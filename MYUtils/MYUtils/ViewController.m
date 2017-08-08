@@ -29,7 +29,7 @@ static NSString * const kShowTextCellReuseIdentifier = @"QSShowTextCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.lines = 2;
-    self.navigationItem.title = @"QSUseLabelDemo";
+    self.navigationItem.title = @"Demo";
     
     NSArray *contentArr = [[NSMutableArray alloc]initWithObjects:
                            @"在iOS中，有时候显示文本，需要设置文本的行间距、指定显示行数、文本内容超出显示行数，省略结尾部分的内容以……方式省略。这些都可以使用UILabel来是实现，前提是你扩展了UILabel这方面的特性。",

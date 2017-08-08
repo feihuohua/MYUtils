@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32712AC81F3857A8008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AC71F3857A8008A105F /* main.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712ACE1F3857A8008A105F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACD1F3857A8008A105F /* ViewController.m */; };
-		32712AD11F3857A8008A105F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32712ACF1F3857A8008A105F /* Main.storyboard */; };
-		32712AD31F3857A8008A105F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32712AD21F3857A8008A105F /* Assets.xcassets */; };
-		32712AD61F3857A8008A105F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32712AD41F3857A8008A105F /* LaunchScreen.storyboard */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
 		32712B001F38584F008A105F /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AFF1F38584F008A105F /* NSString+Size.m */; };
 		32712B041F385874008A105F /* UILabel+FitLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B031F385874008A105F /* UILabel+FitLines.m */; };
 		32712B071F385C3F008A105F /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B061F385C3F008A105F /* MYShowTextCellModel.m */; };
 		32712B0A1F385EDE008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B091F385EDE008A105F /* MYShowTextViewCell.m */; };
+		32712B181F395164008A105F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32712B131F395164008A105F /* Assets.xcassets */; };
+		32712B191F395164008A105F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32712B141F395164008A105F /* Info.plist */; };
+		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
+		32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B1E1F3955BA008A105F /* MYTabBarController.m */; };
+		32712B221F3955D2008A105F /* MYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B211F3955D2008A105F /* MYNavigationController.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 /* End PBXBuildFile section */
 
@@ -42,15 +43,10 @@
 /* Begin PBXFileReference section */
 		26D8685B3E6C2AAC9213C11D /* Pods-MYUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		32712AC71F3857A8008A105F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		32712ACC1F3857A8008A105F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		32712ACD1F3857A8008A105F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		32712AD01F3857A8008A105F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		32712AD21F3857A8008A105F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		32712AD51F3857A8008A105F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		32712AD71F3857A8008A105F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32712ADC1F3857A9008A105F /* MYUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AE01F3857A9008A105F /* MYUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYUtilsTests.m; sourceTree = "<group>"; };
 		32712AE21F3857A9008A105F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +61,13 @@
 		32712B061F385C3F008A105F /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
 		32712B081F385EDE008A105F /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
 		32712B091F385EDE008A105F /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
+		32712B131F395164008A105F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32712B141F395164008A105F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32712B151F395164008A105F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32712B1D1F3955BA008A105F /* MYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarController.h; sourceTree = "<group>"; };
+		32712B1E1F3955BA008A105F /* MYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarController.m; sourceTree = "<group>"; };
+		32712B201F3955D2008A105F /* MYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavigationController.h; sourceTree = "<group>"; };
+		32712B211F3955D2008A105F /* MYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavigationController.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
 		CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +140,13 @@
 		32712AC51F3857A8008A105F /* MYUtils */ = {
 			isa = PBXGroup;
 			children = (
+				32712B0E1F395164008A105F /* Base */,
+				32712B0F1F395164008A105F /* Macro */,
+				32712B101F395164008A105F /* Manager */,
+				32712B111F395164008A105F /* Modules */,
+				32712B121F395164008A105F /* Resource */,
+				32712B161F395164008A105F /* Utils */,
+				32712B171F395164008A105F /* Vendor */,
 				32712AF91F3857F5008A105F /* Category */,
 				32712AC91F3857A8008A105F /* AppDelegate.h */,
 				32712ACA1F3857A8008A105F /* AppDelegate.m */,
@@ -146,21 +156,8 @@
 				32712B061F385C3F008A105F /* MYShowTextCellModel.m */,
 				32712B081F385EDE008A105F /* MYShowTextViewCell.h */,
 				32712B091F385EDE008A105F /* MYShowTextViewCell.m */,
-				32712ACF1F3857A8008A105F /* Main.storyboard */,
-				32712AD21F3857A8008A105F /* Assets.xcassets */,
-				32712AD41F3857A8008A105F /* LaunchScreen.storyboard */,
-				32712AD71F3857A8008A105F /* Info.plist */,
-				32712AC61F3857A8008A105F /* Supporting Files */,
 			);
 			path = MYUtils;
-			sourceTree = "<group>";
-		};
-		32712AC61F3857A8008A105F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				32712AC71F3857A8008A105F /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		32712ADF1F3857A9008A105F /* MYUtilsTests */ = {
@@ -206,6 +203,78 @@
 				32712B031F385874008A105F /* UILabel+FitLines.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		32712B0E1F395164008A105F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				32712B1B1F395564008A105F /* NavigationController */,
+				32712B1C1F395564008A105F /* TabBarController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		32712B0F1F395164008A105F /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		32712B101F395164008A105F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		32712B111F395164008A105F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		32712B121F395164008A105F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				32712B131F395164008A105F /* Assets.xcassets */,
+				32712B141F395164008A105F /* Info.plist */,
+				32712B151F395164008A105F /* main.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		32712B161F395164008A105F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		32712B171F395164008A105F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		32712B1B1F395564008A105F /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				32712B201F3955D2008A105F /* MYNavigationController.h */,
+				32712B211F3955D2008A105F /* MYNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		32712B1C1F395564008A105F /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				32712B1D1F3955BA008A105F /* MYTabBarController.h */,
+				32712B1E1F3955BA008A105F /* MYTabBarController.m */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +347,7 @@
 				TargetAttributes = {
 					32712AC21F3857A8008A105F = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					32712ADB1F3857A9008A105F = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -317,9 +386,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32712AD61F3857A8008A105F /* LaunchScreen.storyboard in Resources */,
-				32712AD31F3857A8008A105F /* Assets.xcassets in Resources */,
-				32712AD11F3857A8008A105F /* Main.storyboard in Resources */,
+				32712B191F395164008A105F /* Info.plist in Resources */,
+				32712B181F395164008A105F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,13 +460,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32712B221F3955D2008A105F /* MYNavigationController.m in Sources */,
 				32712B041F385874008A105F /* UILabel+FitLines.m in Sources */,
 				32712B071F385C3F008A105F /* MYShowTextCellModel.m in Sources */,
 				32712B001F38584F008A105F /* NSString+Size.m in Sources */,
 				32712B0A1F385EDE008A105F /* MYShowTextViewCell.m in Sources */,
 				32712ACE1F3857A8008A105F /* ViewController.m in Sources */,
+				32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */,
+				32712B1A1F395164008A105F /* main.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
-				32712AC81F3857A8008A105F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,25 +502,6 @@
 			targetProxy = 32712AE81F3857A9008A105F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		32712ACF1F3857A8008A105F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32712AD01F3857A8008A105F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		32712AD41F3857A8008A105F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32712AD51F3857A8008A105F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		32712AEE1F3857A9008A105F /* Debug */ = {
@@ -550,10 +601,12 @@
 			baseConfigurationReference = 26D8685B3E6C2AAC9213C11D /* Pods-MYUtils.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MYUtils/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MYUtils/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.MYUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -562,10 +615,12 @@
 			baseConfigurationReference = 496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MYUtils/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/MYUtils/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.MYUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
