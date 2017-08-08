@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MYTabBarController.h"
+#import "TBCityIconFont.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,8 @@
     MYTabBarController *tabBar = [[MYTabBarController alloc] init];
     self.window.rootViewController = tabBar;
     [self.window makeKeyAndVisible];
+    
+    [TBCityIconFont setFontName:@"iconfont"];
     
     return YES;
 }

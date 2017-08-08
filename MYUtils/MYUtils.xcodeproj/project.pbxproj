@@ -20,6 +20,7 @@
 		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
 		32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B1E1F3955BA008A105F /* MYTabBarController.m */; };
 		32712B221F3955D2008A105F /* MYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B211F3955D2008A105F /* MYNavigationController.m */; };
+		32712B281F39B335008A105F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32712B271F39B335008A105F /* iconfont.ttf */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		32712B1E1F3955BA008A105F /* MYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarController.m; sourceTree = "<group>"; };
 		32712B201F3955D2008A105F /* MYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavigationController.h; sourceTree = "<group>"; };
 		32712B211F3955D2008A105F /* MYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavigationController.m; sourceTree = "<group>"; };
+		32712B271F39B335008A105F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
 		CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 				32712B131F395164008A105F /* Assets.xcassets */,
 				32712B141F395164008A105F /* Info.plist */,
 				32712B151F395164008A105F /* main.m */,
+				32712B271F39B335008A105F /* iconfont.ttf */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
 			);
