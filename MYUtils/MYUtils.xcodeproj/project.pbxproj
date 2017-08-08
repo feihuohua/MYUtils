@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
-		32712ACE1F3857A8008A105F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACD1F3857A8008A105F /* ViewController.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
 		32712B001F38584F008A105F /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AFF1F38584F008A105F /* NSString+Size.m */; };
 		32712B041F385874008A105F /* UILabel+FitLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B031F385874008A105F /* UILabel+FitLines.m */; };
-		32712B071F385C3F008A105F /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B061F385C3F008A105F /* MYShowTextCellModel.m */; };
-		32712B0A1F385EDE008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B091F385EDE008A105F /* MYShowTextViewCell.m */; };
 		32712B181F395164008A105F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32712B131F395164008A105F /* Assets.xcassets */; };
 		32712B191F395164008A105F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32712B141F395164008A105F /* Info.plist */; };
 		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
 		32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B1E1F3955BA008A105F /* MYTabBarController.m */; };
 		32712B221F3955D2008A105F /* MYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B211F3955D2008A105F /* MYNavigationController.m */; };
 		32712B281F39B335008A105F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32712B271F39B335008A105F /* iconfont.ttf */; };
+		32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B2E1F39B7E9008A105F /* HomeViewController.m */; };
+		32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B311F39B813008A105F /* MYShowTextViewController.m */; };
+		32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B341F39B824008A105F /* MYIconFontViewController.m */; };
+		32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B371F39BAC4008A105F /* MYShowTextCellModel.m */; };
+		32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +48,6 @@
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		32712ACC1F3857A8008A105F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		32712ACD1F3857A8008A105F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32712ADC1F3857A9008A105F /* MYUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AE01F3857A9008A105F /* MYUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYUtilsTests.m; sourceTree = "<group>"; };
 		32712AE21F3857A9008A105F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,10 +58,6 @@
 		32712AFF1F38584F008A105F /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		32712B021F385874008A105F /* UILabel+FitLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FitLines.h"; sourceTree = "<group>"; };
 		32712B031F385874008A105F /* UILabel+FitLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FitLines.m"; sourceTree = "<group>"; };
-		32712B051F385C3F008A105F /* MYShowTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextCellModel.h; sourceTree = "<group>"; };
-		32712B061F385C3F008A105F /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
-		32712B081F385EDE008A105F /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
-		32712B091F385EDE008A105F /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
 		32712B131F395164008A105F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32712B141F395164008A105F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32712B151F395164008A105F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +66,16 @@
 		32712B201F3955D2008A105F /* MYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNavigationController.h; sourceTree = "<group>"; };
 		32712B211F3955D2008A105F /* MYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNavigationController.m; sourceTree = "<group>"; };
 		32712B271F39B335008A105F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		32712B2D1F39B7E9008A105F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		32712B2E1F39B7E9008A105F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		32712B301F39B813008A105F /* MYShowTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewController.h; sourceTree = "<group>"; };
+		32712B311F39B813008A105F /* MYShowTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewController.m; sourceTree = "<group>"; };
+		32712B331F39B824008A105F /* MYIconFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIconFontViewController.h; sourceTree = "<group>"; };
+		32712B341F39B824008A105F /* MYIconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIconFontViewController.m; sourceTree = "<group>"; };
+		32712B361F39BAC4008A105F /* MYShowTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextCellModel.h; sourceTree = "<group>"; };
+		32712B371F39BAC4008A105F /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
+		32712B391F39BAD4008A105F /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
+		32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
 		CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +148,8 @@
 		32712AC51F3857A8008A105F /* MYUtils */ = {
 			isa = PBXGroup;
 			children = (
+				32712AC91F3857A8008A105F /* AppDelegate.h */,
+				32712ACA1F3857A8008A105F /* AppDelegate.m */,
 				32712B0E1F395164008A105F /* Base */,
 				32712B0F1F395164008A105F /* Macro */,
 				32712B101F395164008A105F /* Manager */,
@@ -150,14 +158,6 @@
 				32712B161F395164008A105F /* Utils */,
 				32712B171F395164008A105F /* Vendor */,
 				32712AF91F3857F5008A105F /* Category */,
-				32712AC91F3857A8008A105F /* AppDelegate.h */,
-				32712ACA1F3857A8008A105F /* AppDelegate.m */,
-				32712ACC1F3857A8008A105F /* ViewController.h */,
-				32712ACD1F3857A8008A105F /* ViewController.m */,
-				32712B051F385C3F008A105F /* MYShowTextCellModel.h */,
-				32712B061F385C3F008A105F /* MYShowTextCellModel.m */,
-				32712B081F385EDE008A105F /* MYShowTextViewCell.h */,
-				32712B091F385EDE008A105F /* MYShowTextViewCell.m */,
 			);
 			path = MYUtils;
 			sourceTree = "<group>";
@@ -233,6 +233,7 @@
 		32712B111F395164008A105F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				32712B291F39B7D6008A105F /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -278,6 +279,47 @@
 				32712B1E1F3955BA008A105F /* MYTabBarController.m */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		32712B291F39B7D6008A105F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				32712B2A1F39B7D6008A105F /* Controller */,
+				32712B2B1F39B7D6008A105F /* Model */,
+				32712B2C1F39B7D6008A105F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		32712B2A1F39B7D6008A105F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32712B2D1F39B7E9008A105F /* HomeViewController.h */,
+				32712B2E1F39B7E9008A105F /* HomeViewController.m */,
+				32712B301F39B813008A105F /* MYShowTextViewController.h */,
+				32712B311F39B813008A105F /* MYShowTextViewController.m */,
+				32712B331F39B824008A105F /* MYIconFontViewController.h */,
+				32712B341F39B824008A105F /* MYIconFontViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		32712B2B1F39B7D6008A105F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32712B361F39BAC4008A105F /* MYShowTextCellModel.h */,
+				32712B371F39BAC4008A105F /* MYShowTextCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32712B2C1F39B7D6008A105F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32712B391F39BAD4008A105F /* MYShowTextViewCell.h */,
+				32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,12 +508,14 @@
 			files = (
 				32712B221F3955D2008A105F /* MYNavigationController.m in Sources */,
 				32712B041F385874008A105F /* UILabel+FitLines.m in Sources */,
-				32712B071F385C3F008A105F /* MYShowTextCellModel.m in Sources */,
+				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				32712B001F38584F008A105F /* NSString+Size.m in Sources */,
-				32712B0A1F385EDE008A105F /* MYShowTextViewCell.m in Sources */,
-				32712ACE1F3857A8008A105F /* ViewController.m in Sources */,
+				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
 				32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */,
+				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
+				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
+				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

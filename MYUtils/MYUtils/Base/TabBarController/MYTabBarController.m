@@ -8,7 +8,7 @@
 
 #import "MYTabBarController.h"
 #import "MYNavigationController.h"
-#import "ViewController.h"
+#import "HomeViewController.h"
 
 @interface MYTabBarController ()
 
@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ViewController *vc = [[ViewController alloc] init];
-    [self setupChildsViewController:vc title:@"首页" imageName:@"" seleceImageName:@""];
+    HomeViewController *home = [[HomeViewController alloc] init];
+    [self setupChildsViewController:home title:@"首页" imageName:@"" seleceImageName:@""];
 }
 
 - (void)setupChildsViewController:(UIViewController *)childsController title:(NSString *)title imageName:(NSString *)imageName seleceImageName:(NSString *)selectImageName {
