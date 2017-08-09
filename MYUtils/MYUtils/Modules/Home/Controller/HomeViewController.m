@@ -9,8 +9,9 @@
 #import "HomeViewController.h"
 #import "MYShowTextViewController.h"
 #import "MYIconFontViewController.h"
+#import "MYImageCornerRadiusViewController.h"
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -27,7 +28,8 @@
     
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
                        @"UILabel设置行间距、指定显示行数",
-                       @"iconfont实战", nil];
+                       @"iconfont实战",
+                       @"imageView设置圆角",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -87,6 +89,10 @@
         
         MYIconFontViewController *iconfont = [[MYIconFontViewController alloc] init];
         [self.navigationController pushViewController:iconfont animated:YES];
+    } else if ([title isEqualToString:@"imageView设置圆角"]) {
+    
+        MYImageCornerRadiusViewController *cornerRadius = [[MYImageCornerRadiusViewController alloc] init];
+        [self.navigationController pushViewController:cornerRadius animated:YES];
     }
 }
 
