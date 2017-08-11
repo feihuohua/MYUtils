@@ -10,6 +10,9 @@
 #define UtilsMacros_h
 
 #define weakSelf(type) __weak __typeof(&*self)weakSelf = self;
-
+#define MYScreenWidth [UIScreen mainScreen].bounds.size.width
+#define MYScreenHeight [UIScreen mainScreen].bounds.size.height
+#define MYSCREEN_RATIO ([[UIScreen mainScreen]bounds].size.height)/667
+#define MYSCREEN_SCALESIZE ([[UIScreen mainScreen]bounds].size.width)/375
 
 #endif /* UtilsMacros_h */

@@ -10,6 +10,7 @@
 #import "MYShowTextViewController.h"
 #import "MYIconFontViewController.h"
 #import "MYImageCornerRadiusViewController.h"
+#import "MYBannerCycleViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -29,7 +30,8 @@
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
                        @"UILabel设置行间距、指定显示行数",
                        @"iconfont实战",
-                       @"imageView设置圆角",nil];
+                       @"imageView设置圆角",
+                       @"轮播图",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -93,6 +95,10 @@
     
         MYImageCornerRadiusViewController *cornerRadius = [[MYImageCornerRadiusViewController alloc] init];
         [self.navigationController pushViewController:cornerRadius animated:YES];
+    } else if ([title isEqualToString:@"轮播图"]) {
+    
+        MYBannerCycleViewController *cycle = [[MYBannerCycleViewController alloc] init];
+        [self.navigationController pushViewController:cycle animated:YES];
     }
 }
 

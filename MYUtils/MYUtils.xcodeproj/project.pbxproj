@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */; };
+		3259D1881F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1851F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m */; };
+		3259D1891F3DB8E700AD2D84 /* FXBannerCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1871F3DB8E700AD2D84 /* FXBannerCycleView.m */; };
+		3259D18C1F3DB93C00AD2D84 /* MYBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D18B1F3DB93C00AD2D84 /* MYBannerViewCell.m */; };
+		3259D18F1F3DBA0200AD2D84 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D18E1F3DBA0200AD2D84 /* UIView+Extension.m */; };
+		3259D1921F3DBA1100AD2D84 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1911F3DBA1100AD2D84 /* UIColor+Extension.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -49,6 +55,18 @@
 
 /* Begin PBXFileReference section */
 		26D8685B3E6C2AAC9213C11D /* Pods-MYUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.debug.xcconfig"; sourceTree = "<group>"; };
+		3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerCycleViewController.h; sourceTree = "<group>"; };
+		3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerCycleViewController.m; sourceTree = "<group>"; };
+		3259D1841F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBannerCycleFlowLayout.h; sourceTree = "<group>"; };
+		3259D1851F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBannerCycleFlowLayout.m; sourceTree = "<group>"; };
+		3259D1861F3DB8E700AD2D84 /* FXBannerCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBannerCycleView.h; sourceTree = "<group>"; };
+		3259D1871F3DB8E700AD2D84 /* FXBannerCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBannerCycleView.m; sourceTree = "<group>"; };
+		3259D18A1F3DB93C00AD2D84 /* MYBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerViewCell.h; sourceTree = "<group>"; };
+		3259D18B1F3DB93C00AD2D84 /* MYBannerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerViewCell.m; sourceTree = "<group>"; };
+		3259D18D1F3DBA0200AD2D84 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		3259D18E1F3DBA0200AD2D84 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		3259D1901F3DBA1100AD2D84 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		3259D1911F3DBA1100AD2D84 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,6 +154,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3259D1831F3DB8E100AD2D84 /* FXBannerCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				3259D1841F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.h */,
+				3259D1851F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m */,
+				3259D1861F3DB8E700AD2D84 /* FXBannerCycleView.h */,
+				3259D1871F3DB8E700AD2D84 /* FXBannerCycleView.m */,
+			);
+			path = FXBannerCycleView;
+			sourceTree = "<group>";
+		};
 		32712ABA1F3857A8008A105F = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +243,10 @@
 		32712B011F38585F008A105F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3259D1901F3DBA1100AD2D84 /* UIColor+Extension.h */,
+				3259D1911F3DBA1100AD2D84 /* UIColor+Extension.m */,
+				3259D18D1F3DBA0200AD2D84 /* UIView+Extension.h */,
+				3259D18E1F3DBA0200AD2D84 /* UIView+Extension.m */,
 				32712B021F385874008A105F /* UILabel+FitLines.h */,
 				32712B031F385874008A105F /* UILabel+FitLines.m */,
 				32712BBA1F3AEDF9008A105F /* UIImageView+CornerRadius.h */,
@@ -277,6 +310,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3259D1831F3DB8E100AD2D84 /* FXBannerCycleView */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -320,6 +354,8 @@
 				32712B341F39B824008A105F /* MYIconFontViewController.m */,
 				32712BBD1F3AF15E008A105F /* MYImageCornerRadiusViewController.h */,
 				32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */,
+				3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */,
+				3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +376,8 @@
 				32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */,
 				32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */,
 				32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */,
+				3259D18A1F3DB93C00AD2D84 /* MYBannerViewCell.h */,
+				3259D18B1F3DB93C00AD2D84 /* MYBannerViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,11 +567,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				32712BC61F3AF797008A105F /* UIImage+Extension.m in Sources */,
+				3259D1891F3DB8E700AD2D84 /* FXBannerCycleView.m in Sources */,
+				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
 				32712B221F3955D2008A105F /* MYNavigationController.m in Sources */,
+				3259D18C1F3DB93C00AD2D84 /* MYBannerViewCell.m in Sources */,
 				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
+				3259D1881F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m in Sources */,
 				32712B041F385874008A105F /* UILabel+FitLines.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				32712B001F38584F008A105F /* NSString+Size.m in Sources */,
+				3259D1921F3DBA1100AD2D84 /* UIColor+Extension.m in Sources */,
+				3259D18F1F3DBA0200AD2D84 /* UIView+Extension.m in Sources */,
 				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
 				32712BBC1F3AEDF9008A105F /* UIImageView+CornerRadius.m in Sources */,
 				32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */,
