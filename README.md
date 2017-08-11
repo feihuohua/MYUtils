@@ -12,26 +12,28 @@ MYUtils项目中会记录日常常用的一些工具类和一些常用的demo等
 
 #### iconfont实战
 
-使用IconFont减小iOS应用体积。
+* 使用IconFont减小iOS应用体积。
 
 #### 使用UIImageView设置圆角
 
-使用UIImageView分类设置圆角
+* 使用UIImageView分类设置圆角
 
 #### UICollectionView实现轮播图
 
-**FXBannerCycleView**是用UICollectionView实现的，使用的时候也特别简单，就跟使用UICollectionView一样的清爽。
+* FXBannerCycleView是用UICollectionView实现的，使用的时候也特别简单，就跟使用UICollectionView一样的清爽。
 
 ![FXBannerCycleView.gif](http://upload-images.jianshu.io/upload_images/588630-ed997a60d2dbc4a9.gif?imageMogr2/auto-orient/strip)
 
-首先，FXBannerCyclePageControlPosition是确定pageControl的位置，默认值是中间位置。
+* 首先，FXBannerCyclePageControlPosition是确定pageControl的位置，默认值是中间位置。
 
 ```
 FXBannerCyclePageControlPositionCenter
 FXBannerCyclePageControlPositionLeft
 FXBannerCyclePageControlPositionRight
 ```
-然后，FXBannerCycleView的代理方法
+
+* 然后，FXBannerCycleView的代理方法
+
 ```
 /**
 *  代理方法取轮播总数（参考UITableView或UICollectionView）
@@ -79,7 +81,9 @@ FXBannerCyclePageControlPositionRight
 - (void)cycleView:(FXBannerCycleView *)cycleView didSelectItemAtRow:(NSInteger)row;
 
 ```
-最后，设置定时器的属性
+
+* 最后，设置定时器的属性
+
 ```
 /** 是否循环(default = YES) */
 @property (nonatomic, assign) BOOL cycleEnabled;
@@ -87,4 +91,3 @@ FXBannerCyclePageControlPositionRight
 @property (nonatomic, assign) CGFloat timeInterval;
 ```
 
-看是不是像UICollectionView一样的清爽。
