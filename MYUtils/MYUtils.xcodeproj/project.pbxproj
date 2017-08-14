@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */; };
-		3259D1881F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1851F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m */; };
-		3259D1891F3DB8E700AD2D84 /* FXBannerCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1871F3DB8E700AD2D84 /* FXBannerCycleView.m */; };
-		3259D18C1F3DB93C00AD2D84 /* MYBannerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D18B1F3DB93C00AD2D84 /* MYBannerViewCell.m */; };
 		3259D18F1F3DBA0200AD2D84 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D18E1F3DBA0200AD2D84 /* UIView+Extension.m */; };
 		3259D1921F3DBA1100AD2D84 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1911F3DBA1100AD2D84 /* UIColor+Extension.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
@@ -33,6 +30,10 @@
 		32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */; };
 		32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */; };
 		32712BC61F3AF797008A105F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC51F3AF797008A105F /* UIImage+Extension.m */; };
+		32DF82041F41B3F700320CB2 /* FXCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF81FF1F41B3F700320CB2 /* FXCyclePagerTransformLayout.m */; };
+		32DF82051F41B3F700320CB2 /* FXCyclePagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82011F41B3F700320CB2 /* FXCyclePagerView.m */; };
+		32DF82061F41B3F700320CB2 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82031F41B3F700320CB2 /* FXPageControl.m */; };
+		32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +58,6 @@
 		26D8685B3E6C2AAC9213C11D /* Pods-MYUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerCycleViewController.h; sourceTree = "<group>"; };
 		3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerCycleViewController.m; sourceTree = "<group>"; };
-		3259D1841F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBannerCycleFlowLayout.h; sourceTree = "<group>"; };
-		3259D1851F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBannerCycleFlowLayout.m; sourceTree = "<group>"; };
-		3259D1861F3DB8E700AD2D84 /* FXBannerCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBannerCycleView.h; sourceTree = "<group>"; };
-		3259D1871F3DB8E700AD2D84 /* FXBannerCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBannerCycleView.m; sourceTree = "<group>"; };
-		3259D18A1F3DB93C00AD2D84 /* MYBannerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerViewCell.h; sourceTree = "<group>"; };
-		3259D18B1F3DB93C00AD2D84 /* MYBannerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerViewCell.m; sourceTree = "<group>"; };
 		3259D18D1F3DBA0200AD2D84 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		3259D18E1F3DBA0200AD2D84 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		3259D1901F3DBA1100AD2D84 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
@@ -107,6 +102,14 @@
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		32712BC41F3AF797008A105F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		32712BC51F3AF797008A105F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		32DF81FE1F41B3F700320CB2 /* FXCyclePagerTransformLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerTransformLayout.h; sourceTree = "<group>"; };
+		32DF81FF1F41B3F700320CB2 /* FXCyclePagerTransformLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerTransformLayout.m; sourceTree = "<group>"; };
+		32DF82001F41B3F700320CB2 /* FXCyclePagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerView.h; sourceTree = "<group>"; };
+		32DF82011F41B3F700320CB2 /* FXCyclePagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerView.m; sourceTree = "<group>"; };
+		32DF82021F41B3F700320CB2 /* FXPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXPageControl.h; sourceTree = "<group>"; };
+		32DF82031F41B3F700320CB2 /* FXPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXPageControl.m; sourceTree = "<group>"; };
+		32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
+		32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
 		CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,17 +155,6 @@
 				CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3259D1831F3DB8E100AD2D84 /* FXBannerCycleView */ = {
-			isa = PBXGroup;
-			children = (
-				3259D1841F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.h */,
-				3259D1851F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m */,
-				3259D1861F3DB8E700AD2D84 /* FXBannerCycleView.h */,
-				3259D1871F3DB8E700AD2D84 /* FXBannerCycleView.m */,
-			);
-			path = FXBannerCycleView;
 			sourceTree = "<group>";
 		};
 		32712ABA1F3857A8008A105F = {
@@ -310,7 +302,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				3259D1831F3DB8E100AD2D84 /* FXBannerCycleView */,
+				32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -376,10 +368,23 @@
 				32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */,
 				32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */,
 				32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */,
-				3259D18A1F3DB93C00AD2D84 /* MYBannerViewCell.h */,
-				3259D18B1F3DB93C00AD2D84 /* MYBannerViewCell.m */,
+				32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */,
+				32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */ = {
+			isa = PBXGroup;
+			children = (
+				32DF81FE1F41B3F700320CB2 /* FXCyclePagerTransformLayout.h */,
+				32DF81FF1F41B3F700320CB2 /* FXCyclePagerTransformLayout.m */,
+				32DF82001F41B3F700320CB2 /* FXCyclePagerView.h */,
+				32DF82011F41B3F700320CB2 /* FXCyclePagerView.m */,
+				32DF82021F41B3F700320CB2 /* FXPageControl.h */,
+				32DF82031F41B3F700320CB2 /* FXPageControl.m */,
+			);
+			path = FXCyclePagerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -567,18 +572,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				32712BC61F3AF797008A105F /* UIImage+Extension.m in Sources */,
-				3259D1891F3DB8E700AD2D84 /* FXBannerCycleView.m in Sources */,
 				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
+				32DF82061F41B3F700320CB2 /* FXPageControl.m in Sources */,
 				32712B221F3955D2008A105F /* MYNavigationController.m in Sources */,
-				3259D18C1F3DB93C00AD2D84 /* MYBannerViewCell.m in Sources */,
+				32DF82051F41B3F700320CB2 /* FXCyclePagerView.m in Sources */,
 				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
-				3259D1881F3DB8E700AD2D84 /* FXBannerCycleFlowLayout.m in Sources */,
 				32712B041F385874008A105F /* UILabel+FitLines.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				32712B001F38584F008A105F /* NSString+Size.m in Sources */,
 				3259D1921F3DBA1100AD2D84 /* UIColor+Extension.m in Sources */,
 				3259D18F1F3DBA0200AD2D84 /* UIView+Extension.m in Sources */,
 				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
+				32DF82041F41B3F700320CB2 /* FXCyclePagerTransformLayout.m in Sources */,
+				32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */,
 				32712BBC1F3AEDF9008A105F /* UIImageView+CornerRadius.m in Sources */,
 				32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */,
 				32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */,
