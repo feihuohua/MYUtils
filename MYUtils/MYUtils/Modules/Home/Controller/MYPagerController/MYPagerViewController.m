@@ -1,39 +1,37 @@
 //
-//  HomeViewController.m
+//  MYPagerViewController.m
 //  MYUtils
 //
-//  Created by sunjinshuai on 2017/8/8.
+//  Created by sunjinshuai on 2017/8/16.
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "MYShowTextViewController.h"
-#import "MYIconFontViewController.h"
-#import "MYImageCornerRadiusViewController.h"
-#import "MYBannerCycleViewController.h"
 #import "MYPagerViewController.h"
+#import "PagerViewDmeoController.h"
+#import "PagerControllerDmeoController.h"
+#import "TabPagerControllerDemoController.h"
+#import "TabPagerViewDmeoController.h"
 
-@interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MYPagerViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
-@implementation HomeViewController
+@implementation MYPagerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"UIKitDemo";
+    self.title = @"MYPagerViewController";
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       @"UILabel设置行间距、指定显示行数",
-                       @"iconfont实战",
-                       @"imageView设置圆角",
-                       @"轮播图",
-                       @"TYPagerController",nil];
+                       @"PagerViewDemo",
+                       @"PagerControllerDemo",
+                       @"TabPagerControllerDemo",
+                       @"TabPagerViewDemo",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -84,27 +82,24 @@
     
     NSString *title = self.dataSource[indexPath.row];
     
-    if ([title isEqualToString:@"UILabel设置行间距、指定显示行数"]) {
+    if ([title isEqualToString:@"PagerViewDemo"]) {
         
-        MYShowTextViewController *text = [[MYShowTextViewController alloc] init];
-        [self.navigationController pushViewController:text animated:YES];
+        PagerViewDmeoController *vc = [[PagerViewDmeoController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
         
-    } else if ([title isEqualToString:@"iconfont实战"]) {
+    } else if ([title isEqualToString:@"PagerControllerDemo"]) {
         
-        MYIconFontViewController *iconfont = [[MYIconFontViewController alloc] init];
-        [self.navigationController pushViewController:iconfont animated:YES];
-    } else if ([title isEqualToString:@"imageView设置圆角"]) {
-    
-        MYImageCornerRadiusViewController *cornerRadius = [[MYImageCornerRadiusViewController alloc] init];
-        [self.navigationController pushViewController:cornerRadius animated:YES];
-    } else if ([title isEqualToString:@"轮播图"]) {
-    
-        MYBannerCycleViewController *cycle = [[MYBannerCycleViewController alloc] init];
-        [self.navigationController pushViewController:cycle animated:YES];
-    } else if ([title isEqualToString:@"TYPagerController"]) {
-    
-        MYPagerViewController *pager = [[MYPagerViewController alloc] init];
-        [self.navigationController pushViewController:pager animated:YES];
+        TabPagerViewDmeoController *vc = [[TabPagerViewDmeoController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([title isEqualToString:@"TabPagerControllerDemo"]) {
+        
+        PagerControllerDmeoController *pagerController = [[PagerControllerDmeoController alloc] init];
+        [self.navigationController pushViewController:pagerController animated:YES];
+    } else if ([title isEqualToString:@"TabPagerViewDemo"]) {
+        
+        TabPagerControllerDemoController *pagerController = [[TabPagerControllerDemoController alloc] init];
+        //pagerController.pagerController.layout.prefetchItemCount = 1;
+        [self.navigationController pushViewController:pagerController animated:YES];
     }
 }
 
