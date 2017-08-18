@@ -11,4 +11,6 @@ target 'MYUtils' do
     
     pod 'TYPagerController' , '~> 2.0.1'
     
+    pod 'CYLTabBarController', '~> 1.13.1'
+    
 end  
