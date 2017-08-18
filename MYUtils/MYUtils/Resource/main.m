@@ -12,12 +12,12 @@
 #import "Child.h"
 
 int main(int argc, char * argv[]) {
-//    @autoreleasepool {
-//        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-//    }
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
     
-    Child *child = [[Child alloc] init];
-    
-    NSLog(@"%@",child);
+//    Child *child = [[Child alloc] init];
+//    
+//    NSLog(@"%@",child);
     
 }

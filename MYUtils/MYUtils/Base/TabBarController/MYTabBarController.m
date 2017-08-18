@@ -7,7 +7,7 @@
 //
 
 #import "MYTabBarController.h"
-#import "MYNavigationController.h"
+#import "HKNavigationController.h"
 #import "HomeViewController.h"
 
 @interface MYTabBarController ()
@@ -25,10 +25,10 @@
 
 - (void)setupChildsViewController:(UIViewController *)childsController title:(NSString *)title imageName:(NSString *)imageName seleceImageName:(NSString *)selectImageName {
     
-    childsController.tabBarItem.title = title;//跟上面一样效果
+    childsController.tabBarItem.title = title;
     childsController.tabBarItem.image = [UIImage imageNamed:imageName];
     childsController.tabBarItem.selectedImage = [UIImage imageNamed:selectImageName];
-    MYNavigationController *nav = [[MYNavigationController alloc] initWithRootViewController:childsController];
+    HKNavigationController *nav = [[HKNavigationController alloc] initWithRootViewController:childsController];
     childsController.title = title;
     [self addChildViewController:nav];
 }

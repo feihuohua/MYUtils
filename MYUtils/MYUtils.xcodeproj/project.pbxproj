@@ -44,6 +44,9 @@
 		32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */; };
 		32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */; };
 		32712BC61F3AF797008A105F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC51F3AF797008A105F /* UIImage+Extension.m */; };
+		32CBE31F1F45AA7100AE6267 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE31C1F45AA7100AE6267 /* UIViewController+NavigationExtension.m */; };
+		32CBE3201F45AA7100AE6267 /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE31E1F45AA7100AE6267 /* HKNavigationController.m */; };
+		32CBE3231F45AAE000AE6267 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3221F45AAE000AE6267 /* UIBarButtonItem+Extension.m */; };
 		32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 		4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5785D1F41FA0A004EE94D /* FXCyclePagerTransformLayout.m */; };
@@ -142,6 +145,12 @@
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		32712BC41F3AF797008A105F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		32712BC51F3AF797008A105F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		32CBE31B1F45AA7100AE6267 /* UIViewController+NavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationExtension.h"; sourceTree = "<group>"; };
+		32CBE31C1F45AA7100AE6267 /* UIViewController+NavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationExtension.m"; sourceTree = "<group>"; };
+		32CBE31D1F45AA7100AE6267 /* HKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNavigationController.h; sourceTree = "<group>"; };
+		32CBE31E1F45AA7100AE6267 /* HKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNavigationController.m; sourceTree = "<group>"; };
+		32CBE3211F45AAE000AE6267 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		32CBE3221F45AAE000AE6267 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
 		32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
@@ -335,6 +344,8 @@
 				32712BBB1F3AEDF9008A105F /* UIImageView+CornerRadius.m */,
 				32712BC41F3AF797008A105F /* UIImage+Extension.h */,
 				32712BC51F3AF797008A105F /* UIImage+Extension.m */,
+				32CBE3211F45AAE000AE6267 /* UIBarButtonItem+Extension.h */,
+				32CBE3221F45AAE000AE6267 /* UIBarButtonItem+Extension.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -392,6 +403,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32CBE31A1F45AA5100AE6267 /* MYNavigationController */,
 				32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */,
 			);
 			path = Vendor;
@@ -463,6 +475,17 @@
 				32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		32CBE31A1F45AA5100AE6267 /* MYNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				32CBE31B1F45AA7100AE6267 /* UIViewController+NavigationExtension.h */,
+				32CBE31C1F45AA7100AE6267 /* UIViewController+NavigationExtension.m */,
+				32CBE31D1F45AA7100AE6267 /* HKNavigationController.h */,
+				32CBE31E1F45AA7100AE6267 /* HKNavigationController.m */,
+			);
+			path = MYNavigationController;
 			sourceTree = "<group>";
 		};
 		32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */ = {
@@ -689,13 +712,16 @@
 				320707281F43F4D900CB66D9 /* TabPagerControllerDemoController.m in Sources */,
 				3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */,
 				32200C2E1F444ABC0027066E /* Parent.m in Sources */,
+				32CBE31F1F45AA7100AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
 				32712BBC1F3AEDF9008A105F /* UIImageView+CornerRadius.m in Sources */,
+				32CBE3201F45AA7100AE6267 /* HKNavigationController.m in Sources */,
 				32712B1F1F3955BA008A105F /* MYTabBarController.m in Sources */,
 				32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */,
 				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
 				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
+				32CBE3231F45AAE000AE6267 /* UIBarButtonItem+Extension.m in Sources */,
 				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 			);
