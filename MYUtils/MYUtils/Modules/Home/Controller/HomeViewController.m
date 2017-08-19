@@ -12,6 +12,7 @@
 #import "MYImageCornerRadiusViewController.h"
 #import "MYBannerCycleViewController.h"
 #import "MYPagerViewController.h"
+#import "MYCustomNavigationBarViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -33,7 +34,8 @@
                        @"iconfont实战",
                        @"imageView设置圆角",
                        @"轮播图",
-                       @"TYPagerController",nil];
+                       @"TYPagerController",
+                       @"CustomNavigationBar",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -94,17 +96,20 @@
         MYIconFontViewController *iconfont = [[MYIconFontViewController alloc] init];
         [self.navigationController pushViewController:iconfont animated:YES];
     } else if ([title isEqualToString:@"imageView设置圆角"]) {
-    
+        
         MYImageCornerRadiusViewController *cornerRadius = [[MYImageCornerRadiusViewController alloc] init];
         [self.navigationController pushViewController:cornerRadius animated:YES];
     } else if ([title isEqualToString:@"轮播图"]) {
-    
+        
         MYBannerCycleViewController *cycle = [[MYBannerCycleViewController alloc] init];
         [self.navigationController pushViewController:cycle animated:YES];
     } else if ([title isEqualToString:@"TYPagerController"]) {
-    
+        
         MYPagerViewController *pager = [[MYPagerViewController alloc] init];
         [self.navigationController pushViewController:pager animated:YES];
+    } else if ([title isEqualToString:@"CustomNavigationBar"]) {
+        MYCustomNavigationBarViewController *customNavigationBar = [[MYCustomNavigationBarViewController alloc] init];
+        [self.navigationController pushViewController:customNavigationBar animated:YES];
     }
 }
 

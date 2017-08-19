@@ -46,6 +46,8 @@
 		32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35B1F46DAFC00AE6267 /* HKNavigationController.m */; };
 		32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */; };
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
+		32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */; };
+		32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */; };
 		32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 		4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5785D1F41FA0A004EE94D /* FXCyclePagerTransformLayout.m */; };
@@ -148,6 +150,10 @@
 		32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationExtension.m"; sourceTree = "<group>"; };
 		32CBE3601F46DB9000AE6267 /* HKTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTabBarControllerConfig.h; sourceTree = "<group>"; };
 		32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTabBarControllerConfig.m; sourceTree = "<group>"; };
+		32CBE3881F47E82100AE6267 /* MYCustomNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomNavigationBarViewController.h; sourceTree = "<group>"; };
+		32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomNavigationBarViewController.m; sourceTree = "<group>"; };
+		32CBE38C1F47E88900AE6267 /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extension.h"; sourceTree = "<group>"; };
+		32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extension.m"; sourceTree = "<group>"; };
 		32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
 		32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
@@ -400,6 +406,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32CBE38B1F47E87B00AE6267 /* MYNavigaionBar */,
 				32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */,
 			);
 			path = Vendor;
@@ -437,6 +444,8 @@
 				32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */,
 				3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */,
 				3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */,
+				32CBE3881F47E82100AE6267 /* MYCustomNavigationBarViewController.h */,
+				32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */,
 				320707131F43F3B800CB66D9 /* MYPagerController */,
 			);
 			path = Controller;
@@ -473,6 +482,15 @@
 				32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */,
 			);
 			path = MYNavigationController;
+			sourceTree = "<group>";
+		};
+		32CBE38B1F47E87B00AE6267 /* MYNavigaionBar */ = {
+			isa = PBXGroup;
+			children = (
+				32CBE38C1F47E88900AE6267 /* UINavigationBar+Extension.h */,
+				32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */,
+			);
+			path = MYNavigaionBar;
 			sourceTree = "<group>";
 		};
 		32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */ = {
@@ -681,6 +699,7 @@
 				32200C371F444B770027066E /* Parent+Load.m in Sources */,
 				3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */,
 				32200C311F444AC80027066E /* Child.m in Sources */,
+				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
 				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
@@ -688,6 +707,7 @@
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				320707251F43F4D900CB66D9 /* PagerViewDmeoController.m in Sources */,
+				32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32712B041F385874008A105F /* UILabel+FitLines.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
