@@ -23,6 +23,7 @@ PODS:
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - TYPagerController (2.0.1)
+  - WebViewJavascriptBridge (6.0.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.13)
   - SDWebImage (~> 4.0.0)
   - TYPagerController (~> 2.0.1)
+  - WebViewJavascriptBridge (~> 6.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -43,7 +45,8 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TYPagerController: f86e3f85d723caa967655f23661d32beaee7db77
+  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
 
-PODFILE CHECKSUM: 2b9cd27d8b96dee898786deab70652a7d04c9f9c
+PODFILE CHECKSUM: 8ce3547b2f3b36a9d3d7bb7e25e28d96b4821f4d
 
 COCOAPODS: 1.2.1
