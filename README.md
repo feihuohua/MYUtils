@@ -27,6 +27,7 @@ MYUtils项目中会记录日常常用的一些工具类和一些常用的demo等
 
 * 首先，FXBannerCyclePageControlPosition是确定pageControl的位置，默认值是中间位置。
 
+
 ```
 FXBannerCyclePageControlPositionCenter
 FXBannerCyclePageControlPositionLeft
@@ -34,6 +35,7 @@ FXBannerCyclePageControlPositionRight
 ```
 
 * 然后，FXBannerCycleView的代理方法
+
 
 ```
 /**
