@@ -7,6 +7,8 @@
 //
 
 #import "MYJavaScriptCoreViewController.h"
+#import "UtilsMacros.h"
+#import "UIColor+Extension.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @interface MYJavaScriptCoreViewController ()<UIWebViewDelegate, UIScrollViewDelegate>
@@ -37,8 +39,8 @@
 }
 
 #pragma mark - private method
-- (void)addCustomActions
-{
+- (void)addCustomActions {
+    
     JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     
     [self addScanWithContext:context];
@@ -50,32 +52,25 @@
     [self addShareWithContext:context];
     
     [self addPayActionWithContext:context];
-    
-    [self addShakeActionWithContext:context];
-    
-    [self addGoBackWithContext:context];
 }
 
-- (void)addScanWithContext:(JSContext *)context
-{
+- (void)addScanWithContext:(JSContext *)context {
     context[@"scan"] = ^() {
         NSLog(@"扫一扫啦");
     };
 }
 
-- (void)addLocationWithContext:(JSContext *)context
-{
+- (void)addLocationWithContext:(JSContext *)context {
     context[@"getLocation"] = ^() {
         // 获取位置信息
         
         // 将结果返回给js
-        NSString *jsStr = [NSString stringWithFormat:@"setLocation('%@')",@"广东省深圳市南山区学府路XXXX号"];
+        NSString *jsStr = [NSString stringWithFormat:@"北京市朝阳区望京SOHO"];
         [[JSContext currentContext] evaluateScript:jsStr];
     };
 }
 
-- (void)addShareWithContext:(JSContext *)context
-{
+- (void)addShareWithContext:(JSContext *)context {
     context[@"share"] = ^() {
         NSArray *args = [JSContext currentArguments];
         
@@ -94,22 +89,16 @@
     };
 }
 
-- (void)addSetBGColorWithContext:(JSContext *)context
-{
-    __weak typeof(self) weakSelf = self;
+- (void)addSetBGColorWithContext:(JSContext *)context {
+    
+    weakSelf(self)
     context[@"setColor"] = ^() {
         NSArray *args = [JSContext currentArguments];
         
         if (args.count < 4) {
             return ;
         }
-        
-        CGFloat r = [[args[0] toNumber] floatValue];
-        CGFloat g = [[args[1] toNumber] floatValue];
-        CGFloat b = [[args[2] toNumber] floatValue];
-        CGFloat a = [[args[3] toNumber] floatValue];
-        
-        weakSelf.view.backgroundColor = [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
+        weakSelf.view.backgroundColor = [UIColor randomColor];
     };
 }
 
@@ -134,22 +123,6 @@
         //        NSString *jsStr = [NSString stringWithFormat:@"payResult('%@')",@"支付成功"];
         //        [[JSContext currentContext] evaluateScript:jsStr];
         [[JSContext currentContext][@"payResult"] callWithArguments:@[@"支付成功"]];
-    };
-}
-
-- (void)addShakeActionWithContext:(JSContext *)context
-{
-    
-    context[@"shake"] = ^() {
-        
-    };
-}
-
-- (void)addGoBackWithContext:(JSContext *)context
-{
-    __weak typeof(self) weakSelf = self;
-    context[@"goBack"] = ^() {
-        [weakSelf.webView goBack];
     };
 }
 

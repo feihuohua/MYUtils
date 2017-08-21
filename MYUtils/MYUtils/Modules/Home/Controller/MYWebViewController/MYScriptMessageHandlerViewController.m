@@ -28,11 +28,7 @@
     [self initProgressView];
     
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
+    
     // addScriptMessageHandler 很容易导致循环引用
     // 控制器 强引用了WKWebView,WKWebView copy(强引用了）configuration， configuration copy （强引用了）userContentController
     // userContentController 强引用了 self （控制器）
@@ -41,24 +37,22 @@
     [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"share"];
     [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Color"];
     [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Pay"];
-    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"Shake"];
-    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"GoBack"];
-    [self.webView.configuration.userContentController addScriptMessageHandler:self name:@"PlaySound"];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+   
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
     // 因此这里要记得移除handlers
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"ScanAction"];
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Location"];
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"share"];
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Color"];
     [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Pay"];
-    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"Shake"];
-    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"GoBack"];
-    [self.webView.configuration.userContentController removeScriptMessageHandlerForName:@"PlaySound"];
+    [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
 }
 
 #pragma mark - KVO
@@ -72,7 +66,6 @@
                 self.progressView.hidden = YES;
                 [self.progressView setProgress:0 animated:NO];
             });
-            
         } else {
             self.progressView.hidden = NO;
             [self.progressView setProgress:newprogress animated:YES];
@@ -81,9 +74,7 @@
 }
 
 #pragma mark - WKUIDelegate
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
-{
-    
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提醒" message:message preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         completionHandler();
@@ -93,8 +84,7 @@
 }
 
 #pragma mark - WKScriptMessageHandler
-- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message
-{
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
     NSLog(@"body:%@",message.body);
     if ([message.name isEqualToString:@"ScanAction"]) {
         NSLog(@"扫一扫");
@@ -109,8 +99,7 @@
     }
 }
 
-- (void)initWKWebView
-{
+- (void)initWKWebView {
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     
     WKPreferences *preferences = [WKPreferences new];
@@ -129,8 +118,7 @@
     [self.view addSubview:self.webView];
 }
 
-- (void)initProgressView
-{
+- (void)initProgressView {
     CGFloat kScreenWidth = [[UIScreen mainScreen] bounds].size.width;
     UIProgressView *progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 2)];
     progressView.tintColor = [UIColor redColor];
@@ -139,19 +127,16 @@
     self.progressView = progressView;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     NSLog(@"%s",__FUNCTION__);
-    [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
 }
 
 #pragma mark - private method
-- (void)getLocation
-{
+- (void)getLocation {
     // 获取位置信息
     
     // 将结果返回给js
-    NSString *jsStr = [NSString stringWithFormat:@"setLocation('%@')",@"广东省深圳市南山区学府路XXXX号"];
+    NSString *jsStr = [NSString stringWithFormat:@"北京市朝阳区望京SOHO"];
     [self.webView evaluateJavaScript:jsStr completionHandler:^(id _Nullable result, NSError * _Nullable error) {
         NSLog(@"%@----%@",result, error);
     }];
@@ -162,8 +147,7 @@
     }];
 }
 
-- (void)shareWithParams:(NSDictionary *)tempDic
-{
+- (void)shareWithParams:(NSDictionary *)tempDic {
     if (![tempDic isKindOfClass:[NSDictionary class]]) {
         return;
     }
@@ -180,8 +164,7 @@
     }];
 }
 
-- (void)changeBGColor:(NSArray *)params
-{
+- (void)changeBGColor:(NSArray *)params {
     if (![params isKindOfClass:[NSArray class]]) {
         return;
     }
@@ -198,8 +181,8 @@
     self.view.backgroundColor = [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a];
 }
 
-- (void)payWithParams:(NSDictionary *)tempDic
-{
+- (void)payWithParams:(NSDictionary *)tempDic {
+    
     if (![tempDic isKindOfClass:[NSDictionary class]]) {
         return;
     }

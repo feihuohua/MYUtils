@@ -1,35 +1,33 @@
 //
-//  MYWebViewController.m
+//  MYWebViewJavascriptBridgeViewController.m
 //  MYUtils
 //
 //  Created by sunjinshuai on 2017/8/21.
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "MYWebViewController.h"
-#import "MYJavaScriptCoreViewController.h"
-#import "MYScriptMessageHandlerViewController.h"
 #import "MYWebViewJavascriptBridgeViewController.h"
+#import "MYWebViewJavascriptBridge1ViewController.h"
+#import "MYWebViewJavascriptBridge2ViewController.h"
 
-@interface MYWebViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MYWebViewJavascriptBridgeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
-@implementation MYWebViewController
+@implementation MYWebViewJavascriptBridgeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"MYWebViewController";
+    self.title = @"WebViewJavascriptBridge";
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       @"JavaScriptCore",
-                       @"ScriptMessageHandler",
-                       @"WebViewJavascriptBridge",nil];
+                       @"UIWebView--WebViewJavascriptBridge",
+                       @"WKWebView--WebViewJavascriptBridge",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -77,19 +75,14 @@
     
     NSString *title = self.dataSource[indexPath.row];
     
-    if ([title isEqualToString:@"JavaScriptCore"]) {
+    if ([title isEqualToString:@"UIWebView--WebViewJavascriptBridge"]) {
         
-        MYJavaScriptCoreViewController *vc = [[MYJavaScriptCoreViewController alloc] init];
+        MYWebViewJavascriptBridge1ViewController *vc = [[MYWebViewJavascriptBridge1ViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
         
-    } else if ([title isEqualToString:@"ScriptMessageHandler"]) {
+    } else if ([title isEqualToString:@"WKWebView--WebViewJavascriptBridge"]) {
         
-        MYScriptMessageHandlerViewController *vc = [[MYScriptMessageHandlerViewController alloc] init];
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    } else if ([title isEqualToString:@"WebViewJavascriptBridge"]) {
-        
-        MYWebViewJavascriptBridgeViewController *vc = [[MYWebViewJavascriptBridgeViewController alloc] init];
+        MYWebViewJavascriptBridge2ViewController *vc = [[MYWebViewJavascriptBridge2ViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
@@ -101,6 +94,7 @@
     }
     return _dataSource;
 }
+
 
 - (UITableView *)tableView {
     

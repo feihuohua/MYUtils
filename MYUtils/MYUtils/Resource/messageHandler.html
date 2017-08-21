@@ -47,18 +47,6 @@
 		                document.getElementById("returnValue").value = content;
 	                }
 
-	                function shake() {
-		                window.webkit.messageHandlers.Shake.postMessage(null);
-	                }
-
-	                function goBack() {
-		                window.webkit.messageHandlers.GoBack.postMessage(null);
-	                }
-
-	                function playSound() {
-		                window.webkit.messageHandlers.PlaySound.postMessage('shake_sound_male.wav');
-	                }
-
 	                function asyncAlert(content) {
 		                setTimeout(function(){
 			                alert(content);

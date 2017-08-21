@@ -18,10 +18,12 @@
 		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
 		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
 		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
-		3208B46C1F4AB0E400A0883B /* MYURLInterceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */; };
 		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
-		3208B4701F4ABE9C00A0883B /* url_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46F1F4ABE9C00A0883B /* url_index.html */; };
 		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
+		3208B4761F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4751F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m */; };
+		3208B4791F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4781F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m */; };
+		3208B47C1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */; };
+		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -103,11 +105,15 @@
 		3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYJavaScriptCoreViewController.m; sourceTree = "<group>"; };
 		3208B4671F4AB01500A0883B /* MYScriptMessageHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScriptMessageHandlerViewController.h; sourceTree = "<group>"; };
 		3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScriptMessageHandlerViewController.m; sourceTree = "<group>"; };
-		3208B46A1F4AB0E400A0883B /* MYURLInterceptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYURLInterceptionViewController.h; sourceTree = "<group>"; };
-		3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYURLInterceptionViewController.m; sourceTree = "<group>"; };
 		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		3208B46F1F4ABE9C00A0883B /* url_index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = url_index.html; sourceTree = "<group>"; };
 		3208B4711F4AC7EF00A0883B /* messageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = messageHandler.html; sourceTree = "<group>"; };
+		3208B4741F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridgeViewController.h; sourceTree = "<group>"; };
+		3208B4751F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridgeViewController.m; sourceTree = "<group>"; };
+		3208B4771F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridge1ViewController.h; sourceTree = "<group>"; };
+		3208B4781F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridge1ViewController.m; sourceTree = "<group>"; };
+		3208B47A1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridge2ViewController.h; sourceTree = "<group>"; };
+		3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridge2ViewController.m; sourceTree = "<group>"; };
+		3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webViewJavascriptBridge.html; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -259,10 +265,22 @@
 				3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */,
 				3208B4671F4AB01500A0883B /* MYScriptMessageHandlerViewController.h */,
 				3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */,
-				3208B46A1F4AB0E400A0883B /* MYURLInterceptionViewController.h */,
-				3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */,
+				3208B4731F4AD43900A0883B /* WebViewJavascriptBridge */,
 			);
 			path = MYWebViewController;
+			sourceTree = "<group>";
+		};
+		3208B4731F4AD43900A0883B /* WebViewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				3208B4741F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.h */,
+				3208B4751F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m */,
+				3208B4771F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.h */,
+				3208B4781F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m */,
+				3208B47A1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.h */,
+				3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */,
+			);
+			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
 		32200C2A1F444A6C0027066E /* MYSampleCode */ = {
@@ -422,7 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				3208B4711F4AC7EF00A0883B /* messageHandler.html */,
-				3208B46F1F4ABE9C00A0883B /* url_index.html */,
+				3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */,
 				3208B46D1F4AB90A00A0883B /* index.html */,
 				32712B131F395164008A105F /* Assets.xcassets */,
 				32712B141F395164008A105F /* Info.plist */,
@@ -656,8 +674,8 @@
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
+				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
-				3208B4701F4ABE9C00A0883B /* url_index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +766,7 @@
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				320707251F43F4D900CB66D9 /* PagerViewDmeoController.m in Sources */,
 				32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */,
+				3208B4761F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32712B041F385874008A105F /* UILabel+FitLines.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
@@ -763,14 +782,15 @@
 				3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */,
 				32200C2E1F444ABC0027066E /* Parent.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
+				3208B4791F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				32712BBC1F3AEDF9008A105F /* UIImageView+CornerRadius.m in Sources */,
 				32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */,
+				3208B47C1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
 				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
 				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
 				3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */,
 				32CBE3231F45AAE000AE6267 /* UIBarButtonItem+Extension.m in Sources */,
-				3208B46C1F4AB0E400A0883B /* MYURLInterceptionViewController.m in Sources */,
 				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
 				3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,

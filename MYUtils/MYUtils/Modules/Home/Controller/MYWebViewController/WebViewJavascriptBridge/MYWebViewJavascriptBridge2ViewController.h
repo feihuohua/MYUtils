@@ -1,5 +1,5 @@
 //
-//  MYURLInterceptionViewController.h
+//  MYWebViewJavascriptBridge2ViewController.h
 //  MYUtils
 //
 //  Created by sunjinshuai on 2017/8/21.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYURLInterceptionViewController : UIViewController
+@interface MYWebViewJavascriptBridge2ViewController : UIViewController
 
 @end

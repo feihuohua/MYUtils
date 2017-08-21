@@ -44,18 +44,6 @@
                 document.getElementById("returnValue").value = content;
             }
 
-            function shake() {
-                shake();
-            }
-            
-            function goBack() {
-                goBack();
-            }
-            
-            function showArr(){
-                asyncAlert(arr);
-            }
-            
             function asyncAlert(content) {
                 setTimeout(function(){
                            alert(content);
@@ -73,9 +61,6 @@
         <input type="button" value="修改背景色" onclick="colorClick()" />
         <input type="button" value="分享" onclick="shareClick()" />
         <input type="button" value="支付" onclick="payClick()" />
-        <input type="button" value="摇一摇" onclick="shake()" />
-        <input type="button" value="返回" onclick="goBack()" />
-        <input type="button" value="输出arr" onclick="showArr()" />
         
         <h1>这是文件上传</h1>
 
