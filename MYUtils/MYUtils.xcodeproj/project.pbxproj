@@ -21,6 +21,7 @@
 		3208B46C1F4AB0E400A0883B /* MYURLInterceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */; };
 		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
 		3208B4701F4ABE9C00A0883B /* url_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46F1F4ABE9C00A0883B /* url_index.html */; };
+		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -106,6 +107,7 @@
 		3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYURLInterceptionViewController.m; sourceTree = "<group>"; };
 		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3208B46F1F4ABE9C00A0883B /* url_index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = url_index.html; sourceTree = "<group>"; };
+		3208B4711F4AC7EF00A0883B /* messageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = messageHandler.html; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 		32712B121F395164008A105F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3208B4711F4AC7EF00A0883B /* messageHandler.html */,
 				3208B46F1F4ABE9C00A0883B /* url_index.html */,
 				3208B46D1F4AB90A00A0883B /* index.html */,
 				32712B131F395164008A105F /* Assets.xcassets */,
@@ -652,6 +655,7 @@
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
+				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
 				3208B4701F4ABE9C00A0883B /* url_index.html in Resources */,
 			);
