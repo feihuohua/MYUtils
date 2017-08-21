@@ -15,6 +15,11 @@
 		320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707201F43F4D900CB66D9 /* CollectionViewController.m */; };
 		3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707221F43F4D900CB66D9 /* CustomViewController.m */; };
 		3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707241F43F4D900CB66D9 /* ListViewController.m */; };
+		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
+		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
+		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
+		3208B46C1F4AB0E400A0883B /* MYURLInterceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */; };
+		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -90,6 +95,15 @@
 		320707221F43F4D900CB66D9 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		320707231F43F4D900CB66D9 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		320707241F43F4D900CB66D9 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		3208B4611F4AAF1700A0883B /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
+		3208B4621F4AAF1700A0883B /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
+		3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYJavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		3208B4671F4AB01500A0883B /* MYScriptMessageHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScriptMessageHandlerViewController.h; sourceTree = "<group>"; };
+		3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScriptMessageHandlerViewController.m; sourceTree = "<group>"; };
+		3208B46A1F4AB0E400A0883B /* MYURLInterceptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYURLInterceptionViewController.h; sourceTree = "<group>"; };
+		3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYURLInterceptionViewController.m; sourceTree = "<group>"; };
+		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -230,6 +244,21 @@
 				320707241F43F4D900CB66D9 /* ListViewController.m */,
 			);
 			path = MYPagerController;
+			sourceTree = "<group>";
+		};
+		3208B4601F4AAEF700A0883B /* MYWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3208B4611F4AAF1700A0883B /* MYWebViewController.h */,
+				3208B4621F4AAF1700A0883B /* MYWebViewController.m */,
+				3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */,
+				3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */,
+				3208B4671F4AB01500A0883B /* MYScriptMessageHandlerViewController.h */,
+				3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */,
+				3208B46A1F4AB0E400A0883B /* MYURLInterceptionViewController.h */,
+				3208B46B1F4AB0E400A0883B /* MYURLInterceptionViewController.m */,
+			);
+			path = MYWebViewController;
 			sourceTree = "<group>";
 		};
 		32200C2A1F444A6C0027066E /* MYSampleCode */ = {
@@ -388,6 +417,7 @@
 		32712B121F395164008A105F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				3208B46D1F4AB90A00A0883B /* index.html */,
 				32712B131F395164008A105F /* Assets.xcassets */,
 				32712B141F395164008A105F /* Info.plist */,
 				32712B151F395164008A105F /* main.m */,
@@ -446,6 +476,7 @@
 				3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */,
 				32CBE3881F47E82100AE6267 /* MYCustomNavigationBarViewController.h */,
 				32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */,
+				3208B4601F4AAEF700A0883B /* MYWebViewController */,
 				320707131F43F3B800CB66D9 /* MYPagerController */,
 			);
 			path = Controller;
@@ -616,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
+				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
 			);
@@ -717,6 +749,7 @@
 				3259D1921F3DBA1100AD2D84 /* UIColor+Extension.m in Sources */,
 				3259D18F1F3DBA0200AD2D84 /* UIView+Extension.m in Sources */,
 				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
+				3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */,
 				32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */,
 				320707281F43F4D900CB66D9 /* TabPagerControllerDemoController.m in Sources */,
 				3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */,
@@ -727,8 +760,11 @@
 				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
 				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
+				3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */,
 				32CBE3231F45AAE000AE6267 /* UIBarButtonItem+Extension.m in Sources */,
+				3208B46C1F4AB0E400A0883B /* MYURLInterceptionViewController.m in Sources */,
 				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
+				3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -864,6 +900,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/MYUtils/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.MYUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -878,6 +915,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/MYUtils/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.MYUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";

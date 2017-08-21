@@ -13,6 +13,7 @@
 #import "MYBannerCycleViewController.h"
 #import "MYPagerViewController.h"
 #import "MYCustomNavigationBarViewController.h"
+#import "MYWebViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -35,7 +36,8 @@
                        @"imageView设置圆角",
                        @"轮播图",
                        @"TYPagerController",
-                       @"CustomNavigationBar",nil];
+                       @"CustomNavigationBar",
+                       @"MYWebViewController",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -110,6 +112,10 @@
     } else if ([title isEqualToString:@"CustomNavigationBar"]) {
         MYCustomNavigationBarViewController *customNavigationBar = [[MYCustomNavigationBarViewController alloc] init];
         [self.navigationController pushViewController:customNavigationBar animated:YES];
+    } else if ([title isEqualToString:@"MYWebViewController"]) {
+    
+        MYWebViewController *webViewController = [[MYWebViewController alloc] init];
+        [self.navigationController pushViewController:webViewController animated:YES];
     }
 }
 
