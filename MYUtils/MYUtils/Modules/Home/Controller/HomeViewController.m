@@ -14,6 +14,7 @@
 #import "MYPagerViewController.h"
 #import "MYCustomNavigationBarViewController.h"
 #import "MYWebViewController.h"
+#import "MYKeyboardViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,7 +38,8 @@
                        @"轮播图",
                        @"TYPagerController",
                        @"CustomNavigationBar",
-                       @"MYWebViewController",nil];
+                       @"MYWebViewController",
+                       @"keyboard",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -116,6 +118,10 @@
     
         MYWebViewController *webViewController = [[MYWebViewController alloc] init];
         [self.navigationController pushViewController:webViewController animated:YES];
+    } else if ([title isEqualToString:@"keyboard"]) {
+    
+        MYKeyboardViewController *keyboard = [[MYKeyboardViewController alloc] init];
+        [self.navigationController pushViewController:keyboard animated:YES];
     }
 }
 

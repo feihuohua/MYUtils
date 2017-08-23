@@ -24,6 +24,7 @@ PODS:
   - SDWebImage/Core (4.0.0)
   - TYPagerController (2.0.1)
   - WebViewJavascriptBridge (6.0.2)
+  - ZYKeyboardUtil (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.0.0)
   - TYPagerController (~> 2.0.1)
   - WebViewJavascriptBridge (~> 6.0.2)
+  - ZYKeyboardUtil (~> 1.0.7)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -46,7 +48,8 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TYPagerController: f86e3f85d723caa967655f23661d32beaee7db77
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: 8ce3547b2f3b36a9d3d7bb7e25e28d96b4821f4d
+PODFILE CHECKSUM: 9db8d177282f73f3b74fa38decc0f412cbc7dd89
 
 COCOAPODS: 1.2.1

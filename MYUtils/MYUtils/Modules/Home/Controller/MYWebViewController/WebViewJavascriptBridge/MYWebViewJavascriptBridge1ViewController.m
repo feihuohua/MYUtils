@@ -6,7 +6,7 @@
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "MYWebViewJavascriptBridge1ViewController.h"¥
+#import "MYWebViewJavascriptBridge1ViewController.h"
 #import "UtilsMacros.h"
 #import "UIColor+Extension.h"
 #import <WebViewJavascriptBridge.h>
