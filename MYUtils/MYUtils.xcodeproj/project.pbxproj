@@ -26,6 +26,9 @@
 		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
 		3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF121F4D528900C57DBE /* MYKeyboardViewController.m */; };
 		3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212BF131F4D528900C57DBE /* MYKeyboardViewController.xib */; };
+		3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF491F4D8C7100C57DBE /* MYModalContentView.m */; };
+		3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */; };
+		3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -119,6 +122,13 @@
 		3212BF111F4D528900C57DBE /* MYKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYKeyboardViewController.h; sourceTree = "<group>"; };
 		3212BF121F4D528900C57DBE /* MYKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYKeyboardViewController.m; sourceTree = "<group>"; };
 		3212BF131F4D528900C57DBE /* MYKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYKeyboardViewController.xib; sourceTree = "<group>"; };
+		3212BF481F4D8C7100C57DBE /* MYModalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalContentView.h; sourceTree = "<group>"; };
+		3212BF491F4D8C7100C57DBE /* MYModalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYModalContentView.m; sourceTree = "<group>"; };
+		3212BF4A1F4D8C7100C57DBE /* MYModalMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalMacros.h; sourceTree = "<group>"; };
+		3212BF4B1F4D8C7100C57DBE /* MYModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalViewController.h; sourceTree = "<group>"; };
+		3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYModalViewController.m; sourceTree = "<group>"; };
+		3212BF4D1F4D8C7100C57DBE /* UIViewController+MYModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MYModal.h"; sourceTree = "<group>"; };
+		3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MYModal.m"; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -286,6 +296,20 @@
 				3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */,
 			);
 			path = WebViewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		3212BF471F4D8C7100C57DBE /* MYModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3212BF481F4D8C7100C57DBE /* MYModalContentView.h */,
+				3212BF491F4D8C7100C57DBE /* MYModalContentView.m */,
+				3212BF4A1F4D8C7100C57DBE /* MYModalMacros.h */,
+				3212BF4B1F4D8C7100C57DBE /* MYModalViewController.h */,
+				3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */,
+				3212BF4D1F4D8C7100C57DBE /* UIViewController+MYModal.h */,
+				3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */,
+			);
+			path = MYModalViewController;
 			sourceTree = "<group>";
 		};
 		32200C2A1F444A6C0027066E /* MYSampleCode */ = {
@@ -465,6 +489,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3212BF471F4D8C7100C57DBE /* MYModalViewController */,
 				32CBE38B1F47E87B00AE6267 /* MYNavigaionBar */,
 				32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */,
 			);
@@ -765,8 +790,10 @@
 				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
 				32200C371F444B770027066E /* Parent+Load.m in Sources */,
 				3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */,
+				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
 				32200C311F444AC80027066E /* Child.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
+				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
 				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
@@ -799,6 +826,7 @@
 				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
 				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
+				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
 				3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */,
 				32CBE3231F45AAE000AE6267 /* UIBarButtonItem+Extension.m in Sources */,
 				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
