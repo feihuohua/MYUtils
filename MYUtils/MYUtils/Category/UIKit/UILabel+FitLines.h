@@ -28,4 +28,15 @@
  */
 - (BOOL)my_adjustTextToFitLines:(NSInteger)numberOfLines;
 
+/**
+ 倒计时
+ 
+ @param seconds seconds
+ @param title 标题
+ @param completion 倒计时之后回调
+ */
+- (void)scheduledTimerWithTimeInterval:(NSInteger)seconds
+                        countDownTitle:(NSString *)title
+                            completion:(void (^)(void))completion;
+
 @end

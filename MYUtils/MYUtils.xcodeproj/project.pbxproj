@@ -29,6 +29,9 @@
 		3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF491F4D8C7100C57DBE /* MYModalContentView.m */; };
 		3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */; };
 		3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */; };
+		3212BFFE1F50192C00C57DBE /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BFFD1F50192C00C57DBE /* UIButton+Extension.m */; };
+		3212C0051F501A3A00C57DBE /* MYCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */; };
+		3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -129,6 +132,11 @@
 		3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYModalViewController.m; sourceTree = "<group>"; };
 		3212BF4D1F4D8C7100C57DBE /* UIViewController+MYModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MYModal.h"; sourceTree = "<group>"; };
 		3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MYModal.m"; sourceTree = "<group>"; };
+		3212BFFC1F50192C00C57DBE /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		3212BFFD1F50192C00C57DBE /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		3212C0021F501A3A00C57DBE /* MYCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCountDownViewController.h; sourceTree = "<group>"; };
+		3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCountDownViewController.m; sourceTree = "<group>"; };
+		3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCountDownViewController.xib; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -429,6 +437,8 @@
 				32712BC51F3AF797008A105F /* UIImage+Extension.m */,
 				32CBE3211F45AAE000AE6267 /* UIBarButtonItem+Extension.h */,
 				32CBE3221F45AAE000AE6267 /* UIBarButtonItem+Extension.m */,
+				3212BFFC1F50192C00C57DBE /* UIButton+Extension.h */,
+				3212BFFD1F50192C00C57DBE /* UIButton+Extension.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -533,6 +543,9 @@
 				3212BF111F4D528900C57DBE /* MYKeyboardViewController.h */,
 				3212BF121F4D528900C57DBE /* MYKeyboardViewController.m */,
 				3212BF131F4D528900C57DBE /* MYKeyboardViewController.xib */,
+				3212C0021F501A3A00C57DBE /* MYCountDownViewController.h */,
+				3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */,
+				3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */,
 				3208B4601F4AAEF700A0883B /* MYWebViewController */,
 				320707131F43F3B800CB66D9 /* MYPagerController */,
 			);
@@ -707,6 +720,7 @@
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
 				3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */,
+				3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
@@ -782,10 +796,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3212C0051F501A3A00C57DBE /* MYCountDownViewController.m in Sources */,
 				32200C8A1F444F310027066E /* Parent.h in Sources */,
 				32200C891F444F270027066E /* Other.m in Sources */,
 				32712BC61F3AF797008A105F /* UIImage+Extension.m in Sources */,
 				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
+				3212BFFE1F50192C00C57DBE /* UIButton+Extension.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
 				32200C371F444B770027066E /* Parent+Load.m in Sources */,

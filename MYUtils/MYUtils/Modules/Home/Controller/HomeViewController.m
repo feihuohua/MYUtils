@@ -15,6 +15,7 @@
 #import "MYCustomNavigationBarViewController.h"
 #import "MYWebViewController.h"
 #import "MYKeyboardViewController.h"
+#import "MYCountDownViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -39,7 +40,8 @@
                        @"TYPagerController",
                        @"CustomNavigationBar",
                        @"MYWebViewController",
-                       @"keyboard",nil];
+                       @"keyboard",
+                       @"倒计时演练",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -122,6 +124,9 @@
     
         MYKeyboardViewController *keyboard = [[MYKeyboardViewController alloc] init];
         [self.navigationController pushViewController:keyboard animated:YES];
+    } else if ([title isEqualToString:@"倒计时演练"]) {
+        MYCountDownViewController *countDown = [[MYCountDownViewController alloc] init];
+        [self.navigationController pushViewController:countDown animated:YES];
     }
 }
 
