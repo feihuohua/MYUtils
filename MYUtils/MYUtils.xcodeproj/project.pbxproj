@@ -38,6 +38,7 @@
 		3212C0201F52B82300C57DBE /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C01F1F52B82300C57DBE /* NSDictionary+Extension.m */; };
 		3212C0231F52BAB900C57DBE /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0221F52BAB900C57DBE /* NSString+Extension.m */; };
 		3212C0261F52BCE900C57DBE /* NSTimer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0251F52BCE900C57DBE /* NSTimer+Extension.m */; };
+		3212C0291F52C42C00C57DBE /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0281F52C42C00C57DBE /* NSArray+Extension.m */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -155,6 +156,8 @@
 		3212C0221F52BAB900C57DBE /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		3212C0241F52BCE900C57DBE /* NSTimer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Extension.h"; sourceTree = "<group>"; };
 		3212C0251F52BCE900C57DBE /* NSTimer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Extension.m"; sourceTree = "<group>"; };
+		3212C0271F52C42C00C57DBE /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
+		3212C0281F52C42C00C57DBE /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -448,6 +451,8 @@
 				32712AFF1F38584F008A105F /* NSString+Size.m */,
 				3212C0211F52BAB900C57DBE /* NSString+Extension.h */,
 				3212C0221F52BAB900C57DBE /* NSString+Extension.m */,
+				3212C0271F52C42C00C57DBE /* NSArray+Extension.h */,
+				3212C0281F52C42C00C57DBE /* NSArray+Extension.m */,
 				3212C0181F52B0EA00C57DBE /* NSMutableDictionary+Extension.h */,
 				3212C0191F52B0EA00C57DBE /* NSMutableDictionary+Extension.m */,
 				3212C01B1F52B16200C57DBE /* NSMutableAttributedString+Extension.h */,
@@ -853,6 +858,7 @@
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
 				3212C0201F52B82300C57DBE /* NSDictionary+Extension.m in Sources */,
+				3212C0291F52C42C00C57DBE /* NSArray+Extension.m in Sources */,
 				320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */,
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
