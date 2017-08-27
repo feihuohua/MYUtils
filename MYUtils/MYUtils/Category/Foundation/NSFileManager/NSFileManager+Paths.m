@@ -57,7 +57,7 @@
 
 + (double)availableDiskSpace
 {
-    NSDictionary *attributes = [self.defaultManager attributesOfFileSystemForPath:self.jk_documentsPath error:nil];
+    NSDictionary *attributes = [self.defaultManager attributesOfFileSystemForPath:self.documentsPath error:nil];
     
     return [attributes[NSFileSystemFreeSize] unsignedLongLongValue] / (double)0x100000;
 }
