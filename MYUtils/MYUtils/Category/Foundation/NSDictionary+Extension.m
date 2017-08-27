@@ -11,6 +11,20 @@
 
 @implementation NSDictionary (Extension)
 
+- (NSMutableDictionary *(^)(CGFloat))font {
+    return ^id(CGFloat font) {
+        [self setValue:[UIFont systemFontOfSize:font] forKey:NSFontAttributeName];
+        return self;
+    };
+}
+
+- (NSMutableDictionary *(^)(UIColor *))color {
+    return ^id(UIColor * color) {
+        [self setValue:color forKey:NSForegroundColorAttributeName];
+        return self;
+    };
+}
+
 - (NSDictionary *)dictionaryObjectForKey:(id)aKey {
     id value = [self objectForKey:aKey];
     if (value == nil || [value isKindOfClass:[NSNull class]] || ![value isKindOfClass:[NSDictionary class]]) {

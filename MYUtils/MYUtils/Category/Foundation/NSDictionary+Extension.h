@@ -7,8 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSDictionary (Extension)
+
+/**
+ 利用链式编程去实现富文本属性的赋值
+ */
+- (NSMutableDictionary *(^)(CGFloat))font;
+- (NSMutableDictionary *(^)(UIColor *))color;
 
 
 /**
