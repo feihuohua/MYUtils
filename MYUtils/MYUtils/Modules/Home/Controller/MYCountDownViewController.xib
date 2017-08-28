@@ -12,9 +12,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MYCountDownViewController">
             <connections>
                 <outlet property="attributedLabel" destination="pEe-dz-2nx" id="mOC-Uy-ghi"/>
+                <outlet property="bottomButton" destination="RTG-Uv-rhO" id="p9l-i1-8b2"/>
                 <outlet property="countdownButton" destination="HqJ-31-Cmh" id="crl-oN-ieb"/>
                 <outlet property="countdownLabel" destination="0g3-5O-Cl9" id="a2O-ab-alr"/>
                 <outlet property="imageView" destination="6Kf-rf-JsV" id="7bY-lX-MEX"/>
+                <outlet property="leftButton" destination="OhS-Zp-cQc" id="Iyx-JO-l5t"/>
+                <outlet property="rightButton" destination="Rh0-as-I13" id="ZHq-uW-Iil"/>
+                <outlet property="topButton" destination="C57-fo-zaC" id="H3P-gS-bZO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +28,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqJ-31-Cmh">
-                    <rect key="frame" x="117" y="154" width="140" height="40"/>
+                    <rect key="frame" x="117" y="74" width="140" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.3294117647" green="0.70588235290000001" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="获取验证码">
@@ -35,7 +39,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="获取验证码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-5O-Cl9">
-                    <rect key="frame" x="55" y="258" width="265" height="44"/>
+                    <rect key="frame" x="55" y="122" width="265" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.30980392159999998" green="0.82352941180000006" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -43,19 +47,50 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kf-rf-JsV">
-                    <rect key="frame" x="117" y="346" width="150" height="150"/>
+                    <rect key="frame" x="117" y="174" width="150" height="150"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEe-dz-2nx">
-                    <rect key="frame" x="75" y="563" width="234" height="38"/>
+                    <rect key="frame" x="70" y="629" width="234" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C57-fo-zaC">
+                    <rect key="frame" x="70" y="340" width="244" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="测试测试测试测试测试测试" image="houses_share_b">
+                        <color key="titleColor" red="0.30980392159999998" green="0.82352941180000006" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rh0-as-I13">
+                    <rect key="frame" x="70" y="402" width="244" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="测试测试测试测试测试测试" image="houses_share_b">
+                        <color key="titleColor" red="0.30980392159999998" green="0.82352941180000006" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhS-Zp-cQc">
+                    <rect key="frame" x="70" y="469" width="244" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="测试测试测试测试测试测试" image="houses_share_b">
+                        <color key="titleColor" red="0.30980392159999998" green="0.82352941180000006" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTG-Uv-rhO">
+                    <rect key="frame" x="70" y="543" width="244" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="测试测试测试测试测试测试" image="houses_share_b">
+                        <color key="titleColor" red="0.30980392159999998" green="0.82352941180000006" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <point key="canvasLocation" x="34.5" y="94.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="houses_share_b" width="23" height="23"/>
+    </resources>
 </document>

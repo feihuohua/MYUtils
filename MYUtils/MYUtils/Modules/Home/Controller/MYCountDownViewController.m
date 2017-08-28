@@ -12,6 +12,9 @@
 #import "CIImage+Extension.h"
 #import "NSMutableDictionary+Extension.h"
 #import "NSMutableAttributedString+Extension.h"
+#import "UIButton+Badge.h"
+#import "UIBarButtonItem+Badge.h"
+#import "UIButton+ImagePosition.h"
 
 @interface MYCountDownViewController ()
 
@@ -19,6 +22,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *countdownLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *attributedLabel;
+@property (weak, nonatomic) IBOutlet UIButton *topButton;
+@property (weak, nonatomic) IBOutlet UIButton *rightButton;
+@property (weak, nonatomic) IBOutlet UIButton *leftButton;
+@property (weak, nonatomic) IBOutlet UIButton *bottomButton;
 
 @end
 
@@ -34,11 +41,42 @@
     [self setupQRCodeImage];
     
     [self setupAttributedString];
+    
+    self.countdownButton.badgeValue = @"1";
+    self.countdownButton.badgeFont = [UIFont systemFontOfSize:10.0f];
+    self.countdownButton.badgePadding = 2.0f;
+    
+    
+    UIImage *image2 = [UIImage imageNamed:@"houses_share_b"];
+    UIBarButtonItem *navRightButton = [[UIBarButtonItem alloc] initWithImage:image2
+                                                                       style:UIBarButtonItemStylePlain
+                                                                      target:self
+                                                                      action:@selector(insertNewObject:)];
+    
+    self.navigationItem.rightBarButtonItem = navRightButton;
+    
+    self.navigationItem.rightBarButtonItem.badgeValue = @"2";
+    self.navigationItem.rightBarButtonItem.badgeBGColor = [UIColor redColor];
+    self.navigationItem.rightBarButtonItem.badgePadding = 2.0f;
+    self.navigationItem.rightBarButtonItem.badgeFont = [UIFont systemFontOfSize:10.0f];
+
+    
+    [self.topButton setImagePosition:MYImagePositionTop spacing:5.0f];
+    [self.rightButton setImagePosition:MYImagePositionRight spacing:5.0f];
+    [self.leftButton setImagePosition:MYImagePositionLeft spacing:5.0f];
+    [self.bottomButton setImagePosition:MYImagePositionBottom spacing:5.0f];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)insertNewObject:(id)sender
+{
+   
 }
 
 - (void)setupAttributedString {
