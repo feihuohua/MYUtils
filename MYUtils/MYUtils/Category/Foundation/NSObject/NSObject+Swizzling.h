@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (Swizzling)
-
 typedef IMP *IMPPointer;
 
 @interface NSObject (Swizzling)

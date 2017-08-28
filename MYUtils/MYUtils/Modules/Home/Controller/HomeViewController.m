@@ -16,6 +16,7 @@
 #import "MYWebViewController.h"
 #import "MYKeyboardViewController.h"
 #import "MYCountDownViewController.h"
+#import "MYAMViralSwitchViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -41,7 +42,8 @@
                        @"CustomNavigationBar",
                        @"MYWebViewController",
                        @"keyboard",
-                       @"倒计时演练",nil];
+                       @"倒计时演练",
+                       @"自定义UISwitch",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -127,6 +129,10 @@
     } else if ([title isEqualToString:@"倒计时演练"]) {
         MYCountDownViewController *countDown = [[MYCountDownViewController alloc] init];
         [self.navigationController pushViewController:countDown animated:YES];
+    } else if ([title isEqualToString:@"自定义UISwitch"]) {
+    
+        MYAMViralSwitchViewController *switchViewController = [[MYAMViralSwitchViewController alloc] init];
+        [self.navigationController pushViewController:switchViewController animated:YES];
     }
 }
 

@@ -92,6 +92,9 @@
 		3212C2011F54222E00C57DBE /* NSNumber+Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C2001F54222E00C57DBE /* NSNumber+Round.m */; };
 		3212C2041F5422D600C57DBE /* NSString+Contains.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C2031F5422D600C57DBE /* NSString+Contains.m */; };
 		3212C2081F5423AD00C57DBE /* NSUserDefaults+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C2071F5423AD00C57DBE /* NSUserDefaults+SafeAccess.m */; };
+		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
+		3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */; };
+		3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */; };
 		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
 		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
 		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
@@ -310,6 +313,11 @@
 		3212C2031F5422D600C57DBE /* NSString+Contains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Contains.m"; sourceTree = "<group>"; };
 		3212C2061F5423AD00C57DBE /* NSUserDefaults+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SafeAccess.h"; sourceTree = "<group>"; };
 		3212C2071F5423AD00C57DBE /* NSUserDefaults+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SafeAccess.m"; sourceTree = "<group>"; };
+		3212C20A1F5425E700C57DBE /* AMViralSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViralSwitch.h; sourceTree = "<group>"; };
+		3212C20B1F5425E700C57DBE /* AMViralSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViralSwitch.m; sourceTree = "<group>"; };
+		3212C20D1F54260700C57DBE /* MYAMViralSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAMViralSwitchViewController.h; sourceTree = "<group>"; };
+		3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAMViralSwitchViewController.m; sourceTree = "<group>"; };
+		3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYAMViralSwitchViewController.xib; sourceTree = "<group>"; };
 		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
 		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
 		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
@@ -797,6 +805,15 @@
 			path = NSUserDefaults;
 			sourceTree = "<group>";
 		};
+		3212C2091F5425E700C57DBE /* AMViralSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				3212C20A1F5425E700C57DBE /* AMViralSwitch.h */,
+				3212C20B1F5425E700C57DBE /* AMViralSwitch.m */,
+			);
+			path = AMViralSwitch;
+			sourceTree = "<group>";
+		};
 		32200C2A1F444A6C0027066E /* MYSampleCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -988,6 +1005,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3212C2091F5425E700C57DBE /* AMViralSwitch */,
 				3212BF471F4D8C7100C57DBE /* MYModalViewController */,
 				32CBE38B1F47E87B00AE6267 /* MYNavigaionBar */,
 				32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */,
@@ -1035,6 +1053,9 @@
 				3212C0021F501A3A00C57DBE /* MYCountDownViewController.h */,
 				3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */,
 				3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */,
+				3212C20D1F54260700C57DBE /* MYAMViralSwitchViewController.h */,
+				3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */,
+				3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */,
 				3208B4601F4AAEF700A0883B /* MYWebViewController */,
 				320707131F43F3B800CB66D9 /* MYPagerController */,
 			);
@@ -1209,6 +1230,7 @@
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
 				3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */,
+				3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */,
 				3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
@@ -1319,6 +1341,7 @@
 				3212C0371F52CABE00C57DBE /* NSArray+Extension.m in Sources */,
 				320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */,
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
+				3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */,
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				3212C2081F5423AD00C57DBE /* NSUserDefaults+SafeAccess.m in Sources */,
 				3212C0731F52D82100C57DBE /* NSFileManager+Paths.m in Sources */,
@@ -1359,6 +1382,7 @@
 				3212C1D01F540F0000C57DBE /* UIButton+ImagePosition.m in Sources */,
 				3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */,
 				3212C2041F5422D600C57DBE /* NSString+Contains.m in Sources */,
+				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				3212C0651F52D3FD00C57DBE /* NSDate+Extension.m in Sources */,
 				3212C1CD1F5409DB00C57DBE /* UIBarButtonItem+Badge.m in Sources */,
 				3212C0931F53ACCC00C57DBE /* UIView+Extension.m in Sources */,
