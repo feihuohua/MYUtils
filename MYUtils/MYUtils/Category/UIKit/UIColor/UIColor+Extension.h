@@ -30,6 +30,18 @@ NS_ASSUME_NONNULL_BEGIN
  @return        An UIColor object from string, or nil if an error occurs.
  */
 + (nullable UIColor *)colorWithHexString:(NSString *)hexStr;
++ (nullable UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alphaValue;
+
+
+/**
+ 渐变颜色
+
+ @param fromColor 开始颜色
+ @param toColor 结束颜色
+ @param height 渐变高度
+ @return 渐变颜色
+ */
++ (UIColor *)gradientFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor height:(CGFloat)height;
 
 @end
 

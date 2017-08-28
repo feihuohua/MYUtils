@@ -10,7 +10,7 @@
 
 @implementation UIColor (Extension)
 
-+ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alphaValue {
++ (nullable UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alphaValue {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     // String should be 6 or 8 characters
@@ -63,6 +63,23 @@
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
 }
 
-
++ (UIColor *)gradientFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor height:(CGFloat)height {
+    CGSize size = CGSizeMake(1, height);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    
+    NSArray* colors = [NSArray arrayWithObjects:(id)fromColor.CGColor, (id)toColor.CGColor, nil];
+    CGGradientRef gradient = CGGradientCreateWithColors(colorspace, (__bridge CFArrayRef)colors, NULL);
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0, 0), CGPointMake(0, size.height), 0);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorspace);
+    UIGraphicsEndImageContext();
+    
+    return [UIColor colorWithPatternImage:image];
+}
 
 @end
