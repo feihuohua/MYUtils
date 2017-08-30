@@ -31,6 +31,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(phoneFieldEditingChanged) name:UITextFieldTextDidBeginEditingNotification object:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.phoneTextField.textField becomeFirstResponder];
+}
+
 - (void)phoneFieldEditingChanged {
     
     
@@ -44,9 +50,10 @@
 }
 
 - (void)loadTextFieldWithFrame {
-
+    
     //固定4个进行分隔
-    self.bankTextField = [[MYTextField alloc] initWithFrame:CGRectMake(20, 200, 300, 50) separateCount:4];
+    self.bankTextField = [[MYTextField alloc] initWithSeparateCount:4];
+    self.bankTextField.frame = CGRectMake(20, 200, 300, 50);
     self.bankTextField.delegate = self;
     self.bankTextField.limitCount = 19;//可以不设置，但是那样的话，就可以无限输入了
     self.bankTextField.layer.cornerRadius = 4.0;
@@ -59,7 +66,7 @@
     //按照数组中的进行分隔，假如分隔电话号码@[@"3",@"4",@"4"]即可
     self.phoneTextField = [[MYTextField alloc] initWithSeparateArray:@[@"3",@"4",@"4"]];
     self.phoneTextField.frame = CGRectMake(20, 300, 300, 50);
-   self.phoneTextField.delegate = self;
+    self.phoneTextField.delegate = self;
     self.phoneTextField.limitCount = 11;//可以不设置，但是那样的话，就可以无限输入了
     self.phoneTextField.layer.cornerRadius = 4.0;
     self.phoneTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -69,7 +76,9 @@
     
     
     //输入身份证号
-    self.idCardTextField = [[MYTextField alloc] initWithFrame:CGRectMake(20, 400, 300, 50) separateArray:@[@"6",@"8",@"4"]];
+    self.idCardTextField = [[MYTextField alloc] initWithSeparateArray:@[@"6",@"8",@"4"]];
+    self.idCardTextField.frame = CGRectMake(20, 400, 300, 50);
+    
     self.idCardTextField.delegate = self;
     self.idCardTextField.limitCount = 18;//可以不设置，但是那样的话，就可以无限输入了
     self.idCardTextField.layer.cornerRadius = 4.0;
@@ -85,13 +94,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

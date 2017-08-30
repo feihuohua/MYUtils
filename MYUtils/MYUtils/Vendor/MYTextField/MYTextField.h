@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) UIColor *textColor;
 @property (nonatomic, copy, nullable) NSString *placeholder;
 @property (nonatomic, assign) NSInteger placeHolderLeft;
-
+@property (nonatomic, strong, readonly) UITextField *textField;
 @property (nonatomic, weak) id<MYTextFieldDelegate> delegate;
 
 @end
