@@ -8,36 +8,35 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYTextField : UITextField
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol MYTextFieldDelegate <NSObject>
+
+@optional
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;
+- (void)textFieldDidBeginEditing:(UITextField *)textField;
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField;
+- (void)textFieldDidEndEditing:(UITextField *)textField;
+- (BOOL)textFieldShouldClear:(UITextField *)textField;
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
+
+@end
+
+@interface MYTextField : UIView
 
 
 /**
  限制输入数量
-
- @param count 限制输入的数量
- @return
  */
 - (instancetype)initWithSeparateCount:(NSInteger)count;
-
-/**
- 限制输入数量
-
- @param frame 视图的frame
- @param count 限制输入的数量
- @return
- */
-- (instancetype)initWithFrame:(CGRect)frame
-                separateCount:(NSInteger)count;
+- (instancetype)initWithFrame:(CGRect)frame separateCount:(NSInteger)count;
 
 
 /**
  根据数组限制输入字符数量
-
- @param countArray 数组
- @return
  */
 - (instancetype)initWithSeparateArray:(NSArray *)countArray;
-
 - (instancetype)initWithFrame:(CGRect)frame separateArray:(NSArray *)countArray;
 
 /**
@@ -50,4 +49,18 @@
  **/
 @property (nonatomic, assign) NSInteger limitCount;
 
+/**
+ 设置文本字体
+ */
+@property (nonatomic, strong, nullable) UIFont *textFont;
+@property (nonatomic, strong, nullable) UIColor *tintColor;
+@property (nonatomic, copy, nullable) NSString *text;
+@property (nonatomic, strong, nullable) UIColor *textColor;
+@property (nonatomic, copy, nullable) NSString *placeholder;
+@property (nonatomic, assign) NSInteger placeHolderLeft;
+
+@property (nonatomic, weak) id<MYTextFieldDelegate> delegate;
+
 @end
+
+NS_ASSUME_NONNULL_END

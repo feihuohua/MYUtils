@@ -7,12 +7,12 @@
 //
 
 #import "MYTextField.h"
-
-// placeHolder的左侧距离
-static const NSInteger placeHolderLeft = 10;
+#import "UtilsMacros.h"
+#import <Masonry.h>
 
 @interface MYTextField ()<UITextFieldDelegate>
 
+@property (nonatomic, strong) UITextField *textField;
 /**
  *  每隔多少字符分割
  **/
@@ -36,16 +36,7 @@ static const NSInteger placeHolderLeft = 10;
         
         self.separateCount = count;
         self.locationIndex = 0;
-        
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;//键盘类型
-        self.font = [UIFont systemFontOfSize:20.0];
-        self.tintColor = [UIColor grayColor];//光标颜色
-        
-        // 左侧填充视图
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, placeHolderLeft, 0)];
-        self.leftView = view;
-        self.leftViewMode = UITextFieldViewModeAlways;
+        [self setupSubViews];
     }
     return self;
 }
@@ -54,16 +45,7 @@ static const NSInteger placeHolderLeft = 10;
     if (self = [super initWithFrame:frame]) {
         self.separateCount = count;
         self.locationIndex = 0;
-        
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;//键盘类型
-        self.font = [UIFont systemFontOfSize:20.0];
-        self.tintColor = [UIColor grayColor];//光标颜色
-        
-        // 左侧填充视图
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, placeHolderLeft, frame.size.height)];
-        self.leftView = view;
-        self.leftViewMode = UITextFieldViewModeAlways;
+        [self setupSubViews];
     }
     return self;
 }
@@ -71,16 +53,7 @@ static const NSInteger placeHolderLeft = 10;
 - (instancetype)initWithSeparateArray:(NSArray *)countArray {
     if (self = [super init]) {
         self.separateArray = [NSMutableArray arrayWithArray:countArray];
-        
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;//键盘类型
-        self.font = [UIFont systemFontOfSize:20.0];
-        self.tintColor = [UIColor grayColor];//光标颜色
-        
-        // 左侧填充视图
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, placeHolderLeft, 0)];
-        self.leftView = view;
-        self.leftViewMode = UITextFieldViewModeAlways;
+        [self setupSubViews];
     }
     return self;
 }
@@ -89,30 +62,12 @@ static const NSInteger placeHolderLeft = 10;
     if (self = [super initWithFrame:frame]) {
         self.separateArray = [NSMutableArray arrayWithArray:countArray];
         
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;//键盘类型
-        self.font = [UIFont systemFontOfSize:20.0];
-        self.tintColor = [UIColor grayColor];//光标颜色
-        
-        // 左侧填充视图
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, placeHolderLeft, frame.size.height)];
-        self.leftView = view;
-        self.leftViewMode = UITextFieldViewModeAlways;
+        [self setupSubViews];
     }
     return self;
 }
 
-- (NSString *)userInputContent {
-    NSString *text = self.text;
-    
-    NSMutableString *mutableText = [NSMutableString stringWithString:text];
-    
-    NSString *contentStr = [mutableText stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    return contentStr;
-}
-
-#pragma mark - textField代理
+#pragma mark - UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     if (![string isEqualToString:@""]) {
@@ -132,17 +87,79 @@ static const NSInteger placeHolderLeft = 10;
     
     // 设置光标位置
     [self setSelectedRange:NSMakeRange(self.locationIndex, 0)];
+    
+    if ([self.delegate respondsToSelector:@selector(textField:shouldChangeCharactersInRange:replacementString:)]) {
+        return [self.delegate textField:textField shouldChangeCharactersInRange:range replacementString:string];
+    }
     return NO;
 }
 
-#pragma mark - 设置光标
-- (void)setSelectedRange:(NSRange)range {
-    UITextPosition *beginning = self.beginningOfDocument;
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textFieldShouldBeginEditing:)]) {
+        return [self.delegate textFieldShouldBeginEditing:self.textField];
+    }
+    return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textFieldDidBeginEditing:)]) {
+        [self.delegate textFieldDidBeginEditing:self.textField];
+    }
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textFieldShouldEndEditing:)]) {
+        return [self.delegate textFieldShouldEndEditing:self.textField];
+    }
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textFieldDidEndEditing:)]) {
+        [self.delegate textFieldDidEndEditing:self.textField];
+    }
+}
+
+- (BOOL)textFieldShouldClear:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textFieldShouldClear:)]) {
+        return [self.delegate textFieldShouldClear:self.textField];
+    }
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if ([self.delegate respondsToSelector:@selector(textFieldShouldReturn:)]) {
+        return [self.delegate textFieldShouldReturn:self.textField];
+    }
+    return YES;
+}
+
+- (void)setupSubViews {
     
-    UITextPosition *startPosition = [self positionFromPosition:beginning offset:range.location];
-    UITextPosition *endPosition = [self positionFromPosition:beginning offset:range.location + range.length];
-    UITextRange *selectionRange = [self textRangeFromPosition:startPosition toPosition:endPosition];
-    [self setSelectedTextRange:selectionRange];
+    weakSelf(weakSelf)
+    
+    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(weakSelf);
+    }];
+}
+
+- (NSString *)userInputContent {
+    NSString *text = self.textField.text;
+    
+    NSMutableString *mutableText = [NSMutableString stringWithString:text];
+    
+    NSString *contentStr = [mutableText stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    return contentStr;
+}
+
+- (void)setSelectedRange:(NSRange)range {
+    UITextPosition *beginning = self.textField.beginningOfDocument;
+    
+    UITextPosition *startPosition = [self.textField positionFromPosition:beginning offset:range.location];
+    UITextPosition *endPosition = [self.textField positionFromPosition:beginning offset:range.location + range.length];
+    UITextRange *selectionRange = [self.textField textRangeFromPosition:startPosition toPosition:endPosition];
+    [self.textField setSelectedTextRange:selectionRange];
 }
 
 - (NSString *)changeStringWithOperateString:(NSString *)string withOperateRange:(NSRange)range withOriginString:(NSString *)originString {
@@ -250,6 +267,63 @@ static const NSInteger placeHolderLeft = 10;
         }
     }
     return newString;
+}
+
+- (void)setTextFont:(UIFont *)textFont {
+    _textFont = textFont;
+    
+    self.textField.font = textFont;
+    [self setNeedsDisplay];
+}
+
+- (void)setTintColor:(UIColor *)tintColor {
+    _tintColor = tintColor;
+    
+    self.textField.tintColor = tintColor;
+    [self setNeedsDisplay];
+}
+
+- (void)setText:(NSString *)text {
+    _text = text;
+    
+    self.textField.text = text;
+    
+    [self setNeedsDisplay];
+}
+
+- (void)setTextColor:(UIColor *)textColor {
+    _textColor = textColor;
+    
+    self.textField.textColor = textColor;
+    [self setNeedsDisplay];
+}
+
+- (void)setPlaceholder:(NSString *)placeholder {
+    _placeholder = placeholder;
+    
+    self.textField.placeholder = placeholder;
+    [self setNeedsDisplay];
+}
+
+- (void)setPlaceHolderLeft:(NSInteger)placeHolderLeft {
+    _placeHolderLeft = placeHolderLeft;
+    
+    self.textField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, placeHolderLeft, 0)];
+    [self setNeedsDisplay];
+}
+
+- (UITextField *)textField {
+    if (!_textField) {
+        _textField = [[UITextField alloc] init];
+        _textField.delegate = self;
+        _textField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 0)];
+        _textField.leftViewMode = UITextFieldViewModeAlways;
+        _textField.keyboardType = UIKeyboardTypeNumberPad;
+        _textField.font = [UIFont systemFontOfSize:20.0f];
+        _textField.tintColor = [UIColor grayColor];
+        [self addSubview:_textField];
+    }
+    return _textField;
 }
 
 @end
