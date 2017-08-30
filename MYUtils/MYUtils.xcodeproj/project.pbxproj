@@ -121,6 +121,8 @@
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
 		32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */; };
 		32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */; };
+		32DD4FD71F5654A1005C6FE9 /* MYTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD61F5654A1005C6FE9 /* MYTextFieldViewController.m */; };
+		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
 		32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
 		4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5785D1F41FA0A004EE94D /* FXCyclePagerTransformLayout.m */; };
@@ -368,6 +370,10 @@
 		32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomNavigationBarViewController.m; sourceTree = "<group>"; };
 		32CBE38C1F47E88900AE6267 /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extension.h"; sourceTree = "<group>"; };
 		32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extension.m"; sourceTree = "<group>"; };
+		32DD4FD51F5654A1005C6FE9 /* MYTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextFieldViewController.h; sourceTree = "<group>"; };
+		32DD4FD61F5654A1005C6FE9 /* MYTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextFieldViewController.m; sourceTree = "<group>"; };
+		32DD4FD81F5654E0005C6FE9 /* MYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextField.h; sourceTree = "<group>"; };
+		32DD4FD91F5654E0005C6FE9 /* MYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextField.m; sourceTree = "<group>"; };
 		32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
 		32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
@@ -1005,6 +1011,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32DD4FD41F565443005C6FE9 /* MYTextField */,
 				3212C2091F5425E700C57DBE /* AMViralSwitch */,
 				3212BF471F4D8C7100C57DBE /* MYModalViewController */,
 				32CBE38B1F47E87B00AE6267 /* MYNavigaionBar */,
@@ -1056,6 +1063,8 @@
 				3212C20D1F54260700C57DBE /* MYAMViralSwitchViewController.h */,
 				3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */,
 				3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */,
+				32DD4FD51F5654A1005C6FE9 /* MYTextFieldViewController.h */,
+				32DD4FD61F5654A1005C6FE9 /* MYTextFieldViewController.m */,
 				3208B4601F4AAEF700A0883B /* MYWebViewController */,
 				320707131F43F3B800CB66D9 /* MYPagerController */,
 			);
@@ -1102,6 +1111,15 @@
 				32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */,
 			);
 			path = MYNavigaionBar;
+			sourceTree = "<group>";
+		};
+		32DD4FD41F565443005C6FE9 /* MYTextField */ = {
+			isa = PBXGroup;
+			children = (
+				32DD4FD81F5654E0005C6FE9 /* MYTextField.h */,
+				32DD4FD91F5654E0005C6FE9 /* MYTextField.m */,
+			);
+			path = MYTextField;
 			sourceTree = "<group>";
 		};
 		32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */ = {
@@ -1339,6 +1357,7 @@
 				3212C1BB1F5400E100C57DBE /* UILabel+AdjustableLabel.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
 				3212C0371F52CABE00C57DBE /* NSArray+Extension.m in Sources */,
+				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
 				320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */,
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
 				3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */,
@@ -1351,6 +1370,7 @@
 				3212C1AA1F53FA7700C57DBE /* UIView+Gesture.m in Sources */,
 				32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */,
 				3212C1A11F53F76400C57DBE /* UIView+Shake.m in Sources */,
+				32DD4FD71F5654A1005C6FE9 /* MYTextFieldViewController.m in Sources */,
 				3212C1C41F5403B300C57DBE /* UIImage+Vector.m in Sources */,
 				3212C04B1F52CB3E00C57DBE /* NSTimer+Extension.m in Sources */,
 				3212C1FD1F541FA500C57DBE /* UINavigationItem+Margin.m in Sources */,

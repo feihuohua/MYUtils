@@ -17,6 +17,7 @@
 #import "MYKeyboardViewController.h"
 #import "MYCountDownViewController.h"
 #import "MYAMViralSwitchViewController.h"
+#import "MYTextFieldViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -43,7 +44,8 @@
                        @"MYWebViewController",
                        @"keyboard",
                        @"倒计时演练",
-                       @"自定义UISwitch",nil];
+                       @"自定义UISwitch",
+                       @"自定义UITextField",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -133,6 +135,10 @@
     
         MYAMViralSwitchViewController *switchViewController = [[MYAMViralSwitchViewController alloc] init];
         [self.navigationController pushViewController:switchViewController animated:YES];
+    } else if ([title isEqualToString:@"自定义UITextField"]) {
+    
+        MYTextFieldViewController *textField = [[MYTextFieldViewController alloc] init];
+        [self.navigationController pushViewController:textField animated:YES];
     }
 }
 
