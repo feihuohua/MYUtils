@@ -7,8 +7,8 @@
 //
 
 #import "MYCountDownViewController.h"
-#import "UIButton+Extension.h"
-#import "UILabel+FitLines.h"
+#import "UIButton+CountDown.h"
+#import "UILabel+CountDown.h"
 #import "CIImage+Extension.h"
 #import "NSMutableDictionary+Extension.h"
 #import "NSMutableAttributedString+Extension.h"
@@ -34,9 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.countdownLabel scheduledTimerWithTimeInterval:3.0f countDownTitle:@"秒后讲自动跳转订单详情页" completion:^{
-        NSLog(@"倒计时结束");
-    }];
+    [self.countdownLabel scheduledTimerWithTimeInterval:5.0f title:@"重新发送" countDownTitle:@"秒后可重发" titleBackgroundColor:[UIColor blueColor] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
     
     [self setupQRCodeImage];
     
@@ -59,7 +57,7 @@
     self.navigationItem.rightBarButtonItem.badgeBGColor = [UIColor redColor];
     self.navigationItem.rightBarButtonItem.badgePadding = 2.0f;
     self.navigationItem.rightBarButtonItem.badgeFont = [UIFont systemFontOfSize:10.0f];
-
+    
     
     [self.topButton setImagePosition:MYImagePositionTop spacing:5.0f];
     [self.rightButton setImagePosition:MYImagePositionRight spacing:5.0f];
@@ -76,7 +74,7 @@
 
 - (void)insertNewObject:(id)sender
 {
-   
+    
 }
 
 - (void)setupAttributedString {
@@ -84,7 +82,7 @@
     NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc]initWithString:@"3秒后自动跳转订单详情页"];
     [attributedStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:16.0] range:NSMakeRange(2, 2)];
     [attributedStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(2, 2)];
-//    self.attributedLabel.attributedText = attributedStr;
+    //    self.attributedLabel.attributedText = attributedStr;
     
     //【封装工具类】
     NSMutableAttributedString *attributedString = [NSMutableAttributedString makeAttributeString:@"3秒后跳转" attribute:^(NSMutableDictionary *attributes) {
@@ -114,7 +112,7 @@
 }
 
 - (IBAction)countdownBtnClick:(UIButton *)sender {
-    [self.countdownButton startWithTime:5 title:@"获取验证码" countDownTitle:@"s" mainColor:[UIColor colorWithRed:84/255.0 green:180/255.0 blue:98/255.0 alpha:1.0f] countColor:[UIColor lightGrayColor]];
+    [self.countdownButton scheduledTimerWithTimeInterval:5.0f title:@"获取验证码" countDownTitle:@"s" titleBackgroundColor:[UIColor colorWithRed:84/255.0 green:180/255.0 blue:98/255.0 alpha:1.0f] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
 }
 
 @end

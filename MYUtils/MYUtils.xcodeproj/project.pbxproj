@@ -52,7 +52,6 @@
 		3212C0731F52D82100C57DBE /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0721F52D82100C57DBE /* NSFileManager+Paths.m */; };
 		3212C0771F52D89000C57DBE /* NSHTTPCookieStorage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0761F52D89000C57DBE /* NSHTTPCookieStorage+Extension.m */; };
 		3212C08D1F53ACCC00C57DBE /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C07A1F53ACCC00C57DBE /* UIBarButtonItem+Extension.m */; };
-		3212C08E1F53ACCC00C57DBE /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C07D1F53ACCC00C57DBE /* UIButton+Extension.m */; };
 		3212C08F1F53ACCC00C57DBE /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0801F53ACCC00C57DBE /* UIColor+Extension.m */; };
 		3212C0901F53ACCC00C57DBE /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0831F53ACCC00C57DBE /* UIImage+Extension.m */; };
 		3212C0911F53ACCC00C57DBE /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0861F53ACCC00C57DBE /* UIImageView+CornerRadius.m */; };
@@ -116,6 +115,9 @@
 		32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */; };
 		32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */; };
 		32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */; };
+		329F15561F57B48D00048E86 /* UIButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F15551F57B48D00048E86 /* UIButton+CountDown.m */; };
+		329F15591F57B4A600048E86 /* UIView+SuperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F15581F57B4A600048E86 /* UIView+SuperController.m */; };
+		329F155C1F57B4B100048E86 /* UILabel+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 329F155B1F57B4B100048E86 /* UILabel+CountDown.m */; };
 		32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35B1F46DAFC00AE6267 /* HKNavigationController.m */; };
 		32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */; };
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
@@ -235,8 +237,6 @@
 		3212C0761F52D89000C57DBE /* NSHTTPCookieStorage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPCookieStorage+Extension.m"; sourceTree = "<group>"; };
 		3212C0791F53ACCC00C57DBE /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		3212C07A1F53ACCC00C57DBE /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
-		3212C07C1F53ACCC00C57DBE /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
-		3212C07D1F53ACCC00C57DBE /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		3212C07F1F53ACCC00C57DBE /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		3212C0801F53ACCC00C57DBE /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		3212C0821F53ACCC00C57DBE /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -360,6 +360,12 @@
 		32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
 		32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		329F15541F57B48D00048E86 /* UIButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CountDown.h"; sourceTree = "<group>"; };
+		329F15551F57B48D00048E86 /* UIButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CountDown.m"; sourceTree = "<group>"; };
+		329F15571F57B4A600048E86 /* UIView+SuperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperController.h"; sourceTree = "<group>"; };
+		329F15581F57B4A600048E86 /* UIView+SuperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperController.m"; sourceTree = "<group>"; };
+		329F155A1F57B4B100048E86 /* UILabel+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CountDown.h"; sourceTree = "<group>"; };
+		329F155B1F57B4B100048E86 /* UILabel+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CountDown.m"; sourceTree = "<group>"; };
 		32CBE35A1F46DAFC00AE6267 /* HKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNavigationController.h; sourceTree = "<group>"; };
 		32CBE35B1F46DAFC00AE6267 /* HKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNavigationController.m; sourceTree = "<group>"; };
 		32CBE35C1F46DAFC00AE6267 /* UIViewController+NavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationExtension.h"; sourceTree = "<group>"; };
@@ -640,8 +646,8 @@
 		3212C07B1F53ACCC00C57DBE /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				3212C07C1F53ACCC00C57DBE /* UIButton+Extension.h */,
-				3212C07D1F53ACCC00C57DBE /* UIButton+Extension.m */,
+				329F15541F57B48D00048E86 /* UIButton+CountDown.h */,
+				329F15551F57B48D00048E86 /* UIButton+CountDown.m */,
 				3212C1C81F54066400C57DBE /* UIButton+Badge.h */,
 				3212C1C91F54066400C57DBE /* UIButton+Badge.m */,
 				3212C1CE1F540F0000C57DBE /* UIButton+ImagePosition.h */,
@@ -700,6 +706,8 @@
 		3212C0871F53ACCC00C57DBE /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				329F155A1F57B4B100048E86 /* UILabel+CountDown.h */,
+				329F155B1F57B4B100048E86 /* UILabel+CountDown.m */,
 				3212C0881F53ACCC00C57DBE /* UILabel+FitLines.h */,
 				3212C0891F53ACCC00C57DBE /* UILabel+FitLines.m */,
 				3212C1B91F5400E100C57DBE /* UILabel+AdjustableLabel.h */,
@@ -723,6 +731,8 @@
 				3212C1A31F53F7C000C57DBE /* UIView+Screenshot.m */,
 				3212C1A81F53FA7700C57DBE /* UIView+Gesture.h */,
 				3212C1A91F53FA7700C57DBE /* UIView+Gesture.m */,
+				329F15571F57B4A600048E86 /* UIView+SuperController.h */,
+				329F15581F57B4A600048E86 /* UIView+SuperController.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1329,9 +1339,9 @@
 				3212C08F1F53ACCC00C57DBE /* UIColor+Extension.m in Sources */,
 				32200C8A1F444F310027066E /* Parent.h in Sources */,
 				32200C891F444F270027066E /* Other.m in Sources */,
-				3212C08E1F53ACCC00C57DBE /* UIButton+Extension.m in Sources */,
 				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
 				3212C06C1F52D52900C57DBE /* NSDateFormatter+Extension.m in Sources */,
+				329F15561F57B48D00048E86 /* UIButton+CountDown.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				3212C1FA1F541F3300C57DBE /* UINavigationController+Transitions.m in Sources */,
 				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
@@ -1345,8 +1355,10 @@
 				3212C0551F52CC7D00C57DBE /* NSData+DataCache.m in Sources */,
 				3212C1ED1F541AC600C57DBE /* UIImageView+Letters.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
+				329F15591F57B4A600048E86 /* UIView+SuperController.m in Sources */,
 				32200C311F444AC80027066E /* Child.m in Sources */,
 				3212C1DD1F54149700C57DBE /* NSObject+Swizzling.m in Sources */,
+				329F155C1F57B4B100048E86 /* UILabel+CountDown.m in Sources */,
 				3212C1E31F54152F00C57DBE /* UIButton+TouchAreaInsets.m in Sources */,
 				3212C0521F52CBC900C57DBE /* NSData+Base64.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,

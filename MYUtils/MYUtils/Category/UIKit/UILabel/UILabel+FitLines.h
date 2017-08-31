@@ -39,4 +39,10 @@
                         countDownTitle:(NSString *)title
                             completion:(void (^)(void))completion;
 
+- (void)scheduledTimerWithTimeInterval:(NSInteger)seconds
+                                 title:(NSString *)title
+                        countDownTitle:(NSString *)subTitle
+                             mainColor:(UIColor *)mColor
+                            countColor:(UIColor *)color;
+
 @end
