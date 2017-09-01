@@ -13,12 +13,17 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIBarButtonItem (Extension)
 
 + (UIBarButtonItem *)barButtonItemWithTarget:(id)target
-                               andWithAction:(SEL)action
-                                andWithImage:(NSString *)image;
+                                      action:(SEL)action
+                                       image:(NSString *)image;
 
 + (UIBarButtonItem *)barButtonItemWithTarget:(id)target
-                               andWithAction:(SEL)action
-                                    andTitle:(NSString *)title
+                                      action:(SEL)action
+                                       image:(NSString *)image
+                               selectedImage:(NSString *)selectedImage;
+
++ (UIBarButtonItem *)barButtonItemWithTarget:(id)target
+                                      action:(SEL)action
+                                       title:(NSString *)title
                                selectedTitle:(NSString *)selectedTitle;
 
 @end

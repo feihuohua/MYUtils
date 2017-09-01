@@ -12,12 +12,12 @@
 
 @implementation UIBarButtonItem (Extension)
 
-+ (UIBarButtonItem *)barButtonItemWithTarget:(id)target andWithAction:(SEL)action andWithImage:(NSString *)image {
++ (UIBarButtonItem *)barButtonItemWithTarget:(id)target
+                                      action:(SEL)action
+                                       image:(NSString *)image {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    // 设置图片
     [button setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-    // 设置UIBarButtonItem的frame
     CGRect frame = button.frame;
     frame.size = button.currentBackgroundImage.size;
     button.frame = frame;
@@ -25,8 +25,22 @@
 }
 
 + (UIBarButtonItem *)barButtonItemWithTarget:(id)target
-                               andWithAction:(SEL)action
-                                    andTitle:(NSString *)title
+                                      action:(SEL)action
+                                       image:(NSString *)image
+                               selectedImage:(NSString *)selectedImage {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+     [button setBackgroundImage:[UIImage imageNamed:selectedImage] forState:UIControlStateSelected];
+    CGRect frame = button.frame;
+    frame.size = button.currentBackgroundImage.size;
+    button.frame = frame;
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
++ (UIBarButtonItem *)barButtonItemWithTarget:(id)target
+                                      action:(SEL)action
+                                       title:(NSString *)title
                                selectedTitle:(NSString *)selectedTitle {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.titleLabel.font = [UIFont systemFontOfSize:14];
