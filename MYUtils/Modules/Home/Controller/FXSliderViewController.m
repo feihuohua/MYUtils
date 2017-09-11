@@ -8,8 +8,13 @@
 
 #import "FXSliderViewController.h"
 #import "FXSlider.h"
+#import "UtilsMacros.h"
+#import <MYKit/MYKit.h>
+#import <Masonry.h>
 
 @interface FXSliderViewController ()
+
+@property (nonatomic, strong) FXSlider *sliderView;
 
 @end
 
@@ -18,13 +23,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    FXSlider *slider = [[FXSlider alloc] initWithFrame:CGRectMake(100, 200, 200, 100)];
-    slider.maxCount = 5;
-    slider.tintColor = [UIColor redColor];
-    slider.sliderCircleColor = [UIColor blueColor];
-    slider.labels = @[@"1", @"2", @"3", @"4", @"5"];
-    slider.labelColor = [UIColor redColor];
-    [self.view addSubview:slider];
+    self.title = @"自定义UISlider";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    _sliderView = [[FXSlider alloc] init];
+    _sliderView.maxCount = 5;
+    _sliderView.trackColor = [UIColor colorWithHexString:@"#F7F7F7"];
+    _sliderView.sliderCircleImage = [UIImage imageNamed:@"homestay_slider"];
+    _sliderView.labels = @[@"1", @"2", @"3", @"4", @"5"];
+    _sliderView.labelColor = [UIColor colorWithHexString:@"#959595"];
+    _sliderView.labelFont = [UIFont systemFontOfSize:14.0f];
+    _sliderView.labelOffset = 10.0f;
+    _sliderView.tintColor = [UIColor colorWithHexString:@"#F1B559"];
+    [_sliderView addTarget:self action:@selector(eventValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.view addSubview:_sliderView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    weakSelf(weakSelf)
+    
+    [self.sliderView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(weakSelf.view);
+        make.top.equalTo(weakSelf.view).offset(120.0f);
+        make.height.mas_equalTo(120.0f);
+    }];
+}
+
+- (void)eventValueChanged:(FXSlider *)slider {
+    NSLog(@"Selected index: %lu",slider.index);
 }
 
 - (void)didReceiveMemoryWarning {
