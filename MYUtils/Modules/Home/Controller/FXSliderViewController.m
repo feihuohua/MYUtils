@@ -30,7 +30,7 @@
     _sliderView.maxCount = 5;
     _sliderView.trackColor = [UIColor colorWithHexString:@"#F7F7F7"];
     _sliderView.sliderCircleImage = [UIImage imageNamed:@"homestay_slider"];
-    _sliderView.labels = @[@"1", @"2", @"3", @"4", @"5"];
+    _sliderView.labels = @[@"100", @"200", @"300", @"400", @"500"];
     _sliderView.labelColor = [UIColor colorWithHexString:@"#959595"];
     _sliderView.labelFont = [UIFont systemFontOfSize:14.0f];
     _sliderView.labelOffset = 10.0f;
