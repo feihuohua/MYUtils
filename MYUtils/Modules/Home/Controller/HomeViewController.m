@@ -18,6 +18,7 @@
 #import "MYCountDownViewController.h"
 #import "MYAMViralSwitchViewController.h"
 #import "MYTextFieldViewController.h"
+#import "FXSliderViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -45,7 +46,8 @@
                        @"keyboard",
                        @"倒计时演练",
                        @"自定义UISwitch",
-                       @"自定义UITextField",nil];
+                       @"自定义UITextField",
+                       @"自定义UISlider",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -139,6 +141,10 @@
     
         MYTextFieldViewController *textField = [[MYTextFieldViewController alloc] init];
         [self.navigationController pushViewController:textField animated:YES];
+    } else if ([title isEqualToString:@"自定义UISlider"]) {
+    
+        FXSliderViewController *slider = [[FXSliderViewController alloc] init];
+        [self.navigationController pushViewController:slider animated:YES];
     }
 }
 
