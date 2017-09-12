@@ -9,6 +9,7 @@
 #import "HKTabBarControllerConfig.h"
 #import "HKNavigationController.h"
 #import "HomeViewController.h"
+#import "MYAnimationViewController.h"
 
 @interface HKTabBarControllerConfig ()<UITabBarControllerDelegate>
 
@@ -45,7 +46,7 @@
     UIViewController *firstNavigationController = [[HKNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    HomeViewController *secondViewController = [[HomeViewController alloc] init];
+    MYAnimationViewController *secondViewController = [[MYAnimationViewController alloc] init];
     UIViewController *secondNavigationController = [[HKNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
@@ -68,7 +69,7 @@
                                                  CYLTabBarItemSelectedImage : @"investment_selected", /* NSString and UIImage are supported*/
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"工具",
+                                                  CYLTabBarItemTitle : @"动画",
                                                   CYLTabBarItemImage : @"travel_normal",
                                                   CYLTabBarItemSelectedImage : @"travel_selected",
                                                   };

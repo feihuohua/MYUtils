@@ -67,6 +67,7 @@
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
 		32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
+		4C13A7D81F68329100A0C34D /* MYAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */; };
 		4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894DF1F64DF3200BD95ED /* UINavigationController+StackManager.m */; };
 		4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894E11F64DF3200BD95ED /* UINavigationController+Transitions.m */; };
 		4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5785D1F41FA0A004EE94D /* FXCyclePagerTransformLayout.m */; };
@@ -205,6 +206,8 @@
 		32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
 		32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
+		4C13A7D61F68329100A0C34D /* MYAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAnimationViewController.h; sourceTree = "<group>"; };
+		4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAnimationViewController.m; sourceTree = "<group>"; };
 		4C3894DE1F64DF3200BD95ED /* UINavigationController+StackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StackManager.h"; sourceTree = "<group>"; };
 		4C3894DF1F64DF3200BD95ED /* UINavigationController+StackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StackManager.m"; sourceTree = "<group>"; };
 		4C3894E01F64DF3200BD95ED /* UINavigationController+Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transitions.h"; sourceTree = "<group>"; };
@@ -462,6 +465,7 @@
 		32712B111F395164008A105F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4C13A7D21F68327B00A0C34D /* MYAnimation */,
 				32712B291F39B7D6008A105F /* Home */,
 			);
 			path = Modules;
@@ -618,6 +622,39 @@
 				4CB578611F41FA0A004EE94D /* FXPageControl.m */,
 			);
 			path = FXCyclePagerView;
+			sourceTree = "<group>";
+		};
+		4C13A7D21F68327B00A0C34D /* MYAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				4C13A7D31F68327B00A0C34D /* Controller */,
+				4C13A7D41F68327B00A0C34D /* Model */,
+				4C13A7D51F68327B00A0C34D /* View */,
+			);
+			path = MYAnimation;
+			sourceTree = "<group>";
+		};
+		4C13A7D31F68327B00A0C34D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C13A7D61F68329100A0C34D /* MYAnimationViewController.h */,
+				4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C13A7D41F68327B00A0C34D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C13A7D51F68327B00A0C34D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4C3894DD1F64DF3200BD95ED /* UINavigationController */ = {
@@ -871,6 +908,7 @@
 				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
+				4C13A7D81F68329100A0C34D /* MYAnimationViewController.m in Sources */,
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
 				3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */,
