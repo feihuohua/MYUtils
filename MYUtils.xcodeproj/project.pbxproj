@@ -58,6 +58,10 @@
 		32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */; };
 		32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */; };
 		32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */; };
+		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
+		32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */; };
+		32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */; };
+		32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84C021F716175003E4793 /* MYActionSheetConfig.m */; };
 		32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35B1F46DAFC00AE6267 /* HKNavigationController.m */; };
 		32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */; };
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
@@ -189,6 +193,14 @@
 		32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
 		32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
+		32C84BF91F715C30003E4793 /* MYActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheet.m; sourceTree = "<group>"; };
+		32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetViewController.h; sourceTree = "<group>"; };
+		32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheetViewController.m; sourceTree = "<group>"; };
+		32C84BFE1F715DD3003E4793 /* MYActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetCell.h; sourceTree = "<group>"; };
+		32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheetCell.m; sourceTree = "<group>"; };
+		32C84C011F716175003E4793 /* MYActionSheetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetConfig.h; sourceTree = "<group>"; };
+		32C84C021F716175003E4793 /* MYActionSheetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheetConfig.m; sourceTree = "<group>"; };
 		32CBE35A1F46DAFC00AE6267 /* HKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNavigationController.h; sourceTree = "<group>"; };
 		32CBE35B1F46DAFC00AE6267 /* HKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNavigationController.m; sourceTree = "<group>"; };
 		32CBE35C1F46DAFC00AE6267 /* UIViewController+NavigationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationExtension.h"; sourceTree = "<group>"; };
@@ -495,6 +507,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32C84BF71F715BE8003E4793 /* MYActionSheet */,
 				3203A3111F66956900BA3601 /* HKNumberButton */,
 				3203A2FE1F66329D00BA3601 /* FXSlider */,
 				4C3894DD1F64DF3200BD95ED /* UINavigationController */,
@@ -580,6 +593,21 @@
 				32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		32C84BF71F715BE8003E4793 /* MYActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				32C84BF81F715C30003E4793 /* MYActionSheet.h */,
+				32C84BF91F715C30003E4793 /* MYActionSheet.m */,
+				32C84C011F716175003E4793 /* MYActionSheetConfig.h */,
+				32C84C021F716175003E4793 /* MYActionSheetConfig.m */,
+				32C84BFE1F715DD3003E4793 /* MYActionSheetCell.h */,
+				32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */,
+				32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */,
+				32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */,
+			);
+			path = MYActionSheet;
 			sourceTree = "<group>";
 		};
 		32CBE3591F46DAFC00AE6267 /* MYNavigationController */ = {
@@ -868,6 +896,7 @@
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
 				32200C371F444B770027066E /* Parent+Load.m in Sources */,
+				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */,
 				3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
@@ -879,6 +908,7 @@
 				3203A3041F66357B00BA3601 /* FXSliderViewController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
+				32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */,
 				320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */,
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
 				3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */,
@@ -889,6 +919,7 @@
 				32DD4FD71F5654A1005C6FE9 /* MYTextFieldViewController.m in Sources */,
 				3208B4761F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
+				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				320707271F43F4D900CB66D9 /* TabPagerViewDmeoController.m in Sources */,
 				32200C3A1F444B820027066E /* Child+Load.m in Sources */,
@@ -913,6 +944,7 @@
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
 				3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */,
 				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
+				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 			);
