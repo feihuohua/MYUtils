@@ -58,6 +58,8 @@
 		32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */; };
 		32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */; };
 		32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */; };
+		328505BA1FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */; };
+		328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328505BC1FA728E40098E2C0 /* MYTestViewController.m */; };
 		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
 		32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */; };
 		32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */; };
@@ -193,6 +195,10 @@
 		32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
 		32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
+		328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
+		328505BB1FA728E40098E2C0 /* MYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
+		328505BC1FA728E40098E2C0 /* MYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
 		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
 		32C84BF91F715C30003E4793 /* MYActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheet.m; sourceTree = "<group>"; };
 		32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetViewController.h; sourceTree = "<group>"; };
@@ -667,6 +673,10 @@
 			children = (
 				4C13A7D61F68329100A0C34D /* MYAnimationViewController.h */,
 				4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */,
+				328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */,
+				328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */,
+				328505BB1FA728E40098E2C0 /* MYTestViewController.h */,
+				328505BC1FA728E40098E2C0 /* MYTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -922,6 +932,8 @@
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				320707271F43F4D900CB66D9 /* TabPagerViewDmeoController.m in Sources */,
+				328505BA1FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m in Sources */,
+				328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */,
 				32200C3A1F444B820027066E /* Child+Load.m in Sources */,
 				3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */,
 				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
