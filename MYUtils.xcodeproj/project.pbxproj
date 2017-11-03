@@ -62,6 +62,24 @@
 		320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207749D1FACB93000A56F88 /* MWTapDetectingView.m */; };
 		320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207749F1FACB93000A56F88 /* MWZoomingScrollView.m */; };
 		320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774A11FACB93000A56F88 /* UIImage+MWPhotoBrowser.m */; };
+		320774DF1FACBE1C00A56F88 /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774CD1FACBE1C00A56F88 /* photo1.jpg */; };
+		320774E01FACBE1C00A56F88 /* photo1t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774CE1FACBE1C00A56F88 /* photo1t.jpg */; };
+		320774E11FACBE1C00A56F88 /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774CF1FACBE1C00A56F88 /* photo2.jpg */; };
+		320774E21FACBE1C00A56F88 /* photo2t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D01FACBE1C00A56F88 /* photo2t.jpg */; };
+		320774E31FACBE1C00A56F88 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D11FACBE1C00A56F88 /* photo3.jpg */; };
+		320774E41FACBE1C00A56F88 /* photo3t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D21FACBE1C00A56F88 /* photo3t.jpg */; };
+		320774E51FACBE1C00A56F88 /* photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D31FACBE1C00A56F88 /* photo4.jpg */; };
+		320774E61FACBE1C00A56F88 /* photo4t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D41FACBE1C00A56F88 /* photo4t.jpg */; };
+		320774E71FACBE1C00A56F88 /* photo5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D51FACBE1C00A56F88 /* photo5.jpg */; };
+		320774E81FACBE1C00A56F88 /* photo5t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D61FACBE1C00A56F88 /* photo5t.jpg */; };
+		320774E91FACBE1C00A56F88 /* photo6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D71FACBE1C00A56F88 /* photo6.jpg */; };
+		320774EA1FACBE1C00A56F88 /* photo6t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D81FACBE1C00A56F88 /* photo6t.jpg */; };
+		320774EB1FACBE1C00A56F88 /* photo7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774D91FACBE1C00A56F88 /* photo7.jpg */; };
+		320774EC1FACBE1C00A56F88 /* photo7t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DA1FACBE1C00A56F88 /* photo7t.jpg */; };
+		320774ED1FACBE1C00A56F88 /* photo8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DB1FACBE1C00A56F88 /* photo8.jpg */; };
+		320774EE1FACBE1C00A56F88 /* photo8t.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DC1FACBE1C00A56F88 /* photo8t.jpg */; };
+		320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 320774DD1FACBE1C00A56F88 /* video.mp4 */; };
+		320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DE1FACBE1C00A56F88 /* video_thumb.jpg */; };
 		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
 		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
 		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
@@ -224,6 +242,24 @@
 		3207749F1FACB93000A56F88 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWZoomingScrollView.m; sourceTree = "<group>"; };
 		320774A01FACB93000A56F88 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
 		320774A11FACB93000A56F88 /* UIImage+MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MWPhotoBrowser.m"; sourceTree = "<group>"; };
+		320774CD1FACBE1C00A56F88 /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+		320774CE1FACBE1C00A56F88 /* photo1t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1t.jpg; sourceTree = "<group>"; };
+		320774CF1FACBE1C00A56F88 /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
+		320774D01FACBE1C00A56F88 /* photo2t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2t.jpg; sourceTree = "<group>"; };
+		320774D11FACBE1C00A56F88 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
+		320774D21FACBE1C00A56F88 /* photo3t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3t.jpg; sourceTree = "<group>"; };
+		320774D31FACBE1C00A56F88 /* photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4.jpg; sourceTree = "<group>"; };
+		320774D41FACBE1C00A56F88 /* photo4t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4t.jpg; sourceTree = "<group>"; };
+		320774D51FACBE1C00A56F88 /* photo5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo5.jpg; sourceTree = "<group>"; };
+		320774D61FACBE1C00A56F88 /* photo5t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo5t.jpg; sourceTree = "<group>"; };
+		320774D71FACBE1C00A56F88 /* photo6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo6.jpg; sourceTree = "<group>"; };
+		320774D81FACBE1C00A56F88 /* photo6t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo6t.jpg; sourceTree = "<group>"; };
+		320774D91FACBE1C00A56F88 /* photo7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo7.jpg; sourceTree = "<group>"; };
+		320774DA1FACBE1C00A56F88 /* photo7t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo7t.jpg; sourceTree = "<group>"; };
+		320774DB1FACBE1C00A56F88 /* photo8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo8.jpg; sourceTree = "<group>"; };
+		320774DC1FACBE1C00A56F88 /* photo8t.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo8t.jpg; sourceTree = "<group>"; };
+		320774DD1FACBE1C00A56F88 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		320774DE1FACBE1C00A56F88 /* video_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video_thumb.jpg; sourceTree = "<group>"; };
 		3208B4611F4AAF1700A0883B /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
 		3208B4621F4AAF1700A0883B /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
 		3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
@@ -511,6 +547,31 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		320774CC1FACBE1C00A56F88 /* Local Media */ = {
+			isa = PBXGroup;
+			children = (
+				320774CD1FACBE1C00A56F88 /* photo1.jpg */,
+				320774CE1FACBE1C00A56F88 /* photo1t.jpg */,
+				320774CF1FACBE1C00A56F88 /* photo2.jpg */,
+				320774D01FACBE1C00A56F88 /* photo2t.jpg */,
+				320774D11FACBE1C00A56F88 /* photo3.jpg */,
+				320774D21FACBE1C00A56F88 /* photo3t.jpg */,
+				320774D31FACBE1C00A56F88 /* photo4.jpg */,
+				320774D41FACBE1C00A56F88 /* photo4t.jpg */,
+				320774D51FACBE1C00A56F88 /* photo5.jpg */,
+				320774D61FACBE1C00A56F88 /* photo5t.jpg */,
+				320774D71FACBE1C00A56F88 /* photo6.jpg */,
+				320774D81FACBE1C00A56F88 /* photo6t.jpg */,
+				320774D91FACBE1C00A56F88 /* photo7.jpg */,
+				320774DA1FACBE1C00A56F88 /* photo7t.jpg */,
+				320774DB1FACBE1C00A56F88 /* photo8.jpg */,
+				320774DC1FACBE1C00A56F88 /* photo8t.jpg */,
+				320774DD1FACBE1C00A56F88 /* video.mp4 */,
+				320774DE1FACBE1C00A56F88 /* video_thumb.jpg */,
+			);
+			path = "Local Media";
+			sourceTree = "<group>";
+		};
 		3208B4601F4AAEF700A0883B /* MYWebViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +741,7 @@
 		32712B121F395164008A105F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				320774CC1FACBE1C00A56F88 /* Local Media */,
 				3208B4711F4AC7EF00A0883B /* messageHandler.html */,
 				3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */,
 				3208B46D1F4AB90A00A0883B /* index.html */,
@@ -1012,34 +1074,52 @@
 				320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */,
 				320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */,
 				320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */,
+				320774E81FACBE1C00A56F88 /* photo5t.jpg in Resources */,
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				320774BF1FACB93000A56F88 /* UIBarButtonItemGrid@3x.png in Resources */,
 				320774C21FACB93000A56F88 /* VideoOverlay@3x.png in Resources */,
+				320774ED1FACBE1C00A56F88 /* photo8.jpg in Resources */,
+				320774E01FACBE1C00A56F88 /* photo1t.jpg in Resources */,
 				320774A21FACB93000A56F88 /* ImageError.png in Resources */,
 				320774B21FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png in Resources */,
+				320774E21FACBE1C00A56F88 /* photo2t.jpg in Resources */,
 				320774B71FACB93000A56F88 /* UIBarButtonItemArrowLeft.png in Resources */,
 				320774BC1FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png in Resources */,
 				320774C01FACB93000A56F88 /* VideoOverlay.png in Resources */,
+				320774EE1FACBE1C00A56F88 /* photo8t.jpg in Resources */,
 				320774C11FACB93000A56F88 /* VideoOverlay@2x.png in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
+				320774DF1FACBE1C00A56F88 /* photo1.jpg in Resources */,
 				320774BD1FACB93000A56F88 /* UIBarButtonItemGrid.png in Resources */,
+				320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */,
 				320774A51FACB93000A56F88 /* ImageSelectedOff.png in Resources */,
+				320774E51FACBE1C00A56F88 /* photo4.jpg in Resources */,
 				3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */,
 				320774B61FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
 				320774A31FACB93000A56F88 /* ImageError@2x.png in Resources */,
 				320774AE1FACB93000A56F88 /* ImageSelectedSmallOn.png in Resources */,
 				320774B81FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png in Resources */,
+				320774E11FACBE1C00A56F88 /* photo2.jpg in Resources */,
+				320774E41FACBE1C00A56F88 /* photo3t.jpg in Resources */,
 				320774AC1FACB93000A56F88 /* ImageSelectedSmallOff@2x.png in Resources */,
 				320774A71FACB93000A56F88 /* ImageSelectedOff@3x.png in Resources */,
 				320774B51FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
 				3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */,
 				320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */,
+				320774E71FACBE1C00A56F88 /* photo5.jpg in Resources */,
+				320774E91FACBE1C00A56F88 /* photo6.jpg in Resources */,
+				320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */,
 				3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */,
 				320774BE1FACB93000A56F88 /* UIBarButtonItemGrid@2x.png in Resources */,
+				320774EC1FACBE1C00A56F88 /* photo7t.jpg in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
+				320774EB1FACBE1C00A56F88 /* photo7.jpg in Resources */,
 				320774A61FACB93000A56F88 /* ImageSelectedOff@2x.png in Resources */,
+				320774E61FACBE1C00A56F88 /* photo4t.jpg in Resources */,
+				320774EA1FACBE1C00A56F88 /* photo6t.jpg in Resources */,
 				320774B41FACB93000A56F88 /* PlayButtonOverlayLargeTap.png in Resources */,
+				320774E31FACBE1C00A56F88 /* photo3.jpg in Resources */,
 				320774AB1FACB93000A56F88 /* ImageSelectedSmallOff.png in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
 				320774B11FACB93000A56F88 /* PlayButtonOverlayLarge.png in Resources */,
