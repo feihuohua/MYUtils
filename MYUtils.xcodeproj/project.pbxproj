@@ -19,6 +19,49 @@
 		3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707221F43F4D900CB66D9 /* CustomViewController.m */; };
 		3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707241F43F4D900CB66D9 /* ListViewController.m */; };
 		320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */; };
+		320774681FACB85800A56F88 /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774671FACB85800A56F88 /* MWPhotoBrowserDemo.m */; };
+		320774A21FACB93000A56F88 /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746B1FACB93000A56F88 /* ImageError.png */; };
+		320774A31FACB93000A56F88 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746C1FACB93000A56F88 /* ImageError@2x.png */; };
+		320774A41FACB93000A56F88 /* ImageError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746D1FACB93000A56F88 /* ImageError@3x.png */; };
+		320774A51FACB93000A56F88 /* ImageSelectedOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746E1FACB93000A56F88 /* ImageSelectedOff.png */; };
+		320774A61FACB93000A56F88 /* ImageSelectedOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746F1FACB93000A56F88 /* ImageSelectedOff@2x.png */; };
+		320774A71FACB93000A56F88 /* ImageSelectedOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774701FACB93000A56F88 /* ImageSelectedOff@3x.png */; };
+		320774A81FACB93000A56F88 /* ImageSelectedOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774711FACB93000A56F88 /* ImageSelectedOn.png */; };
+		320774A91FACB93000A56F88 /* ImageSelectedOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774721FACB93000A56F88 /* ImageSelectedOn@2x.png */; };
+		320774AA1FACB93000A56F88 /* ImageSelectedOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774731FACB93000A56F88 /* ImageSelectedOn@3x.png */; };
+		320774AB1FACB93000A56F88 /* ImageSelectedSmallOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774741FACB93000A56F88 /* ImageSelectedSmallOff.png */; };
+		320774AC1FACB93000A56F88 /* ImageSelectedSmallOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774751FACB93000A56F88 /* ImageSelectedSmallOff@2x.png */; };
+		320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774761FACB93000A56F88 /* ImageSelectedSmallOff@3x.png */; };
+		320774AE1FACB93000A56F88 /* ImageSelectedSmallOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774771FACB93000A56F88 /* ImageSelectedSmallOn.png */; };
+		320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774781FACB93000A56F88 /* ImageSelectedSmallOn@2x.png */; };
+		320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774791FACB93000A56F88 /* ImageSelectedSmallOn@3x.png */; };
+		320774B11FACB93000A56F88 /* PlayButtonOverlayLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207747A1FACB93000A56F88 /* PlayButtonOverlayLarge.png */; };
+		320774B21FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207747B1FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png */; };
+		320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207747C1FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png */; };
+		320774B41FACB93000A56F88 /* PlayButtonOverlayLargeTap.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207747D1FACB93000A56F88 /* PlayButtonOverlayLargeTap.png */; };
+		320774B51FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207747E1FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png */; };
+		320774B61FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207747F1FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png */; };
+		320774B71FACB93000A56F88 /* UIBarButtonItemArrowLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774801FACB93000A56F88 /* UIBarButtonItemArrowLeft.png */; };
+		320774B81FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774811FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png */; };
+		320774B91FACB93000A56F88 /* UIBarButtonItemArrowLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774821FACB93000A56F88 /* UIBarButtonItemArrowLeft@3x.png */; };
+		320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774831FACB93000A56F88 /* UIBarButtonItemArrowRight.png */; };
+		320774BB1FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774841FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png */; };
+		320774BC1FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774851FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png */; };
+		320774BD1FACB93000A56F88 /* UIBarButtonItemGrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774861FACB93000A56F88 /* UIBarButtonItemGrid.png */; };
+		320774BE1FACB93000A56F88 /* UIBarButtonItemGrid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774871FACB93000A56F88 /* UIBarButtonItemGrid@2x.png */; };
+		320774BF1FACB93000A56F88 /* UIBarButtonItemGrid@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774881FACB93000A56F88 /* UIBarButtonItemGrid@3x.png */; };
+		320774C01FACB93000A56F88 /* VideoOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 320774891FACB93000A56F88 /* VideoOverlay.png */; };
+		320774C11FACB93000A56F88 /* VideoOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207748A1FACB93000A56F88 /* VideoOverlay@2x.png */; };
+		320774C21FACB93000A56F88 /* VideoOverlay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207748B1FACB93000A56F88 /* VideoOverlay@3x.png */; };
+		320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207748E1FACB93000A56F88 /* MWCaptionView.m */; };
+		320774C41FACB93000A56F88 /* MWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774911FACB93000A56F88 /* MWGridCell.m */; };
+		320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774931FACB93000A56F88 /* MWGridViewController.m */; };
+		320774C61FACB93000A56F88 /* MWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774951FACB93000A56F88 /* MWPhoto.m */; };
+		320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774971FACB93000A56F88 /* MWPhotoBrowser.m */; };
+		320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207749B1FACB93000A56F88 /* MWTapDetectingImageView.m */; };
+		320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207749D1FACB93000A56F88 /* MWTapDetectingView.m */; };
+		320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207749F1FACB93000A56F88 /* MWZoomingScrollView.m */; };
+		320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774A11FACB93000A56F88 /* UIImage+MWPhotoBrowser.m */; };
 		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
 		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
 		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
@@ -125,6 +168,62 @@
 		320707241F43F4D900CB66D9 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		320774621FACAD7600A56F88 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		320774661FACB85800A56F88 /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
+		320774671FACB85800A56F88 /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
+		3207746B1FACB93000A56F88 /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
+		3207746C1FACB93000A56F88 /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
+		3207746D1FACB93000A56F88 /* ImageError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@3x.png"; sourceTree = "<group>"; };
+		3207746E1FACB93000A56F88 /* ImageSelectedOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedOff.png; sourceTree = "<group>"; };
+		3207746F1FACB93000A56F88 /* ImageSelectedOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@2x.png"; sourceTree = "<group>"; };
+		320774701FACB93000A56F88 /* ImageSelectedOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOff@3x.png"; sourceTree = "<group>"; };
+		320774711FACB93000A56F88 /* ImageSelectedOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedOn.png; sourceTree = "<group>"; };
+		320774721FACB93000A56F88 /* ImageSelectedOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@2x.png"; sourceTree = "<group>"; };
+		320774731FACB93000A56F88 /* ImageSelectedOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedOn@3x.png"; sourceTree = "<group>"; };
+		320774741FACB93000A56F88 /* ImageSelectedSmallOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedSmallOff.png; sourceTree = "<group>"; };
+		320774751FACB93000A56F88 /* ImageSelectedSmallOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOff@2x.png"; sourceTree = "<group>"; };
+		320774761FACB93000A56F88 /* ImageSelectedSmallOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOff@3x.png"; sourceTree = "<group>"; };
+		320774771FACB93000A56F88 /* ImageSelectedSmallOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageSelectedSmallOn.png; sourceTree = "<group>"; };
+		320774781FACB93000A56F88 /* ImageSelectedSmallOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@2x.png"; sourceTree = "<group>"; };
+		320774791FACB93000A56F88 /* ImageSelectedSmallOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageSelectedSmallOn@3x.png"; sourceTree = "<group>"; };
+		3207747A1FACB93000A56F88 /* PlayButtonOverlayLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOverlayLarge.png; sourceTree = "<group>"; };
+		3207747B1FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLarge@2x.png"; sourceTree = "<group>"; };
+		3207747C1FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLarge@3x.png"; sourceTree = "<group>"; };
+		3207747D1FACB93000A56F88 /* PlayButtonOverlayLargeTap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButtonOverlayLargeTap.png; sourceTree = "<group>"; };
+		3207747E1FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLargeTap@2x.png"; sourceTree = "<group>"; };
+		3207747F1FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayButtonOverlayLargeTap@3x.png"; sourceTree = "<group>"; };
+		320774801FACB93000A56F88 /* UIBarButtonItemArrowLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemArrowLeft.png; sourceTree = "<group>"; };
+		320774811FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowLeft@2x.png"; sourceTree = "<group>"; };
+		320774821FACB93000A56F88 /* UIBarButtonItemArrowLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowLeft@3x.png"; sourceTree = "<group>"; };
+		320774831FACB93000A56F88 /* UIBarButtonItemArrowRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemArrowRight.png; sourceTree = "<group>"; };
+		320774841FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowRight@2x.png"; sourceTree = "<group>"; };
+		320774851FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemArrowRight@3x.png"; sourceTree = "<group>"; };
+		320774861FACB93000A56F88 /* UIBarButtonItemGrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIBarButtonItemGrid.png; sourceTree = "<group>"; };
+		320774871FACB93000A56F88 /* UIBarButtonItemGrid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemGrid@2x.png"; sourceTree = "<group>"; };
+		320774881FACB93000A56F88 /* UIBarButtonItemGrid@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIBarButtonItemGrid@3x.png"; sourceTree = "<group>"; };
+		320774891FACB93000A56F88 /* VideoOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoOverlay.png; sourceTree = "<group>"; };
+		3207748A1FACB93000A56F88 /* VideoOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@2x.png"; sourceTree = "<group>"; };
+		3207748B1FACB93000A56F88 /* VideoOverlay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VideoOverlay@3x.png"; sourceTree = "<group>"; };
+		3207748D1FACB93000A56F88 /* MWCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCaptionView.h; sourceTree = "<group>"; };
+		3207748E1FACB93000A56F88 /* MWCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCaptionView.m; sourceTree = "<group>"; };
+		3207748F1FACB93000A56F88 /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCommon.h; sourceTree = "<group>"; };
+		320774901FACB93000A56F88 /* MWGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWGridCell.h; sourceTree = "<group>"; };
+		320774911FACB93000A56F88 /* MWGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWGridCell.m; sourceTree = "<group>"; };
+		320774921FACB93000A56F88 /* MWGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWGridViewController.h; sourceTree = "<group>"; };
+		320774931FACB93000A56F88 /* MWGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWGridViewController.m; sourceTree = "<group>"; };
+		320774941FACB93000A56F88 /* MWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhoto.h; sourceTree = "<group>"; };
+		320774951FACB93000A56F88 /* MWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhoto.m; sourceTree = "<group>"; };
+		320774961FACB93000A56F88 /* MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowser.h; sourceTree = "<group>"; };
+		320774971FACB93000A56F88 /* MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowser.m; sourceTree = "<group>"; };
+		320774981FACB93000A56F88 /* MWPhotoBrowserPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserPrivate.h; sourceTree = "<group>"; };
+		320774991FACB93000A56F88 /* MWPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoProtocol.h; sourceTree = "<group>"; };
+		3207749A1FACB93000A56F88 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingImageView.h; sourceTree = "<group>"; };
+		3207749B1FACB93000A56F88 /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingImageView.m; sourceTree = "<group>"; };
+		3207749C1FACB93000A56F88 /* MWTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingView.h; sourceTree = "<group>"; };
+		3207749D1FACB93000A56F88 /* MWTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingView.m; sourceTree = "<group>"; };
+		3207749E1FACB93000A56F88 /* MWZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWZoomingScrollView.h; sourceTree = "<group>"; };
+		3207749F1FACB93000A56F88 /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWZoomingScrollView.m; sourceTree = "<group>"; };
+		320774A01FACB93000A56F88 /* UIImage+MWPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MWPhotoBrowser.h"; sourceTree = "<group>"; };
+		320774A11FACB93000A56F88 /* UIImage+MWPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MWPhotoBrowser.m"; sourceTree = "<group>"; };
 		3208B4611F4AAF1700A0883B /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
 		3208B4621F4AAF1700A0883B /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
 		3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
@@ -326,6 +425,92 @@
 			path = MYPagerController;
 			sourceTree = "<group>";
 		};
+		320774651FACB84600A56F88 /* MWPhotoBrowserDemo */ = {
+			isa = PBXGroup;
+			children = (
+				320774661FACB85800A56F88 /* MWPhotoBrowserDemo.h */,
+				320774671FACB85800A56F88 /* MWPhotoBrowserDemo.m */,
+			);
+			path = MWPhotoBrowserDemo;
+			sourceTree = "<group>";
+		};
+		320774691FACB93000A56F88 /* MWPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				3207746A1FACB93000A56F88 /* Assets */,
+				3207748C1FACB93000A56F88 /* Classes */,
+			);
+			path = MWPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		3207746A1FACB93000A56F88 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3207746B1FACB93000A56F88 /* ImageError.png */,
+				3207746C1FACB93000A56F88 /* ImageError@2x.png */,
+				3207746D1FACB93000A56F88 /* ImageError@3x.png */,
+				3207746E1FACB93000A56F88 /* ImageSelectedOff.png */,
+				3207746F1FACB93000A56F88 /* ImageSelectedOff@2x.png */,
+				320774701FACB93000A56F88 /* ImageSelectedOff@3x.png */,
+				320774711FACB93000A56F88 /* ImageSelectedOn.png */,
+				320774721FACB93000A56F88 /* ImageSelectedOn@2x.png */,
+				320774731FACB93000A56F88 /* ImageSelectedOn@3x.png */,
+				320774741FACB93000A56F88 /* ImageSelectedSmallOff.png */,
+				320774751FACB93000A56F88 /* ImageSelectedSmallOff@2x.png */,
+				320774761FACB93000A56F88 /* ImageSelectedSmallOff@3x.png */,
+				320774771FACB93000A56F88 /* ImageSelectedSmallOn.png */,
+				320774781FACB93000A56F88 /* ImageSelectedSmallOn@2x.png */,
+				320774791FACB93000A56F88 /* ImageSelectedSmallOn@3x.png */,
+				3207747A1FACB93000A56F88 /* PlayButtonOverlayLarge.png */,
+				3207747B1FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png */,
+				3207747C1FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png */,
+				3207747D1FACB93000A56F88 /* PlayButtonOverlayLargeTap.png */,
+				3207747E1FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png */,
+				3207747F1FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png */,
+				320774801FACB93000A56F88 /* UIBarButtonItemArrowLeft.png */,
+				320774811FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png */,
+				320774821FACB93000A56F88 /* UIBarButtonItemArrowLeft@3x.png */,
+				320774831FACB93000A56F88 /* UIBarButtonItemArrowRight.png */,
+				320774841FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png */,
+				320774851FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png */,
+				320774861FACB93000A56F88 /* UIBarButtonItemGrid.png */,
+				320774871FACB93000A56F88 /* UIBarButtonItemGrid@2x.png */,
+				320774881FACB93000A56F88 /* UIBarButtonItemGrid@3x.png */,
+				320774891FACB93000A56F88 /* VideoOverlay.png */,
+				3207748A1FACB93000A56F88 /* VideoOverlay@2x.png */,
+				3207748B1FACB93000A56F88 /* VideoOverlay@3x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3207748C1FACB93000A56F88 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3207748D1FACB93000A56F88 /* MWCaptionView.h */,
+				3207748E1FACB93000A56F88 /* MWCaptionView.m */,
+				3207748F1FACB93000A56F88 /* MWCommon.h */,
+				320774901FACB93000A56F88 /* MWGridCell.h */,
+				320774911FACB93000A56F88 /* MWGridCell.m */,
+				320774921FACB93000A56F88 /* MWGridViewController.h */,
+				320774931FACB93000A56F88 /* MWGridViewController.m */,
+				320774941FACB93000A56F88 /* MWPhoto.h */,
+				320774951FACB93000A56F88 /* MWPhoto.m */,
+				320774961FACB93000A56F88 /* MWPhotoBrowser.h */,
+				320774971FACB93000A56F88 /* MWPhotoBrowser.m */,
+				320774981FACB93000A56F88 /* MWPhotoBrowserPrivate.h */,
+				320774991FACB93000A56F88 /* MWPhotoProtocol.h */,
+				3207749A1FACB93000A56F88 /* MWTapDetectingImageView.h */,
+				3207749B1FACB93000A56F88 /* MWTapDetectingImageView.m */,
+				3207749C1FACB93000A56F88 /* MWTapDetectingView.h */,
+				3207749D1FACB93000A56F88 /* MWTapDetectingView.m */,
+				3207749E1FACB93000A56F88 /* MWZoomingScrollView.h */,
+				3207749F1FACB93000A56F88 /* MWZoomingScrollView.m */,
+				320774A01FACB93000A56F88 /* UIImage+MWPhotoBrowser.h */,
+				320774A11FACB93000A56F88 /* UIImage+MWPhotoBrowser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3208B4601F4AAEF700A0883B /* MYWebViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +703,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				320774691FACB93000A56F88 /* MWPhotoBrowser */,
 				32C84BF71F715BE8003E4793 /* MYActionSheet */,
 				3203A3111F66956900BA3601 /* HKNumberButton */,
 				3203A2FE1F66329D00BA3601 /* FXSlider */,
@@ -553,6 +739,7 @@
 		32712B2A1F39B7D6008A105F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				320774651FACB84600A56F88 /* MWPhotoBrowserDemo */,
 				32712B2D1F39B7E9008A105F /* HomeViewController.h */,
 				32712B2E1F39B7E9008A105F /* HomeViewController.m */,
 				32712B301F39B813008A105F /* MYShowTextViewController.h */,
@@ -820,15 +1007,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320774A41FACB93000A56F88 /* ImageError@3x.png in Resources */,
+				320774AA1FACB93000A56F88 /* ImageSelectedOn@3x.png in Resources */,
+				320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */,
+				320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */,
+				320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */,
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
+				320774BF1FACB93000A56F88 /* UIBarButtonItemGrid@3x.png in Resources */,
+				320774C21FACB93000A56F88 /* VideoOverlay@3x.png in Resources */,
+				320774A21FACB93000A56F88 /* ImageError.png in Resources */,
+				320774B21FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png in Resources */,
+				320774B71FACB93000A56F88 /* UIBarButtonItemArrowLeft.png in Resources */,
+				320774BC1FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png in Resources */,
+				320774C01FACB93000A56F88 /* VideoOverlay.png in Resources */,
+				320774C11FACB93000A56F88 /* VideoOverlay@2x.png in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
+				320774BD1FACB93000A56F88 /* UIBarButtonItemGrid.png in Resources */,
+				320774A51FACB93000A56F88 /* ImageSelectedOff.png in Resources */,
 				3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */,
+				320774B61FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
+				320774A31FACB93000A56F88 /* ImageError@2x.png in Resources */,
+				320774AE1FACB93000A56F88 /* ImageSelectedSmallOn.png in Resources */,
+				320774B81FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png in Resources */,
+				320774AC1FACB93000A56F88 /* ImageSelectedSmallOff@2x.png in Resources */,
+				320774A71FACB93000A56F88 /* ImageSelectedOff@3x.png in Resources */,
+				320774B51FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
 				3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */,
+				320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */,
 				3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */,
+				320774BE1FACB93000A56F88 /* UIBarButtonItemGrid@2x.png in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
+				320774A61FACB93000A56F88 /* ImageSelectedOff@2x.png in Resources */,
+				320774B41FACB93000A56F88 /* PlayButtonOverlayLargeTap.png in Resources */,
+				320774AB1FACB93000A56F88 /* ImageSelectedSmallOff.png in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
+				320774B11FACB93000A56F88 /* PlayButtonOverlayLarge.png in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
+				320774A81FACB93000A56F88 /* ImageSelectedOn.png in Resources */,
+				320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */,
+				320774BB1FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png in Resources */,
+				320774A91FACB93000A56F88 /* ImageSelectedOn@2x.png in Resources */,
+				320774B91FACB93000A56F88 /* UIBarButtonItemArrowLeft@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -908,6 +1128,7 @@
 				32200C8A1F444F310027066E /* Parent.h in Sources */,
 				32200C891F444F270027066E /* Other.m in Sources */,
 				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
+				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
 				32200C371F444B770027066E /* Parent+Load.m in Sources */,
@@ -921,8 +1142,10 @@
 				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				3203A3041F66357B00BA3601 /* FXSliderViewController.m in Sources */,
+				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
+				320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */,
 				32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */,
 				320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */,
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
@@ -939,9 +1162,14 @@
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				320707271F43F4D900CB66D9 /* TabPagerViewDmeoController.m in Sources */,
 				328505BA1FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m in Sources */,
+				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
+				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */,
 				32200C3A1F444B820027066E /* Child+Load.m in Sources */,
 				3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */,
+				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
+				320774681FACB85800A56F88 /* MWPhotoBrowserDemo.m in Sources */,
+				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
 				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
 				3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
@@ -950,10 +1178,12 @@
 				3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */,
 				32200C2E1F444ABC0027066E /* Parent.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
+				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
 				3208B4791F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */,
 				3208B47C1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
 				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
+				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
 				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,

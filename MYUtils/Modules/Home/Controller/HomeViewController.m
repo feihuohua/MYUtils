@@ -19,6 +19,7 @@
 #import "MYAMViralSwitchViewController.h"
 #import "MYTextFieldViewController.h"
 #import "FXSliderViewController.h"
+#import "MWPhotoBrowserDemo.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -47,7 +48,8 @@
                        @"倒计时演练",
                        @"自定义UISwitch",
                        @"自定义UITextField",
-                       @"自定义UISlider",nil];
+                       @"自定义UISlider",
+                       @"照片浏览器",nil];
     [self.view addSubview:self.tableView];
 }
 
@@ -145,6 +147,9 @@
     
         FXSliderViewController *slider = [[FXSliderViewController alloc] init];
         [self.navigationController pushViewController:slider animated:YES];
+    } else if ([title isEqualToString:@"照片浏览器"]) {
+        MWPhotoBrowserDemo *photoBrowser = [[MWPhotoBrowserDemo alloc] init];
+        [self.navigationController pushViewController:photoBrowser animated:YES];
     }
 }
 

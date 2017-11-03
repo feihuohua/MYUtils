@@ -10,10 +10,9 @@ target 'MYUtils' do
     pod 'Masonry', '~> 1.0.2'
     pod 'MYKit', '~> 1.0.3'
     pod 'TYPagerController' , '~> 2.0.1'
-    
     pod 'CYLTabBarController', '~> 1.13.1'
-    
+    pod 'DACircularProgress', '~> 2.3.1'
     pod 'WebViewJavascriptBridge', '~> 6.0.2'
     pod 'ZYKeyboardUtil', '~> 1.0.7'
-    
+    pod 'MBProgressHUD', '~> 0.9.2'
 end  
