@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HKTabBarControllerConfig.h"
 #import "TBCityIconFont.h"
+#import "UncaughtExceptionHandler.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
@@ -18,6 +19,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //捕捉意外崩溃
+    [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

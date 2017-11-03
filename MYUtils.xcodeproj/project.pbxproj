@@ -18,6 +18,7 @@
 		320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707201F43F4D900CB66D9 /* CollectionViewController.m */; };
 		3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707221F43F4D900CB66D9 /* CustomViewController.m */; };
 		3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707241F43F4D900CB66D9 /* ListViewController.m */; };
+		320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */; };
 		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
 		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
 		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
@@ -122,6 +123,8 @@
 		320707221F43F4D900CB66D9 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		320707231F43F4D900CB66D9 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		320707241F43F4D900CB66D9 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		320774621FACAD7600A56F88 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		3208B4611F4AAF1700A0883B /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
 		3208B4621F4AAF1700A0883B /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
 		3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
@@ -506,6 +509,8 @@
 		32712B161F395164008A105F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				320774621FACAD7600A56F88 /* UncaughtExceptionHandler.h */,
+				320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -923,6 +928,7 @@
 				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
 				3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */,
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
+				320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */,
 				3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */,
 				320707251F43F4D900CB66D9 /* PagerViewDmeoController.m in Sources */,
 				32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */,
