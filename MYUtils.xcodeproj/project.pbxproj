@@ -81,6 +81,9 @@
 		320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 320774DD1FACBE1C00A56F88 /* video.mp4 */; };
 		320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DE1FACBE1C00A56F88 /* video_thumb.jpg */; };
 		320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */; };
+		320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */; };
+		320774FA1FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F91FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m */; };
+		320774FD1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774FC1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m */; };
 		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
 		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
 		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
@@ -263,6 +266,12 @@
 		320774DE1FACBE1C00A56F88 /* video_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video_thumb.jpg; sourceTree = "<group>"; };
 		320774F11FADA85600A56F88 /* MYIGLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIGLDemoViewController.h; sourceTree = "<group>"; };
 		320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIGLDemoViewController.m; sourceTree = "<group>"; };
+		320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomTransitionViewController.h; sourceTree = "<group>"; };
+		320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomTransitionViewController.m; sourceTree = "<group>"; };
+		320774F81FADD3D800A56F88 /* MYCrossDissolveFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveFirstViewController.h; sourceTree = "<group>"; };
+		320774F91FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveFirstViewController.m; sourceTree = "<group>"; };
+		320774FB1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveSecondViewController.h; sourceTree = "<group>"; };
+		320774FC1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveSecondViewController.m; sourceTree = "<group>"; };
 		3208B4611F4AAF1700A0883B /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
 		3208B4621F4AAF1700A0883B /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
 		3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
@@ -336,8 +345,8 @@
 		32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
 		32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
-		328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
-		328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
+		328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYCrossDissolveTransitionAnimator.h; path = ../MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
+		328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYCrossDissolveTransitionAnimator.m; path = ../MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
 		328505BB1FA728E40098E2C0 /* MYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
 		328505BC1FA728E40098E2C0 /* MYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
 		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
@@ -573,6 +582,19 @@
 				320774DE1FACBE1C00A56F88 /* video_thumb.jpg */,
 			);
 			path = "Local Media";
+			sourceTree = "<group>";
+		};
+		320774F71FADD3B900A56F88 /* Cross Dissolve */ = {
+			isa = PBXGroup;
+			children = (
+				328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */,
+				328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */,
+				320774F81FADD3D800A56F88 /* MYCrossDissolveFirstViewController.h */,
+				320774F91FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m */,
+				320774FB1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.h */,
+				320774FC1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m */,
+			);
+			path = "Cross Dissolve";
 			sourceTree = "<group>";
 		};
 		3208B4601F4AAEF700A0883B /* MYWebViewController */ = {
@@ -930,8 +952,9 @@
 			children = (
 				4C13A7D61F68329100A0C34D /* MYAnimationViewController.h */,
 				4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */,
-				328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */,
-				328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */,
+				320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */,
+				320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */,
+				320774F71FADD3B900A56F88 /* Cross Dissolve */,
 				328505BB1FA728E40098E2C0 /* MYTestViewController.h */,
 				328505BC1FA728E40098E2C0 /* MYTestViewController.m */,
 				320774F11FADA85600A56F88 /* MYIGLDemoViewController.h */,
@@ -1242,15 +1265,18 @@
 				32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */,
 				32DD4FD71F5654A1005C6FE9 /* MYTextFieldViewController.m in Sources */,
 				3208B4761F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m in Sources */,
+				320774FA1FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
 				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
 				320707271F43F4D900CB66D9 /* TabPagerViewDmeoController.m in Sources */,
 				328505BA1FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
+				320774FD1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m in Sources */,
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */,
 				32200C3A1F444B820027066E /* Child+Load.m in Sources */,
+				320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */,
 				3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				320774681FACB85800A56F88 /* MWPhotoBrowserDemo.m in Sources */,

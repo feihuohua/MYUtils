@@ -1,32 +1,29 @@
 //
-//  MYAnimationViewController.m
+//  MYCustomTransitionViewController.m
 //  MYUtils
 //
-//  Created by Michael on 2017/9/12.
+//  Created by sunjinshuai on 2017/11/4.
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "MYAnimationViewController.h"
-#import "MYActionSheet.h"
-#import "MYTestViewController.h"
 #import "MYCustomTransitionViewController.h"
 
-@interface MYAnimationViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MYCustomTransitionViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
-@implementation MYAnimationViewController
+@implementation MYCustomTransitionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"UIKitDemo";
+    self.title = @"自定义转场";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.dataSource addObject:@"有多种自定义动画效果的下拉菜单-MYIGLDemoViewController"];
+    [self.dataSource addObject:@"Cross Dissolve-MYCrossDissolveFirstViewController"];
     [self.dataSource addObject:@"自定义转场动画-MYCustomTransitionViewController"];
     [self.dataSource addObject:@"左右滑动列表cell-MGSwipeTableCellDemo"];
     [self.dataSource addObject:@"*原生UI控件替代方案-TYGUIListTableViewController"];
@@ -85,7 +82,7 @@
     
     UIViewController *viewController = [[NSClassFromString(className) alloc] init];
     viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
-   
+    
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
