@@ -18,6 +18,7 @@ PODS:
   - CYLTabBarController (1.13.1)
   - DACircularProgress (2.3.1)
   - IconFont (1.0.2)
+  - IGLDropDownMenu (1.6.2)
   - Masonry (1.0.2)
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.13)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - CYLTabBarController (~> 1.13.1)
   - DACircularProgress (~> 2.3.1)
   - IconFont (~> 1.0.2)
+  - IGLDropDownMenu (~> 1.6.2)
   - Masonry (~> 1.0.2)
   - MBProgressHUD (~> 0.9.2)
   - MJExtension (~> 3.0.13)
@@ -55,6 +57,7 @@ SPEC CHECKSUMS:
   CYLTabBarController: 97f6b486f9e6c613d69e9c111cc9c2c5db7000ce
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   IconFont: 97ff724bc6d26aac018678a2da4f8542600e5a67
+  IGLDropDownMenu: ae118618ae858fa66ce7c2ac80ed9124a710b228
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
@@ -64,6 +67,6 @@ SPEC CHECKSUMS:
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: 049bdbcb43823aeccc39c46146babd17a87672ec
+PODFILE CHECKSUM: ac1145e77b2b9e08e6cfd320ab78c6989477bc61
 
 COCOAPODS: 1.4.0.beta.1

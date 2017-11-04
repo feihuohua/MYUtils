@@ -36,20 +36,20 @@
     self.title = @"UIKitDemo";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.dataSource = [[NSMutableArray alloc] initWithObjects:
-                       @"UILabel设置行间距、指定显示行数",
-                       @"iconfont实战",
-                       @"imageView设置圆角",
-                       @"轮播图",
-                       @"TYPagerController",
-                       @"CustomNavigationBar",
-                       @"MYWebViewController",
-                       @"keyboard",
-                       @"倒计时演练",
-                       @"自定义UISwitch",
-                       @"自定义UITextField",
-                       @"自定义UISlider",
-                       @"照片浏览器",nil];
+    [self.dataSource addObject:@"UILabel设置行间距、指定显示行数-MYShowTextViewController"];
+    [self.dataSource addObject:@"iconfont实战-MYIconFontViewController"];
+    [self.dataSource addObject:@"imageView设置圆角-MYImageCornerRadiusViewController"];
+    [self.dataSource addObject:@"*轮播图-MYBannerCycleViewController"];
+    [self.dataSource addObject:@"*TYPagerController-MYBannerCycleViewController"];
+    [self.dataSource addObject:@"*照片浏览器-MWPhotoBrowserDemo"];
+    [self.dataSource addObject:@"*自定义UISlider-FXSliderViewController"];
+    [self.dataSource addObject:@"*自定义UITextField-MYTextFieldViewController"];
+    [self.dataSource addObject:@"*自定义UISwitch-MYAMViralSwitchViewController"];
+    [self.dataSource addObject:@"*倒计时演练-MYCountDownViewController"];
+    [self.dataSource addObject:@"*keyboard-MYKeyboardViewController"];
+    [self.dataSource addObject:@"*WebView实战-MYWebViewController"];
+    [self.dataSource addObject:@"*自定义导航条-MYCustomNavigationBarViewController"];
+   
     [self.view addSubview:self.tableView];
 }
 
@@ -98,59 +98,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *title = self.dataSource[indexPath.row];
+    NSString *title = [self.dataSource objectAtIndex:indexPath.row];
+    NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
     
-    if ([title isEqualToString:@"UILabel设置行间距、指定显示行数"]) {
-        
-        MYShowTextViewController *text = [[MYShowTextViewController alloc] init];
-        [self.navigationController pushViewController:text animated:YES];
-        
-    } else if ([title isEqualToString:@"iconfont实战"]) {
-        
-        MYIconFontViewController *iconfont = [[MYIconFontViewController alloc] init];
-        [self.navigationController pushViewController:iconfont animated:YES];
-    } else if ([title isEqualToString:@"imageView设置圆角"]) {
-        
-        MYImageCornerRadiusViewController *cornerRadius = [[MYImageCornerRadiusViewController alloc] init];
-        [self.navigationController pushViewController:cornerRadius animated:YES];
-    } else if ([title isEqualToString:@"轮播图"]) {
-        
-        MYBannerCycleViewController *cycle = [[MYBannerCycleViewController alloc] init];
-        [self.navigationController pushViewController:cycle animated:YES];
-    } else if ([title isEqualToString:@"TYPagerController"]) {
-        
-        MYPagerViewController *pager = [[MYPagerViewController alloc] init];
-        [self.navigationController pushViewController:pager animated:YES];
-    } else if ([title isEqualToString:@"CustomNavigationBar"]) {
-        MYCustomNavigationBarViewController *customNavigationBar = [[MYCustomNavigationBarViewController alloc] init];
-        [self.navigationController pushViewController:customNavigationBar animated:YES];
-    } else if ([title isEqualToString:@"MYWebViewController"]) {
+    UIViewController *viewController = [[NSClassFromString(className) alloc] init];
+    viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
     
-        MYWebViewController *webViewController = [[MYWebViewController alloc] init];
-        [self.navigationController pushViewController:webViewController animated:YES];
-    } else if ([title isEqualToString:@"keyboard"]) {
-    
-        MYKeyboardViewController *keyboard = [[MYKeyboardViewController alloc] init];
-        [self.navigationController pushViewController:keyboard animated:YES];
-    } else if ([title isEqualToString:@"倒计时演练"]) {
-        MYCountDownViewController *countDown = [[MYCountDownViewController alloc] init];
-        [self.navigationController pushViewController:countDown animated:YES];
-    } else if ([title isEqualToString:@"自定义UISwitch"]) {
-    
-        MYAMViralSwitchViewController *switchViewController = [[MYAMViralSwitchViewController alloc] init];
-        [self.navigationController pushViewController:switchViewController animated:YES];
-    } else if ([title isEqualToString:@"自定义UITextField"]) {
-    
-        MYTextFieldViewController *textField = [[MYTextFieldViewController alloc] init];
-        [self.navigationController pushViewController:textField animated:YES];
-    } else if ([title isEqualToString:@"自定义UISlider"]) {
-    
-        FXSliderViewController *slider = [[FXSliderViewController alloc] init];
-        [self.navigationController pushViewController:slider animated:YES];
-    } else if ([title isEqualToString:@"照片浏览器"]) {
-        MWPhotoBrowserDemo *photoBrowser = [[MWPhotoBrowserDemo alloc] init];
-        [self.navigationController pushViewController:photoBrowser animated:YES];
-    }
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (NSMutableArray *)dataSource {

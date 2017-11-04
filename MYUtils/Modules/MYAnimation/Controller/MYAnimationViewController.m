@@ -13,7 +13,10 @@
 
 #define KEY_WINDOW  [UIApplication sharedApplication].keyWindow
 
-@interface MYAnimationViewController ()<UIAlertViewDelegate, MYActionSheetDelegate, UIViewControllerTransitioningDelegate>
+@interface MYAnimationViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
@@ -22,100 +25,91 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"动画";
+    self.title = @"UIKitDemo";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIButton *cancellationButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    cancellationButton.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - 50)/2, 200, 50, 50);
-    cancellationButton.backgroundColor = [UIColor redColor];
-    [cancellationButton addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:cancellationButton];
+    [self.dataSource addObject:@"有多种自定义动画效果的下拉菜单-MYIGLDemoViewController"];
+    [self.dataSource addObject:@"左右滑动列表cell-SWTableViewCellDemo"];
+    [self.dataSource addObject:@"左右滑动列表cell-MGSwipeTableCellDemo"];
+    [self.dataSource addObject:@"*原生UI控件替代方案-TYGUIListTableViewController"];
+    [self.dataSource addObject:@"*Progress进度条-TYGProgressTableViewController"];
+    [self.dataSource addObject:@"*启动引导-TYGLoadingTableViewController"];
     
+    [self.view addSubview:self.tableView];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    UIButton *photoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    photoButton.frame = CGRectMake(([UIScreen mainScreen].bounds.size.width - 50)/2, CGRectGetMaxY(cancellationButton.frame) + 20, 200, 50);
-    photoButton.backgroundColor = [UIColor redColor];
-    [photoButton addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:photoButton];
+    return self.dataSource.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
+    return 1;
 }
 
-- (void)click {
-
-//    MYActionSheet *actionSheet = [MYActionSheet sheetWithTitle:@"确定要注销吗？"
-//                                                      delegate:self
-//                                             cancelButtonTitle:@"取消"
-//                                             otherButtonTitles:@"确定", nil];
-//    NSMutableIndexSet *indexSet = [[NSMutableIndexSet alloc] init];
-//    [indexSet addIndex:1];
-//    
-//    actionSheet.destructiveButtonIndexSet = indexSet;
-//    actionSheet.destructiveButtonColor    = [UIColor redColor];
-//    [actionSheet show];
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    MYTestViewController *test = [[MYTestViewController alloc] init];
-    // Setting the modalPresentationStyle to FullScreen enables the
-    // <ContextTransitioning> to provide more accurate initial and final frames
-    // of the participating view controllers
-    test.modalPresentationStyle = UIModalPresentationFullScreen;
+    return 50.0f;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    // The transitioning delegate can supply a custom animation controller
-    // that will be used to animate the incoming view controller.
-    test.transitioningDelegate = self;
+    if (section == 0) {
+        return 0.01f;
+    }
+    return 10.00f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     
-    [self presentViewController:test animated:YES completion:NULL];
+    return 0.01f;
 }
 
-#pragma mark UIViewControllerTransitioningDelegate
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.dataSource[indexPath.row];
+    
+    return cell;
+}
 
-//| ----------------------------------------------------------------------------
-//  The system calls this method on the presented view controller's
-//  transitioningDelegate to retrieve the animator object used for animating
-//  the presentation of the incoming view controller.  Your implementation is
-//  expected to return an object that conforms to the
-//  UIViewControllerAnimatedTransitioning protocol, or nil if the default
-//  presentation animation should be used.
-//
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-{
-    return [MYCrossDissolveTransitionAnimator new];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *title = [self.dataSource objectAtIndex:indexPath.row];
+    NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
+    
+    UIViewController *viewController = [[NSClassFromString(className) alloc] init];
+    viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
+   
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (NSMutableArray *)dataSource {
+    
+    if (!_dataSource) {
+        _dataSource = [NSMutableArray array];
+    }
+    return _dataSource;
 }
 
 
-//| ----------------------------------------------------------------------------
-//  The system calls this method on the presented view controller's
-//  transitioningDelegate to retrieve the animator object used for animating
-//  the dismissal of the presented view controller.  Your implementation is
-//  expected to return an object that conforms to the
-//  UIViewControllerAnimatedTransitioning protocol, or nil if the default
-//  dismissal animation should be used.
-//
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
-{
-    return [MYCrossDissolveTransitionAnimator new];
+- (UITableView *)tableView {
+    
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.dataSource = self;
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
 }
-
-#pragma mark - MYActionSheetDelegate
-
-- (void)actionSheet:(MYActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSLog(@"clickedButtonAtIndex: %d, keyWindow: %p", (int)buttonIndex, KEY_WINDOW);
-}
-
-- (void)willPresentActionSheet:(MYActionSheet *)actionSheet {
-    NSLog(@"willPresentActionSheet, keyWindow: %p", KEY_WINDOW);
-}
-
-- (void)didPresentActionSheet:(MYActionSheet *)actionSheet {
-    NSLog(@"didPresentActionSheet, keyWindow: %p", KEY_WINDOW);
-}
-
-- (void)actionSheet:(MYActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex {
-    NSLog(@"willDismissWithButtonIndex: %d, keyWindow: %p", (int)buttonIndex, KEY_WINDOW);
-}
-
-- (void)actionSheet:(MYActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    NSLog(@"didDismissWithButtonIndex: %d, keyWindow: %p", (int)buttonIndex, KEY_WINDOW);
-}
-
 
 @end
