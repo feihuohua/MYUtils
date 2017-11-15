@@ -24,11 +24,11 @@
     
     self.title = @"UIWebView-JavaScriptCore";
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    NSString *htmlPath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"];
-    NSString *appHtml = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
-    NSURL *baseURL = [NSURL fileURLWithPath:htmlPath];
-    [self.webView loadHTMLString:appHtml baseURL:baseURL];
+    NSString *encodedUrl = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)@"http://www.jianshu.com/p/1312c8eb2381", NULL, NULL, kCFStringEncodingUTF8);
+    NSURL *url = [NSURL URLWithString:encodedUrl];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest setHTTPMethod:@"GET"];
+    [self.webView loadRequest:urlRequest];
 }
 
 #pragma mark - UIWebViewDelegate
