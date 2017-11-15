@@ -47,8 +47,6 @@
     _contentLabel.text = model.content;
     BOOL isLimitedToLines = [_contentLabel my_adjustTextToFitLines:model.contentLines];
     _contentLabel.frame = CGRectMake(15, CGRectGetMaxY(self.titleLabel.frame) + 10, CGRectGetWidth( _contentLabel.bounds),CGRectGetHeight(_contentLabel.bounds));
-    
-    
     if (!isLimitedToLines && (model.contentLines != 0)) {
         self.openContentBtn.hidden = YES;
         
@@ -60,6 +58,10 @@
     if (!self.openContentBtn.hidden) {
         self.openContentBtn.frame = CGRectMake(15, CGRectGetMaxY(_contentLabel.frame) + 5, 80, 20);
     }
+}
+- (void)updateConstraints {
+    [super updateConstraints];
+    
 }
 
 + (CGFloat)cellHeightWithModel:(MYShowTextCellModel *)model{

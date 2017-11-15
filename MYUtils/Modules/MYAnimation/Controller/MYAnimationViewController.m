@@ -28,7 +28,7 @@
     
     [self.dataSource addObject:@"有多种自定义动画效果的下拉菜单-MYIGLDemoViewController"];
     [self.dataSource addObject:@"自定义转场动画-MYCustomTransitionViewController"];
-    [self.dataSource addObject:@"左右滑动列表cell-MGSwipeTableCellDemo"];
+    [self.dataSource addObject:@"MasronyDemo测试updateViewConstraints-MYMasronyDemoViewController"];
     [self.dataSource addObject:@"*原生UI控件替代方案-TYGUIListTableViewController"];
     [self.dataSource addObject:@"*Progress进度条-TYGProgressTableViewController"];
     [self.dataSource addObject:@"*启动引导-TYGLoadingTableViewController"];

@@ -47,9 +47,6 @@
     [self.window makeKeyAndVisible];
     
     [TBCityIconFont setFontName:@"iconfont"];
-    
-    
-    
     return YES;
 }
 
