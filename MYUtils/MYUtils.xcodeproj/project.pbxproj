@@ -103,12 +103,6 @@
 		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
 		3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */; };
 		3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */; };
-		32200C2E1F444ABC0027066E /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2D1F444ABC0027066E /* Parent.m */; };
-		32200C311F444AC80027066E /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C301F444AC80027066E /* Child.m */; };
-		32200C371F444B770027066E /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C361F444B770027066E /* Parent+Load.m */; };
-		32200C3A1F444B820027066E /* Child+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C391F444B820027066E /* Child+Load.m */; };
-		32200C891F444F270027066E /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 32200C331F444AD30027066E /* Other.m */; };
-		32200C8A1F444F310027066E /* Parent.h in Sources */ = {isa = PBXBuildFile; fileRef = 32200C2C1F444ABC0027066E /* Parent.h */; };
 		3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
@@ -306,16 +300,6 @@
 		3212C20D1F54260700C57DBE /* MYAMViralSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAMViralSwitchViewController.h; sourceTree = "<group>"; };
 		3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAMViralSwitchViewController.m; sourceTree = "<group>"; };
 		3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYAMViralSwitchViewController.xib; sourceTree = "<group>"; };
-		32200C2C1F444ABC0027066E /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
-		32200C2D1F444ABC0027066E /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
-		32200C2F1F444AC80027066E /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
-		32200C301F444AC80027066E /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
-		32200C321F444AD30027066E /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
-		32200C331F444AD30027066E /* Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
-		32200C351F444B770027066E /* Parent+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parent+Load.h"; sourceTree = "<group>"; };
-		32200C361F444B770027066E /* Parent+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parent+Load.m"; sourceTree = "<group>"; };
-		32200C381F444B820027066E /* Child+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Child+Load.h"; sourceTree = "<group>"; };
-		32200C391F444B820027066E /* Child+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Child+Load.m"; sourceTree = "<group>"; };
 		3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerCycleViewController.h; sourceTree = "<group>"; };
 		3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerCycleViewController.m; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -650,36 +634,9 @@
 			path = AMViralSwitch;
 			sourceTree = "<group>";
 		};
-		32200C2A1F444A6C0027066E /* MYSampleCode */ = {
-			isa = PBXGroup;
-			children = (
-				32200C2B1F444A930027066E /* +load和+initialize方法 */,
-			);
-			name = MYSampleCode;
-			path = MYUtils/MYSampleCode;
-			sourceTree = "<group>";
-		};
-		32200C2B1F444A930027066E /* +load和+initialize方法 */ = {
-			isa = PBXGroup;
-			children = (
-				32200C2C1F444ABC0027066E /* Parent.h */,
-				32200C2D1F444ABC0027066E /* Parent.m */,
-				32200C2F1F444AC80027066E /* Child.h */,
-				32200C301F444AC80027066E /* Child.m */,
-				32200C321F444AD30027066E /* Other.h */,
-				32200C331F444AD30027066E /* Other.m */,
-				32200C351F444B770027066E /* Parent+Load.h */,
-				32200C361F444B770027066E /* Parent+Load.m */,
-				32200C381F444B820027066E /* Child+Load.h */,
-				32200C391F444B820027066E /* Child+Load.m */,
-			);
-			path = "+load和+initialize方法";
-			sourceTree = "<group>";
-		};
 		32712ABA1F3857A8008A105F = {
 			isa = PBXGroup;
 			children = (
-				32200C2A1F444A6C0027066E /* MYSampleCode */,
 				32712AC51F3857A8008A105F /* MYUtils */,
 				32712ADF1F3857A9008A105F /* MYUtilsTests */,
 				32712AEA1F3857A9008A105F /* MYUtilsUITests */,
@@ -1247,18 +1204,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3212C0051F501A3A00C57DBE /* MYCountDownViewController.m in Sources */,
-				32200C8A1F444F310027066E /* Parent.h in Sources */,
-				32200C891F444F270027066E /* Other.m in Sources */,
 				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
-				32200C371F444B770027066E /* Parent+Load.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */,
 				3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
-				32200C311F444AC80027066E /* Child.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
 				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
 				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
@@ -1289,7 +1242,6 @@
 				320774FD1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m in Sources */,
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */,
-				32200C3A1F444B820027066E /* Child+Load.m in Sources */,
 				320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */,
 				3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
@@ -1301,7 +1253,6 @@
 				32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */,
 				320707281F43F4D900CB66D9 /* TabPagerControllerDemoController.m in Sources */,
 				3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */,
-				32200C2E1F444ABC0027066E /* Parent.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
 				3208B4791F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
