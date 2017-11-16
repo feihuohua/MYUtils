@@ -8,18 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203A3001F6632AD00BA3601 /* FXSlider.m */; };
-		3203A3041F66357B00BA3601 /* FXSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203A3031F66357B00BA3601 /* FXSliderViewController.m */; };
 		3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203A3131F66957800BA3601 /* HKNumberButton.m */; };
-		320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707151F43F3DF00CB66D9 /* MYPagerViewController.m */; };
-		320707251F43F4D900CB66D9 /* PagerViewDmeoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707181F43F4D900CB66D9 /* PagerViewDmeoController.m */; };
-		320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207071A1F43F4D900CB66D9 /* PagerControllerDmeoController.m */; };
-		320707271F43F4D900CB66D9 /* TabPagerViewDmeoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207071C1F43F4D900CB66D9 /* TabPagerViewDmeoController.m */; };
-		320707281F43F4D900CB66D9 /* TabPagerControllerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3207071E1F43F4D900CB66D9 /* TabPagerControllerDemoController.m */; };
-		320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707201F43F4D900CB66D9 /* CollectionViewController.m */; };
-		3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707221F43F4D900CB66D9 /* CustomViewController.m */; };
-		3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320707241F43F4D900CB66D9 /* ListViewController.m */; };
 		320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */; };
-		320774681FACB85800A56F88 /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774671FACB85800A56F88 /* MWPhotoBrowserDemo.m */; };
 		320774A21FACB93000A56F88 /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746B1FACB93000A56F88 /* ImageError.png */; };
 		320774A31FACB93000A56F88 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746C1FACB93000A56F88 /* ImageError@2x.png */; };
 		320774A41FACB93000A56F88 /* ImageError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3207746D1FACB93000A56F88 /* ImageError@3x.png */; };
@@ -82,28 +72,43 @@
 		320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DE1FACBE1C00A56F88 /* video_thumb.jpg */; };
 		320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */; };
 		320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */; };
-		320774FA1FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F91FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m */; };
-		320774FD1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774FC1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m */; };
-		3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4621F4AAF1700A0883B /* MYWebViewController.m */; };
-		3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */; };
-		3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */; };
 		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
 		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
-		3208B4761F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4751F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m */; };
-		3208B4791F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B4781F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m */; };
-		3208B47C1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */; };
 		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
-		3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF121F4D528900C57DBE /* MYKeyboardViewController.m */; };
-		3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212BF131F4D528900C57DBE /* MYKeyboardViewController.xib */; };
 		3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF491F4D8C7100C57DBE /* MYModalContentView.m */; };
 		3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */; };
 		3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */; };
-		3212C0051F501A3A00C57DBE /* MYCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */; };
-		3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */; };
 		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
-		3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */; };
-		3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */; };
-		3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */; };
+		3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */; };
+		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
+		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
+		3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */; };
+		3254F4E31FBD78470020B58C /* FXSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4BB1FBD78470020B58C /* FXSliderViewController.m */; };
+		3254F4E41FBD78470020B58C /* MYCustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4BF1FBD78470020B58C /* MYCustomNavigationBarViewController.m */; };
+		3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */; };
+		3254F4E61FBD78470020B58C /* MYKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */; };
+		3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4C41FBD78470020B58C /* MYFunctionFirstViewController.m */; };
+		3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */; };
+		3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4C71FBD78470020B58C /* MYAMViralSwitchViewController.m */; };
+		3254F4EA1FBD78470020B58C /* MYTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4CB1FBD78470020B58C /* MYTextFieldViewController.m */; };
+		3254F4EB1FBD78480020B58C /* MYIconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4CE1FBD78470020B58C /* MYIconFontViewController.m */; };
+		3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4D11FBD78470020B58C /* MYCountDownViewController.m */; };
+		3254F4ED1FBD78480020B58C /* MYCountDownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4D21FBD78470020B58C /* MYCountDownViewController.xib */; };
+		3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4D41FBD78470020B58C /* MYJavaScriptCoreViewController.m */; };
+		3254F4EF1FBD78480020B58C /* MYScriptMessageHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4D51FBD78470020B58C /* MYScriptMessageHandlerViewController.m */; };
+		3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4D61FBD78470020B58C /* MYWebViewController.m */; };
+		3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4D81FBD78470020B58C /* MYWebViewJavascriptBridge1ViewController.m */; };
+		3254F4F21FBD78480020B58C /* MYWebViewJavascriptBridge2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4DC1FBD78470020B58C /* MYWebViewJavascriptBridge2ViewController.m */; };
+		3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4DE1FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.m */; };
+		3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F50E1FBD792F0020B58C /* MYShowTextViewController.m */; };
+		3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */; };
+		3254F5221FBD7A920020B58C /* MYCrossDissolveFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5201FBD7A920020B58C /* MYCrossDissolveFirstViewController.m */; };
+		3254F5231FBD7A920020B58C /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5211FBD7A920020B58C /* MYCrossDissolveSecondViewController.m */; };
+		3254F5261FBD7ABF0020B58C /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5241FBD7ABE0020B58C /* MYShowTextCellModel.m */; };
+		3254F5291FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5271FBD7AE20020B58C /* MYCrossDissolveTransitionAnimator.m */; };
+		3254F5301FBD7B0B0020B58C /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */; };
+		3254F5311FBD7B0B0020B58C /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */; };
+		3254F5321FBD7B0B0020B58C /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -111,15 +116,6 @@
 		32712B191F395164008A105F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32712B141F395164008A105F /* Info.plist */; };
 		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
 		32712B281F39B335008A105F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32712B271F39B335008A105F /* iconfont.ttf */; };
-		32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B2E1F39B7E9008A105F /* HomeViewController.m */; };
-		32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B311F39B813008A105F /* MYShowTextViewController.m */; };
-		32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B341F39B824008A105F /* MYIconFontViewController.m */; };
-		32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B371F39BAC4008A105F /* MYShowTextCellModel.m */; };
-		32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */; };
-		32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */; };
-		32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */; };
-		328505BA1FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */; };
-		328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328505BC1FA728E40098E2C0 /* MYTestViewController.m */; };
 		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
 		32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */; };
 		32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */; };
@@ -127,13 +123,9 @@
 		32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35B1F46DAFC00AE6267 /* HKNavigationController.m */; };
 		32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */; };
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
-		32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */; };
 		32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */; };
-		32DD4FD71F5654A1005C6FE9 /* MYTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD61F5654A1005C6FE9 /* MYTextFieldViewController.m */; };
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
-		32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
-		4C13A7D81F68329100A0C34D /* MYAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */; };
 		4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894DF1F64DF3200BD95ED /* UINavigationController+StackManager.m */; };
 		4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3894E11F64DF3200BD95ED /* UINavigationController+Transitions.m */; };
 		4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB5785D1F41FA0A004EE94D /* FXCyclePagerTransformLayout.m */; };
@@ -162,30 +154,10 @@
 		26D8685B3E6C2AAC9213C11D /* Pods-MYUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		3203A2FF1F6632AD00BA3601 /* FXSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXSlider.h; sourceTree = "<group>"; };
 		3203A3001F6632AD00BA3601 /* FXSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXSlider.m; sourceTree = "<group>"; };
-		3203A3021F66357B00BA3601 /* FXSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXSliderViewController.h; sourceTree = "<group>"; };
-		3203A3031F66357B00BA3601 /* FXSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXSliderViewController.m; sourceTree = "<group>"; };
 		3203A3121F66957800BA3601 /* HKNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKNumberButton.h; sourceTree = "<group>"; };
 		3203A3131F66957800BA3601 /* HKNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKNumberButton.m; sourceTree = "<group>"; };
-		320707141F43F3DF00CB66D9 /* MYPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPagerViewController.h; sourceTree = "<group>"; };
-		320707151F43F3DF00CB66D9 /* MYPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPagerViewController.m; sourceTree = "<group>"; };
-		320707171F43F4D900CB66D9 /* PagerViewDmeoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewDmeoController.h; sourceTree = "<group>"; };
-		320707181F43F4D900CB66D9 /* PagerViewDmeoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewDmeoController.m; sourceTree = "<group>"; };
-		320707191F43F4D900CB66D9 /* PagerControllerDmeoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerControllerDmeoController.h; sourceTree = "<group>"; };
-		3207071A1F43F4D900CB66D9 /* PagerControllerDmeoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerControllerDmeoController.m; sourceTree = "<group>"; };
-		3207071B1F43F4D900CB66D9 /* TabPagerViewDmeoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabPagerViewDmeoController.h; sourceTree = "<group>"; };
-		3207071C1F43F4D900CB66D9 /* TabPagerViewDmeoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabPagerViewDmeoController.m; sourceTree = "<group>"; };
-		3207071D1F43F4D900CB66D9 /* TabPagerControllerDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabPagerControllerDemoController.h; sourceTree = "<group>"; };
-		3207071E1F43F4D900CB66D9 /* TabPagerControllerDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabPagerControllerDemoController.m; sourceTree = "<group>"; };
-		3207071F1F43F4D900CB66D9 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
-		320707201F43F4D900CB66D9 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		320707211F43F4D900CB66D9 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
-		320707221F43F4D900CB66D9 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
-		320707231F43F4D900CB66D9 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		320707241F43F4D900CB66D9 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		320774621FACAD7600A56F88 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
-		320774661FACB85800A56F88 /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
-		320774671FACB85800A56F88 /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
 		3207746B1FACB93000A56F88 /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
 		3207746C1FACB93000A56F88 /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
 		3207746D1FACB93000A56F88 /* ImageError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@3x.png"; sourceTree = "<group>"; };
@@ -262,28 +234,9 @@
 		320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIGLDemoViewController.m; sourceTree = "<group>"; };
 		320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomTransitionViewController.h; sourceTree = "<group>"; };
 		320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomTransitionViewController.m; sourceTree = "<group>"; };
-		320774F81FADD3D800A56F88 /* MYCrossDissolveFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveFirstViewController.h; sourceTree = "<group>"; };
-		320774F91FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveFirstViewController.m; sourceTree = "<group>"; };
-		320774FB1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveSecondViewController.h; sourceTree = "<group>"; };
-		320774FC1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveSecondViewController.m; sourceTree = "<group>"; };
-		3208B4611F4AAF1700A0883B /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
-		3208B4621F4AAF1700A0883B /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
-		3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
-		3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYJavaScriptCoreViewController.m; sourceTree = "<group>"; };
-		3208B4671F4AB01500A0883B /* MYScriptMessageHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScriptMessageHandlerViewController.h; sourceTree = "<group>"; };
-		3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScriptMessageHandlerViewController.m; sourceTree = "<group>"; };
 		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3208B4711F4AC7EF00A0883B /* messageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = messageHandler.html; sourceTree = "<group>"; };
-		3208B4741F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridgeViewController.h; sourceTree = "<group>"; };
-		3208B4751F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridgeViewController.m; sourceTree = "<group>"; };
-		3208B4771F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridge1ViewController.h; sourceTree = "<group>"; };
-		3208B4781F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridge1ViewController.m; sourceTree = "<group>"; };
-		3208B47A1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridge2ViewController.h; sourceTree = "<group>"; };
-		3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridge2ViewController.m; sourceTree = "<group>"; };
 		3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webViewJavascriptBridge.html; sourceTree = "<group>"; };
-		3212BF111F4D528900C57DBE /* MYKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYKeyboardViewController.h; sourceTree = "<group>"; };
-		3212BF121F4D528900C57DBE /* MYKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYKeyboardViewController.m; sourceTree = "<group>"; };
-		3212BF131F4D528900C57DBE /* MYKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYKeyboardViewController.xib; sourceTree = "<group>"; };
 		3212BF481F4D8C7100C57DBE /* MYModalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalContentView.h; sourceTree = "<group>"; };
 		3212BF491F4D8C7100C57DBE /* MYModalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYModalContentView.m; sourceTree = "<group>"; };
 		3212BF4A1F4D8C7100C57DBE /* MYModalMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalMacros.h; sourceTree = "<group>"; };
@@ -291,16 +244,65 @@
 		3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYModalViewController.m; sourceTree = "<group>"; };
 		3212BF4D1F4D8C7100C57DBE /* UIViewController+MYModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MYModal.h"; sourceTree = "<group>"; };
 		3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MYModal.m"; sourceTree = "<group>"; };
-		3212C0021F501A3A00C57DBE /* MYCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCountDownViewController.h; sourceTree = "<group>"; };
-		3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCountDownViewController.m; sourceTree = "<group>"; };
-		3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCountDownViewController.xib; sourceTree = "<group>"; };
 		3212C20A1F5425E700C57DBE /* AMViralSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViralSwitch.h; sourceTree = "<group>"; };
 		3212C20B1F5425E700C57DBE /* AMViralSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViralSwitch.m; sourceTree = "<group>"; };
-		3212C20D1F54260700C57DBE /* MYAMViralSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAMViralSwitchViewController.h; sourceTree = "<group>"; };
-		3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAMViralSwitchViewController.m; sourceTree = "<group>"; };
-		3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYAMViralSwitchViewController.xib; sourceTree = "<group>"; };
-		3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerCycleViewController.h; sourceTree = "<group>"; };
-		3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerCycleViewController.m; sourceTree = "<group>"; };
+		3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionThirdViewController.h; sourceTree = "<group>"; };
+		3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionThirdViewController.m; sourceTree = "<group>"; };
+		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
+		3254F4B11FBD78470020B58C /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
+		3254F4B21FBD78470020B58C /* MYFunctionFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionFirstViewController.h; sourceTree = "<group>"; };
+		3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewController.m; sourceTree = "<group>"; };
+		3254F4B51FBD78470020B58C /* MYImageCornerRadiusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewController.h; sourceTree = "<group>"; };
+		3254F4B81FBD78470020B58C /* MYBannerCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerCycleViewController.h; sourceTree = "<group>"; };
+		3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerCycleViewController.m; sourceTree = "<group>"; };
+		3254F4BB1FBD78470020B58C /* FXSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXSliderViewController.m; sourceTree = "<group>"; };
+		3254F4BC1FBD78470020B58C /* FXSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXSliderViewController.h; sourceTree = "<group>"; };
+		3254F4BE1FBD78470020B58C /* MYCustomNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomNavigationBarViewController.h; sourceTree = "<group>"; };
+		3254F4BF1FBD78470020B58C /* MYCustomNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomNavigationBarViewController.m; sourceTree = "<group>"; };
+		3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYKeyboardViewController.m; sourceTree = "<group>"; };
+		3254F4C21FBD78470020B58C /* MYKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYKeyboardViewController.h; sourceTree = "<group>"; };
+		3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYKeyboardViewController.xib; sourceTree = "<group>"; };
+		3254F4C41FBD78470020B58C /* MYFunctionFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionFirstViewController.m; sourceTree = "<group>"; };
+		3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYAMViralSwitchViewController.xib; sourceTree = "<group>"; };
+		3254F4C71FBD78470020B58C /* MYAMViralSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAMViralSwitchViewController.m; sourceTree = "<group>"; };
+		3254F4C81FBD78470020B58C /* MYAMViralSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAMViralSwitchViewController.h; sourceTree = "<group>"; };
+		3254F4CA1FBD78470020B58C /* MYTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextFieldViewController.h; sourceTree = "<group>"; };
+		3254F4CB1FBD78470020B58C /* MYTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextFieldViewController.m; sourceTree = "<group>"; };
+		3254F4CD1FBD78470020B58C /* MYIconFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIconFontViewController.h; sourceTree = "<group>"; };
+		3254F4CE1FBD78470020B58C /* MYIconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIconFontViewController.m; sourceTree = "<group>"; };
+		3254F4D01FBD78470020B58C /* MYCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCountDownViewController.h; sourceTree = "<group>"; };
+		3254F4D11FBD78470020B58C /* MYCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCountDownViewController.m; sourceTree = "<group>"; };
+		3254F4D21FBD78470020B58C /* MYCountDownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYCountDownViewController.xib; sourceTree = "<group>"; };
+		3254F4D41FBD78470020B58C /* MYJavaScriptCoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYJavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		3254F4D51FBD78470020B58C /* MYScriptMessageHandlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScriptMessageHandlerViewController.m; sourceTree = "<group>"; };
+		3254F4D61FBD78470020B58C /* MYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewController.m; sourceTree = "<group>"; };
+		3254F4D71FBD78470020B58C /* MYWebViewJavascriptBridge2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridge2ViewController.h; sourceTree = "<group>"; };
+		3254F4D81FBD78470020B58C /* MYWebViewJavascriptBridge1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridge1ViewController.m; sourceTree = "<group>"; };
+		3254F4D91FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridgeViewController.h; sourceTree = "<group>"; };
+		3254F4DA1FBD78470020B58C /* MYScriptMessageHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScriptMessageHandlerViewController.h; sourceTree = "<group>"; };
+		3254F4DB1FBD78470020B58C /* MYJavaScriptCoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYJavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		3254F4DC1FBD78470020B58C /* MYWebViewJavascriptBridge2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridge2ViewController.m; sourceTree = "<group>"; };
+		3254F4DD1FBD78470020B58C /* MYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewController.h; sourceTree = "<group>"; };
+		3254F4DE1FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYWebViewJavascriptBridgeViewController.m; sourceTree = "<group>"; };
+		3254F4DF1FBD78470020B58C /* MYWebViewJavascriptBridge1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYWebViewJavascriptBridge1ViewController.h; sourceTree = "<group>"; };
+		3254F50E1FBD792F0020B58C /* MYShowTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewController.m; sourceTree = "<group>"; };
+		3254F50F1FBD792F0020B58C /* MYShowTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewController.h; sourceTree = "<group>"; };
+		3254F5121FBD79E70020B58C /* MYFunctionSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionSecondViewController.h; sourceTree = "<group>"; };
+		3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionSecondViewController.m; sourceTree = "<group>"; };
+		3254F51E1FBD7A920020B58C /* MYCrossDissolveFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveFirstViewController.h; sourceTree = "<group>"; };
+		3254F51F1FBD7A920020B58C /* MYCrossDissolveSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveSecondViewController.h; sourceTree = "<group>"; };
+		3254F5201FBD7A920020B58C /* MYCrossDissolveFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveFirstViewController.m; sourceTree = "<group>"; };
+		3254F5211FBD7A920020B58C /* MYCrossDissolveSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveSecondViewController.m; sourceTree = "<group>"; };
+		3254F5241FBD7ABE0020B58C /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
+		3254F5251FBD7ABF0020B58C /* MYShowTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextCellModel.h; sourceTree = "<group>"; };
+		3254F5271FBD7AE20020B58C /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
+		3254F5281FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
+		3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
+		3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
+		3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
+		3254F52D1FBD7B0A0020B58C /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
+		3254F52E1FBD7B0A0020B58C /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
+		3254F52F1FBD7B0A0020B58C /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -314,25 +316,7 @@
 		32712B141F395164008A105F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32712B151F395164008A105F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32712B271F39B335008A105F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
-		32712B2D1F39B7E9008A105F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		32712B2E1F39B7E9008A105F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		32712B301F39B813008A105F /* MYShowTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewController.h; sourceTree = "<group>"; };
-		32712B311F39B813008A105F /* MYShowTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewController.m; sourceTree = "<group>"; };
-		32712B331F39B824008A105F /* MYIconFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIconFontViewController.h; sourceTree = "<group>"; };
-		32712B341F39B824008A105F /* MYIconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIconFontViewController.m; sourceTree = "<group>"; };
-		32712B361F39BAC4008A105F /* MYShowTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextCellModel.h; sourceTree = "<group>"; };
-		32712B371F39BAC4008A105F /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
-		32712B391F39BAD4008A105F /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
-		32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
-		32712BBD1F3AF15E008A105F /* MYImageCornerRadiusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewController.h; sourceTree = "<group>"; };
-		32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewController.m; sourceTree = "<group>"; };
-		32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
-		32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
-		328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYCrossDissolveTransitionAnimator.h; path = ../MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
-		328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYCrossDissolveTransitionAnimator.m; path = ../MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
-		328505BB1FA728E40098E2C0 /* MYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
-		328505BC1FA728E40098E2C0 /* MYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
 		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
 		32C84BF91F715C30003E4793 /* MYActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheet.m; sourceTree = "<group>"; };
 		32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetViewController.h; sourceTree = "<group>"; };
@@ -347,19 +331,11 @@
 		32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationExtension.m"; sourceTree = "<group>"; };
 		32CBE3601F46DB9000AE6267 /* HKTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTabBarControllerConfig.h; sourceTree = "<group>"; };
 		32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTabBarControllerConfig.m; sourceTree = "<group>"; };
-		32CBE3881F47E82100AE6267 /* MYCustomNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomNavigationBarViewController.h; sourceTree = "<group>"; };
-		32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomNavigationBarViewController.m; sourceTree = "<group>"; };
 		32CBE38C1F47E88900AE6267 /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extension.h"; sourceTree = "<group>"; };
 		32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extension.m"; sourceTree = "<group>"; };
-		32DD4FD51F5654A1005C6FE9 /* MYTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextFieldViewController.h; sourceTree = "<group>"; };
-		32DD4FD61F5654A1005C6FE9 /* MYTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextFieldViewController.m; sourceTree = "<group>"; };
 		32DD4FD81F5654E0005C6FE9 /* MYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextField.h; sourceTree = "<group>"; };
 		32DD4FD91F5654E0005C6FE9 /* MYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextField.m; sourceTree = "<group>"; };
-		32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
-		32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
 		496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils.release.xcconfig"; sourceTree = "<group>"; };
-		4C13A7D61F68329100A0C34D /* MYAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAnimationViewController.h; sourceTree = "<group>"; };
-		4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAnimationViewController.m; sourceTree = "<group>"; };
 		4C3894DE1F64DF3200BD95ED /* UINavigationController+StackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+StackManager.h"; sourceTree = "<group>"; };
 		4C3894DF1F64DF3200BD95ED /* UINavigationController+StackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+StackManager.m"; sourceTree = "<group>"; };
 		4C3894E01F64DF3200BD95ED /* UINavigationController+Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Transitions.h"; sourceTree = "<group>"; };
@@ -432,38 +408,6 @@
 				3203A3131F66957800BA3601 /* HKNumberButton.m */,
 			);
 			path = HKNumberButton;
-			sourceTree = "<group>";
-		};
-		320707131F43F3B800CB66D9 /* MYPagerController */ = {
-			isa = PBXGroup;
-			children = (
-				320707141F43F3DF00CB66D9 /* MYPagerViewController.h */,
-				320707151F43F3DF00CB66D9 /* MYPagerViewController.m */,
-				320707171F43F4D900CB66D9 /* PagerViewDmeoController.h */,
-				320707181F43F4D900CB66D9 /* PagerViewDmeoController.m */,
-				320707191F43F4D900CB66D9 /* PagerControllerDmeoController.h */,
-				3207071A1F43F4D900CB66D9 /* PagerControllerDmeoController.m */,
-				3207071B1F43F4D900CB66D9 /* TabPagerViewDmeoController.h */,
-				3207071C1F43F4D900CB66D9 /* TabPagerViewDmeoController.m */,
-				3207071D1F43F4D900CB66D9 /* TabPagerControllerDemoController.h */,
-				3207071E1F43F4D900CB66D9 /* TabPagerControllerDemoController.m */,
-				3207071F1F43F4D900CB66D9 /* CollectionViewController.h */,
-				320707201F43F4D900CB66D9 /* CollectionViewController.m */,
-				320707211F43F4D900CB66D9 /* CustomViewController.h */,
-				320707221F43F4D900CB66D9 /* CustomViewController.m */,
-				320707231F43F4D900CB66D9 /* ListViewController.h */,
-				320707241F43F4D900CB66D9 /* ListViewController.m */,
-			);
-			path = MYPagerController;
-			sourceTree = "<group>";
-		};
-		320774651FACB84600A56F88 /* MWPhotoBrowserDemo */ = {
-			isa = PBXGroup;
-			children = (
-				320774661FACB85800A56F88 /* MWPhotoBrowserDemo.h */,
-				320774671FACB85800A56F88 /* MWPhotoBrowserDemo.m */,
-			);
-			path = MWPhotoBrowserDemo;
 			sourceTree = "<group>";
 		};
 		320774691FACB93000A56F88 /* MWPhotoBrowser */ = {
@@ -568,46 +512,6 @@
 			path = "Local Media";
 			sourceTree = "<group>";
 		};
-		320774F71FADD3B900A56F88 /* Cross Dissolve */ = {
-			isa = PBXGroup;
-			children = (
-				328505B81FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.h */,
-				328505B91FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m */,
-				320774F81FADD3D800A56F88 /* MYCrossDissolveFirstViewController.h */,
-				320774F91FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m */,
-				320774FB1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.h */,
-				320774FC1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m */,
-			);
-			path = "Cross Dissolve";
-			sourceTree = "<group>";
-		};
-		3208B4601F4AAEF700A0883B /* MYWebViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3208B4611F4AAF1700A0883B /* MYWebViewController.h */,
-				3208B4621F4AAF1700A0883B /* MYWebViewController.m */,
-				3208B4641F4AAFD900A0883B /* MYJavaScriptCoreViewController.h */,
-				3208B4651F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m */,
-				3208B4671F4AB01500A0883B /* MYScriptMessageHandlerViewController.h */,
-				3208B4681F4AB01500A0883B /* MYScriptMessageHandlerViewController.m */,
-				3208B4731F4AD43900A0883B /* WebViewJavascriptBridge */,
-			);
-			path = MYWebViewController;
-			sourceTree = "<group>";
-		};
-		3208B4731F4AD43900A0883B /* WebViewJavascriptBridge */ = {
-			isa = PBXGroup;
-			children = (
-				3208B4741F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.h */,
-				3208B4751F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m */,
-				3208B4771F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.h */,
-				3208B4781F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m */,
-				3208B47A1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.h */,
-				3208B47B1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m */,
-			);
-			path = WebViewJavascriptBridge;
-			sourceTree = "<group>";
-		};
 		3212BF471F4D8C7100C57DBE /* MYModalViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,6 +534,243 @@
 			);
 			path = AMViralSwitch;
 			sourceTree = "<group>";
+		};
+		3254F48D1FBD72A90020B58C /* Function(功能一) */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4FB1FBD78540020B58C /* Model */,
+				3254F4F41FBD78540020B58C /* View */,
+				3254F4AE1FBD78470020B58C /* Controller */,
+			);
+			path = "Function(功能一)";
+			sourceTree = "<group>";
+		};
+		3254F48E1FBD72A90020B58C /* Function(功能二) */ = {
+			isa = PBXGroup;
+			children = (
+				3254F5111FBD79E70020B58C /* Controller */,
+			);
+			path = "Function(功能二)";
+			sourceTree = "<group>";
+		};
+		3254F48F1FBD72A90020B58C /* Function(功能三) */ = {
+			isa = PBXGroup;
+			children = (
+				3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */,
+				3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */,
+			);
+			path = "Function(功能三)";
+			sourceTree = "<group>";
+		};
+		3254F4AE1FBD78470020B58C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4C41FBD78470020B58C /* MYFunctionFirstViewController.m */,
+				3254F4B21FBD78470020B58C /* MYFunctionFirstViewController.h */,
+				3254F4AF1FBD78470020B58C /* 照片浏览器 */,
+				3254F4B31FBD78470020B58C /* ImageView设置圆角 */,
+				3254F4B61FBD78470020B58C /* UILabel设置行间距、指定显示行数 */,
+				3254F4B71FBD78470020B58C /* 轮播图 */,
+				3254F4BA1FBD78470020B58C /* 自定义UISlider */,
+				3254F4BD1FBD78470020B58C /* 自定义导航条 */,
+				3254F4C01FBD78470020B58C /* 自定义键盘keyboard */,
+				3254F4C51FBD78470020B58C /* 自定义UISwitch */,
+				3254F4C91FBD78470020B58C /* 自定义UITextField */,
+				3254F4CC1FBD78470020B58C /* Iconfont实战 */,
+				3254F4CF1FBD78470020B58C /* 倒计时演练 */,
+				3254F4D31FBD78470020B58C /* WebView实战 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3254F4AF1FBD78470020B58C /* 照片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */,
+				3254F4B11FBD78470020B58C /* MWPhotoBrowserDemo.h */,
+			);
+			path = "照片浏览器";
+			sourceTree = "<group>";
+		};
+		3254F4B31FBD78470020B58C /* ImageView设置圆角 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */,
+				3254F4B51FBD78470020B58C /* MYImageCornerRadiusViewController.h */,
+			);
+			path = "ImageView设置圆角";
+			sourceTree = "<group>";
+		};
+		3254F4B61FBD78470020B58C /* UILabel设置行间距、指定显示行数 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F50F1FBD792F0020B58C /* MYShowTextViewController.h */,
+				3254F50E1FBD792F0020B58C /* MYShowTextViewController.m */,
+			);
+			path = "UILabel设置行间距、指定显示行数";
+			sourceTree = "<group>";
+		};
+		3254F4B71FBD78470020B58C /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4B81FBD78470020B58C /* MYBannerCycleViewController.h */,
+				3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		3254F4BA1FBD78470020B58C /* 自定义UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4BB1FBD78470020B58C /* FXSliderViewController.m */,
+				3254F4BC1FBD78470020B58C /* FXSliderViewController.h */,
+			);
+			path = "自定义UISlider";
+			sourceTree = "<group>";
+		};
+		3254F4BD1FBD78470020B58C /* 自定义导航条 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4BE1FBD78470020B58C /* MYCustomNavigationBarViewController.h */,
+				3254F4BF1FBD78470020B58C /* MYCustomNavigationBarViewController.m */,
+			);
+			path = "自定义导航条";
+			sourceTree = "<group>";
+		};
+		3254F4C01FBD78470020B58C /* 自定义键盘keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */,
+				3254F4C21FBD78470020B58C /* MYKeyboardViewController.h */,
+				3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */,
+			);
+			path = "自定义键盘keyboard";
+			sourceTree = "<group>";
+		};
+		3254F4C51FBD78470020B58C /* 自定义UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */,
+				3254F4C71FBD78470020B58C /* MYAMViralSwitchViewController.m */,
+				3254F4C81FBD78470020B58C /* MYAMViralSwitchViewController.h */,
+			);
+			path = "自定义UISwitch";
+			sourceTree = "<group>";
+		};
+		3254F4C91FBD78470020B58C /* 自定义UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4CA1FBD78470020B58C /* MYTextFieldViewController.h */,
+				3254F4CB1FBD78470020B58C /* MYTextFieldViewController.m */,
+			);
+			path = "自定义UITextField";
+			sourceTree = "<group>";
+		};
+		3254F4CC1FBD78470020B58C /* Iconfont实战 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4CD1FBD78470020B58C /* MYIconFontViewController.h */,
+				3254F4CE1FBD78470020B58C /* MYIconFontViewController.m */,
+			);
+			path = "Iconfont实战";
+			sourceTree = "<group>";
+		};
+		3254F4CF1FBD78470020B58C /* 倒计时演练 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4D01FBD78470020B58C /* MYCountDownViewController.h */,
+				3254F4D11FBD78470020B58C /* MYCountDownViewController.m */,
+				3254F4D21FBD78470020B58C /* MYCountDownViewController.xib */,
+			);
+			path = "倒计时演练";
+			sourceTree = "<group>";
+		};
+		3254F4D31FBD78470020B58C /* WebView实战 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F4D41FBD78470020B58C /* MYJavaScriptCoreViewController.m */,
+				3254F4D51FBD78470020B58C /* MYScriptMessageHandlerViewController.m */,
+				3254F4D61FBD78470020B58C /* MYWebViewController.m */,
+				3254F4D71FBD78470020B58C /* MYWebViewJavascriptBridge2ViewController.h */,
+				3254F4D81FBD78470020B58C /* MYWebViewJavascriptBridge1ViewController.m */,
+				3254F4D91FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.h */,
+				3254F4DA1FBD78470020B58C /* MYScriptMessageHandlerViewController.h */,
+				3254F4DB1FBD78470020B58C /* MYJavaScriptCoreViewController.h */,
+				3254F4DC1FBD78470020B58C /* MYWebViewJavascriptBridge2ViewController.m */,
+				3254F4DD1FBD78470020B58C /* MYWebViewController.h */,
+				3254F4DE1FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.m */,
+				3254F4DF1FBD78470020B58C /* MYWebViewJavascriptBridge1ViewController.h */,
+			);
+			path = "WebView实战";
+			sourceTree = "<group>";
+		};
+		3254F4F41FBD78540020B58C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3254F52E1FBD7B0A0020B58C /* FXCyclePagerViewCell.h */,
+				3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */,
+				3254F52F1FBD7B0A0020B58C /* MYImageCornerRadiusViewCell.h */,
+				3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */,
+				3254F52D1FBD7B0A0020B58C /* MYShowTextViewCell.h */,
+				3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */,
+			);
+			name = View;
+			path = MYUtils/Modules/Home/View;
+			sourceTree = SOURCE_ROOT;
+		};
+		3254F4FB1FBD78540020B58C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3254F5251FBD7ABF0020B58C /* MYShowTextCellModel.h */,
+				3254F5241FBD7ABE0020B58C /* MYShowTextCellModel.m */,
+			);
+			name = Model;
+			path = MYUtils/Modules/Home/Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		3254F5111FBD79E70020B58C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3254F5121FBD79E70020B58C /* MYFunctionSecondViewController.h */,
+				3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */,
+				3254F5161FBD7A280020B58C /* 自定义转场动画 */,
+				3254F5151FBD7A080020B58C /* 有多种自定义动画效果的下拉菜单 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3254F5151FBD7A080020B58C /* 有多种自定义动画效果的下拉菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */,
+				320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */,
+				320774F11FADA85600A56F88 /* MYIGLDemoViewController.h */,
+				320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */,
+				3254F5281FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.h */,
+				3254F5271FBD7AE20020B58C /* MYCrossDissolveTransitionAnimator.m */,
+				3254F5171FBD7A440020B58C /* Cross Dissolve */,
+			);
+			path = "有多种自定义动画效果的下拉菜单";
+			sourceTree = "<group>";
+		};
+		3254F5161FBD7A280020B58C /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "自定义转场动画";
+			sourceTree = "<group>";
+		};
+		3254F5171FBD7A440020B58C /* Cross Dissolve */ = {
+			isa = PBXGroup;
+			children = (
+				3254F51E1FBD7A920020B58C /* MYCrossDissolveFirstViewController.h */,
+				3254F5201FBD7A920020B58C /* MYCrossDissolveFirstViewController.m */,
+				3254F51F1FBD7A920020B58C /* MYCrossDissolveSecondViewController.h */,
+				3254F5211FBD7A920020B58C /* MYCrossDissolveSecondViewController.m */,
+			);
+			name = "Cross Dissolve";
+			path = "MYUtils/Modules/MYAnimation/Controller/Cross Dissolve";
+			sourceTree = SOURCE_ROOT;
 		};
 		32712ABA1F3857A8008A105F = {
 			isa = PBXGroup;
@@ -714,8 +855,9 @@
 		32712B111F395164008A105F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4C13A7D21F68327B00A0C34D /* MYAnimation */,
-				32712B291F39B7D6008A105F /* Home */,
+				3254F48E1FBD72A90020B58C /* Function(功能二) */,
+				3254F48F1FBD72A90020B58C /* Function(功能三) */,
+				3254F48D1FBD72A90020B58C /* Function(功能一) */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -768,73 +910,6 @@
 				32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */,
 			);
 			path = TabBarController;
-			sourceTree = "<group>";
-		};
-		32712B291F39B7D6008A105F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				32712B2A1F39B7D6008A105F /* Controller */,
-				32712B2B1F39B7D6008A105F /* Model */,
-				32712B2C1F39B7D6008A105F /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		32712B2A1F39B7D6008A105F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				320774651FACB84600A56F88 /* MWPhotoBrowserDemo */,
-				32712B2D1F39B7E9008A105F /* HomeViewController.h */,
-				32712B2E1F39B7E9008A105F /* HomeViewController.m */,
-				32712B301F39B813008A105F /* MYShowTextViewController.h */,
-				32712B311F39B813008A105F /* MYShowTextViewController.m */,
-				32712B331F39B824008A105F /* MYIconFontViewController.h */,
-				32712B341F39B824008A105F /* MYIconFontViewController.m */,
-				32712BBD1F3AF15E008A105F /* MYImageCornerRadiusViewController.h */,
-				32712BBE1F3AF15E008A105F /* MYImageCornerRadiusViewController.m */,
-				3259D1801F3DB82100AD2D84 /* MYBannerCycleViewController.h */,
-				3259D1811F3DB82100AD2D84 /* MYBannerCycleViewController.m */,
-				32CBE3881F47E82100AE6267 /* MYCustomNavigationBarViewController.h */,
-				32CBE3891F47E82100AE6267 /* MYCustomNavigationBarViewController.m */,
-				3212BF111F4D528900C57DBE /* MYKeyboardViewController.h */,
-				3212BF121F4D528900C57DBE /* MYKeyboardViewController.m */,
-				3212BF131F4D528900C57DBE /* MYKeyboardViewController.xib */,
-				3212C0021F501A3A00C57DBE /* MYCountDownViewController.h */,
-				3212C0031F501A3A00C57DBE /* MYCountDownViewController.m */,
-				3212C0041F501A3A00C57DBE /* MYCountDownViewController.xib */,
-				3212C20D1F54260700C57DBE /* MYAMViralSwitchViewController.h */,
-				3212C20E1F54260700C57DBE /* MYAMViralSwitchViewController.m */,
-				3212C20F1F54260700C57DBE /* MYAMViralSwitchViewController.xib */,
-				32DD4FD51F5654A1005C6FE9 /* MYTextFieldViewController.h */,
-				32DD4FD61F5654A1005C6FE9 /* MYTextFieldViewController.m */,
-				3203A3021F66357B00BA3601 /* FXSliderViewController.h */,
-				3203A3031F66357B00BA3601 /* FXSliderViewController.m */,
-				3208B4601F4AAEF700A0883B /* MYWebViewController */,
-				320707131F43F3B800CB66D9 /* MYPagerController */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		32712B2B1F39B7D6008A105F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				32712B361F39BAC4008A105F /* MYShowTextCellModel.h */,
-				32712B371F39BAC4008A105F /* MYShowTextCellModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		32712B2C1F39B7D6008A105F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				32712B391F39BAD4008A105F /* MYShowTextViewCell.h */,
-				32712B3A1F39BAD4008A105F /* MYShowTextViewCell.m */,
-				32712BC01F3AF2B1008A105F /* MYImageCornerRadiusViewCell.h */,
-				32712BC11F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m */,
-				32DF82071F41B40D00320CB2 /* FXCyclePagerViewCell.h */,
-				32DF82081F41B40D00320CB2 /* FXCyclePagerViewCell.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		32C84BF71F715BE8003E4793 /* MYActionSheet */ = {
@@ -892,46 +967,6 @@
 				4CB578611F41FA0A004EE94D /* FXPageControl.m */,
 			);
 			path = FXCyclePagerView;
-			sourceTree = "<group>";
-		};
-		4C13A7D21F68327B00A0C34D /* MYAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				4C13A7D31F68327B00A0C34D /* Controller */,
-				4C13A7D41F68327B00A0C34D /* Model */,
-				4C13A7D51F68327B00A0C34D /* View */,
-			);
-			path = MYAnimation;
-			sourceTree = "<group>";
-		};
-		4C13A7D31F68327B00A0C34D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4C13A7D61F68329100A0C34D /* MYAnimationViewController.h */,
-				4C13A7D71F68329100A0C34D /* MYAnimationViewController.m */,
-				320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */,
-				320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */,
-				320774F71FADD3B900A56F88 /* Cross Dissolve */,
-				328505BB1FA728E40098E2C0 /* MYTestViewController.h */,
-				328505BC1FA728E40098E2C0 /* MYTestViewController.m */,
-				320774F11FADA85600A56F88 /* MYIGLDemoViewController.h */,
-				320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4C13A7D41F68327B00A0C34D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4C13A7D51F68327B00A0C34D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		4C3894DD1F64DF3200BD95ED /* UINavigationController */ = {
@@ -1055,8 +1090,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				320774A41FACB93000A56F88 /* ImageError@3x.png in Resources */,
+				3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */,
 				320774AA1FACB93000A56F88 /* ImageSelectedOn@3x.png in Resources */,
 				320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */,
+				3254F4ED1FBD78480020B58C /* MYCountDownViewController.xib in Resources */,
 				320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */,
 				320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */,
 				320774E81FACBE1C00A56F88 /* photo5t.jpg in Resources */,
@@ -1080,7 +1117,6 @@
 				320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */,
 				320774A51FACB93000A56F88 /* ImageSelectedOff.png in Resources */,
 				320774E51FACBE1C00A56F88 /* photo4.jpg in Resources */,
-				3212BF151F4D528900C57DBE /* MYKeyboardViewController.xib in Resources */,
 				320774B61FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
 				320774A31FACB93000A56F88 /* ImageError@2x.png in Resources */,
 				320774AE1FACB93000A56F88 /* ImageSelectedSmallOn.png in Resources */,
@@ -1090,14 +1126,13 @@
 				320774AC1FACB93000A56F88 /* ImageSelectedSmallOff@2x.png in Resources */,
 				320774A71FACB93000A56F88 /* ImageSelectedOff@3x.png in Resources */,
 				320774B51FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
-				3212C2111F54260700C57DBE /* MYAMViralSwitchViewController.xib in Resources */,
 				320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */,
 				320774E71FACBE1C00A56F88 /* photo5.jpg in Resources */,
 				320774E91FACBE1C00A56F88 /* photo6.jpg in Resources */,
 				320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */,
-				3212C0061F501A3A00C57DBE /* MYCountDownViewController.xib in Resources */,
 				320774BE1FACB93000A56F88 /* UIBarButtonItemGrid@2x.png in Resources */,
 				320774EC1FACBE1C00A56F88 /* photo7t.jpg in Resources */,
+				3254F4E61FBD78470020B58C /* MYKeyboardViewController.xib in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
 				320774EB1FACBE1C00A56F88 /* photo7.jpg in Resources */,
 				320774A61FACB93000A56F88 /* ImageSelectedOff@2x.png in Resources */,
@@ -1189,75 +1224,67 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3212C0051F501A3A00C57DBE /* MYCountDownViewController.m in Sources */,
-				3259D1821F3DB82100AD2D84 /* MYBannerCycleViewController.m in Sources */,
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
-				320707161F43F3DF00CB66D9 /* MYPagerViewController.m in Sources */,
+				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
+				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
+				3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */,
-				3207072A1F43F4D900CB66D9 /* CustomViewController.m in Sources */,
+				3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
 				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
-				32712BC21F3AF2B1008A105F /* MYImageCornerRadiusViewCell.m in Sources */,
+				3254F5291FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.m in Sources */,
+				3254F5221FBD7A920020B58C /* MYCrossDissolveFirstViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
-				3203A3041F66357B00BA3601 /* FXSliderViewController.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
+				3254F4E41FBD78470020B58C /* MYCustomNavigationBarViewController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
 				320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */,
+				3254F4EB1FBD78480020B58C /* MYIconFontViewController.m in Sources */,
 				32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */,
-				320707261F43F4D900CB66D9 /* PagerControllerDmeoController.m in Sources */,
-				320707291F43F4D900CB66D9 /* CollectionViewController.m in Sources */,
-				3212C2101F54260700C57DBE /* MYAMViralSwitchViewController.m in Sources */,
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */,
+				3254F5301FBD7B0B0020B58C /* MYImageCornerRadiusViewCell.m in Sources */,
 				3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */,
-				320707251F43F4D900CB66D9 /* PagerViewDmeoController.m in Sources */,
-				32CBE38A1F47E82100AE6267 /* MYCustomNavigationBarViewController.m in Sources */,
-				32DD4FD71F5654A1005C6FE9 /* MYTextFieldViewController.m in Sources */,
-				3208B4761F4AD45500A0883B /* MYWebViewJavascriptBridgeViewController.m in Sources */,
-				320774FA1FADD3D800A56F88 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
-				32712B2F1F39B7E9008A105F /* HomeViewController.m in Sources */,
-				320707271F43F4D900CB66D9 /* TabPagerViewDmeoController.m in Sources */,
-				328505BA1FA7266B0098E2C0 /* MYCrossDissolveTransitionAnimator.m in Sources */,
+				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
+				3254F4E31FBD78470020B58C /* FXSliderViewController.m in Sources */,
+				3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
-				320774FD1FADD3E800A56F88 /* MYCrossDissolveSecondViewController.m in Sources */,
+				3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */,
+				3254F5321FBD7B0B0020B58C /* MYShowTextViewCell.m in Sources */,
+				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
+				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
+				3254F4EA1FBD78470020B58C /* MYTextFieldViewController.m in Sources */,
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
-				328505BD1FA728E40098E2C0 /* MYTestViewController.m in Sources */,
+				3254F4EF1FBD78480020B58C /* MYScriptMessageHandlerViewController.m in Sources */,
 				320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */,
-				3212BF141F4D528900C57DBE /* MYKeyboardViewController.m in Sources */,
+				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
+				3254F5231FBD7A920020B58C /* MYCrossDissolveSecondViewController.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
-				320774681FACB85800A56F88 /* MWPhotoBrowserDemo.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
-				32712B381F39BAC4008A105F /* MYShowTextCellModel.m in Sources */,
-				3208B4631F4AAF1700A0883B /* MYWebViewController.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
-				32DF82091F41B40D00320CB2 /* FXCyclePagerViewCell.m in Sources */,
-				320707281F43F4D900CB66D9 /* TabPagerControllerDemoController.m in Sources */,
-				3207072B1F43F4D900CB66D9 /* ListViewController.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
-				3208B4791F4AD4A300A0883B /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
-				32712BBF1F3AF15E008A105F /* MYImageCornerRadiusViewController.m in Sources */,
-				3208B47C1F4AD4B200A0883B /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
-				32712B321F39B813008A105F /* MYShowTextViewController.m in Sources */,
+				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
 				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
-				32712B3B1F39BAD4008A105F /* MYShowTextViewCell.m in Sources */,
+				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
+				3254F5261FBD7ABF0020B58C /* MYShowTextCellModel.m in Sources */,
+				3254F5311FBD7B0B0020B58C /* FXCyclePagerViewCell.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
+				3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
-				4C13A7D81F68329100A0C34D /* MYAnimationViewController.m in Sources */,
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
 				320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */,
-				3208B4661F4AAFDA00A0883B /* MYJavaScriptCoreViewController.m in Sources */,
-				32712B351F39B824008A105F /* MYIconFontViewController.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
-				3208B4691F4AB01500A0883B /* MYScriptMessageHandlerViewController.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
+				3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */,
+				3254F4F21FBD78480020B58C /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

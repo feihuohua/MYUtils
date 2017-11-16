@@ -24,7 +24,7 @@
     
     self.title = @"UIWebView-JavaScriptCore";
     self.view.backgroundColor = [UIColor whiteColor];
-    NSString *encodedUrl = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)@"http://www.jianshu.com/p/1312c8eb2381", NULL, NULL, kCFStringEncodingUTF8);
+    NSString *encodedUrl = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)@"http://www.jianshu.com/p/b1c9a6b316e8", NULL, NULL, kCFStringEncodingUTF8);
     NSURL *url = [NSURL URLWithString:encodedUrl];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     [urlRequest setHTTPMethod:@"GET"];
@@ -35,7 +35,12 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     NSLog(@"webViewDidFinishLoad");
     
-    [self addCustomActions];
+//    [self addCustomActions];
+    NSString *encodedUrl = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (__bridge CFStringRef)@"http://www.jianshu.com/p/b1c9a6b316e8", NULL, NULL, kCFStringEncodingUTF8);
+    NSURL *url = [NSURL URLWithString:encodedUrl];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest setHTTPMethod:@"GET"];
+    [self.webView loadRequest:urlRequest];
 }
 
 #pragma mark - private method

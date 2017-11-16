@@ -8,8 +8,9 @@
 
 #import "HKTabBarControllerConfig.h"
 #import "HKNavigationController.h"
-#import "HomeViewController.h"
-#import "MYAnimationViewController.h"
+#import "MYFunctionFirstViewController.h"
+#import "MYFunctionSecondViewController.h"
+#import "MYFunctionThirdViewController.h"
 
 @interface HKTabBarControllerConfig ()<UITabBarControllerDelegate>
 
@@ -42,15 +43,15 @@
 
 - (NSArray *)viewControllers {
     
-    HomeViewController *firstViewController = [[HomeViewController alloc] init];
+    MYFunctionFirstViewController *firstViewController = [[MYFunctionFirstViewController alloc] init];
     UIViewController *firstNavigationController = [[HKNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    MYAnimationViewController *secondViewController = [[MYAnimationViewController alloc] init];
+    MYFunctionSecondViewController *secondViewController = [[MYFunctionSecondViewController alloc] init];
     UIViewController *secondNavigationController = [[HKNavigationController alloc]
                                                     initWithRootViewController:secondViewController];
     
-    HomeViewController *thirdViewController = [[HomeViewController alloc] init];
+    MYFunctionThirdViewController *thirdViewController = [[MYFunctionThirdViewController alloc] init];
     UIViewController *thirdNavigationController = [[HKNavigationController alloc]
                                                    initWithRootViewController:thirdViewController];
     
@@ -64,17 +65,17 @@
 
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"首页",
+                                                 CYLTabBarItemTitle : @"功能一",
                                                  CYLTabBarItemImage : @"investment_normal",  /* NSString and UIImage are supported*/
                                                  CYLTabBarItemSelectedImage : @"investment_selected", /* NSString and UIImage are supported*/
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"动画",
+                                                  CYLTabBarItemTitle : @"功能二",
                                                   CYLTabBarItemImage : @"travel_normal",
                                                   CYLTabBarItemSelectedImage : @"travel_selected",
                                                   };
     NSDictionary *thirdTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"我的",
+                                                 CYLTabBarItemTitle : @"功能三",
                                                  CYLTabBarItemImage : @"myprofile_normal",
                                                  CYLTabBarItemSelectedImage : @"myprofile_selected",
                                                  };

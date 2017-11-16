@@ -1,34 +1,30 @@
 //
-//  MYCustomTransitionViewController.m
+//  MYFunctionSecondViewController.m
 //  MYUtils
 //
-//  Created by sunjinshuai on 2017/11/4.
+//  Created by sunjinshuai on 2017/11/16.
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "MYCustomTransitionViewController.h"
+#import "MYFunctionSecondViewController.h"
 
-@interface MYCustomTransitionViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MYFunctionSecondViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
-@implementation MYCustomTransitionViewController
+@implementation MYFunctionSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"自定义转场";
+    self.title = @"UIKitDemo";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.dataSource addObject:@"Cross Dissolve-MYCrossDissolveFirstViewController"];
+    [self.dataSource addObject:@"有多种自定义动画效果的下拉菜单-MYIGLDemoViewController"];
     [self.dataSource addObject:@"自定义转场动画-MYCustomTransitionViewController"];
-    [self.dataSource addObject:@"MasronyDemo测试updateViewConstraints-MYMasronyDemoViewController"];
-    [self.dataSource addObject:@"*原生UI控件替代方案-TYGUIListTableViewController"];
-    [self.dataSource addObject:@"*Progress进度条-TYGProgressTableViewController"];
-    [self.dataSource addObject:@"*启动引导-TYGLoadingTableViewController"];
     
     [self.view addSubview:self.tableView];
 }
@@ -46,17 +42,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     return 50.0f;
 }
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
-    if (section == 0) {
-        return 0.01f;
-    }
-    return 10.00f;
+
+    return 0.01f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -93,7 +84,6 @@
     }
     return _dataSource;
 }
-
 
 - (UITableView *)tableView {
     

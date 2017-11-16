@@ -1,34 +1,21 @@
 //
-//  HomeViewController.m
+//  MYFunctionFirstViewController.m
 //  MYUtils
 //
-//  Created by sunjinshuai on 2017/8/8.
+//  Created by sunjinshuai on 2017/11/16.
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "MYShowTextViewController.h"
-#import "MYIconFontViewController.h"
-#import "MYImageCornerRadiusViewController.h"
-#import "MYBannerCycleViewController.h"
-#import "MYPagerViewController.h"
-#import "MYCustomNavigationBarViewController.h"
-#import "MYWebViewController.h"
-#import "MYKeyboardViewController.h"
-#import "MYCountDownViewController.h"
-#import "MYAMViralSwitchViewController.h"
-#import "MYTextFieldViewController.h"
-#import "FXSliderViewController.h"
-#import "MWPhotoBrowserDemo.h"
+#import "MYFunctionFirstViewController.h"
 
-@interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MYFunctionFirstViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
-@implementation HomeViewController
+@implementation MYFunctionFirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +27,6 @@
     [self.dataSource addObject:@"iconfont实战-MYIconFontViewController"];
     [self.dataSource addObject:@"imageView设置圆角-MYImageCornerRadiusViewController"];
     [self.dataSource addObject:@"*轮播图-MYBannerCycleViewController"];
-    [self.dataSource addObject:@"*TYPagerController-MYBannerCycleViewController"];
     [self.dataSource addObject:@"*照片浏览器-MWPhotoBrowserDemo"];
     [self.dataSource addObject:@"*自定义UISlider-FXSliderViewController"];
     [self.dataSource addObject:@"*自定义UITextField-MYTextFieldViewController"];
@@ -49,7 +35,7 @@
     [self.dataSource addObject:@"*keyboard-MYKeyboardViewController"];
     [self.dataSource addObject:@"*WebView实战-MYWebViewController"];
     [self.dataSource addObject:@"*自定义导航条-MYCustomNavigationBarViewController"];
-   
+    
     [self.view addSubview:self.tableView];
 }
 
@@ -70,13 +56,9 @@
     return 50.0f;
 }
 
-
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
-    if (section == 0) {
-        return 0.01f;
-    }
-    return 10.00f;
+  
+    return 0.01f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -105,6 +87,7 @@
     viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
     
     [self.navigationController pushViewController:viewController animated:YES];
+    
 }
 
 - (NSMutableArray *)dataSource {
