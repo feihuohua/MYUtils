@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5351FBD81CB0020B58C /* CaculatorMaker.m */; };
+		3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */; };
 		32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3151FBC3EC20054FC23 /* AppDelegate.m */; };
 		32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3181FBC3EC20054FC23 /* ViewController.m */; };
 		32C6C31C1FBC3EC20054FC23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6C31A1FBC3EC20054FC23 /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3254F5341FBD81CB0020B58C /* CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorMaker.h; sourceTree = "<group>"; };
+		3254F5351FBD81CB0020B58C /* CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaculatorMaker.m; sourceTree = "<group>"; };
+		3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CaculatorMaker.h"; sourceTree = "<group>"; };
+		3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CaculatorMaker.m"; sourceTree = "<group>"; };
 		32C6C3111FBC3EC20054FC23 /* MYSampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYSampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6C3141FBC3EC20054FC23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32C6C3151FBC3EC20054FC23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,9 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3254F5331FBD80EA0020B58C /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				3254F5341FBD81CB0020B58C /* CaculatorMaker.h */,
+				3254F5351FBD81CB0020B58C /* CaculatorMaker.m */,
+				3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */,
+				3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */,
+			);
+			path = "链式编程";
+			sourceTree = "<group>";
+		};
 		32C6C3081FBC3EC20054FC23 = {
 			isa = PBXGroup;
 			children = (
+				3254F5331FBD80EA0020B58C /* 链式编程 */,
 				32C6C3461FBC3EE40054FC23 /* +load和+initialize方法 */,
 				32C6C3131FBC3EC20054FC23 /* MYSampleCode */,
 				32C6C32C1FBC3EC20054FC23 /* MYSampleCodeTests */,
@@ -301,11 +319,13 @@
 				32C6C3541FBC3EE50054FC23 /* Parent+Load.m in Sources */,
 				32C6C3531FBC3EE50054FC23 /* Other.m in Sources */,
 				32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */,
+				3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */,
 				32C6C3511FBC3EE50054FC23 /* Parent.m in Sources */,
 				32C6C3241FBC3EC20054FC23 /* main.m in Sources */,
 				32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */,
 				32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */,
 				32C6C3521FBC3EE50054FC23 /* Child.m in Sources */,
+				3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

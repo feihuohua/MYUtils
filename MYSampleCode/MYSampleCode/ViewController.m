@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+CaculatorMaker.h"
+#import "CaculatorMaker.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    int result = [NSObject makeCaculators:^(CaculatorMaker *make) {
+        make.add(5).subtraction(1).muilt(2).divide(2);
+    }];
+    
+    NSLog(@"结果是：%d",result);
 }
 
 
