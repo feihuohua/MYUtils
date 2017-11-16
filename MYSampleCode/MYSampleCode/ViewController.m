@@ -26,7 +26,6 @@
     NSLog(@"结果是：%d",result);
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

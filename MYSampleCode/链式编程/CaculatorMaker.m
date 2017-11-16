@@ -12,28 +12,28 @@
 
 - (CaculatorMaker *(^)(int))add {
     return ^CaculatorMaker *(int value) {
-        _result += value;
+        self.result += value;
         return self;
     };
 }
 
 - (CaculatorMaker *(^)(int))subtraction {
     return ^CaculatorMaker *(int value) {
-        _result -= value;
+        self.result -= value;
         return self;
     };
 }
 
 - (CaculatorMaker *(^)(int))muilt {
     return ^CaculatorMaker *(int value) {
-        _result *= value;
+        self.result *= value;
         return self;
     };
 }
 
 - (CaculatorMaker *(^)(int))divide {
     return ^CaculatorMaker *(int value) {
-        _result /= value;
+        self.result /= value;
         return self;
     };
 }
