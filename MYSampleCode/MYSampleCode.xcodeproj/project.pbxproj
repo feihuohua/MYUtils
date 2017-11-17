@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5351FBD81CB0020B58C /* CaculatorMaker.m */; };
 		3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */; };
+		32B3EBC61FBE74C10067DF21 /* UITableView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */; };
+		32B3EBC91FBE754B0067DF21 /* MYTableViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */; };
 		32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3151FBC3EC20054FC23 /* AppDelegate.m */; };
 		32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3181FBC3EC20054FC23 /* ViewController.m */; };
 		32C6C31C1FBC3EC20054FC23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6C31A1FBC3EC20054FC23 /* Main.storyboard */; };
@@ -46,6 +48,10 @@
 		3254F5351FBD81CB0020B58C /* CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaculatorMaker.m; sourceTree = "<group>"; };
 		3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CaculatorMaker.h"; sourceTree = "<group>"; };
 		3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CaculatorMaker.m"; sourceTree = "<group>"; };
+		32B3EBC41FBE74C10067DF21 /* UITableView+Chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Chain.h"; sourceTree = "<group>"; };
+		32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Chain.m"; sourceTree = "<group>"; };
+		32B3EBC71FBE754B0067DF21 /* MYTableViewHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewHelper.h; sourceTree = "<group>"; };
+		32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableViewHelper.m; sourceTree = "<group>"; };
 		32C6C3111FBC3EC20054FC23 /* MYSampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYSampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6C3141FBC3EC20054FC23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32C6C3151FBC3EC20054FC23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +112,10 @@
 				3254F5351FBD81CB0020B58C /* CaculatorMaker.m */,
 				3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */,
 				3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */,
+				32B3EBC41FBE74C10067DF21 /* UITableView+Chain.h */,
+				32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */,
+				32B3EBC71FBE754B0067DF21 /* MYTableViewHelper.h */,
+				32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */,
 			);
 			path = "链式编程";
 			sourceTree = "<group>";
@@ -316,12 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B3EBC61FBE74C10067DF21 /* UITableView+Chain.m in Sources */,
 				32C6C3541FBC3EE50054FC23 /* Parent+Load.m in Sources */,
 				32C6C3531FBC3EE50054FC23 /* Other.m in Sources */,
 				32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */,
 				3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */,
 				32C6C3511FBC3EE50054FC23 /* Parent.m in Sources */,
 				32C6C3241FBC3EC20054FC23 /* main.m in Sources */,
+				32B3EBC91FBE754B0067DF21 /* MYTableViewHelper.m in Sources */,
 				32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */,
 				32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */,
 				32C6C3521FBC3EE50054FC23 /* Child.m in Sources */,
