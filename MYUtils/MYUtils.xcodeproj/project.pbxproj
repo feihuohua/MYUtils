@@ -123,6 +123,8 @@
 		32B3EC041FBE94090067DF21 /* DynamicSizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B3EBFE1FBE94090067DF21 /* DynamicSizeCell.xib */; };
 		32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC011FBE94090067DF21 /* DynamicHeightCell.m */; };
 		32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */; };
+		32B3EC091FBEA7F60067DF21 /* MYHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */; };
+		32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */; };
 		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
 		32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */; };
 		32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */; };
@@ -336,6 +338,10 @@
 		32B3EC001FBE94090067DF21 /* DynamicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHeightCell.h; sourceTree = "<group>"; };
 		32B3EC011FBE94090067DF21 /* DynamicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHeightCell.m; sourceTree = "<group>"; };
 		32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicSizeCell.m; sourceTree = "<group>"; };
+		32B3EC071FBEA7F60067DF21 /* MYHamburgerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHamburgerButton.h; sourceTree = "<group>"; };
+		32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHamburgerButton.m; sourceTree = "<group>"; };
+		32B3EC0D1FBEA9830067DF21 /* MYHamburgerButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHamburgerButtonViewController.h; sourceTree = "<group>"; };
+		32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHamburgerButtonViewController.m; sourceTree = "<group>"; };
 		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
 		32C84BF91F715C30003E4793 /* MYActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheet.m; sourceTree = "<group>"; };
 		32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetViewController.h; sourceTree = "<group>"; };
@@ -730,6 +736,8 @@
 			children = (
 				3254F5121FBD79E70020B58C /* MYFunctionSecondViewController.h */,
 				3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */,
+				32B3EC0D1FBEA9830067DF21 /* MYHamburgerButtonViewController.h */,
+				32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */,
 				32B3EBEA1FBE8FB40067DF21 /* 自动计算UICollectionviewcell尺寸 */,
 				32B3EBCE1FBE8DEB0067DF21 /* 自定义转场动画 */,
 				3254F5151FBD7A080020B58C /* 有多种自定义动画效果的下拉菜单 */,
@@ -968,6 +976,8 @@
 				32B3EBFF1FBE94090067DF21 /* DynamicSizeCell.h */,
 				32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */,
 				32B3EBFE1FBE94090067DF21 /* DynamicSizeCell.xib */,
+				32B3EC071FBEA7F60067DF21 /* MYHamburgerButton.h */,
+				32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1303,6 +1313,7 @@
 				32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */,
 				32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
+				32B3EC091FBEA7F60067DF21 /* MYHamburgerButton.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
 				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
 				3254F4E41FBD78470020B58C /* MYCustomNavigationBarViewController.m in Sources */,
@@ -1319,6 +1330,7 @@
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3254F4E31FBD78470020B58C /* FXSliderViewController.m in Sources */,
+				32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */,
 				32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */,
 				3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,

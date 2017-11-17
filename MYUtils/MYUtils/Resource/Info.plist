@@ -53,6 +53,6 @@
     <key>NSMicrophoneUsageDescription</key>
     <string>MYUtils需要您的同意,才能访问麦克风</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>繁星优选需要您的同意,才能访问相册</string>
+    <string>MYUtils需要您的同意,才能访问相册</string>
 </dict>
 </plist>
