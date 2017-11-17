@@ -25,6 +25,7 @@
     
     [self.dataSource addObject:@"有多种自定义动画效果的下拉菜单-MYIGLDemoViewController"];
     [self.dataSource addObject:@"自定义转场动画-MYCustomTransitionViewController"];
+    [self.dataSource addObject:@"自动计算UICollectionviewcell尺寸-MYAutomaticallyCollectionViewCellViewController"];
     
     [self.view addSubview:self.tableView];
 }

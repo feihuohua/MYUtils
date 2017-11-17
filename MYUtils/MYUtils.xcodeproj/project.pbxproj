@@ -71,7 +71,6 @@
 		320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 320774DD1FACBE1C00A56F88 /* video.mp4 */; };
 		320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 320774DE1FACBE1C00A56F88 /* video_thumb.jpg */; };
 		320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */; };
-		320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */; };
 		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
 		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
 		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
@@ -102,13 +101,6 @@
 		3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4DE1FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.m */; };
 		3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F50E1FBD792F0020B58C /* MYShowTextViewController.m */; };
 		3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */; };
-		3254F5221FBD7A920020B58C /* MYCrossDissolveFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5201FBD7A920020B58C /* MYCrossDissolveFirstViewController.m */; };
-		3254F5231FBD7A920020B58C /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5211FBD7A920020B58C /* MYCrossDissolveSecondViewController.m */; };
-		3254F5261FBD7ABF0020B58C /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5241FBD7ABE0020B58C /* MYShowTextCellModel.m */; };
-		3254F5291FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5271FBD7AE20020B58C /* MYCrossDissolveTransitionAnimator.m */; };
-		3254F5301FBD7B0B0020B58C /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */; };
-		3254F5311FBD7B0B0020B58C /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */; };
-		3254F5321FBD7B0B0020B58C /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -116,6 +108,21 @@
 		32712B191F395164008A105F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32712B141F395164008A105F /* Info.plist */; };
 		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
 		32712B281F39B335008A105F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32712B271F39B335008A105F /* iconfont.ttf */; };
+		32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
+		32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD01FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m */; };
+		32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD41FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m */; };
+		32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD51FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m */; };
+		32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBDA1FBE8EC30067DF21 /* MYCustomTransitionViewController.m */; };
+		32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBDD1FBE8EFC0067DF21 /* MYShowTextCellModel.m */; };
+		32B3EBE71FBE8EFC0067DF21 /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBE21FBE8EFC0067DF21 /* MYShowTextViewCell.m */; };
+		32B3EBE81FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBE31FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m */; };
+		32B3EBE91FBE8EFC0067DF21 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBE51FBE8EFC0067DF21 /* FXCyclePagerViewCell.m */; };
+		32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBEC1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m */; };
+		32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBF01FBE91070067DF21 /* MYFeedModel.m */; };
+		32B3EC031FBE94090067DF21 /* DynamicHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B3EBFD1FBE94090067DF21 /* DynamicHeightCell.xib */; };
+		32B3EC041FBE94090067DF21 /* DynamicSizeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B3EBFE1FBE94090067DF21 /* DynamicSizeCell.xib */; };
+		32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC011FBE94090067DF21 /* DynamicHeightCell.m */; };
+		32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */; };
 		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
 		32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */; };
 		32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */; };
@@ -232,8 +239,6 @@
 		320774DE1FACBE1C00A56F88 /* video_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video_thumb.jpg; sourceTree = "<group>"; };
 		320774F11FADA85600A56F88 /* MYIGLDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIGLDemoViewController.h; sourceTree = "<group>"; };
 		320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYIGLDemoViewController.m; sourceTree = "<group>"; };
-		320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomTransitionViewController.h; sourceTree = "<group>"; };
-		320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomTransitionViewController.m; sourceTree = "<group>"; };
 		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3208B4711F4AC7EF00A0883B /* messageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = messageHandler.html; sourceTree = "<group>"; };
 		3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webViewJavascriptBridge.html; sourceTree = "<group>"; };
@@ -289,20 +294,6 @@
 		3254F50F1FBD792F0020B58C /* MYShowTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewController.h; sourceTree = "<group>"; };
 		3254F5121FBD79E70020B58C /* MYFunctionSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionSecondViewController.h; sourceTree = "<group>"; };
 		3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionSecondViewController.m; sourceTree = "<group>"; };
-		3254F51E1FBD7A920020B58C /* MYCrossDissolveFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveFirstViewController.h; sourceTree = "<group>"; };
-		3254F51F1FBD7A920020B58C /* MYCrossDissolveSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveSecondViewController.h; sourceTree = "<group>"; };
-		3254F5201FBD7A920020B58C /* MYCrossDissolveFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveFirstViewController.m; sourceTree = "<group>"; };
-		3254F5211FBD7A920020B58C /* MYCrossDissolveSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveSecondViewController.m; sourceTree = "<group>"; };
-		3254F5241FBD7ABE0020B58C /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
-		3254F5251FBD7ABF0020B58C /* MYShowTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextCellModel.h; sourceTree = "<group>"; };
-		3254F5271FBD7AE20020B58C /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
-		3254F5281FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
-		3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
-		3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
-		3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
-		3254F52D1FBD7B0A0020B58C /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
-		3254F52E1FBD7B0A0020B58C /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
-		3254F52F1FBD7B0A0020B58C /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -317,6 +308,34 @@
 		32712B151F395164008A105F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32712B271F39B335008A105F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		32B3EBCB1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
+		32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
+		32B3EBCF1FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
+		32B3EBD01FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveTransitionAnimator.m; sourceTree = "<group>"; };
+		32B3EBD21FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveSecondViewController.h; sourceTree = "<group>"; };
+		32B3EBD31FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveFirstViewController.h; sourceTree = "<group>"; };
+		32B3EBD41FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveSecondViewController.m; sourceTree = "<group>"; };
+		32B3EBD51FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCrossDissolveFirstViewController.m; sourceTree = "<group>"; };
+		32B3EBD91FBE8EC30067DF21 /* MYCustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCustomTransitionViewController.h; sourceTree = "<group>"; };
+		32B3EBDA1FBE8EC30067DF21 /* MYCustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCustomTransitionViewController.m; sourceTree = "<group>"; };
+		32B3EBDD1FBE8EFC0067DF21 /* MYShowTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextCellModel.m; sourceTree = "<group>"; };
+		32B3EBDE1FBE8EFC0067DF21 /* MYShowTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextCellModel.h; sourceTree = "<group>"; };
+		32B3EBE01FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
+		32B3EBE11FBE8EFC0067DF21 /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
+		32B3EBE21FBE8EFC0067DF21 /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
+		32B3EBE31FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewCell.m; sourceTree = "<group>"; };
+		32B3EBE41FBE8EFC0067DF21 /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
+		32B3EBE51FBE8EFC0067DF21 /* FXCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXCyclePagerViewCell.m; sourceTree = "<group>"; };
+		32B3EBEB1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAutomaticallyCollectionViewCellViewController.h; sourceTree = "<group>"; };
+		32B3EBEC1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAutomaticallyCollectionViewCellViewController.m; sourceTree = "<group>"; };
+		32B3EBEF1FBE91070067DF21 /* MYFeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFeedModel.h; sourceTree = "<group>"; };
+		32B3EBF01FBE91070067DF21 /* MYFeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFeedModel.m; sourceTree = "<group>"; };
+		32B3EBFD1FBE94090067DF21 /* DynamicHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHeightCell.xib; sourceTree = "<group>"; };
+		32B3EBFE1FBE94090067DF21 /* DynamicSizeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicSizeCell.xib; sourceTree = "<group>"; };
+		32B3EBFF1FBE94090067DF21 /* DynamicSizeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicSizeCell.h; sourceTree = "<group>"; };
+		32B3EC001FBE94090067DF21 /* DynamicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicHeightCell.h; sourceTree = "<group>"; };
+		32B3EC011FBE94090067DF21 /* DynamicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicHeightCell.m; sourceTree = "<group>"; };
+		32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicSizeCell.m; sourceTree = "<group>"; };
 		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
 		32C84BF91F715C30003E4793 /* MYActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheet.m; sourceTree = "<group>"; };
 		32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetViewController.h; sourceTree = "<group>"; };
@@ -538,8 +557,8 @@
 		3254F48D1FBD72A90020B58C /* Function(功能一) */ = {
 			isa = PBXGroup;
 			children = (
-				3254F4FB1FBD78540020B58C /* Model */,
-				3254F4F41FBD78540020B58C /* View */,
+				32B3EBDC1FBE8EFC0067DF21 /* Model */,
+				32B3EBDF1FBE8EFC0067DF21 /* View */,
 				3254F4AE1FBD78470020B58C /* Controller */,
 			);
 			path = "Function(功能一)";
@@ -548,6 +567,8 @@
 		3254F48E1FBD72A90020B58C /* Function(功能二) */ = {
 			isa = PBXGroup;
 			children = (
+				32B3EBF21FBE91510067DF21 /* View */,
+				32B3EBEE1FBE90F40067DF21 /* Model */,
 				3254F5111FBD79E70020B58C /* Controller */,
 			);
 			path = "Function(功能二)";
@@ -704,36 +725,13 @@
 			path = "WebView实战";
 			sourceTree = "<group>";
 		};
-		3254F4F41FBD78540020B58C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3254F52E1FBD7B0A0020B58C /* FXCyclePagerViewCell.h */,
-				3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */,
-				3254F52F1FBD7B0A0020B58C /* MYImageCornerRadiusViewCell.h */,
-				3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */,
-				3254F52D1FBD7B0A0020B58C /* MYShowTextViewCell.h */,
-				3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */,
-			);
-			name = View;
-			path = MYUtils/Modules/Home/View;
-			sourceTree = SOURCE_ROOT;
-		};
-		3254F4FB1FBD78540020B58C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3254F5251FBD7ABF0020B58C /* MYShowTextCellModel.h */,
-				3254F5241FBD7ABE0020B58C /* MYShowTextCellModel.m */,
-			);
-			name = Model;
-			path = MYUtils/Modules/Home/Model;
-			sourceTree = SOURCE_ROOT;
-		};
 		3254F5111FBD79E70020B58C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				3254F5121FBD79E70020B58C /* MYFunctionSecondViewController.h */,
 				3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */,
-				3254F5161FBD7A280020B58C /* 自定义转场动画 */,
+				32B3EBEA1FBE8FB40067DF21 /* 自动计算UICollectionviewcell尺寸 */,
+				32B3EBCE1FBE8DEB0067DF21 /* 自定义转场动画 */,
 				3254F5151FBD7A080020B58C /* 有多种自定义动画效果的下拉菜单 */,
 			);
 			path = Controller;
@@ -742,35 +740,11 @@
 		3254F5151FBD7A080020B58C /* 有多种自定义动画效果的下拉菜单 */ = {
 			isa = PBXGroup;
 			children = (
-				320774F41FADD33D00A56F88 /* MYCustomTransitionViewController.h */,
-				320774F51FADD33D00A56F88 /* MYCustomTransitionViewController.m */,
 				320774F11FADA85600A56F88 /* MYIGLDemoViewController.h */,
 				320774F21FADA85600A56F88 /* MYIGLDemoViewController.m */,
-				3254F5281FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.h */,
-				3254F5271FBD7AE20020B58C /* MYCrossDissolveTransitionAnimator.m */,
-				3254F5171FBD7A440020B58C /* Cross Dissolve */,
 			);
 			path = "有多种自定义动画效果的下拉菜单";
 			sourceTree = "<group>";
-		};
-		3254F5161FBD7A280020B58C /* 自定义转场动画 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "自定义转场动画";
-			sourceTree = "<group>";
-		};
-		3254F5171FBD7A440020B58C /* Cross Dissolve */ = {
-			isa = PBXGroup;
-			children = (
-				3254F51E1FBD7A920020B58C /* MYCrossDissolveFirstViewController.h */,
-				3254F5201FBD7A920020B58C /* MYCrossDissolveFirstViewController.m */,
-				3254F51F1FBD7A920020B58C /* MYCrossDissolveSecondViewController.h */,
-				3254F5211FBD7A920020B58C /* MYCrossDissolveSecondViewController.m */,
-			);
-			name = "Cross Dissolve";
-			path = "MYUtils/Modules/MYAnimation/Controller/Cross Dissolve";
-			sourceTree = SOURCE_ROOT;
 		};
 		32712ABA1F3857A8008A105F = {
 			isa = PBXGroup;
@@ -889,6 +863,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */,
 				320774691FACB93000A56F88 /* MWPhotoBrowser */,
 				32C84BF71F715BE8003E4793 /* MYActionSheet */,
 				3203A3111F66956900BA3601 /* HKNumberButton */,
@@ -910,6 +885,91 @@
 				32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBCB1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */,
+				32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */,
+			);
+			path = "UICollectionView+ARDynamicHeightLayoutCell";
+			sourceTree = "<group>";
+		};
+		32B3EBCE1FBE8DEB0067DF21 /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBD11FBE8E7F0067DF21 /* Cross Dissolve */,
+				32B3EBCF1FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.h */,
+				32B3EBD01FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m */,
+				32B3EBD91FBE8EC30067DF21 /* MYCustomTransitionViewController.h */,
+				32B3EBDA1FBE8EC30067DF21 /* MYCustomTransitionViewController.m */,
+			);
+			path = "自定义转场动画";
+			sourceTree = "<group>";
+		};
+		32B3EBD11FBE8E7F0067DF21 /* Cross Dissolve */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBD21FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.h */,
+				32B3EBD31FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.h */,
+				32B3EBD41FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m */,
+				32B3EBD51FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m */,
+			);
+			path = "Cross Dissolve";
+			sourceTree = "<group>";
+		};
+		32B3EBDC1FBE8EFC0067DF21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBDD1FBE8EFC0067DF21 /* MYShowTextCellModel.m */,
+				32B3EBDE1FBE8EFC0067DF21 /* MYShowTextCellModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32B3EBDF1FBE8EFC0067DF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBE01FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.h */,
+				32B3EBE11FBE8EFC0067DF21 /* FXCyclePagerViewCell.h */,
+				32B3EBE21FBE8EFC0067DF21 /* MYShowTextViewCell.m */,
+				32B3EBE31FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m */,
+				32B3EBE41FBE8EFC0067DF21 /* MYShowTextViewCell.h */,
+				32B3EBE51FBE8EFC0067DF21 /* FXCyclePagerViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32B3EBEA1FBE8FB40067DF21 /* 自动计算UICollectionviewcell尺寸 */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBEB1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.h */,
+				32B3EBEC1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m */,
+			);
+			path = "自动计算UICollectionviewcell尺寸";
+			sourceTree = "<group>";
+		};
+		32B3EBEE1FBE90F40067DF21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EBEF1FBE91070067DF21 /* MYFeedModel.h */,
+				32B3EBF01FBE91070067DF21 /* MYFeedModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		32B3EBF21FBE91510067DF21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32B3EC001FBE94090067DF21 /* DynamicHeightCell.h */,
+				32B3EC011FBE94090067DF21 /* DynamicHeightCell.m */,
+				32B3EBFD1FBE94090067DF21 /* DynamicHeightCell.xib */,
+				32B3EBFF1FBE94090067DF21 /* DynamicSizeCell.h */,
+				32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */,
+				32B3EBFE1FBE94090067DF21 /* DynamicSizeCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		32C84BF71F715BE8003E4793 /* MYActionSheet */ = {
@@ -1107,6 +1167,7 @@
 				320774B21FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png in Resources */,
 				320774E21FACBE1C00A56F88 /* photo2t.jpg in Resources */,
 				320774B71FACB93000A56F88 /* UIBarButtonItemArrowLeft.png in Resources */,
+				32B3EC041FBE94090067DF21 /* DynamicSizeCell.xib in Resources */,
 				320774BC1FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png in Resources */,
 				320774C01FACB93000A56F88 /* VideoOverlay.png in Resources */,
 				320774EE1FACBE1C00A56F88 /* photo8t.jpg in Resources */,
@@ -1132,6 +1193,7 @@
 				320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */,
 				320774BE1FACB93000A56F88 /* UIBarButtonItemGrid@2x.png in Resources */,
 				320774EC1FACBE1C00A56F88 /* photo7t.jpg in Resources */,
+				32B3EC031FBE94090067DF21 /* DynamicHeightCell.xib in Resources */,
 				3254F4E61FBD78470020B58C /* MYKeyboardViewController.xib in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
 				320774EB1FACBE1C00A56F88 /* photo7.jpg in Resources */,
@@ -1227,18 +1289,22 @@
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
+				32B3EBE91FBE8EFC0067DF21 /* FXCyclePagerViewCell.m in Sources */,
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */,
+				32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */,
+				32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */,
 				3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
 				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
-				3254F5291FBD7AE30020B58C /* MYCrossDissolveTransitionAnimator.m in Sources */,
-				3254F5221FBD7A920020B58C /* MYCrossDissolveFirstViewController.m in Sources */,
+				32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */,
+				32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
+				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
 				3254F4E41FBD78470020B58C /* MYCustomNavigationBarViewController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
@@ -1247,34 +1313,34 @@
 				32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */,
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */,
-				3254F5301FBD7B0B0020B58C /* MYImageCornerRadiusViewCell.m in Sources */,
 				3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
+				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3254F4E31FBD78470020B58C /* FXSliderViewController.m in Sources */,
+				32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */,
 				3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
 				3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */,
-				3254F5321FBD7B0B0020B58C /* MYShowTextViewCell.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
 				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
 				3254F4EA1FBD78470020B58C /* MYTextFieldViewController.m in Sources */,
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				3254F4EF1FBD78480020B58C /* MYScriptMessageHandlerViewController.m in Sources */,
-				320774F61FADD33D00A56F88 /* MYCustomTransitionViewController.m in Sources */,
+				32B3EBE71FBE8EFC0067DF21 /* MYShowTextViewCell.m in Sources */,
 				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
-				3254F5231FBD7A920020B58C /* MYCrossDissolveSecondViewController.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
+				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
+				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
 				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
+				32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */,
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
-				3254F5261FBD7ABF0020B58C /* MYShowTextCellModel.m in Sources */,
-				3254F5311FBD7B0B0020B58C /* FXCyclePagerViewCell.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
@@ -1283,6 +1349,7 @@
 				320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
+				32B3EBE81FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m in Sources */,
 				3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */,
 				3254F4F21FBD78480020B58C /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
 			);
