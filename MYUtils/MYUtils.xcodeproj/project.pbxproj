@@ -109,6 +109,7 @@
 		3254F5301FBD7B0B0020B58C /* MYImageCornerRadiusViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52A1FBD7B090020B58C /* MYImageCornerRadiusViewCell.m */; };
 		3254F5311FBD7B0B0020B58C /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52B1FBD7B090020B58C /* FXCyclePagerViewCell.m */; };
 		3254F5321FBD7B0B0020B58C /* MYShowTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */; };
+		325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -303,6 +304,8 @@
 		3254F52D1FBD7B0A0020B58C /* MYShowTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewCell.h; sourceTree = "<group>"; };
 		3254F52E1FBD7B0A0020B58C /* FXCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXCyclePagerViewCell.h; sourceTree = "<group>"; };
 		3254F52F1FBD7B0A0020B58C /* MYImageCornerRadiusViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewCell.h; sourceTree = "<group>"; };
+		325AFE9D1FC01B63009FF8B1 /* MYSplashScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSplashScreenManager.h; sourceTree = "<group>"; };
+		325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSplashScreenManager.m; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -772,6 +775,15 @@
 			path = "MYUtils/Modules/MYAnimation/Controller/Cross Dissolve";
 			sourceTree = SOURCE_ROOT;
 		};
+		325AFE9C1FC01B52009FF8B1 /* MYSplashScreenManager */ = {
+			isa = PBXGroup;
+			children = (
+				325AFE9D1FC01B63009FF8B1 /* MYSplashScreenManager.h */,
+				325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */,
+			);
+			path = MYSplashScreenManager;
+			sourceTree = "<group>";
+		};
 		32712ABA1F3857A8008A105F = {
 			isa = PBXGroup;
 			children = (
@@ -889,6 +901,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				325AFE9C1FC01B52009FF8B1 /* MYSplashScreenManager */,
 				320774691FACB93000A56F88 /* MWPhotoBrowser */,
 				32C84BF71F715BE8003E4793 /* MYActionSheet */,
 				3203A3111F66956900BA3601 /* HKNumberButton */,
@@ -1256,6 +1269,7 @@
 				3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
 				3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */,
+				325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */,
 				3254F5321FBD7B0B0020B58C /* MYShowTextViewCell.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
 				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
