@@ -102,6 +102,7 @@
 		3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4DE1FBD78470020B58C /* MYWebViewJavascriptBridgeViewController.m */; };
 		3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F50E1FBD792F0020B58C /* MYShowTextViewController.m */; };
 		3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */; };
+		325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -299,6 +300,9 @@
 		3254F50F1FBD792F0020B58C /* MYShowTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYShowTextViewController.h; sourceTree = "<group>"; };
 		3254F5121FBD79E70020B58C /* MYFunctionSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionSecondViewController.h; sourceTree = "<group>"; };
 		3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionSecondViewController.m; sourceTree = "<group>"; };
+		3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
+		325AFE9D1FC01B63009FF8B1 /* MYSplashScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSplashScreenManager.h; sourceTree = "<group>"; };
+		325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSplashScreenManager.m; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -563,6 +567,14 @@
 			path = AMViralSwitch;
 			sourceTree = "<group>";
 		};
+		323AD4231FC2AE5F00BC3DEA /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		3254F48D1FBD72A90020B58C /* Function(功能一) */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +769,15 @@
 			path = "有多种自定义动画效果的下拉菜单";
 			sourceTree = "<group>";
 		};
+		325AFE9C1FC01B52009FF8B1 /* MYSplashScreenManager */ = {
+			isa = PBXGroup;
+			children = (
+				325AFE9D1FC01B63009FF8B1 /* MYSplashScreenManager.h */,
+				325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */,
+			);
+			path = MYSplashScreenManager;
+			sourceTree = "<group>";
+		};
 		32712ABA1F3857A8008A105F = {
 			isa = PBXGroup;
 			children = (
@@ -766,6 +787,7 @@
 				32712AC41F3857A8008A105F /* Products */,
 				109F11B4FF4BFCB676412FCF /* Pods */,
 				14F5CE5606068E4691A6AE83 /* Frameworks */,
+				323AD4231FC2AE5F00BC3DEA /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -877,6 +899,7 @@
 			isa = PBXGroup;
 			children = (
 				32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */,
+				325AFE9C1FC01B52009FF8B1 /* MYSplashScreenManager */,
 				320774691FACB93000A56F88 /* MWPhotoBrowser */,
 				32C84BF71F715BE8003E4793 /* MYActionSheet */,
 				3203A3111F66956900BA3601 /* HKNumberButton */,
@@ -944,12 +967,12 @@
 		32B3EBDF1FBE8EFC0067DF21 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				32B3EBE01FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.h */,
-				32B3EBE11FBE8EFC0067DF21 /* FXCyclePagerViewCell.h */,
-				32B3EBE21FBE8EFC0067DF21 /* MYShowTextViewCell.m */,
-				32B3EBE31FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m */,
 				32B3EBE41FBE8EFC0067DF21 /* MYShowTextViewCell.h */,
+				32B3EBE21FBE8EFC0067DF21 /* MYShowTextViewCell.m */,
+				32B3EBE11FBE8EFC0067DF21 /* FXCyclePagerViewCell.h */,
 				32B3EBE51FBE8EFC0067DF21 /* FXCyclePagerViewCell.m */,
+				32B3EBE01FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.h */,
+				32B3EBE31FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1340,6 +1363,7 @@
 				3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
 				3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */,
+				325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
 				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
 				3254F4EA1FBD78470020B58C /* MYTextFieldViewController.m in Sources */,

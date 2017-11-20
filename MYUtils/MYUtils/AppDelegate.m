@@ -11,6 +11,7 @@
 #import "TBCityIconFont.h"
 #import "UncaughtExceptionHandler.h"
 #import "MYFPSStatusManager.h"
+#import "MYSplashScreenManager.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
@@ -20,6 +21,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[MYSplashScreenManager sharedManager] showSplashScreenWithDuration:1.5];
+    [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/4133010-bb1c14196f3241f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     
     //捕捉意外崩溃
     [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
