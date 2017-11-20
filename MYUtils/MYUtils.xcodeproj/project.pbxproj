@@ -78,6 +78,7 @@
 		3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */; };
 		3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */; };
 		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
+		323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */; };
 		3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
@@ -253,6 +254,8 @@
 		3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MYModal.m"; sourceTree = "<group>"; };
 		3212C20A1F5425E700C57DBE /* AMViralSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViralSwitch.h; sourceTree = "<group>"; };
 		3212C20B1F5425E700C57DBE /* AMViralSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViralSwitch.m; sourceTree = "<group>"; };
+		323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFPSStatusManager.h; sourceTree = "<group>"; };
+		323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFPSStatusManager.m; sourceTree = "<group>"; };
 		3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionThirdViewController.h; sourceTree = "<group>"; };
 		3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionThirdViewController.m; sourceTree = "<group>"; };
 		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
@@ -864,6 +867,8 @@
 			children = (
 				320774621FACAD7600A56F88 /* UncaughtExceptionHandler.h */,
 				320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */,
+				323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */,
+				323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1349,6 +1354,7 @@
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
+				323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */,
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
 				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
 				32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */,

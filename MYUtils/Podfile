@@ -16,4 +16,5 @@ target 'MYUtils' do
     pod 'ZYKeyboardUtil', '~> 1.0.7'
     pod 'MBProgressHUD', '~> 0.9.2'
     pod 'IGLDropDownMenu', '~> 1.6.2'
+    pod 'YYKit', '1.0.9'
 end  

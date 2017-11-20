@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OCSafeThread.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [OCSafeThread setup];
+    
+    [OCSafeThread performNormalLogicOperation:^(id  _Nullable callBackObject) {
+        NSLog(@"ddddd");
+        
+    } withCallBackObject:self];
+    
+    NSLog(@"aaaa");
     return YES;
 }
 

@@ -10,6 +10,7 @@
 #import "HKTabBarControllerConfig.h"
 #import "TBCityIconFont.h"
 #import "UncaughtExceptionHandler.h"
+#import "MYFPSStatusManager.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
@@ -46,6 +47,7 @@
     
     [self.window makeKeyAndVisible];
     
+    [[MYFPSStatusManager sharedInstance] start];
     [TBCityIconFont setFontName:@"iconfont"];
     return YES;
 }
