@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4261FC2B35E00BC3DEA /* MYScrollView.m */; };
 		3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5351FBD81CB0020B58C /* CaculatorMaker.m */; };
 		3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */; };
 		32B3EBC61FBE74C10067DF21 /* UITableView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */; };
@@ -25,6 +26,7 @@
 		32C6C3531FBC3EE50054FC23 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34C1FBC3EE40054FC23 /* Other.m */; };
 		32C6C3541FBC3EE50054FC23 /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34E1FBC3EE40054FC23 /* Parent+Load.m */; };
 		32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34F1FBC3EE40054FC23 /* Child+Load.m */; };
+		B980D3484D04B4FCD6E27C41 /* libPods-MYSampleCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10D4F6338FF14D155E2E1D1B /* Pods-MYSampleCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.debug.xcconfig"; sourceTree = "<group>"; };
+		323AD4251FC2B35E00BC3DEA /* MYScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollView.h; sourceTree = "<group>"; };
+		323AD4261FC2B35E00BC3DEA /* MYScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollView.m; sourceTree = "<group>"; };
 		3254F5341FBD81CB0020B58C /* CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorMaker.h; sourceTree = "<group>"; };
 		3254F5351FBD81CB0020B58C /* CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaculatorMaker.m; sourceTree = "<group>"; };
 		3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CaculatorMaker.h"; sourceTree = "<group>"; };
@@ -81,6 +86,8 @@
 		32C6C34E1FBC3EE40054FC23 /* Parent+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parent+Load.m"; sourceTree = "<group>"; };
 		32C6C34F1FBC3EE40054FC23 /* Child+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Child+Load.m"; sourceTree = "<group>"; };
 		32C6C3501FBC3EE40054FC23 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYSampleCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54BF657F7C04031213FA335 /* Pods-MYSampleCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B980D3484D04B4FCD6E27C41 /* libPods-MYSampleCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +116,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323AD4241FC2B34300BC3DEA /* MYScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				323AD4251FC2B35E00BC3DEA /* MYScrollView.h */,
+				323AD4261FC2B35E00BC3DEA /* MYScrollView.m */,
+			);
+			path = MYScrollView;
+			sourceTree = "<group>";
+		};
 		3254F5331FBD80EA0020B58C /* 链式编程 */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,12 +145,15 @@
 		32C6C3081FBC3EC20054FC23 = {
 			isa = PBXGroup;
 			children = (
+				323AD4241FC2B34300BC3DEA /* MYScrollView */,
 				3254F5331FBD80EA0020B58C /* 链式编程 */,
 				32C6C3461FBC3EE40054FC23 /* +load和+initialize方法 */,
 				32C6C3131FBC3EC20054FC23 /* MYSampleCode */,
 				32C6C32C1FBC3EC20054FC23 /* MYSampleCodeTests */,
 				32C6C3371FBC3EC20054FC23 /* MYSampleCodeUITests */,
 				32C6C3121FBC3EC20054FC23 /* Products */,
+				58A88FA38E6B7B4AA52C2344 /* Pods */,
+				BE709429C23891C99E659B67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +218,23 @@
 			path = "+load和+initialize方法";
 			sourceTree = "<group>";
 		};
+		58A88FA38E6B7B4AA52C2344 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10D4F6338FF14D155E2E1D1B /* Pods-MYSampleCode.debug.xcconfig */,
+				D54BF657F7C04031213FA335 /* Pods-MYSampleCode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE709429C23891C99E659B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C6C33D1FBC3EC20054FC23 /* Build configuration list for PBXNativeTarget "MYSampleCode" */;
 			buildPhases = (
+				AD880BE853FBA1E792C5E683 /* [CP] Check Pods Manifest.lock */,
 				32C6C30D1FBC3EC20054FC23 /* Sources */,
 				32C6C30E1FBC3EC20054FC23 /* Frameworks */,
 				32C6C30F1FBC3EC20054FC23 /* Resources */,
+				DD5C04E1F8794D71BEF6BAFB /* [CP] Embed Pods Frameworks */,
+				B979980C819F945FA3B652D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +366,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AD880BE853FBA1E792C5E683 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MYSampleCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B979980C819F945FA3B652D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5C04E1F8794D71BEF6BAFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		32C6C30D1FBC3EC20054FC23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -344,6 +435,7 @@
 				32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */,
 				32C6C3521FBC3EE50054FC23 /* Child.m in Sources */,
 				3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */,
+				323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +596,7 @@
 		};
 		32C6C33E1FBC3EC20054FC23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D4F6338FF14D155E2E1D1B /* Pods-MYSampleCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +610,7 @@
 		};
 		32C6C33F1FBC3EC20054FC23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D54BF657F7C04031213FA335 /* Pods-MYSampleCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
