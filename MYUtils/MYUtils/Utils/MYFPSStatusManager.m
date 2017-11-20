@@ -62,7 +62,7 @@
 - (void)setupSubViews {
     UIView *currentView = [UIApplication sharedApplication].delegate.window.rootViewController.view;
     [self.fpsLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(50, 20));
+        make.size.mas_equalTo(CGSizeMake(60, 20));
         make.right.equalTo(currentView).offset(-20.0f);
         make.bottom.equalTo(currentView).offset(-59.0f);
     }];
@@ -109,8 +109,9 @@
         _fpsLabel.tag = 100000;
         _fpsLabel.font = [UIFont boldSystemFontOfSize:12];
         _fpsLabel.textColor = [UIColor greenColor];
-        _fpsLabel.backgroundColor = [UIColor clearColor];
-        _fpsLabel.textAlignment = NSTextAlignmentRight;
+        _fpsLabel.backgroundColor = [UIColor blackColor];
+        _fpsLabel.alpha = 0.3;
+        _fpsLabel.textAlignment = NSTextAlignmentCenter;
         [[UIApplication sharedApplication].delegate.window.rootViewController.view addSubview:_fpsLabel];
         [[UIApplication sharedApplication].delegate.window.rootViewController.view bringSubviewToFront:_fpsLabel];
     }
