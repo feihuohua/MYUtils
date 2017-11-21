@@ -82,6 +82,7 @@
 		3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */; };
 		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
 		3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B45E1FC45A8F001038A5 /* AuthenticationWIFIManager.m */; };
+		3215B4681FC464FC001038A5 /* MYPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4671FC464FC001038A5 /* MYPresentationViewController.m */; };
 		323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */; };
 		3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
@@ -267,6 +268,8 @@
 		3212C20B1F5425E700C57DBE /* AMViralSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViralSwitch.m; sourceTree = "<group>"; };
 		3215B45D1FC45A8F001038A5 /* AuthenticationWIFIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationWIFIManager.h; sourceTree = "<group>"; };
 		3215B45E1FC45A8F001038A5 /* AuthenticationWIFIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWIFIManager.m; sourceTree = "<group>"; };
+		3215B4661FC464FC001038A5 /* MYPresentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPresentationViewController.h; sourceTree = "<group>"; };
+		3215B4671FC464FC001038A5 /* MYPresentationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPresentationViewController.m; sourceTree = "<group>"; };
 		323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFPSStatusManager.h; sourceTree = "<group>"; };
 		323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFPSStatusManager.m; sourceTree = "<group>"; };
 		3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionThirdViewController.h; sourceTree = "<group>"; };
@@ -630,6 +633,8 @@
 			children = (
 				3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */,
 				3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */,
+				3215B4661FC464FC001038A5 /* MYPresentationViewController.h */,
+				3215B4671FC464FC001038A5 /* MYPresentationViewController.m */,
 			);
 			path = "Function(功能三)";
 			sourceTree = "<group>";
@@ -1184,6 +1189,7 @@
 				TargetAttributes = {
 					32712AC21F3857A8008A105F = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = EFYJC86RP9;
 						ProvisioningStyle = Manual;
 					};
 					32712ADB1F3857A9008A105F = {
@@ -1416,6 +1422,7 @@
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
+				3215B4681FC464FC001038A5 /* MYPresentationViewController.m in Sources */,
 				320FFB221FC3D966006CC5AE /* MYFadeViewController.m in Sources */,
 				323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */,
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
@@ -1566,13 +1573,14 @@
 			baseConfigurationReference = 26D8685B3E6C2AAC9213C11D /* Pods-MYUtils.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EFYJC86RP9;
 				INFOPLIST_FILE = "$(SRCROOT)/MYUtils/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.MYUtils;
+				PRODUCT_BUNDLE_IDENTIFIER = "qmtv.com.QMTV-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "825e07b8-2b88-4182-b288-fee33b8ec64c";
+				PROVISIONING_PROFILE_SPECIFIER = qmtv_more_development;
 			};
 			name = Debug;
 		};
@@ -1581,13 +1589,14 @@
 			baseConfigurationReference = 496F8C86D7AFCAF6B8939EA3 /* Pods-MYUtils.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EFYJC86RP9;
 				INFOPLIST_FILE = "$(SRCROOT)/MYUtils/Resource/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.51fanxing.MYUtils;
+				PRODUCT_BUNDLE_IDENTIFIER = "qmtv.com.QMTV-More";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "825e07b8-2b88-4182-b288-fee33b8ec64c";
+				PROVISIONING_PROFILE_SPECIFIER = qmtv_more_development;
 			};
 			name = Release;
 		};

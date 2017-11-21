@@ -7,10 +7,15 @@
 //
 
 #import "MYFunctionThirdViewController.h"
+#import "MYPresentationViewController.h"
+#import "UtilsMacros.h"
 
-@interface MYFunctionThirdViewController ()<UISearchResultsUpdating>
+@interface MYFunctionThirdViewController ()<UITableViewDelegate, UITableViewDataSource, UIViewControllerPreviewingDelegate, UISearchResultsUpdating>
 
 @property (nonatomic, assign) BOOL hidden;
+@property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, assign) CGRect sourceRect;
+@property (nonatomic, strong) NSIndexPath *indexPath; 
 
 @end
 
@@ -27,10 +32,12 @@
         searchController.searchResultsUpdater = self;
         self.navigationItem.searchController = searchController;
     }
+    // 注册Peek和Pop方法
+    [self registerForPreviewingWithDelegate:self sourceView:self.view];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+    return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -56,12 +63,75 @@
     return nil;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return 0.01f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    
+    return 0.01f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 50.0f;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
+}
+
+#pragma mark peek(preview)
+- (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location NS_AVAILABLE_IOS(9_0) {
+    // 获取用户手势点所在cell的下标。同时判断手势点是否超出tableView响应范围。
+    if (![self getShouldShowRectAndIndexPathWithLocation:location]) {
+        return nil;
+    }
+    previewingContext.sourceRect = self.sourceRect;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:(UITableViewCell *)[previewingContext sourceView]];
+    NSString *str = [NSString stringWithFormat:@"%@",self.dataSource[indexPath.row]];
+    
+    //创建要预览的控制器
+    MYPresentationViewController *presentationVC = [[MYPresentationViewController alloc] init];
+    presentationVC.arrData = (NSMutableArray *)self.dataSource;
+    presentationVC.index = indexPath.row;
+    presentationVC.strInfo = str;
+    
+    previewingContext.sourceRect = self.sourceRect;;
+    
+    return presentationVC;
+}
+
+#pragma mark pop(push)
+- (void)previewingContext:(id <UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit NS_AVAILABLE_IOS(9_0) {
+    
+    [self showViewController:viewControllerToCommit sender:self];
+}
+
+// 获取用户手势点所在cell的下标。同时判断手势点是否超出tableView响应范围。
+- (BOOL)getShouldShowRectAndIndexPathWithLocation:(CGPoint)location {
+    NSInteger row = location.y/50;
+    self.sourceRect = CGRectMake(0, row * 50, MYScreenWidth, 50);
+    self.indexPath = [NSIndexPath indexPathForItem:row inSection:0];
+    // 如果row越界了，返回NO 不处理peek手势
+    return row >= self.dataSource.count ? NO : YES;
+}
+
+- (NSMutableArray *)dataSource {
+    if (!_dataSource) {
+        _dataSource = @[].mutableCopy;
+        NSMutableArray *array = [NSMutableArray array];
+        for (int i = 0; i < 30; i++) {
+            [array addObject:@(i)];
+        }
+        _dataSource = array;
+    }
+    return _dataSource;
 }
 
 @end

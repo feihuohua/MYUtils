@@ -19,6 +19,13 @@
 
 @implementation AppDelegate
 
+/*
+ 当程序启动时
+ 
+ 1、判断launchOptions字典内的UIApplicationLaunchOptionsShortcutItemKey是否为空
+ 2、当不为空时,application:didFinishLaunchWithOptions方法返回NO，否则返回YES
+ 3、在application:performActionForShortcutItem:completionHandler方法内处理点击事件
+ */
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
@@ -53,6 +60,8 @@
     
     [[MYFPSStatusManager sharedInstance] start];
     [TBCityIconFont setFontName:@"iconfont"];
+    [self configShortCutItems];
+
     return YES;
 }
 
@@ -135,6 +144,31 @@
             animationView.layer.transform = CATransform3DMakeRotation(2 * M_PI, 0, 1, 0);
         } completion:nil];
     });
+}
+
+/** 创建shortcutItems */
+- (void)configShortCutItems {
+    NSMutableArray *shortcutItems = [NSMutableArray array];
+    UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"1" localizedTitle:@"测试1"];
+    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc] initWithType:@"2" localizedTitle:@"测试2"];
+    [shortcutItems addObject:item1];
+    [shortcutItems addObject:item2];
+    
+    [[UIApplication sharedApplication] setShortcutItems:shortcutItems];
+}
+
+/** 处理shortcutItem */
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    switch (shortcutItem.type.integerValue) {
+        case 1: { // 测试1
+          
+        }
+        case 2: { // 测试2
+         
+        }   break;
+        default:
+            break;
+    }
 }
 
 @end
