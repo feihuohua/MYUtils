@@ -12,9 +12,12 @@
 #import "UncaughtExceptionHandler.h"
 #import "MYFPSStatusManager.h"
 #import "MYSplashScreenManager.h"
+#import <FLEX/FLEX.h>
 
-@interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate>
+@interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate, NSURLConnectionDataDelegate, NSURLSessionDataDelegate>
 
+@property (nonatomic, strong) NSTimer *repeatingLogExampleTimer;
+@property (nonatomic, strong) NSMutableArray *connections;
 @end
 
 @implementation AppDelegate
@@ -29,6 +32,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [[FLEXManager sharedManager] setNetworkDebuggingEnabled:YES];
+    [self sendExampleNetworkRequests];
+    self.repeatingLogExampleTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendExampleLogMessage) userInfo:nil repeats:YES];
+
+   
     [[MYSplashScreenManager sharedManager] showSplashScreenWithDuration:1.5];
     [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/4133010-bb1c14196f3241f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     
@@ -170,5 +178,107 @@
             break;
     }
 }
+
+- (void)sendExampleLogMessage
+{
+    // To show off the system log viewer, send 20 example log messages at 1 second intervals.
+    static NSInteger count = 0;
+    NSLog(@"Example log %ld", (long)count++);
+    if (count > 20) {
+        [self.repeatingLogExampleTimer invalidate];
+    }
+}
+
+- (void)sendExampleNetworkRequests
+{
+    // Async NSURLConnection
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://api.github.com/repos/Flipboard/FLEX/issues"]] queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+    }];
+    
+    // Sync NSURLConnection
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lorempixel.com/320/480/"]] returningResponse:NULL error:NULL];
+    });
+    
+    // NSURLSession
+    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+    config.timeoutIntervalForRequest = 10.0;
+    NSURLSession *mySession = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    
+    NSMutableArray *pendingTasks = [NSMutableArray array];
+    
+    // NSURLSessionDataTask with delegate
+    [pendingTasks addObject:[mySession dataTaskWithURL:[NSURL URLWithString:@"http://cdn.flipboard.com/serviceIcons/v2/social-icon-flipboard-96.png"]]];
+    
+    // NSURLSessionDownloadTask with delegate
+    [pendingTasks addObject:[mySession downloadTaskWithURL:[NSURL URLWithString:@"https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v5"]]];
+    
+    // Async NSURLSessionDownloadTask
+    [pendingTasks addObject:[[NSURLSession sharedSession] downloadTaskWithURL:[NSURL URLWithString:@"http://lorempixel.com/1024/1024/"] completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        
+    }]];
+    
+    // Async NSURLSessionDataTask
+    [pendingTasks addObject:[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:@"https://api.github.com/emojis"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+    }]];
+    
+    // Async NSURLSessionUploadTask
+    NSMutableURLRequest *uploadRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://google.com/"]];
+    uploadRequest.HTTPMethod = @"POST";
+    NSData *data = [@"q=test" dataUsingEncoding:NSUTF8StringEncoding];
+    [pendingTasks addObject:[mySession uploadTaskWithRequest:uploadRequest fromData:data completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+    }]];
+    
+    // Remaining requests made through NSURLConnection with a delegate
+    NSArray *requestURLStrings = @[ @"http://lorempixel.com/400/400/",
+                                    @"http://google.com",
+                                    @"http://search.cocoapods.org/api/pods?query=FLEX&amount=1",
+                                    @"https://api.github.com/users/Flipboard/repos",
+                                    @"http://info.cern.ch/hypertext/WWW/TheProject.html",
+                                    @"https://api.github.com/repos/Flipboard/FLEX/issues",
+                                    @"https://cloud.githubusercontent.com/assets/516562/3971767/e4e21f58-27d6-11e4-9b07-4d1fe82b80ca.png",
+                                    @"http://hipsterjesus.com/api?paras=1&type=hipster-centric&html=false",
+                                    @"http://lorempixel.com/750/1334/" ];
+    
+    NSTimeInterval delayTime = 10.0;
+    const NSTimeInterval stagger = 1.0;
+    
+    // Send off the NSURLSessionTasks (staggered)
+    for (NSURLSessionTask *task in pendingTasks) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [task resume];
+        });
+        delayTime += stagger;
+    }
+    
+    // Begin the NSURLConnection requests (staggered)
+    self.connections = [NSMutableArray array];
+    for (NSString *urlString in requestURLStrings) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+            [self.connections addObject:[[NSURLConnection alloc] initWithRequest:request delegate:self]];
+        });
+        delayTime += stagger;
+    }
+}
+
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler
+{
+    completionHandler(NSURLSessionResponseAllow);
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    [self.connections removeObject:connection];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    [self.connections removeObject:connection];
+}
+
 
 @end

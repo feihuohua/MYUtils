@@ -8,6 +8,7 @@
 
 #import "MYFunctionFirstViewController.h"
 #import "UtilsMacros.h"
+#import <FLEX/FLEX.h>
 
 @interface MYFunctionFirstViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,6 +38,9 @@
     [self.dataSource addObject:@"*WebView实战-MYWebViewController"];
     [self.dataSource addObject:@"*自定义导航条-MYCustomNavigationBarViewController"];
     
+    [self registerViewControllerBasedOption];
+    
+      self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"FLEX" style:UIBarButtonItemStylePlain target:self action:@selector(flexButtonTapped:)];
     [self.view addSubview:self.tableView];
 }
 
@@ -94,6 +98,45 @@
     viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
     
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)registerViewControllerBasedOption
+{
+    // create UIViewController subclass
+    UIViewController *viewController = [[UIViewController alloc] init];
+    
+    // fill it with some stuff
+    UILabel *infoLabel = [[UILabel alloc] init];
+    infoLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    infoLabel.text = @"Add switches, notes or whatewer you wish to provide your testers with superpowers!";
+    infoLabel.numberOfLines = 0;
+    infoLabel.textAlignment = NSTextAlignmentCenter;
+    
+    UIView *view = viewController.view;
+    view.backgroundColor = [UIColor whiteColor];
+    [view addSubview:infoLabel];
+    
+    [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[infoLabel]-0-|"
+                                                                 options:0
+                                                                 metrics:nil
+                                                                   views:NSDictionaryOfVariableBindings(infoLabel)]];
+    
+    [view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[infoLabel]-0-|"
+                                                                 options:0
+                                                                 metrics:nil
+                                                                   views:NSDictionaryOfVariableBindings(infoLabel)]];
+    
+    
+    
+    // return it in viewControllerFutureBlock
+    [[FLEXManager sharedManager] registerGlobalEntryWithName:@"🛃  Custom Superpowers"
+                                   viewControllerFutureBlock:^id{
+                                       return viewController;
+                                   }];
+}
+
+- (void)flexButtonTapped:(id)sender {
+    [[FLEXManager sharedManager] showExplorer];
 }
 
 - (NSMutableArray *)dataSource {
