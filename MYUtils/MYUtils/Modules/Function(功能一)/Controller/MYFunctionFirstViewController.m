@@ -7,6 +7,7 @@
 //
 
 #import "MYFunctionFirstViewController.h"
+#import "UtilsMacros.h"
 
 @interface MYFunctionFirstViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -53,7 +54,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 50.0f;
+    return 44.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -66,12 +67,18 @@
     return 0.01f;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        
     }
     cell.textLabel.text = self.dataSource[indexPath.row];
     
@@ -87,7 +94,6 @@
     viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
     
     [self.navigationController pushViewController:viewController animated:YES];
-    
 }
 
 - (NSMutableArray *)dataSource {
@@ -98,14 +104,17 @@
     return _dataSource;
 }
 
-
 - (UITableView *)tableView {
-    
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, MYScreenWidth, MYScreenHeight) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
-        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.dataSource = self;
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            _tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+            _tableView.scrollIndicatorInsets = _tableView.contentInset;
+        }
         [self.view addSubview:_tableView];
     }
     return _tableView;

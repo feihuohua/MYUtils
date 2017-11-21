@@ -80,6 +80,14 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
 - (NSMutableArray *)dataSource {
     
     if (!_dataSource) {

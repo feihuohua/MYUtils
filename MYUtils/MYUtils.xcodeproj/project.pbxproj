@@ -625,8 +625,8 @@
 		3254F4AE1FBD78470020B58C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3254F4C41FBD78470020B58C /* MYFunctionFirstViewController.m */,
 				3254F4B21FBD78470020B58C /* MYFunctionFirstViewController.h */,
+				3254F4C41FBD78470020B58C /* MYFunctionFirstViewController.m */,
 				3254F4AF1FBD78470020B58C /* 照片浏览器 */,
 				3254F4B31FBD78470020B58C /* ImageView设置圆角 */,
 				3254F4B61FBD78470020B58C /* UILabel设置行间距、指定显示行数 */,
@@ -884,8 +884,8 @@
 		32712B111F395164008A105F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3254F48E1FBD72A90020B58C /* Function(功能二) */,
 				3254F48F1FBD72A90020B58C /* Function(功能三) */,
+				3254F48E1FBD72A90020B58C /* Function(功能二) */,
 				3254F48D1FBD72A90020B58C /* Function(功能一) */,
 			);
 			path = Modules;

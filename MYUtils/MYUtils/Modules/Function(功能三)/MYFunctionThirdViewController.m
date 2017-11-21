@@ -8,7 +8,9 @@
 
 #import "MYFunctionThirdViewController.h"
 
-@interface MYFunctionThirdViewController ()
+@interface MYFunctionThirdViewController ()<UISearchResultsUpdating>
+
+@property (nonatomic, assign) BOOL hidden;
 
 @end
 
@@ -16,22 +18,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"iOS11的效果";
+    
+    self.tableView.backgroundColor = [UIColor whiteColor];
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+        UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+        searchController.searchResultsUpdater = self;
+        self.navigationItem.searchController = searchController;
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 50;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *identifier = @"MyCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+    }
+    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.backgroundColor = self.tableView.backgroundColor;
+    cell.backgroundColor = self.tableView.backgroundColor;
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell %ld", indexPath.row + 1];
+    return cell;
 }
-*/
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
+}
 
 @end
