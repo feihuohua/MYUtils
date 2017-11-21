@@ -74,6 +74,9 @@
 		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
 		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
 		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
+		320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */; };
+		320FFB221FC3D966006CC5AE /* MYFadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB211FC3D966006CC5AE /* MYFadeViewController.m */; };
+		320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB241FC3DC85006CC5AE /* MYTestViewController.m */; };
 		3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF491F4D8C7100C57DBE /* MYModalContentView.m */; };
 		3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4C1F4D8C7100C57DBE /* MYModalViewController.m */; };
 		3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212BF4E1F4D8C7100C57DBE /* UIViewController+MYModal.m */; };
@@ -246,6 +249,12 @@
 		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3208B4711F4AC7EF00A0883B /* messageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = messageHandler.html; sourceTree = "<group>"; };
 		3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webViewJavascriptBridge.html; sourceTree = "<group>"; };
+		320FFB1D1FC3D6E7006CC5AE /* MYFadeNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFadeNavigationController.h; sourceTree = "<group>"; };
+		320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFadeNavigationController.m; sourceTree = "<group>"; };
+		320FFB201FC3D966006CC5AE /* MYFadeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFadeViewController.h; sourceTree = "<group>"; };
+		320FFB211FC3D966006CC5AE /* MYFadeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFadeViewController.m; sourceTree = "<group>"; };
+		320FFB231FC3DC85006CC5AE /* MYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
+		320FFB241FC3DC85006CC5AE /* MYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
 		3212BF481F4D8C7100C57DBE /* MYModalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalContentView.h; sourceTree = "<group>"; };
 		3212BF491F4D8C7100C57DBE /* MYModalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYModalContentView.m; sourceTree = "<group>"; };
 		3212BF4A1F4D8C7100C57DBE /* MYModalMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYModalMacros.h; sourceTree = "<group>"; };
@@ -544,6 +553,15 @@
 			path = "Local Media";
 			sourceTree = "<group>";
 		};
+		320FFB1C1FC3D6D1006CC5AE /* MYFadeNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				320FFB1D1FC3D6E7006CC5AE /* MYFadeNavigationController.h */,
+				320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */,
+			);
+			path = MYFadeNavigationController;
+			sourceTree = "<group>";
+		};
 		3212BF471F4D8C7100C57DBE /* MYModalViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +771,10 @@
 				3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */,
 				32B3EC0D1FBEA9830067DF21 /* MYHamburgerButtonViewController.h */,
 				32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */,
+				320FFB201FC3D966006CC5AE /* MYFadeViewController.h */,
+				320FFB211FC3D966006CC5AE /* MYFadeViewController.m */,
+				320FFB231FC3DC85006CC5AE /* MYTestViewController.h */,
+				320FFB241FC3DC85006CC5AE /* MYTestViewController.m */,
 				32B3EBEA1FBE8FB40067DF21 /* 自动计算UICollectionviewcell尺寸 */,
 				32B3EBCE1FBE8DEB0067DF21 /* 自定义转场动画 */,
 				3254F5151FBD7A080020B58C /* 有多种自定义动画效果的下拉菜单 */,
@@ -898,6 +920,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				320FFB1C1FC3D6D1006CC5AE /* MYFadeNavigationController */,
 				32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */,
 				325AFE9C1FC01B52009FF8B1 /* MYSplashScreenManager */,
 				320774691FACB93000A56F88 /* MWPhotoBrowser */,
@@ -1346,6 +1369,7 @@
 				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
 				3254F4E41FBD78470020B58C /* MYCustomNavigationBarViewController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
+				320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
 				320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */,
 				3254F4EB1FBD78480020B58C /* MYIconFontViewController.m in Sources */,
@@ -1378,6 +1402,7 @@
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
+				320FFB221FC3D966006CC5AE /* MYFadeViewController.m in Sources */,
 				323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */,
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
 				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
@@ -1386,6 +1411,7 @@
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
+				320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */,
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
 				320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */,
