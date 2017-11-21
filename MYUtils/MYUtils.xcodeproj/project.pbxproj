@@ -74,6 +74,7 @@
 		3208B46E1F4AB90A00A0883B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B46D1F4AB90A00A0883B /* index.html */; };
 		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
 		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
+		3208CADD1FC48BCD00AD9A30 /* UIFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CADC1FC48BCD00AD9A30 /* UIFloatLabelTextField.m */; };
 		320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */; };
 		320FFB221FC3D966006CC5AE /* MYFadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB211FC3D966006CC5AE /* MYFadeViewController.m */; };
 		320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB241FC3DC85006CC5AE /* MYTestViewController.m */; };
@@ -256,6 +257,8 @@
 		3208B46D1F4AB90A00A0883B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		3208B4711F4AC7EF00A0883B /* messageHandler.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = messageHandler.html; sourceTree = "<group>"; };
 		3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webViewJavascriptBridge.html; sourceTree = "<group>"; };
+		3208CADB1FC48BCD00AD9A30 /* UIFloatLabelTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFloatLabelTextField.h; sourceTree = "<group>"; };
+		3208CADC1FC48BCD00AD9A30 /* UIFloatLabelTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabelTextField.m; sourceTree = "<group>"; };
 		320FFB1D1FC3D6E7006CC5AE /* MYFadeNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFadeNavigationController.h; sourceTree = "<group>"; };
 		320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFadeNavigationController.m; sourceTree = "<group>"; };
 		320FFB201FC3D966006CC5AE /* MYFadeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFadeViewController.h; sourceTree = "<group>"; };
@@ -1124,6 +1127,8 @@
 			children = (
 				32DD4FD81F5654E0005C6FE9 /* MYTextField.h */,
 				32DD4FD91F5654E0005C6FE9 /* MYTextField.m */,
+				3208CADB1FC48BCD00AD9A30 /* UIFloatLabelTextField.h */,
+				3208CADC1FC48BCD00AD9A30 /* UIFloatLabelTextField.m */,
 			);
 			path = MYTextField;
 			sourceTree = "<group>";
@@ -1450,6 +1455,7 @@
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				3254F4EF1FBD78480020B58C /* MYScriptMessageHandlerViewController.m in Sources */,
 				32B3EBE71FBE8EFC0067DF21 /* MYShowTextViewCell.m in Sources */,
+				3208CADD1FC48BCD00AD9A30 /* UIFloatLabelTextField.m in Sources */,
 				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
