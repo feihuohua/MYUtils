@@ -29,7 +29,7 @@ static NSString *identifier = @"UITableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
 
     self.navigationBarVisibility = MYFadeNavigationControllerNavigationBarVisibilityHidden;

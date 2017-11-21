@@ -97,7 +97,7 @@
         CGFloat statusBarHeight = [self statusBarHeight];
         
         _visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-        _visualEffectView.frame = CGRectMake(0, -statusBarHeight, self.view.frame.size.width, navigationBarHeight+statusBarHeight);
+        _visualEffectView.frame = CGRectMake(0, 0, self.view.frame.size.width, navigationBarHeight+statusBarHeight);
         _visualEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         _visualEffectView.userInteractionEnabled = NO;
         
@@ -143,9 +143,7 @@
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.translucent = YES;
     self.navigationBar.shadowImage = [UIImage new];
-    
-    [self.navigationBar addSubview:self.visualEffectView];
-    [self.navigationBar sendSubviewToBack:self.visualEffectView];
+    [self.navigationBar.subviews.firstObject insertSubview:self.visualEffectView atIndex:0];
 }
 
 - (void)setupSystemNavigationBar {
