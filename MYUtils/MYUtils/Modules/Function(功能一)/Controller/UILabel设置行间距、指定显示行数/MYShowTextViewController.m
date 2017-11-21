@@ -79,6 +79,14 @@ static NSString * const reuseIdentifier = @"MYShowTextViewCell";
     return 0.01f;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     MYShowTextViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
