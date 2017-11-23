@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3208CAE11FC695A400AD9A30 /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE01FC695A400AD9A30 /* Runtime.m */; };
+		3208CAE41FC697CC00AD9A30 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE31FC697CC00AD9A30 /* TestClass.m */; };
+		3208CAE71FC698B800AD9A30 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE61FC698B800AD9A30 /* TestClass+Category.m */; };
+		3208CAEA1FC69ADE00AD9A30 /* TestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE91FC69ADE00AD9A30 /* TestClass+AssociatedObject.m */; };
+		3208CAED1FC69C7400AD9A30 /* TestClass+Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAEC1FC69C7400AD9A30 /* TestClass+Exchange.m */; };
+		3208CAF01FC69EC000AD9A30 /* ForwardTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAEF1FC69EC000AD9A30 /* ForwardTestClass.m */; };
+		3208CAF31FC6B0EA00AD9A30 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */; };
+		3208CAF61FC6B16100AD9A30 /* MYChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */; };
+		3208CAFA1FC6B30D00AD9A30 /* MYNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */; };
 		323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4261FC2B35E00BC3DEA /* MYScrollView.m */; };
 		3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5351FBD81CB0020B58C /* CaculatorMaker.m */; };
 		3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */; };
@@ -48,6 +57,24 @@
 
 /* Begin PBXFileReference section */
 		10D4F6338FF14D155E2E1D1B /* Pods-MYSampleCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.debug.xcconfig"; sourceTree = "<group>"; };
+		3208CADF1FC695A400AD9A30 /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		3208CAE01FC695A400AD9A30 /* Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
+		3208CAE21FC697CC00AD9A30 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		3208CAE31FC697CC00AD9A30 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		3208CAE51FC698B800AD9A30 /* TestClass+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+Category.h"; sourceTree = "<group>"; };
+		3208CAE61FC698B800AD9A30 /* TestClass+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Category.m"; sourceTree = "<group>"; };
+		3208CAE81FC69ADE00AD9A30 /* TestClass+AssociatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+AssociatedObject.h"; sourceTree = "<group>"; };
+		3208CAE91FC69ADE00AD9A30 /* TestClass+AssociatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AssociatedObject.m"; sourceTree = "<group>"; };
+		3208CAEB1FC69C7400AD9A30 /* TestClass+Exchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+Exchange.h"; sourceTree = "<group>"; };
+		3208CAEC1FC69C7400AD9A30 /* TestClass+Exchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Exchange.m"; sourceTree = "<group>"; };
+		3208CAEE1FC69EC000AD9A30 /* ForwardTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardTestClass.h; sourceTree = "<group>"; };
+		3208CAEF1FC69EC000AD9A30 /* ForwardTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardTestClass.m; sourceTree = "<group>"; };
+		3208CAF11FC6B0EA00AD9A30 /* MYScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollViewController.h; sourceTree = "<group>"; };
+		3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollViewController.m; sourceTree = "<group>"; };
+		3208CAF41FC6B16100AD9A30 /* MYChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYChainViewController.h; sourceTree = "<group>"; };
+		3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChainViewController.m; sourceTree = "<group>"; };
+		3208CAF81FC6B30D00AD9A30 /* MYNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNotificationViewController.h; sourceTree = "<group>"; };
+		3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNotificationViewController.m; sourceTree = "<group>"; };
 		323AD4251FC2B35E00BC3DEA /* MYScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollView.h; sourceTree = "<group>"; };
 		323AD4261FC2B35E00BC3DEA /* MYScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollView.m; sourceTree = "<group>"; };
 		3254F5341FBD81CB0020B58C /* CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorMaker.h; sourceTree = "<group>"; };
@@ -116,11 +143,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3208CADE1FC6866500AD9A30 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				3208CADF1FC695A400AD9A30 /* Runtime.h */,
+				3208CAE01FC695A400AD9A30 /* Runtime.m */,
+				3208CAE21FC697CC00AD9A30 /* TestClass.h */,
+				3208CAE31FC697CC00AD9A30 /* TestClass.m */,
+				3208CAE51FC698B800AD9A30 /* TestClass+Category.h */,
+				3208CAE61FC698B800AD9A30 /* TestClass+Category.m */,
+				3208CAE81FC69ADE00AD9A30 /* TestClass+AssociatedObject.h */,
+				3208CAE91FC69ADE00AD9A30 /* TestClass+AssociatedObject.m */,
+				3208CAEB1FC69C7400AD9A30 /* TestClass+Exchange.h */,
+				3208CAEC1FC69C7400AD9A30 /* TestClass+Exchange.m */,
+				3208CAEE1FC69EC000AD9A30 /* ForwardTestClass.h */,
+				3208CAEF1FC69EC000AD9A30 /* ForwardTestClass.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		3208CAF71FC6B2F100AD9A30 /* NSNotification的原理 */ = {
+			isa = PBXGroup;
+			children = (
+				3208CAF81FC6B30D00AD9A30 /* MYNotificationViewController.h */,
+				3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */,
+			);
+			path = "NSNotification的原理";
+			sourceTree = "<group>";
+		};
 		323AD4241FC2B34300BC3DEA /* MYScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				323AD4251FC2B35E00BC3DEA /* MYScrollView.h */,
 				323AD4261FC2B35E00BC3DEA /* MYScrollView.m */,
+				3208CAF11FC6B0EA00AD9A30 /* MYScrollViewController.h */,
+				3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */,
 			);
 			path = MYScrollView;
 			sourceTree = "<group>";
@@ -138,6 +195,8 @@
 				32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */,
 				32B3EC121FBEBD2C0067DF21 /* MYImageMaker.h */,
 				32B3EC131FBEBD2C0067DF21 /* MYImageMaker.m */,
+				3208CAF41FC6B16100AD9A30 /* MYChainViewController.h */,
+				3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */,
 			);
 			path = "链式编程";
 			sourceTree = "<group>";
@@ -145,6 +204,8 @@
 		32C6C3081FBC3EC20054FC23 = {
 			isa = PBXGroup;
 			children = (
+				3208CAF71FC6B2F100AD9A30 /* NSNotification的原理 */,
+				3208CADE1FC6866500AD9A30 /* Runtime */,
 				323AD4241FC2B34300BC3DEA /* MYScrollView */,
 				3254F5331FBD80EA0020B58C /* 链式编程 */,
 				32C6C3461FBC3EE40054FC23 /* +load和+initialize方法 */,
@@ -427,14 +488,23 @@
 				32B3EC141FBEBD2C0067DF21 /* MYImageMaker.m in Sources */,
 				32C6C3531FBC3EE50054FC23 /* Other.m in Sources */,
 				32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */,
+				3208CAF31FC6B0EA00AD9A30 /* MYScrollViewController.m in Sources */,
+				3208CAF61FC6B16100AD9A30 /* MYChainViewController.m in Sources */,
 				3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */,
 				32C6C3511FBC3EE50054FC23 /* Parent.m in Sources */,
+				3208CAED1FC69C7400AD9A30 /* TestClass+Exchange.m in Sources */,
+				3208CAEA1FC69ADE00AD9A30 /* TestClass+AssociatedObject.m in Sources */,
 				32C6C3241FBC3EC20054FC23 /* main.m in Sources */,
 				32B3EBC91FBE754B0067DF21 /* MYTableViewHelper.m in Sources */,
 				32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */,
 				32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */,
+				3208CAFA1FC6B30D00AD9A30 /* MYNotificationViewController.m in Sources */,
+				3208CAE71FC698B800AD9A30 /* TestClass+Category.m in Sources */,
 				32C6C3521FBC3EE50054FC23 /* Child.m in Sources */,
+				3208CAE41FC697CC00AD9A30 /* TestClass.m in Sources */,
+				3208CAF01FC69EC000AD9A30 /* ForwardTestClass.m in Sources */,
 				3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */,
+				3208CAE11FC695A400AD9A30 /* Runtime.m in Sources */,
 				323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

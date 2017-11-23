@@ -10,4 +10,6 @@
 
 @interface TestClass (Category)
 
+- (void)categoryMethod;
+
 @end

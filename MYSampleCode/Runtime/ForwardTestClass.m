@@ -10,4 +10,8 @@
 
 @implementation ForwardTestClass
 
+- (void)method3:(NSString *)value {
+    NSLog(@"ForwardTestClass中的方法实现 %@", value);
+}
+
 @end

@@ -10,4 +10,8 @@
 
 @implementation TestClass (Category)
 
+- (void)categoryMethod {
+    NSLog(@"categoryMethod");
+}
+
 @end

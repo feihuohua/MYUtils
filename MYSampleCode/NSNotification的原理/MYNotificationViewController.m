@@ -16,22 +16,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    // 往通知中心添加观察者
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleNotification:)
+                                                 name:@"MyNAME"
+                                               object:nil];
+    
+    NSLog(@"register notifcation thread = %@", [NSThread currentThread]);
+    
+    // 创建子线程，在子线程中发送通知
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"post notification thread = %@", [NSThread currentThread]);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"MyNAME" object:nil userInfo:nil];
+    });
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/**
+ 处理通知的方法
+ 
+ @param notification notification
+ */
+- (void)handleNotification:(NSNotification *)notification {
+    //打印处理通知方法的线程
+    NSLog(@"handle notification thread = %@", [NSThread currentThread]);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -7,15 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "NSObject+CaculatorMaker.h"
-#import "UITableView+Chain.h"
-#import "CaculatorMaker.h"
-#import "MYTableViewHelper.h"
 #import "MYScrollView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) MYScrollView *scrollView;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
@@ -24,60 +21,93 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    int result = [NSObject makeCaculators:^(CaculatorMaker *make) {
-//        make.add(5).subtraction(1).muilt(2).divide(2);
-//    }];
-//
-//    NSLog(@"结果是：%d",result);
+    self.view.backgroundColor = [UIColor whiteColor];
     
-//    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-//    [tableView makeConfigure:^(MYTableViewHelper *helper) {
-//        helper.bindTb(tableView, [UITableViewCell class]).totalSection(1).section(0).row(10).configureCell(@[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9"]);
-//    }];
-//    [self.view addSubview:tableView];
-  
-    self.scrollView = [[MYScrollView alloc] initWithFrame:self.view.bounds];
-    self.scrollView.scrollHorizontal = NO;
-    
-    UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 100, 100)];
-    UIView *greenView = [[UIView alloc] initWithFrame:CGRectMake(150, 160, 150, 200)];
-    UIView *blueView = [[UIView alloc] initWithFrame:CGRectMake(40, 400, 200, 150)];
-    UIView *yellowView = [[UIView alloc] initWithFrame:CGRectMake(100, 600, 180, 150)];
-    
-    redView.backgroundColor = [UIColor colorWithRed:0.815 green:0.007 blue:0.105 alpha:1];
-    greenView.backgroundColor = [UIColor colorWithRed:0.494 green:0.827 blue:0.129 alpha:1];
-    blueView.backgroundColor = [UIColor colorWithRed:0.29 green:0.564 blue:0.886 alpha:1];
-    yellowView.backgroundColor = [UIColor colorWithRed:0.972 green:0.905 blue:0.109 alpha:1];
-    
-    [self.scrollView addSubview:redView];
-    [self.scrollView addSubview:greenView];
-    [self.scrollView addSubview:blueView];
-    [self.scrollView addSubview:yellowView];
-    
-    
-    
-    UIView *redView1 = [[UIView alloc] initWithFrame:CGRectMake(20, 500+20, 100, 100)];
-    UIView *greenView1 = [[UIView alloc] initWithFrame:CGRectMake(150, 500+160, 150, 200)];
-    UIView *blueView1 = [[UIView alloc] initWithFrame:CGRectMake(40, 500+400, 200, 150)];
-    UIView *yellowView1 = [[UIView alloc] initWithFrame:CGRectMake(100, 500+600, 180, 150)];
-    
-    redView1.backgroundColor = [UIColor purpleColor];
-    greenView1.backgroundColor = [UIColor redColor];
-    blueView1.backgroundColor = [UIColor grayColor];
-    yellowView1.backgroundColor = [UIColor blackColor];
-    
-    [self.scrollView addSubview:redView1];
-    [self.scrollView addSubview:greenView1];
-    [self.scrollView addSubview:blueView1];
-    [self.scrollView addSubview:yellowView1];
-    
-    self.scrollView.contentSize = CGSizeMake(self.view.bounds.size.width, CGRectGetMaxY(yellowView1.frame));
-    [self.view addSubview:self.scrollView];
+    [self.dataSource addObject:@"探索UIScrollView的原理-MYScrollViewController"];
+    [self.dataSource addObject:@"探索链式编程-MYChainViewController"];
+    [self.dataSource addObject:@"探索通知的原理-MYNotificationViewController"];
+
+    [self.view addSubview:self.tableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.dataSource.count;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 44.0f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return 0.01f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    
+    return 0.01f;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.dataSource[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *title = [self.dataSource objectAtIndex:indexPath.row];
+    NSString *className = [[title componentsSeparatedByString:@"-"] lastObject];
+    
+    UIViewController *viewController = [[NSClassFromString(className) alloc] init];
+    viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (NSMutableArray *)dataSource {
+    
+    if (!_dataSource) {
+        _dataSource = [NSMutableArray array];
+    }
+    return _dataSource;
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+                                                  style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.dataSource = self;
+        if (@available(iOS 11.0, *)) {
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
+            _tableView.contentInset = UIEdgeInsetsMake(0, 0, 64, 0);
+            _tableView.scrollIndicatorInsets = _tableView.contentInset;
+        }
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
 }
 
 @end

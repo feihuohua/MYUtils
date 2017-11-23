@@ -10,4 +10,6 @@
 
 @interface ForwardTestClass : NSObject
 
+- (void)method3:(NSString *)value;
+
 @end

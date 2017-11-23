@@ -10,4 +10,6 @@
 
 @interface TestClass (Exchange)
 
+- (void)exchangeMethod;
+
 @end
