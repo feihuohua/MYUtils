@@ -21,7 +21,8 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 }
 
 ```
-![image.png](http://upload-images.jianshu.io/upload_images/588630-dbdda123792ccf4d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](http://upload-images.jianshu.io/upload_images/588630-5eda51fb29c68b9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 在主线程中注册观察者，主线程中发送通知，是发送通知的线程处理的通知事件
