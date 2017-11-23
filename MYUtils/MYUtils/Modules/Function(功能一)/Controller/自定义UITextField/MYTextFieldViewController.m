@@ -29,7 +29,6 @@
     
     [self loadTextFieldWithFrame];
     
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(phoneFieldEditingChanged) name:UITextFieldTextDidBeginEditingNotification object:nil];
 }
 
