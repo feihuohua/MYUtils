@@ -19,4 +19,5 @@ target 'MYUtils' do
     pod 'YYKit', '1.0.9'
     pod 'pop', '~> 1.0.10'
     pod 'FLEX', '~> 2.4.0'
+    pod 'MLeaksFinder', '~> 1.0.0'
 end  

@@ -154,9 +154,7 @@
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.dataSource = self;
         if (@available(iOS 11.0, *)) {
-            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-            _tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
-            _tableView.scrollIndicatorInsets = _tableView.contentInset;
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
         }
         [self.view addSubview:_tableView];
     }
