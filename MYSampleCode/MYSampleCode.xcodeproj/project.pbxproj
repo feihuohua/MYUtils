@@ -16,6 +16,7 @@
 		3208CAF31FC6B0EA00AD9A30 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */; };
 		3208CAF61FC6B16100AD9A30 /* MYChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */; };
 		3208CAFA1FC6B30D00AD9A30 /* MYNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */; };
+		3208CAFD1FC6B94100AD9A30 /* MYTestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAFC1FC6B94100AD9A30 /* MYTestNotificationViewController.m */; };
 		323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4261FC2B35E00BC3DEA /* MYScrollView.m */; };
 		3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5351FBD81CB0020B58C /* CaculatorMaker.m */; };
 		3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */; };
@@ -75,6 +76,8 @@
 		3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChainViewController.m; sourceTree = "<group>"; };
 		3208CAF81FC6B30D00AD9A30 /* MYNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNotificationViewController.h; sourceTree = "<group>"; };
 		3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNotificationViewController.m; sourceTree = "<group>"; };
+		3208CAFB1FC6B94100AD9A30 /* MYTestNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestNotificationViewController.h; sourceTree = "<group>"; };
+		3208CAFC1FC6B94100AD9A30 /* MYTestNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestNotificationViewController.m; sourceTree = "<group>"; };
 		323AD4251FC2B35E00BC3DEA /* MYScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollView.h; sourceTree = "<group>"; };
 		323AD4261FC2B35E00BC3DEA /* MYScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollView.m; sourceTree = "<group>"; };
 		3254F5341FBD81CB0020B58C /* CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorMaker.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 			children = (
 				3208CAF81FC6B30D00AD9A30 /* MYNotificationViewController.h */,
 				3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */,
+				3208CAFB1FC6B94100AD9A30 /* MYTestNotificationViewController.h */,
+				3208CAFC1FC6B94100AD9A30 /* MYTestNotificationViewController.m */,
 			);
 			path = "NSNotification的原理";
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 				32B3EC141FBEBD2C0067DF21 /* MYImageMaker.m in Sources */,
 				32C6C3531FBC3EE50054FC23 /* Other.m in Sources */,
 				32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */,
+				3208CAFD1FC6B94100AD9A30 /* MYTestNotificationViewController.m in Sources */,
 				3208CAF31FC6B0EA00AD9A30 /* MYScrollViewController.m in Sources */,
 				3208CAF61FC6B16100AD9A30 /* MYChainViewController.m in Sources */,
 				3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */,
