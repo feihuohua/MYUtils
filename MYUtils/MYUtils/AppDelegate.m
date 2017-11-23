@@ -35,14 +35,10 @@
     [[FLEXManager sharedManager] setNetworkDebuggingEnabled:YES];
     [self sendExampleNetworkRequests];
     self.repeatingLogExampleTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendExampleLogMessage) userInfo:nil repeats:YES];
-
-   
+    
     [[MYSplashScreenManager sharedManager] showSplashScreenWithDuration:1.5];
     [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/4133010-bb1c14196f3241f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
-    
-    //捕捉意外崩溃
-    [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
-    
+   
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     HKTabBarControllerConfig *tabBarControllerConfig = [[HKTabBarControllerConfig alloc] init];
@@ -66,10 +62,13 @@
     
     [self.window makeKeyAndVisible];
     
-    [[MYFPSStatusManager sharedInstance] start];
     [TBCityIconFont setFontName:@"iconfont"];
     [self configShortCutItems];
-
+    [[MYFPSStatusManager sharedInstance] start];
+    
+    //捕捉意外崩溃
+    [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
+    
     return YES;
 }
 
@@ -169,10 +168,10 @@
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
     switch (shortcutItem.type.integerValue) {
         case 1: { // 测试1
-          
+            
         }
         case 2: { // 测试2
-         
+            
         }   break;
         default:
             break;
@@ -279,6 +278,5 @@
 {
     [self.connections removeObject:connection];
 }
-
 
 @end
