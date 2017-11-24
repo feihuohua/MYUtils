@@ -7,25 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3208CAE11FC695A400AD9A30 /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE01FC695A400AD9A30 /* Runtime.m */; };
-		3208CAE41FC697CC00AD9A30 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE31FC697CC00AD9A30 /* TestClass.m */; };
-		3208CAE71FC698B800AD9A30 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE61FC698B800AD9A30 /* TestClass+Category.m */; };
-		3208CAEA1FC69ADE00AD9A30 /* TestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAE91FC69ADE00AD9A30 /* TestClass+AssociatedObject.m */; };
-		3208CAED1FC69C7400AD9A30 /* TestClass+Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAEC1FC69C7400AD9A30 /* TestClass+Exchange.m */; };
-		3208CAF01FC69EC000AD9A30 /* ForwardTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAEF1FC69EC000AD9A30 /* ForwardTestClass.m */; };
-		3208CAF31FC6B0EA00AD9A30 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */; };
-		3208CAF61FC6B16100AD9A30 /* MYChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */; };
-		3208CAFA1FC6B30D00AD9A30 /* MYNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */; };
-		3208CAFD1FC6B94100AD9A30 /* MYTestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CAFC1FC6B94100AD9A30 /* MYTestNotificationViewController.m */; };
-		3208CB1A1FC7BD7E00AD9A30 /* MYStringFormattManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB191FC7BD7E00AD9A30 /* MYStringFormattManager.m */; };
-		3208CB1D1FC7BDAD00AD9A30 /* MYStringFormatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB1C1FC7BDAD00AD9A30 /* MYStringFormatModel.m */; };
-		3208CB201FC7BDE500AD9A30 /* MYStringFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB1F1FC7BDE500AD9A30 /* MYStringFormatViewController.m */; };
-		323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4261FC2B35E00BC3DEA /* MYScrollView.m */; };
-		3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5351FBD81CB0020B58C /* CaculatorMaker.m */; };
-		3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */; };
-		32B3EBC61FBE74C10067DF21 /* UITableView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */; };
-		32B3EBC91FBE754B0067DF21 /* MYTableViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */; };
-		32B3EC141FBEBD2C0067DF21 /* MYImageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC131FBEBD2C0067DF21 /* MYImageMaker.m */; };
 		32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3151FBC3EC20054FC23 /* AppDelegate.m */; };
 		32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3181FBC3EC20054FC23 /* ViewController.m */; };
 		32C6C31C1FBC3EC20054FC23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C6C31A1FBC3EC20054FC23 /* Main.storyboard */; };
@@ -34,11 +15,33 @@
 		32C6C3241FBC3EC20054FC23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3231FBC3EC20054FC23 /* main.m */; };
 		32C6C32E1FBC3EC20054FC23 /* MYSampleCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C32D1FBC3EC20054FC23 /* MYSampleCodeTests.m */; };
 		32C6C3391FBC3EC20054FC23 /* MYSampleCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3381FBC3EC20054FC23 /* MYSampleCodeUITests.m */; };
-		32C6C3511FBC3EE50054FC23 /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C3471FBC3EE40054FC23 /* Parent.m */; };
-		32C6C3521FBC3EE50054FC23 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34B1FBC3EE40054FC23 /* Child.m */; };
-		32C6C3531FBC3EE50054FC23 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34C1FBC3EE40054FC23 /* Other.m */; };
-		32C6C3541FBC3EE50054FC23 /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34E1FBC3EE40054FC23 /* Parent+Load.m */; };
-		32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6C34F1FBC3EE40054FC23 /* Child+Load.m */; };
+		32C726D31FC82BCC0093D353 /* Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C7269A1FC82BCB0093D353 /* Runtime.m */; };
+		32C726D41FC82BCC0093D353 /* ForwardTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A01FC82BCB0093D353 /* ForwardTestClass.m */; };
+		32C726D51FC82BCC0093D353 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A11FC82BCB0093D353 /* TestClass.m */; };
+		32C726D61FC82BCC0093D353 /* TestClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A21FC82BCB0093D353 /* TestClass+Category.m */; };
+		32C726D71FC82BCC0093D353 /* TestClass+AssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A31FC82BCB0093D353 /* TestClass+AssociatedObject.m */; };
+		32C726D81FC82BCC0093D353 /* TestClass+Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A41FC82BCB0093D353 /* TestClass+Exchange.m */; };
+		32C726D91FC82BCC0093D353 /* MYNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A71FC82BCB0093D353 /* MYNotificationViewController.m */; };
+		32C726DA1FC82BCC0093D353 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32C726A81FC82BCB0093D353 /* README.md */; };
+		32C726DB1FC82BCC0093D353 /* MYTestNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726A91FC82BCB0093D353 /* MYTestNotificationViewController.m */; };
+		32C726DC1FC82BCC0093D353 /* CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726AC1FC82BCB0093D353 /* CaculatorMaker.m */; };
+		32C726DD1FC82BCC0093D353 /* UITableView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726AD1FC82BCB0093D353 /* UITableView+Chain.m */; };
+		32C726DE1FC82BCC0093D353 /* MYImageMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726AF1FC82BCB0093D353 /* MYImageMaker.m */; };
+		32C726DF1FC82BCC0093D353 /* MYChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726B31FC82BCB0093D353 /* MYChainViewController.m */; };
+		32C726E01FC82BCC0093D353 /* MYTableViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726B51FC82BCB0093D353 /* MYTableViewHelper.m */; };
+		32C726E11FC82BCC0093D353 /* NSObject+CaculatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726B71FC82BCB0093D353 /* NSObject+CaculatorMaker.m */; };
+		32C726E21FC82BCC0093D353 /* Parent.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726B91FC82BCB0093D353 /* Parent.m */; };
+		32C726E31FC82BCC0093D353 /* Child.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726BD1FC82BCB0093D353 /* Child.m */; };
+		32C726E41FC82BCC0093D353 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726BE1FC82BCB0093D353 /* Other.m */; };
+		32C726E51FC82BCC0093D353 /* Parent+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726C01FC82BCB0093D353 /* Parent+Load.m */; };
+		32C726E61FC82BCC0093D353 /* Child+Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726C11FC82BCB0093D353 /* Child+Load.m */; };
+		32C726E71FC82BCC0093D353 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32C726C61FC82BCB0093D353 /* README.md */; };
+		32C726E81FC82BCC0093D353 /* MYScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726C71FC82BCB0093D353 /* MYScrollView.m */; };
+		32C726E91FC82BCC0093D353 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726C81FC82BCB0093D353 /* MYScrollViewController.m */; };
+		32C726EA1FC82BCC0093D353 /* MYStringFormatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726CC1FC82BCB0093D353 /* MYStringFormatModel.m */; };
+		32C726EB1FC82BCC0093D353 /* MYStringFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726CD1FC82BCB0093D353 /* MYStringFormatViewController.m */; };
+		32C726EC1FC82BCC0093D353 /* MYStringFormattManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726CE1FC82BCB0093D353 /* MYStringFormattManager.m */; };
+		32C726ED1FC82BCC0093D353 /* MYHuggingPriorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */; };
 		B980D3484D04B4FCD6E27C41 /* libPods-MYSampleCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */; };
 /* End PBXBuildFile section */
 
@@ -61,44 +64,6 @@
 
 /* Begin PBXFileReference section */
 		10D4F6338FF14D155E2E1D1B /* Pods-MYSampleCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.debug.xcconfig"; sourceTree = "<group>"; };
-		3208CADF1FC695A400AD9A30 /* Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
-		3208CAE01FC695A400AD9A30 /* Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
-		3208CAE21FC697CC00AD9A30 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
-		3208CAE31FC697CC00AD9A30 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
-		3208CAE51FC698B800AD9A30 /* TestClass+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+Category.h"; sourceTree = "<group>"; };
-		3208CAE61FC698B800AD9A30 /* TestClass+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Category.m"; sourceTree = "<group>"; };
-		3208CAE81FC69ADE00AD9A30 /* TestClass+AssociatedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+AssociatedObject.h"; sourceTree = "<group>"; };
-		3208CAE91FC69ADE00AD9A30 /* TestClass+AssociatedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AssociatedObject.m"; sourceTree = "<group>"; };
-		3208CAEB1FC69C7400AD9A30 /* TestClass+Exchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+Exchange.h"; sourceTree = "<group>"; };
-		3208CAEC1FC69C7400AD9A30 /* TestClass+Exchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Exchange.m"; sourceTree = "<group>"; };
-		3208CAEE1FC69EC000AD9A30 /* ForwardTestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardTestClass.h; sourceTree = "<group>"; };
-		3208CAEF1FC69EC000AD9A30 /* ForwardTestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForwardTestClass.m; sourceTree = "<group>"; };
-		3208CAF11FC6B0EA00AD9A30 /* MYScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollViewController.h; sourceTree = "<group>"; };
-		3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollViewController.m; sourceTree = "<group>"; };
-		3208CAF41FC6B16100AD9A30 /* MYChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYChainViewController.h; sourceTree = "<group>"; };
-		3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYChainViewController.m; sourceTree = "<group>"; };
-		3208CAF81FC6B30D00AD9A30 /* MYNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNotificationViewController.h; sourceTree = "<group>"; };
-		3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNotificationViewController.m; sourceTree = "<group>"; };
-		3208CAFB1FC6B94100AD9A30 /* MYTestNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestNotificationViewController.h; sourceTree = "<group>"; };
-		3208CAFC1FC6B94100AD9A30 /* MYTestNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestNotificationViewController.m; sourceTree = "<group>"; };
-		3208CB181FC7BD7E00AD9A30 /* MYStringFormattManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYStringFormattManager.h; path = ../../MYUtils/MYUtils/Manager/MYStringFormattManager.h; sourceTree = "<group>"; };
-		3208CB191FC7BD7E00AD9A30 /* MYStringFormattManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYStringFormattManager.m; path = ../../MYUtils/MYUtils/Manager/MYStringFormattManager.m; sourceTree = "<group>"; };
-		3208CB1B1FC7BDAD00AD9A30 /* MYStringFormatModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYStringFormatModel.h; sourceTree = "<group>"; };
-		3208CB1C1FC7BDAD00AD9A30 /* MYStringFormatModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYStringFormatModel.m; sourceTree = "<group>"; };
-		3208CB1E1FC7BDE500AD9A30 /* MYStringFormatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYStringFormatViewController.h; sourceTree = "<group>"; };
-		3208CB1F1FC7BDE500AD9A30 /* MYStringFormatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYStringFormatViewController.m; sourceTree = "<group>"; };
-		323AD4251FC2B35E00BC3DEA /* MYScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYScrollView.h; sourceTree = "<group>"; };
-		323AD4261FC2B35E00BC3DEA /* MYScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYScrollView.m; sourceTree = "<group>"; };
-		3254F5341FBD81CB0020B58C /* CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaculatorMaker.h; sourceTree = "<group>"; };
-		3254F5351FBD81CB0020B58C /* CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaculatorMaker.m; sourceTree = "<group>"; };
-		3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CaculatorMaker.h"; sourceTree = "<group>"; };
-		3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CaculatorMaker.m"; sourceTree = "<group>"; };
-		32B3EBC41FBE74C10067DF21 /* UITableView+Chain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Chain.h"; sourceTree = "<group>"; };
-		32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Chain.m"; sourceTree = "<group>"; };
-		32B3EBC71FBE754B0067DF21 /* MYTableViewHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTableViewHelper.h; sourceTree = "<group>"; };
-		32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTableViewHelper.m; sourceTree = "<group>"; };
-		32B3EC121FBEBD2C0067DF21 /* MYImageMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYImageMaker.h; sourceTree = "<group>"; };
-		32B3EC131FBEBD2C0067DF21 /* MYImageMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYImageMaker.m; sourceTree = "<group>"; };
 		32C6C3111FBC3EC20054FC23 /* MYSampleCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYSampleCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6C3141FBC3EC20054FC23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32C6C3151FBC3EC20054FC23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,16 +80,58 @@
 		32C6C3341FBC3EC20054FC23 /* MYSampleCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYSampleCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C6C3381FBC3EC20054FC23 /* MYSampleCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSampleCodeUITests.m; sourceTree = "<group>"; };
 		32C6C33A1FBC3EC20054FC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C6C3471FBC3EE40054FC23 /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
-		32C6C3481FBC3EE40054FC23 /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
-		32C6C3491FBC3EE40054FC23 /* Child+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Child+Load.h"; sourceTree = "<group>"; };
-		32C6C34A1FBC3EE40054FC23 /* Parent+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parent+Load.h"; sourceTree = "<group>"; };
-		32C6C34B1FBC3EE40054FC23 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
-		32C6C34C1FBC3EE40054FC23 /* Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
-		32C6C34D1FBC3EE40054FC23 /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
-		32C6C34E1FBC3EE40054FC23 /* Parent+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parent+Load.m"; sourceTree = "<group>"; };
-		32C6C34F1FBC3EE40054FC23 /* Child+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Child+Load.m"; sourceTree = "<group>"; };
-		32C6C3501FBC3EE40054FC23 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		32C726991FC82BCB0093D353 /* ForwardTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardTestClass.h; sourceTree = "<group>"; };
+		32C7269A1FC82BCB0093D353 /* Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Runtime.m; sourceTree = "<group>"; };
+		32C7269B1FC82BCB0093D353 /* TestClass+AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+AssociatedObject.h"; sourceTree = "<group>"; };
+		32C7269C1FC82BCB0093D353 /* TestClass+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+Category.h"; sourceTree = "<group>"; };
+		32C7269D1FC82BCB0093D353 /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		32C7269E1FC82BCB0093D353 /* TestClass+Exchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestClass+Exchange.h"; sourceTree = "<group>"; };
+		32C7269F1FC82BCB0093D353 /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		32C726A01FC82BCB0093D353 /* ForwardTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardTestClass.m; sourceTree = "<group>"; };
+		32C726A11FC82BCB0093D353 /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		32C726A21FC82BCB0093D353 /* TestClass+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Category.m"; sourceTree = "<group>"; };
+		32C726A31FC82BCB0093D353 /* TestClass+AssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AssociatedObject.m"; sourceTree = "<group>"; };
+		32C726A41FC82BCB0093D353 /* TestClass+Exchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TestClass+Exchange.m"; sourceTree = "<group>"; };
+		32C726A61FC82BCB0093D353 /* MYTestNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTestNotificationViewController.h; sourceTree = "<group>"; };
+		32C726A71FC82BCB0093D353 /* MYNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNotificationViewController.m; sourceTree = "<group>"; };
+		32C726A81FC82BCB0093D353 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		32C726A91FC82BCB0093D353 /* MYTestNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTestNotificationViewController.m; sourceTree = "<group>"; };
+		32C726AA1FC82BCB0093D353 /* MYNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNotificationViewController.h; sourceTree = "<group>"; };
+		32C726AC1FC82BCB0093D353 /* CaculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaculatorMaker.m; sourceTree = "<group>"; };
+		32C726AD1FC82BCB0093D353 /* UITableView+Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Chain.m"; sourceTree = "<group>"; };
+		32C726AE1FC82BCB0093D353 /* MYTableViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableViewHelper.h; sourceTree = "<group>"; };
+		32C726AF1FC82BCB0093D353 /* MYImageMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageMaker.m; sourceTree = "<group>"; };
+		32C726B01FC82BCB0093D353 /* MYChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYChainViewController.h; sourceTree = "<group>"; };
+		32C726B11FC82BCB0093D353 /* NSObject+CaculatorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CaculatorMaker.h"; sourceTree = "<group>"; };
+		32C726B21FC82BCB0093D353 /* CaculatorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaculatorMaker.h; sourceTree = "<group>"; };
+		32C726B31FC82BCB0093D353 /* MYChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYChainViewController.m; sourceTree = "<group>"; };
+		32C726B41FC82BCB0093D353 /* MYImageMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageMaker.h; sourceTree = "<group>"; };
+		32C726B51FC82BCB0093D353 /* MYTableViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableViewHelper.m; sourceTree = "<group>"; };
+		32C726B61FC82BCB0093D353 /* UITableView+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Chain.h"; sourceTree = "<group>"; };
+		32C726B71FC82BCB0093D353 /* NSObject+CaculatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CaculatorMaker.m"; sourceTree = "<group>"; };
+		32C726B91FC82BCB0093D353 /* Parent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parent.m; sourceTree = "<group>"; };
+		32C726BA1FC82BCB0093D353 /* Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
+		32C726BB1FC82BCB0093D353 /* Child+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Child+Load.h"; sourceTree = "<group>"; };
+		32C726BC1FC82BCB0093D353 /* Parent+Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parent+Load.h"; sourceTree = "<group>"; };
+		32C726BD1FC82BCB0093D353 /* Child.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Child.m; sourceTree = "<group>"; };
+		32C726BE1FC82BCB0093D353 /* Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
+		32C726BF1FC82BCB0093D353 /* Parent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parent.h; sourceTree = "<group>"; };
+		32C726C01FC82BCB0093D353 /* Parent+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Parent+Load.m"; sourceTree = "<group>"; };
+		32C726C11FC82BCB0093D353 /* Child+Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Child+Load.m"; sourceTree = "<group>"; };
+		32C726C21FC82BCB0093D353 /* Child.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Child.h; sourceTree = "<group>"; };
+		32C726C41FC82BCB0093D353 /* MYScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScrollView.h; sourceTree = "<group>"; };
+		32C726C51FC82BCB0093D353 /* MYScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScrollViewController.h; sourceTree = "<group>"; };
+		32C726C61FC82BCB0093D353 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		32C726C71FC82BCB0093D353 /* MYScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScrollView.m; sourceTree = "<group>"; };
+		32C726C81FC82BCB0093D353 /* MYScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScrollViewController.m; sourceTree = "<group>"; };
+		32C726CA1FC82BCB0093D353 /* MYStringFormattManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStringFormattManager.h; sourceTree = "<group>"; };
+		32C726CB1FC82BCB0093D353 /* MYStringFormatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStringFormatViewController.h; sourceTree = "<group>"; };
+		32C726CC1FC82BCB0093D353 /* MYStringFormatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYStringFormatModel.m; sourceTree = "<group>"; };
+		32C726CD1FC82BCB0093D353 /* MYStringFormatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYStringFormatViewController.m; sourceTree = "<group>"; };
+		32C726CE1FC82BCB0093D353 /* MYStringFormattManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYStringFormattManager.m; sourceTree = "<group>"; };
+		32C726CF1FC82BCB0093D353 /* MYStringFormatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStringFormatModel.h; sourceTree = "<group>"; };
+		32C726D11FC82BCC0093D353 /* MYHuggingPriorityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHuggingPriorityViewController.h; sourceTree = "<group>"; };
+		32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHuggingPriorityViewController.m; sourceTree = "<group>"; };
 		5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYSampleCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54BF657F7C04031213FA335 /* Pods-MYSampleCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,88 +162,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3208CADE1FC6866500AD9A30 /* Runtime */ = {
-			isa = PBXGroup;
-			children = (
-				3208CADF1FC695A400AD9A30 /* Runtime.h */,
-				3208CAE01FC695A400AD9A30 /* Runtime.m */,
-				3208CAE21FC697CC00AD9A30 /* TestClass.h */,
-				3208CAE31FC697CC00AD9A30 /* TestClass.m */,
-				3208CAE51FC698B800AD9A30 /* TestClass+Category.h */,
-				3208CAE61FC698B800AD9A30 /* TestClass+Category.m */,
-				3208CAE81FC69ADE00AD9A30 /* TestClass+AssociatedObject.h */,
-				3208CAE91FC69ADE00AD9A30 /* TestClass+AssociatedObject.m */,
-				3208CAEB1FC69C7400AD9A30 /* TestClass+Exchange.h */,
-				3208CAEC1FC69C7400AD9A30 /* TestClass+Exchange.m */,
-				3208CAEE1FC69EC000AD9A30 /* ForwardTestClass.h */,
-				3208CAEF1FC69EC000AD9A30 /* ForwardTestClass.m */,
-			);
-			path = Runtime;
-			sourceTree = "<group>";
-		};
-		3208CAF71FC6B2F100AD9A30 /* NSNotification的原理 */ = {
-			isa = PBXGroup;
-			children = (
-				3208CAF81FC6B30D00AD9A30 /* MYNotificationViewController.h */,
-				3208CAF91FC6B30D00AD9A30 /* MYNotificationViewController.m */,
-				3208CAFB1FC6B94100AD9A30 /* MYTestNotificationViewController.h */,
-				3208CAFC1FC6B94100AD9A30 /* MYTestNotificationViewController.m */,
-			);
-			path = "NSNotification的原理";
-			sourceTree = "<group>";
-		};
-		3208CB051FC7BD4500AD9A30 /* 字符串格式化 */ = {
-			isa = PBXGroup;
-			children = (
-				3208CB181FC7BD7E00AD9A30 /* MYStringFormattManager.h */,
-				3208CB191FC7BD7E00AD9A30 /* MYStringFormattManager.m */,
-				3208CB1B1FC7BDAD00AD9A30 /* MYStringFormatModel.h */,
-				3208CB1C1FC7BDAD00AD9A30 /* MYStringFormatModel.m */,
-				3208CB1E1FC7BDE500AD9A30 /* MYStringFormatViewController.h */,
-				3208CB1F1FC7BDE500AD9A30 /* MYStringFormatViewController.m */,
-			);
-			path = "字符串格式化";
-			sourceTree = "<group>";
-		};
-		323AD4241FC2B34300BC3DEA /* MYScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				323AD4251FC2B35E00BC3DEA /* MYScrollView.h */,
-				323AD4261FC2B35E00BC3DEA /* MYScrollView.m */,
-				3208CAF11FC6B0EA00AD9A30 /* MYScrollViewController.h */,
-				3208CAF21FC6B0EA00AD9A30 /* MYScrollViewController.m */,
-			);
-			path = MYScrollView;
-			sourceTree = "<group>";
-		};
-		3254F5331FBD80EA0020B58C /* 链式编程 */ = {
-			isa = PBXGroup;
-			children = (
-				3254F5341FBD81CB0020B58C /* CaculatorMaker.h */,
-				3254F5351FBD81CB0020B58C /* CaculatorMaker.m */,
-				3254F5371FBD83E00020B58C /* NSObject+CaculatorMaker.h */,
-				3254F5381FBD83E00020B58C /* NSObject+CaculatorMaker.m */,
-				32B3EBC41FBE74C10067DF21 /* UITableView+Chain.h */,
-				32B3EBC51FBE74C10067DF21 /* UITableView+Chain.m */,
-				32B3EBC71FBE754B0067DF21 /* MYTableViewHelper.h */,
-				32B3EBC81FBE754B0067DF21 /* MYTableViewHelper.m */,
-				32B3EC121FBEBD2C0067DF21 /* MYImageMaker.h */,
-				32B3EC131FBEBD2C0067DF21 /* MYImageMaker.m */,
-				3208CAF41FC6B16100AD9A30 /* MYChainViewController.h */,
-				3208CAF51FC6B16100AD9A30 /* MYChainViewController.m */,
-			);
-			path = "链式编程";
-			sourceTree = "<group>";
-		};
 		32C6C3081FBC3EC20054FC23 = {
 			isa = PBXGroup;
 			children = (
-				3208CB051FC7BD4500AD9A30 /* 字符串格式化 */,
-				3208CAF71FC6B2F100AD9A30 /* NSNotification的原理 */,
-				3208CADE1FC6866500AD9A30 /* Runtime */,
-				323AD4241FC2B34300BC3DEA /* MYScrollView */,
-				3254F5331FBD80EA0020B58C /* 链式编程 */,
-				32C6C3461FBC3EE40054FC23 /* +load和+initialize方法 */,
 				32C6C3131FBC3EC20054FC23 /* MYSampleCode */,
 				32C6C32C1FBC3EC20054FC23 /* MYSampleCodeTests */,
 				32C6C3371FBC3EC20054FC23 /* MYSampleCodeUITests */,
@@ -259,6 +187,13 @@
 		32C6C3131FBC3EC20054FC23 /* MYSampleCode */ = {
 			isa = PBXGroup;
 			children = (
+				32C726B81FC82BCB0093D353 /* +load和+initialize方法 */,
+				32C726AB1FC82BCB0093D353 /* 链式编程 */,
+				32C726D01FC82BCC0093D353 /* 验证自动布局的抗压缩和抗拉伸 */,
+				32C726C91FC82BCB0093D353 /* 字符串格式化 */,
+				32C726C31FC82BCB0093D353 /* MYScrollView */,
+				32C726A51FC82BCB0093D353 /* NSNotification的原理 */,
+				32C726981FC82BCB0093D353 /* Runtime */,
 				32C6C3141FBC3EC20054FC23 /* AppDelegate.h */,
 				32C6C3151FBC3EC20054FC23 /* AppDelegate.m */,
 				32C6C3171FBC3EC20054FC23 /* ViewController.h */,
@@ -290,21 +225,105 @@
 			path = MYSampleCodeUITests;
 			sourceTree = "<group>";
 		};
-		32C6C3461FBC3EE40054FC23 /* +load和+initialize方法 */ = {
+		32C726981FC82BCB0093D353 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
-				32C6C3471FBC3EE40054FC23 /* Parent.m */,
-				32C6C3481FBC3EE40054FC23 /* Other.h */,
-				32C6C3491FBC3EE40054FC23 /* Child+Load.h */,
-				32C6C34A1FBC3EE40054FC23 /* Parent+Load.h */,
-				32C6C34B1FBC3EE40054FC23 /* Child.m */,
-				32C6C34C1FBC3EE40054FC23 /* Other.m */,
-				32C6C34D1FBC3EE40054FC23 /* Parent.h */,
-				32C6C34E1FBC3EE40054FC23 /* Parent+Load.m */,
-				32C6C34F1FBC3EE40054FC23 /* Child+Load.m */,
-				32C6C3501FBC3EE40054FC23 /* Child.h */,
+				32C726991FC82BCB0093D353 /* ForwardTestClass.h */,
+				32C7269A1FC82BCB0093D353 /* Runtime.m */,
+				32C7269B1FC82BCB0093D353 /* TestClass+AssociatedObject.h */,
+				32C7269C1FC82BCB0093D353 /* TestClass+Category.h */,
+				32C7269D1FC82BCB0093D353 /* TestClass.h */,
+				32C7269E1FC82BCB0093D353 /* TestClass+Exchange.h */,
+				32C7269F1FC82BCB0093D353 /* Runtime.h */,
+				32C726A01FC82BCB0093D353 /* ForwardTestClass.m */,
+				32C726A11FC82BCB0093D353 /* TestClass.m */,
+				32C726A21FC82BCB0093D353 /* TestClass+Category.m */,
+				32C726A31FC82BCB0093D353 /* TestClass+AssociatedObject.m */,
+				32C726A41FC82BCB0093D353 /* TestClass+Exchange.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		32C726A51FC82BCB0093D353 /* NSNotification的原理 */ = {
+			isa = PBXGroup;
+			children = (
+				32C726A61FC82BCB0093D353 /* MYTestNotificationViewController.h */,
+				32C726A71FC82BCB0093D353 /* MYNotificationViewController.m */,
+				32C726A81FC82BCB0093D353 /* README.md */,
+				32C726A91FC82BCB0093D353 /* MYTestNotificationViewController.m */,
+				32C726AA1FC82BCB0093D353 /* MYNotificationViewController.h */,
+			);
+			path = "NSNotification的原理";
+			sourceTree = "<group>";
+		};
+		32C726AB1FC82BCB0093D353 /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				32C726AC1FC82BCB0093D353 /* CaculatorMaker.m */,
+				32C726AD1FC82BCB0093D353 /* UITableView+Chain.m */,
+				32C726AE1FC82BCB0093D353 /* MYTableViewHelper.h */,
+				32C726AF1FC82BCB0093D353 /* MYImageMaker.m */,
+				32C726B01FC82BCB0093D353 /* MYChainViewController.h */,
+				32C726B11FC82BCB0093D353 /* NSObject+CaculatorMaker.h */,
+				32C726B21FC82BCB0093D353 /* CaculatorMaker.h */,
+				32C726B31FC82BCB0093D353 /* MYChainViewController.m */,
+				32C726B41FC82BCB0093D353 /* MYImageMaker.h */,
+				32C726B51FC82BCB0093D353 /* MYTableViewHelper.m */,
+				32C726B61FC82BCB0093D353 /* UITableView+Chain.h */,
+				32C726B71FC82BCB0093D353 /* NSObject+CaculatorMaker.m */,
+			);
+			path = "链式编程";
+			sourceTree = "<group>";
+		};
+		32C726B81FC82BCB0093D353 /* +load和+initialize方法 */ = {
+			isa = PBXGroup;
+			children = (
+				32C726B91FC82BCB0093D353 /* Parent.m */,
+				32C726BA1FC82BCB0093D353 /* Other.h */,
+				32C726BB1FC82BCB0093D353 /* Child+Load.h */,
+				32C726BC1FC82BCB0093D353 /* Parent+Load.h */,
+				32C726BD1FC82BCB0093D353 /* Child.m */,
+				32C726BE1FC82BCB0093D353 /* Other.m */,
+				32C726BF1FC82BCB0093D353 /* Parent.h */,
+				32C726C01FC82BCB0093D353 /* Parent+Load.m */,
+				32C726C11FC82BCB0093D353 /* Child+Load.m */,
+				32C726C21FC82BCB0093D353 /* Child.h */,
 			);
 			path = "+load和+initialize方法";
+			sourceTree = "<group>";
+		};
+		32C726C31FC82BCB0093D353 /* MYScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				32C726C41FC82BCB0093D353 /* MYScrollView.h */,
+				32C726C51FC82BCB0093D353 /* MYScrollViewController.h */,
+				32C726C61FC82BCB0093D353 /* README.md */,
+				32C726C71FC82BCB0093D353 /* MYScrollView.m */,
+				32C726C81FC82BCB0093D353 /* MYScrollViewController.m */,
+			);
+			path = MYScrollView;
+			sourceTree = "<group>";
+		};
+		32C726C91FC82BCB0093D353 /* 字符串格式化 */ = {
+			isa = PBXGroup;
+			children = (
+				32C726CA1FC82BCB0093D353 /* MYStringFormattManager.h */,
+				32C726CB1FC82BCB0093D353 /* MYStringFormatViewController.h */,
+				32C726CC1FC82BCB0093D353 /* MYStringFormatModel.m */,
+				32C726CD1FC82BCB0093D353 /* MYStringFormatViewController.m */,
+				32C726CE1FC82BCB0093D353 /* MYStringFormattManager.m */,
+				32C726CF1FC82BCB0093D353 /* MYStringFormatModel.h */,
+			);
+			path = "字符串格式化";
+			sourceTree = "<group>";
+		};
+		32C726D01FC82BCC0093D353 /* 验证自动布局的抗压缩和抗拉伸 */ = {
+			isa = PBXGroup;
+			children = (
+				32C726D11FC82BCC0093D353 /* MYHuggingPriorityViewController.h */,
+				32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */,
+			);
+			path = "验证自动布局的抗压缩和抗拉伸";
 			sourceTree = "<group>";
 		};
 		58A88FA38E6B7B4AA52C2344 /* Pods */ = {
@@ -435,6 +454,8 @@
 			files = (
 				32C6C3211FBC3EC20054FC23 /* LaunchScreen.storyboard in Resources */,
 				32C6C31E1FBC3EC20054FC23 /* Assets.xcassets in Resources */,
+				32C726E71FC82BCC0093D353 /* README.md in Resources */,
+				32C726DA1FC82BCC0093D353 /* README.md in Resources */,
 				32C6C31C1FBC3EC20054FC23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,33 +532,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32B3EBC61FBE74C10067DF21 /* UITableView+Chain.m in Sources */,
-				3208CB201FC7BDE500AD9A30 /* MYStringFormatViewController.m in Sources */,
-				3208CB1D1FC7BDAD00AD9A30 /* MYStringFormatModel.m in Sources */,
-				32C6C3541FBC3EE50054FC23 /* Parent+Load.m in Sources */,
-				32B3EC141FBEBD2C0067DF21 /* MYImageMaker.m in Sources */,
-				32C6C3531FBC3EE50054FC23 /* Other.m in Sources */,
+				32C726E61FC82BCC0093D353 /* Child+Load.m in Sources */,
+				32C726D51FC82BCC0093D353 /* TestClass.m in Sources */,
+				32C726DD1FC82BCC0093D353 /* UITableView+Chain.m in Sources */,
+				32C726DC1FC82BCC0093D353 /* CaculatorMaker.m in Sources */,
+				32C726D31FC82BCC0093D353 /* Runtime.m in Sources */,
+				32C726DB1FC82BCC0093D353 /* MYTestNotificationViewController.m in Sources */,
+				32C726EB1FC82BCC0093D353 /* MYStringFormatViewController.m in Sources */,
+				32C726E21FC82BCC0093D353 /* Parent.m in Sources */,
+				32C726ED1FC82BCC0093D353 /* MYHuggingPriorityViewController.m in Sources */,
+				32C726DF1FC82BCC0093D353 /* MYChainViewController.m in Sources */,
+				32C726E11FC82BCC0093D353 /* NSObject+CaculatorMaker.m in Sources */,
+				32C726E41FC82BCC0093D353 /* Other.m in Sources */,
+				32C726D61FC82BCC0093D353 /* TestClass+Category.m in Sources */,
+				32C726E01FC82BCC0093D353 /* MYTableViewHelper.m in Sources */,
+				32C726EA1FC82BCC0093D353 /* MYStringFormatModel.m in Sources */,
+				32C726D91FC82BCC0093D353 /* MYNotificationViewController.m in Sources */,
+				32C726E81FC82BCC0093D353 /* MYScrollView.m in Sources */,
+				32C726D41FC82BCC0093D353 /* ForwardTestClass.m in Sources */,
+				32C726EC1FC82BCC0093D353 /* MYStringFormattManager.m in Sources */,
+				32C726E31FC82BCC0093D353 /* Child.m in Sources */,
+				32C726E51FC82BCC0093D353 /* Parent+Load.m in Sources */,
 				32C6C3191FBC3EC20054FC23 /* ViewController.m in Sources */,
-				3208CAFD1FC6B94100AD9A30 /* MYTestNotificationViewController.m in Sources */,
-				3208CAF31FC6B0EA00AD9A30 /* MYScrollViewController.m in Sources */,
-				3208CAF61FC6B16100AD9A30 /* MYChainViewController.m in Sources */,
-				3254F5361FBD81CB0020B58C /* CaculatorMaker.m in Sources */,
-				32C6C3511FBC3EE50054FC23 /* Parent.m in Sources */,
-				3208CAED1FC69C7400AD9A30 /* TestClass+Exchange.m in Sources */,
-				3208CAEA1FC69ADE00AD9A30 /* TestClass+AssociatedObject.m in Sources */,
 				32C6C3241FBC3EC20054FC23 /* main.m in Sources */,
-				32B3EBC91FBE754B0067DF21 /* MYTableViewHelper.m in Sources */,
+				32C726DE1FC82BCC0093D353 /* MYImageMaker.m in Sources */,
 				32C6C3161FBC3EC20054FC23 /* AppDelegate.m in Sources */,
-				3208CB1A1FC7BD7E00AD9A30 /* MYStringFormattManager.m in Sources */,
-				32C6C3551FBC3EE50054FC23 /* Child+Load.m in Sources */,
-				3208CAFA1FC6B30D00AD9A30 /* MYNotificationViewController.m in Sources */,
-				3208CAE71FC698B800AD9A30 /* TestClass+Category.m in Sources */,
-				32C6C3521FBC3EE50054FC23 /* Child.m in Sources */,
-				3208CAE41FC697CC00AD9A30 /* TestClass.m in Sources */,
-				3208CAF01FC69EC000AD9A30 /* ForwardTestClass.m in Sources */,
-				3254F5391FBD83E00020B58C /* NSObject+CaculatorMaker.m in Sources */,
-				3208CAE11FC695A400AD9A30 /* Runtime.m in Sources */,
-				323AD4271FC2B35E00BC3DEA /* MYScrollView.m in Sources */,
+				32C726D71FC82BCC0093D353 /* TestClass+AssociatedObject.m in Sources */,
+				32C726D81FC82BCC0093D353 /* TestClass+Exchange.m in Sources */,
+				32C726E91FC82BCC0093D353 /* MYScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

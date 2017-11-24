@@ -27,6 +27,7 @@
     [self.dataSource addObject:@"探索链式编程-MYChainViewController"];
     [self.dataSource addObject:@"探索通知的原理-MYNotificationViewController"];
     [self.dataSource addObject:@"字符串格式化-MYStringFormatViewController"];
+    [self.dataSource addObject:@"自动布局的抗压缩和抗拉伸-MYHuggingPriorityViewController"];
 
     [self.view addSubview:self.tableView];
 }
