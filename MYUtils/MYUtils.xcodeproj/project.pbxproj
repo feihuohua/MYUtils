@@ -75,6 +75,8 @@
 		3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B4711F4AC7EF00A0883B /* messageHandler.html */; };
 		3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = 3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */; };
 		3208CADD1FC48BCD00AD9A30 /* UIFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CADC1FC48BCD00AD9A30 /* UIFloatLabelTextField.m */; };
+		3208CB011FC7B69A00AD9A30 /* MYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB001FC7B69A00AD9A30 /* MYFileManager.m */; };
+		3208CB041FC7BB8100AD9A30 /* MYStringFormattManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */; };
 		320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */; };
 		320FFB221FC3D966006CC5AE /* MYFadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB211FC3D966006CC5AE /* MYFadeViewController.m */; };
 		320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB241FC3DC85006CC5AE /* MYTestViewController.m */; };
@@ -259,6 +261,10 @@
 		3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webViewJavascriptBridge.html; sourceTree = "<group>"; };
 		3208CADB1FC48BCD00AD9A30 /* UIFloatLabelTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFloatLabelTextField.h; sourceTree = "<group>"; };
 		3208CADC1FC48BCD00AD9A30 /* UIFloatLabelTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabelTextField.m; sourceTree = "<group>"; };
+		3208CAFF1FC7B69A00AD9A30 /* MYFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFileManager.h; sourceTree = "<group>"; };
+		3208CB001FC7B69A00AD9A30 /* MYFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFileManager.m; sourceTree = "<group>"; };
+		3208CB021FC7BB8100AD9A30 /* MYStringFormattManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYStringFormattManager.h; sourceTree = "<group>"; };
+		3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYStringFormattManager.m; sourceTree = "<group>"; };
 		320FFB1D1FC3D6E7006CC5AE /* MYFadeNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFadeNavigationController.h; sourceTree = "<group>"; };
 		320FFB1E1FC3D6E7006CC5AE /* MYFadeNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFadeNavigationController.m; sourceTree = "<group>"; };
 		320FFB201FC3D966006CC5AE /* MYFadeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFadeViewController.h; sourceTree = "<group>"; };
@@ -577,6 +583,17 @@
 			path = "Local Media";
 			sourceTree = "<group>";
 		};
+		3208CAFE1FC7B65200AD9A30 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3208CAFF1FC7B69A00AD9A30 /* MYFileManager.h */,
+				3208CB001FC7B69A00AD9A30 /* MYFileManager.m */,
+				3208CB021FC7BB8100AD9A30 /* MYStringFormattManager.h */,
+				3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		320FFB1C1FC3D6D1006CC5AE /* MYFadeNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -881,9 +898,9 @@
 			children = (
 				32712AC91F3857A8008A105F /* AppDelegate.h */,
 				32712ACA1F3857A8008A105F /* AppDelegate.m */,
+				3208CAFE1FC7B65200AD9A30 /* Manager */,
 				32712B0E1F395164008A105F /* Base */,
 				32712B0F1F395164008A105F /* Macro */,
-				32712B101F395164008A105F /* Manager */,
 				32712B111F395164008A105F /* Modules */,
 				32712B121F395164008A105F /* Resource */,
 				32712B161F395164008A105F /* Utils */,
@@ -925,13 +942,6 @@
 				32712BC31F3AF520008A105F /* UtilsMacros.h */,
 			);
 			path = Macro;
-			sourceTree = "<group>";
-		};
-		32712B101F395164008A105F /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		32712B111F395164008A105F /* Modules */ = {
@@ -1421,6 +1431,7 @@
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
 				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
+				3208CB011FC7B69A00AD9A30 /* MYFileManager.m in Sources */,
 				32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */,
 				32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
@@ -1470,6 +1481,7 @@
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
 				3215B46C1FC47128001038A5 /* MYSideslipScrollViewController.m in Sources */,
 				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
+				3208CB041FC7BB8100AD9A30 /* MYStringFormattManager.m in Sources */,
 				32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */,
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
