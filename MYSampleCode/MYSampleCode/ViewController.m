@@ -26,6 +26,7 @@
     [self.dataSource addObject:@"探索UIScrollView的原理-MYScrollViewController"];
     [self.dataSource addObject:@"探索链式编程-MYChainViewController"];
     [self.dataSource addObject:@"探索通知的原理-MYNotificationViewController"];
+    [self.dataSource addObject:@"字符串格式化-MYStringFormatViewController"];
 
     [self.view addSubview:self.tableView];
 }

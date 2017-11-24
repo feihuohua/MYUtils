@@ -10,4 +10,6 @@
 
 @interface MYStringFormatModel : NSObject
 
+@property (nonatomic, strong) NSString *stringFormatKey;
+
 @end
