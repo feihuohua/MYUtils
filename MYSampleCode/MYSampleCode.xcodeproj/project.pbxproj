@@ -42,6 +42,8 @@
 		32C726EB1FC82BCC0093D353 /* MYStringFormatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726CD1FC82BCB0093D353 /* MYStringFormatViewController.m */; };
 		32C726EC1FC82BCC0093D353 /* MYStringFormattManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726CE1FC82BCB0093D353 /* MYStringFormattManager.m */; };
 		32C726ED1FC82BCC0093D353 /* MYHuggingPriorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */; };
+		32C727061FCBBD010093D353 /* MYAOPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C727051FCBBD010093D353 /* MYAOPViewController.m */; };
+		32C727091FCBBDA90093D353 /* TestClass+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C727081FCBBDA90093D353 /* TestClass+AOP.m */; };
 		B980D3484D04B4FCD6E27C41 /* libPods-MYSampleCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +134,10 @@
 		32C726CF1FC82BCB0093D353 /* MYStringFormatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYStringFormatModel.h; sourceTree = "<group>"; };
 		32C726D11FC82BCC0093D353 /* MYHuggingPriorityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYHuggingPriorityViewController.h; sourceTree = "<group>"; };
 		32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYHuggingPriorityViewController.m; sourceTree = "<group>"; };
+		32C727041FCBBD010093D353 /* MYAOPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAOPViewController.h; sourceTree = "<group>"; };
+		32C727051FCBBD010093D353 /* MYAOPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAOPViewController.m; sourceTree = "<group>"; };
+		32C727071FCBBDA90093D353 /* TestClass+AOP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+AOP.h"; sourceTree = "<group>"; };
+		32C727081FCBBDA90093D353 /* TestClass+AOP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AOP.m"; sourceTree = "<group>"; };
 		5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYSampleCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54BF657F7C04031213FA335 /* Pods-MYSampleCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +193,7 @@
 		32C6C3131FBC3EC20054FC23 /* MYSampleCode */ = {
 			isa = PBXGroup;
 			children = (
+				32C727031FCBBCED0093D353 /* 面向切面编程(AOP) */,
 				32C726B81FC82BCB0093D353 /* +load和+initialize方法 */,
 				32C726AB1FC82BCB0093D353 /* 链式编程 */,
 				32C726D01FC82BCC0093D353 /* 验证自动布局的抗压缩和抗拉伸 */,
@@ -324,6 +331,17 @@
 				32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */,
 			);
 			path = "验证自动布局的抗压缩和抗拉伸";
+			sourceTree = "<group>";
+		};
+		32C727031FCBBCED0093D353 /* 面向切面编程(AOP) */ = {
+			isa = PBXGroup;
+			children = (
+				32C727041FCBBD010093D353 /* MYAOPViewController.h */,
+				32C727051FCBBD010093D353 /* MYAOPViewController.m */,
+				32C727071FCBBDA90093D353 /* TestClass+AOP.h */,
+				32C727081FCBBDA90093D353 /* TestClass+AOP.m */,
+			);
+			path = "面向切面编程(AOP)";
 			sourceTree = "<group>";
 		};
 		58A88FA38E6B7B4AA52C2344 /* Pods */ = {
@@ -546,10 +564,12 @@
 				32C726E41FC82BCC0093D353 /* Other.m in Sources */,
 				32C726D61FC82BCC0093D353 /* TestClass+Category.m in Sources */,
 				32C726E01FC82BCC0093D353 /* MYTableViewHelper.m in Sources */,
+				32C727061FCBBD010093D353 /* MYAOPViewController.m in Sources */,
 				32C726EA1FC82BCC0093D353 /* MYStringFormatModel.m in Sources */,
 				32C726D91FC82BCC0093D353 /* MYNotificationViewController.m in Sources */,
 				32C726E81FC82BCC0093D353 /* MYScrollView.m in Sources */,
 				32C726D41FC82BCC0093D353 /* ForwardTestClass.m in Sources */,
+				32C727091FCBBDA90093D353 /* TestClass+AOP.m in Sources */,
 				32C726EC1FC82BCC0093D353 /* MYStringFormattManager.m in Sources */,
 				32C726E31FC82BCC0093D353 /* Child.m in Sources */,
 				32C726E51FC82BCC0093D353 /* Parent+Load.m in Sources */,

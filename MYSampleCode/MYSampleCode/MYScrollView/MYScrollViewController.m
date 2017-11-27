@@ -22,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.scrollView = [[MYScrollView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    self.scrollView = [[MYScrollView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)];
     self.scrollView.scrollHorizontal = NO;
     
     UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 100, 100)];
