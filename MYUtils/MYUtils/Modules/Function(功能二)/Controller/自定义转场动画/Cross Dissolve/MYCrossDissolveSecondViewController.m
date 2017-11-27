@@ -31,6 +31,7 @@
     [customButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(weakSelf.view);
     }];
+
 }
 
 - (void)dismissAction:(UIButton *)sender

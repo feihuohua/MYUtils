@@ -140,6 +140,8 @@
 		32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */; };
 		32B3EC091FBEA7F60067DF21 /* MYHamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */; };
 		32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */; };
+		32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726F01FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m */; };
+		32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726F31FCBADD00093D353 /* MYCountDownManager.m */; };
 		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
 		32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */; };
 		32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */; };
@@ -388,6 +390,10 @@
 		32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHamburgerButton.m; sourceTree = "<group>"; };
 		32B3EC0D1FBEA9830067DF21 /* MYHamburgerButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHamburgerButtonViewController.h; sourceTree = "<group>"; };
 		32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHamburgerButtonViewController.m; sourceTree = "<group>"; };
+		32C726EF1FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownTimeIntervalModel.h; sourceTree = "<group>"; };
+		32C726F01FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCountDownTimeIntervalModel.m; sourceTree = "<group>"; };
+		32C726F21FCBADD00093D353 /* MYCountDownManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownManager.h; sourceTree = "<group>"; };
+		32C726F31FCBADD00093D353 /* MYCountDownManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCountDownManager.m; sourceTree = "<group>"; };
 		32C84BF81F715C30003E4793 /* MYActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheet.h; sourceTree = "<group>"; };
 		32C84BF91F715C30003E4793 /* MYActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYActionSheet.m; sourceTree = "<group>"; };
 		32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYActionSheetViewController.h; sourceTree = "<group>"; };
@@ -983,6 +989,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32C726EE1FCBAD650093D353 /* MYCountDownManager */,
 				3215B45C1FC45A7D001038A5 /* AuthenticationWIFI */,
 				320FFB1C1FC3D6D1006CC5AE /* MYFadeNavigationController */,
 				32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */,
@@ -1095,6 +1102,17 @@
 				32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		32C726EE1FCBAD650093D353 /* MYCountDownManager */ = {
+			isa = PBXGroup;
+			children = (
+				32C726EF1FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.h */,
+				32C726F01FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m */,
+				32C726F21FCBADD00093D353 /* MYCountDownManager.h */,
+				32C726F31FCBADD00093D353 /* MYCountDownManager.m */,
+			);
+			path = MYCountDownManager;
 			sourceTree = "<group>";
 		};
 		32C84BF71F715BE8003E4793 /* MYActionSheet */ = {
@@ -1470,6 +1488,7 @@
 				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
+				32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
@@ -1491,6 +1510,7 @@
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
 				320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */,
+				32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 				32B3EBE81FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m in Sources */,

@@ -78,7 +78,6 @@
     self.textLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:self.textLabel];
     self.textLabel.text = @"No Selected.";
-    
 }
 
 - (void)segmentChanged:(UISegmentedControl*)segment
