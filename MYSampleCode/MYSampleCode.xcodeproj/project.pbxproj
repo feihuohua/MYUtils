@@ -44,6 +44,9 @@
 		32C726ED1FC82BCC0093D353 /* MYHuggingPriorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726D21FC82BCC0093D353 /* MYHuggingPriorityViewController.m */; };
 		32C727061FCBBD010093D353 /* MYAOPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C727051FCBBD010093D353 /* MYAOPViewController.m */; };
 		32C727091FCBBDA90093D353 /* TestClass+AOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C727081FCBBDA90093D353 /* TestClass+AOP.m */; };
+		32C7270D1FCBC0740093D353 /* MYCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C7270C1FCBC0740093D353 /* MYCountDownViewController.m */; };
+		32C727121FCBDBB00093D353 /* MYCountDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C7270F1FCBDBAF0093D353 /* MYCountDownViewCell.m */; };
+		32C727131FCBDBB00093D353 /* MYCountDownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C727111FCBDBB00093D353 /* MYCountDownModel.m */; };
 		B980D3484D04B4FCD6E27C41 /* libPods-MYSampleCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +141,12 @@
 		32C727051FCBBD010093D353 /* MYAOPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAOPViewController.m; sourceTree = "<group>"; };
 		32C727071FCBBDA90093D353 /* TestClass+AOP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestClass+AOP.h"; sourceTree = "<group>"; };
 		32C727081FCBBDA90093D353 /* TestClass+AOP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TestClass+AOP.m"; sourceTree = "<group>"; };
+		32C7270B1FCBC0740093D353 /* MYCountDownViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownViewController.h; sourceTree = "<group>"; };
+		32C7270C1FCBC0740093D353 /* MYCountDownViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCountDownViewController.m; sourceTree = "<group>"; };
+		32C7270E1FCBDBAF0093D353 /* MYCountDownViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYCountDownViewCell.h; path = "../../../MYUtils/MYUtils/Modules/Function(功能二)/Controller/UITableViewCell倒计时/MYCountDownViewCell.h"; sourceTree = "<group>"; };
+		32C7270F1FCBDBAF0093D353 /* MYCountDownViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYCountDownViewCell.m; path = "../../../MYUtils/MYUtils/Modules/Function(功能二)/Controller/UITableViewCell倒计时/MYCountDownViewCell.m"; sourceTree = "<group>"; };
+		32C727101FCBDBB00093D353 /* MYCountDownModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYCountDownModel.h; path = "../../../MYUtils/MYUtils/Modules/Function(功能二)/Controller/UITableViewCell倒计时/MYCountDownModel.h"; sourceTree = "<group>"; };
+		32C727111FCBDBB00093D353 /* MYCountDownModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYCountDownModel.m; path = "../../../MYUtils/MYUtils/Modules/Function(功能二)/Controller/UITableViewCell倒计时/MYCountDownModel.m"; sourceTree = "<group>"; };
 		5A642536BA86C7067CE0FA0E /* libPods-MYSampleCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYSampleCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54BF657F7C04031213FA335 /* Pods-MYSampleCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYSampleCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-MYSampleCode/Pods-MYSampleCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +202,7 @@
 		32C6C3131FBC3EC20054FC23 /* MYSampleCode */ = {
 			isa = PBXGroup;
 			children = (
+				32C7270A1FCBC0640093D353 /* 探索倒计时 */,
 				32C727031FCBBCED0093D353 /* 面向切面编程(AOP) */,
 				32C726B81FC82BCB0093D353 /* +load和+initialize方法 */,
 				32C726AB1FC82BCB0093D353 /* 链式编程 */,
@@ -342,6 +352,19 @@
 				32C727081FCBBDA90093D353 /* TestClass+AOP.m */,
 			);
 			path = "面向切面编程(AOP)";
+			sourceTree = "<group>";
+		};
+		32C7270A1FCBC0640093D353 /* 探索倒计时 */ = {
+			isa = PBXGroup;
+			children = (
+				32C7270B1FCBC0740093D353 /* MYCountDownViewController.h */,
+				32C7270C1FCBC0740093D353 /* MYCountDownViewController.m */,
+				32C727101FCBDBB00093D353 /* MYCountDownModel.h */,
+				32C727111FCBDBB00093D353 /* MYCountDownModel.m */,
+				32C7270E1FCBDBAF0093D353 /* MYCountDownViewCell.h */,
+				32C7270F1FCBDBAF0093D353 /* MYCountDownViewCell.m */,
+			);
+			path = "探索倒计时";
 			sourceTree = "<group>";
 		};
 		58A88FA38E6B7B4AA52C2344 /* Pods */ = {
@@ -560,6 +583,7 @@
 				32C726E21FC82BCC0093D353 /* Parent.m in Sources */,
 				32C726ED1FC82BCC0093D353 /* MYHuggingPriorityViewController.m in Sources */,
 				32C726DF1FC82BCC0093D353 /* MYChainViewController.m in Sources */,
+				32C7270D1FCBC0740093D353 /* MYCountDownViewController.m in Sources */,
 				32C726E11FC82BCC0093D353 /* NSObject+CaculatorMaker.m in Sources */,
 				32C726E41FC82BCC0093D353 /* Other.m in Sources */,
 				32C726D61FC82BCC0093D353 /* TestClass+Category.m in Sources */,
@@ -567,6 +591,8 @@
 				32C727061FCBBD010093D353 /* MYAOPViewController.m in Sources */,
 				32C726EA1FC82BCC0093D353 /* MYStringFormatModel.m in Sources */,
 				32C726D91FC82BCC0093D353 /* MYNotificationViewController.m in Sources */,
+				32C727131FCBDBB00093D353 /* MYCountDownModel.m in Sources */,
+				32C727121FCBDBB00093D353 /* MYCountDownViewCell.m in Sources */,
 				32C726E81FC82BCC0093D353 /* MYScrollView.m in Sources */,
 				32C726D41FC82BCC0093D353 /* ForwardTestClass.m in Sources */,
 				32C727091FCBBDA90093D353 /* TestClass+AOP.m in Sources */,

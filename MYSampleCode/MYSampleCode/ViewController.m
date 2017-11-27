@@ -29,6 +29,8 @@
     [self.dataSource addObject:@"字符串格式化-MYStringFormatViewController"];
     [self.dataSource addObject:@"自动布局的抗压缩和抗拉伸-MYHuggingPriorityViewController"];
     [self.dataSource addObject:@"探索面向切面编程-MYAOPViewController"];
+    [self.dataSource addObject:@"探索倒计时的实现-MYCountDownViewController"];
+    
     [self.view addSubview:self.tableView];
 }
 
