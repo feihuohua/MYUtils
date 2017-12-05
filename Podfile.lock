@@ -17,6 +17,10 @@ PODS:
   - CTMediator (12)
   - CYLTabBarController (1.13.1)
   - DACircularProgress (2.3.1)
+  - FBAllocationTracker (0.1.5)
+  - FBMemoryProfiler (0.1.3):
+    - FBAllocationTracker (~> 0.1)
+    - FBRetainCycleDetector (~> 0.1)
   - FBRetainCycleDetector (0.1.4)
   - FLEX (2.4.0)
   - IconFont (1.0.2)
@@ -48,6 +52,7 @@ DEPENDENCIES:
   - CTMediator
   - CYLTabBarController (~> 1.13.1)
   - DACircularProgress (~> 2.3.1)
+  - FBMemoryProfiler (~> 0.1.3)
   - FLEX (~> 2.4.0)
   - IconFont (~> 1.0.2)
   - IGLDropDownMenu (~> 1.6.2)
@@ -68,6 +73,8 @@ SPEC CHECKSUMS:
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
   CYLTabBarController: 97f6b486f9e6c613d69e9c111cc9c2c5db7000ce
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
+  FBMemoryProfiler: 623fc5f8a61f7d02ec75c87e3b97c90f621d8b02
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   IconFont: 97ff724bc6d26aac018678a2da4f8542600e5a67
@@ -84,6 +91,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: b59d38531a272b19f2aa73fc062cc92f7461e38f
+PODFILE CHECKSUM: ea22ad31013ecf7dadf575faa1682e13f4f4637e
 
 COCOAPODS: 1.3.1

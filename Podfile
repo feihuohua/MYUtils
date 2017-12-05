@@ -20,4 +20,5 @@ target 'MYUtils' do
     pod 'pop', '~> 1.0.10'
     pod 'FLEX', '~> 2.4.0'
     pod 'MLeaksFinder', '~> 1.0.0'
+    pod 'FBMemoryProfiler', '~> 0.1.3'
 end  

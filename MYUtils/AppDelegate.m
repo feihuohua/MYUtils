@@ -13,8 +13,13 @@
 #import "MYFPSStatusManager.h"
 #import "MYSplashScreenManager.h"
 #import <FLEX/FLEX.h>
+#import <FBMemoryProfiler/FBMemoryProfiler.h>
+#import "CacheCleanerPlugin.h"
+#import "RetainCycleLoggerPlugin.h"
 
-@interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate, NSURLConnectionDataDelegate, NSURLSessionDataDelegate>
+@interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate, NSURLConnectionDataDelegate, NSURLSessionDataDelegate> {
+    FBMemoryProfiler *_memoryProfiler;
+}
 
 @property (nonatomic, strong) NSTimer *repeatingLogExampleTimer;
 @property (nonatomic, strong) NSMutableArray *connections;
@@ -68,6 +73,11 @@
     
     //捕捉意外崩溃
     [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
+    
+    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
+                                                                  [RetainCycleLoggerPlugin new]]
+                               retainCycleDetectorConfiguration:nil];
+    [_memoryProfiler enable];
     
     return YES;
 }
