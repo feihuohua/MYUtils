@@ -30,6 +30,7 @@
     [self.dataSource addObject:@"仿美团导航栏-MYFadeViewController"];
     [self.dataSource addObject:@"UIScrollView的侧滑返回并存-MYSideslipScrollViewController"];
     [self.dataSource addObject:@"UITableVieCell倒计时-MYCountDownViewController1"];
+    [self.dataSource addObject:@"*雷达效果咻一咻*-MYRadarViewViewController"];
     
     [self.view addSubview:self.tableView];
 }

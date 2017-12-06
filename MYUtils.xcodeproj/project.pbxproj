@@ -154,6 +154,8 @@
 		32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE35D1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m */; };
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
 		32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */; };
+		32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */; };
+		32CC0EFD1FD7A08F00D45E30 /* MYRadarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */; };
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
@@ -424,6 +426,10 @@
 		32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTabBarControllerConfig.m; sourceTree = "<group>"; };
 		32CBE38C1F47E88900AE6267 /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Extension.h"; sourceTree = "<group>"; };
 		32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Extension.m"; sourceTree = "<group>"; };
+		32CC0EF81FD79F4B00D45E30 /* MYRadarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYRadarView.h; sourceTree = "<group>"; };
+		32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRadarView.m; sourceTree = "<group>"; };
+		32CC0EFB1FD7A08F00D45E30 /* MYRadarViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYRadarViewViewController.h; sourceTree = "<group>"; };
+		32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRadarViewViewController.m; sourceTree = "<group>"; };
 		32DD4FD81F5654E0005C6FE9 /* MYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextField.h; sourceTree = "<group>"; };
 		32DD4FD91F5654E0005C6FE9 /* MYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextField.m; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
@@ -870,6 +876,8 @@
 				320FFB211FC3D966006CC5AE /* MYFadeViewController.m */,
 				320FFB231FC3DC85006CC5AE /* MYTestViewController.h */,
 				320FFB241FC3DC85006CC5AE /* MYTestViewController.m */,
+				32CC0EFB1FD7A08F00D45E30 /* MYRadarViewViewController.h */,
+				32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */,
 				32C726F91FCBB0F30093D353 /* UITableViewCell倒计时 */,
 				3215B4691FC47100001038A5 /* UIScrollView的侧滑 */,
 				32B3EBEA1FBE8FB40067DF21 /* 自动计算UICollectionviewcell尺寸 */,
@@ -1014,6 +1022,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32CC0EF71FD79F2500D45E30 /* MYRadarView */,
 				32C726EE1FCBAD650093D353 /* MYCountDownManager */,
 				3215B45C1FC45A7D001038A5 /* AuthenticationWIFI */,
 				320FFB1C1FC3D6D1006CC5AE /* MYFadeNavigationController */,
@@ -1186,6 +1195,15 @@
 				32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */,
 			);
 			path = MYNavigaionBar;
+			sourceTree = "<group>";
+		};
+		32CC0EF71FD79F2500D45E30 /* MYRadarView */ = {
+			isa = PBXGroup;
+			children = (
+				32CC0EF81FD79F4B00D45E30 /* MYRadarView.h */,
+				32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */,
+			);
+			path = MYRadarView;
 			sourceTree = "<group>";
 		};
 		32DD4FD41F565443005C6FE9 /* MYTextField */ = {
@@ -1513,7 +1531,9 @@
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */,
+				32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */,
 				3254F4E31FBD78470020B58C /* FXSliderViewController.m in Sources */,
+				32CC0EFD1FD7A08F00D45E30 /* MYRadarViewViewController.m in Sources */,
 				32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */,
 				32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */,
 				3254F4E71FBD78470020B58C /* MYFunctionFirstViewController.m in Sources */,
