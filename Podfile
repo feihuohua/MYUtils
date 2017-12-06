@@ -21,4 +21,5 @@ target 'MYUtils' do
     pod 'FLEX', '~> 2.4.0'
     pod 'MLeaksFinder', '~> 1.0.0'
     pod 'FBMemoryProfiler', '~> 0.1.3'
+    pod 'CATLog', '~> 1.1.0'
 end  

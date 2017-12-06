@@ -16,6 +16,9 @@
 #import <FBMemoryProfiler/FBMemoryProfiler.h>
 #import "CacheCleanerPlugin.h"
 #import "RetainCycleLoggerPlugin.h"
+#import "CATLog.h"
+
+#define YouLogI(fmt, ...) [CATLog logI:[NSString stringWithFormat:@"[%@:%d] %s %@",[NSString stringWithFormat:@"%s",__FILE__].lastPathComponent,__LINE__,__func__,fmt],##__VA_ARGS__,@""];
 
 @interface AppDelegate ()<UITabBarControllerDelegate, CYLTabBarControllerDelegate, NSURLConnectionDataDelegate, NSURLSessionDataDelegate> {
     FBMemoryProfiler *_memoryProfiler;
@@ -79,7 +82,50 @@
                                retainCycleDetectorConfiguration:nil];
     [_memoryProfiler enable];
     
+    //Set ExceptionHandler
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    //Init log
+    [CATLog initWithNumberOfDaysToDelete:3];
+    
+    //Remote Log
+    [CATLog setRemoteLogEnable:YES];
+    [CATLog setRemoteIp:@"192.168.1.100" port:1111];
+    
+    //Set log level
+    [CATLog setLogLevel:CATLevelV];
+    
+    //Set Color
+    [CATLog setR:200 G:0 B:0 forLevel:CATLevelE];
+    [CATLog setBgR:255 G:255 B:255 forLevel:CATLevelE];
+    
+    //Redefine log
+    YouLogI(@"ReDefine Log by yourself");
+    
+    //Log normal string
+    CLogE(@"Normal string");
+    
+    NSString* normalStt = [NSString stringWithFormat:@"Normal String"];
+    CLogE(normalStt);
+    
+    //Log format string
+    CLogD(@"Format String:string1,%@,%@",@"string2",@"string3");
+    
+    UIImageView* imgView = [[UIImageView alloc]init];
+    CLogD(@"Format String %@",imgView);
+    
+    //Log Color
+    CLogE(@"I am error log. Do you like my color?");
+    CLogW(@"I am warning log. Do you like my color?");
+    CLogI(@"I am info log. Do you like my color?");
+    CLogD(@"I am debug log. Do you like my color?");
+    CLogV(@"I am verbose log. Do you like my color?");
+    
     return YES;
+}
+
+void uncaughtExceptionHandler(NSException *exception){
+    [CATLog logCrash:exception];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

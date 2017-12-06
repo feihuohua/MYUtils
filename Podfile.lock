@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - CATLog (1.1.0)
   - CTMediator (12)
   - CYLTabBarController (1.13.1)
   - DACircularProgress (2.3.1)
@@ -49,6 +50,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - CATLog (~> 1.1.0)
   - CTMediator
   - CYLTabBarController (~> 1.13.1)
   - DACircularProgress (~> 2.3.1)
@@ -70,6 +72,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CATLog: 518918ae4f922e3b52152391e3e9e4bda591e4ea
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
   CYLTabBarController: 97f6b486f9e6c613d69e9c111cc9c2c5db7000ce
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
@@ -91,6 +94,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: ea22ad31013ecf7dadf575faa1682e13f4f4637e
+PODFILE CHECKSUM: 014324eca95d1cc15e5937610bb34a28beda2c1e
 
 COCOAPODS: 1.3.1

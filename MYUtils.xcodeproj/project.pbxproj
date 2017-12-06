@@ -1457,9 +1457,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils-resources.sh",
+				"${PODS_ROOT}/CATLog/CATLog/CATLog/CATLogFilesViewController.xib",
+				"${PODS_ROOT}/CATLog/CATLog/CATLog/CATLogReviewController.xib",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -8,6 +8,7 @@
 
 #import "MYFunctionFirstViewController.h"
 #import "UtilsMacros.h"
+#import "CATLog.h"
 #import <FLEX/FLEX.h>
 
 @interface MYFunctionFirstViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -40,7 +41,9 @@
     
     [self registerViewControllerBasedOption];
     
-      self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"FLEX" style:UIBarButtonItemStylePlain target:self action:@selector(flexButtonTapped:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"FLEX" style:UIBarButtonItemStylePlain target:self action:@selector(flexButtonTapped:)];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"SHOWLOGFILE" style:UIBarButtonItemStylePlain target:self action:@selector(showLogFile)];
     [self.view addSubview:self.tableView];
 }
 
@@ -62,7 +65,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-  
+    
     return 0.01f;
 }
 
@@ -98,6 +101,11 @@
     viewController.title = [[title componentsSeparatedByString:@"-"] firstObject];
     
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)showLogFile {
+    //    [CATLog showAllLogFile];
+    [CATLog showTodayLogFile];
 }
 
 - (void)registerViewControllerBasedOption
@@ -149,7 +157,7 @@
 
 - (UITableView *)tableView {
     if (!_tableView) {
-         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, MYScreenWidth, MYScreenHeight) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, MYScreenWidth, MYScreenHeight) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.backgroundColor = [UIColor whiteColor];
         _tableView.dataSource = self;
