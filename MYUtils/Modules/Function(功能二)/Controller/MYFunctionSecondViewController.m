@@ -31,6 +31,7 @@
     [self.dataSource addObject:@"UIScrollView的侧滑返回并存-MYSideslipScrollViewController"];
     [self.dataSource addObject:@"UITableVieCell倒计时-MYCountDownViewController1"];
     [self.dataSource addObject:@"*雷达效果咻一咻*-MYRadarViewViewController"];
+    [self.dataSource addObject:@"*UICollectionView Header悬浮效果*-MYSectionHeaderCollectionViewController"];
     
     [self.view addSubview:self.tableView];
 }
