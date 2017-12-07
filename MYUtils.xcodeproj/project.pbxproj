@@ -118,6 +118,12 @@
 		325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */; };
 		32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */; };
 		32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */; };
+		32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */; };
+		32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F561FD8EC2800A8F68F /* FDFeedEntity.m */; };
+		32672F5E1FD8EC5B00A8F68F /* FDFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F5C1FD8EC5B00A8F68F /* FDFeedCell.m */; };
+		32672F5F1FD8EC5B00A8F68F /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */; };
+		32672F611FD8EDA100A8F68F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32672F601FD8EDA100A8F68F /* data.json */; };
+		32672F631FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -358,6 +364,15 @@
 		32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSectionHeaderCollectionViewLayout.m; sourceTree = "<group>"; };
 		32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewController.h; sourceTree = "<group>"; };
 		32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSectionHeaderCollectionViewController.m; sourceTree = "<group>"; };
+		32672F511FD8EBC200A8F68F /* MYTemplateLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTemplateLayoutViewController.h; sourceTree = "<group>"; };
+		32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTemplateLayoutViewController.m; sourceTree = "<group>"; };
+		32672F551FD8EC2700A8F68F /* FDFeedEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedEntity.h; sourceTree = "<group>"; };
+		32672F561FD8EC2800A8F68F /* FDFeedEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedEntity.m; sourceTree = "<group>"; };
+		32672F5B1FD8EC5B00A8F68F /* FDFeedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFeedCell.h; sourceTree = "<group>"; };
+		32672F5C1FD8EC5B00A8F68F /* FDFeedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFeedCell.m; sourceTree = "<group>"; };
+		32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDFeedCell.xib; sourceTree = "<group>"; };
+		32672F601FD8EDA100A8F68F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYTemplateLayoutViewController.xib; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -886,6 +901,7 @@
 				32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */,
 				32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */,
 				32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */,
+				32672F541FD8EC1A00A8F68F /* FDTemplateLayoutCell的使用 */,
 				32C726F91FCBB0F30093D353 /* UITableViewCell倒计时 */,
 				3215B4691FC47100001038A5 /* UIScrollView的侧滑 */,
 				32B3EBEA1FBE8FB40067DF21 /* 自动计算UICollectionviewcell尺寸 */,
@@ -920,6 +936,22 @@
 				32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */,
 			);
 			path = MYSectionHeaderCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		32672F541FD8EC1A00A8F68F /* FDTemplateLayoutCell的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				32672F511FD8EBC200A8F68F /* MYTemplateLayoutViewController.h */,
+				32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */,
+				32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */,
+				32672F551FD8EC2700A8F68F /* FDFeedEntity.h */,
+				32672F561FD8EC2800A8F68F /* FDFeedEntity.m */,
+				32672F5B1FD8EC5B00A8F68F /* FDFeedCell.h */,
+				32672F5C1FD8EC5B00A8F68F /* FDFeedCell.m */,
+				32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */,
+				32672F601FD8EDA100A8F68F /* data.json */,
+			);
+			path = "FDTemplateLayoutCell的使用";
 			sourceTree = "<group>";
 		};
 		32712ABA1F3857A8008A105F = {
@@ -1380,6 +1412,7 @@
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
 				320774BF1FACB93000A56F88 /* UIBarButtonItemGrid@3x.png in Resources */,
+				32672F611FD8EDA100A8F68F /* data.json in Resources */,
 				320774C21FACB93000A56F88 /* VideoOverlay@3x.png in Resources */,
 				320774ED1FACBE1C00A56F88 /* photo8.jpg in Resources */,
 				320774E01FACBE1C00A56F88 /* photo1t.jpg in Resources */,
@@ -1410,12 +1443,14 @@
 				320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */,
 				320774E71FACBE1C00A56F88 /* photo5.jpg in Resources */,
 				320774E91FACBE1C00A56F88 /* photo6.jpg in Resources */,
+				32672F631FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib in Resources */,
 				320774F01FACBE1C00A56F88 /* video_thumb.jpg in Resources */,
 				320774BE1FACB93000A56F88 /* UIBarButtonItemGrid@2x.png in Resources */,
 				320774EC1FACBE1C00A56F88 /* photo7t.jpg in Resources */,
 				32B3EC031FBE94090067DF21 /* DynamicHeightCell.xib in Resources */,
 				3254F4E61FBD78470020B58C /* MYKeyboardViewController.xib in Resources */,
 				3208B4721F4AC7EF00A0883B /* messageHandler.html in Resources */,
+				32672F5F1FD8EC5B00A8F68F /* FDFeedCell.xib in Resources */,
 				320774EB1FACBE1C00A56F88 /* photo7.jpg in Resources */,
 				320774A61FACB93000A56F88 /* ImageSelectedOff@2x.png in Resources */,
 				320774E61FACBE1C00A56F88 /* photo4t.jpg in Resources */,
@@ -1515,6 +1550,7 @@
 				3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */,
 				3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
+				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
 				32B3EBE91FBE8EFC0067DF21 /* FXCyclePagerViewCell.m in Sources */,
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */,
@@ -1530,6 +1566,7 @@
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
 				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
 				3208CB011FC7B69A00AD9A30 /* MYFileManager.m in Sources */,
+				32672F5E1FD8EC5B00A8F68F /* FDFeedCell.m in Sources */,
 				32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */,
 				32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
@@ -1594,6 +1631,7 @@
 				3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
 				320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */,
+				32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */,
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */,
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,

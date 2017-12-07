@@ -87,4 +87,8 @@ static NSString * const sectionIndentifier = @"sectionHeaderIndentifier";
     return nil;
 }
 
+- (void)dealloc {
+    
+}
+
 @end

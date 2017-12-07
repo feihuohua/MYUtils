@@ -32,6 +32,7 @@
     [self.dataSource addObject:@"UITableVieCell倒计时-MYCountDownViewController1"];
     [self.dataSource addObject:@"*雷达效果咻一咻*-MYRadarViewViewController"];
     [self.dataSource addObject:@"*UICollectionView Header悬浮效果*-MYSectionHeaderCollectionViewController"];
+    [self.dataSource addObject:@"*UITableView-FDTemplateLayoutCell的使用*-MYTemplateLayoutViewController"];
     
     [self.view addSubview:self.tableView];
 }

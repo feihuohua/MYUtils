@@ -22,4 +22,5 @@ target 'MYUtils' do
     pod 'MLeaksFinder', '~> 1.0.0'
     pod 'FBMemoryProfiler', '~> 0.1.3'
     pod 'CATLog', '~> 1.1.0'
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
 end  

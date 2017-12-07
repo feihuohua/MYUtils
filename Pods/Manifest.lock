@@ -42,6 +42,7 @@ PODS:
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - TYPagerController (2.0.1)
+  - UITableView+FDTemplateLayoutCell (1.6)
   - WebViewJavascriptBridge (6.0.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -66,6 +67,7 @@ DEPENDENCIES:
   - pop (~> 1.0.10)
   - SDWebImage (~> 4.0.0)
   - TYPagerController (~> 2.0.1)
+  - UITableView+FDTemplateLayoutCell (~> 1.6)
   - WebViewJavascriptBridge (~> 6.0.2)
   - YYKit (= 1.0.9)
   - ZYKeyboardUtil (~> 1.0.7)
@@ -90,10 +92,11 @@ SPEC CHECKSUMS:
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TYPagerController: f86e3f85d723caa967655f23661d32beaee7db77
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: 014324eca95d1cc15e5937610bb34a28beda2c1e
+PODFILE CHECKSUM: a552fb7eabbf3291c5f41f77a76d6fb0a65704f2
 
 COCOAPODS: 1.3.1
