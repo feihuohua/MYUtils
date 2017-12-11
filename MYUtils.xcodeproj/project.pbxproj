@@ -116,6 +116,8 @@
 		3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F50E1FBD792F0020B58C /* MYShowTextViewController.m */; };
 		3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F5131FBD79E70020B58C /* MYFunctionSecondViewController.m */; };
 		325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */; };
+		325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */; };
+		325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */; };
 		32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */; };
 		32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */; };
 		32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */; };
@@ -360,6 +362,10 @@
 		3254F52C1FBD7B090020B58C /* MYShowTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYShowTextViewCell.m; sourceTree = "<group>"; };
 		325AFE9D1FC01B63009FF8B1 /* MYSplashScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSplashScreenManager.h; sourceTree = "<group>"; };
 		325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSplashScreenManager.m; sourceTree = "<group>"; };
+		325BAD9B1FDE877C0070BCD2 /* MYRunLoopOperationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYRunLoopOperationManager.h; sourceTree = "<group>"; };
+		325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRunLoopOperationManager.m; sourceTree = "<group>"; };
+		325BAD9E1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CurrentIndexPath.h"; sourceTree = "<group>"; };
+		325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CurrentIndexPath.m"; sourceTree = "<group>"; };
 		32672F4B1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewLayout.h; sourceTree = "<group>"; };
 		32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSectionHeaderCollectionViewLayout.m; sourceTree = "<group>"; };
 		32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewController.h; sourceTree = "<group>"; };
@@ -929,6 +935,15 @@
 			path = MYSplashScreenManager;
 			sourceTree = "<group>";
 		};
+		325BAD9A1FDE876C0070BCD2 /* MYRunLoopOperationManager */ = {
+			isa = PBXGroup;
+			children = (
+				325BAD9B1FDE877C0070BCD2 /* MYRunLoopOperationManager.h */,
+				325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */,
+			);
+			path = MYRunLoopOperationManager;
+			sourceTree = "<group>";
+		};
 		32672F4A1FD8DD7D00A8F68F /* MYSectionHeaderCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,6 +1079,8 @@
 				320774631FACAD7600A56F88 /* UncaughtExceptionHandler.m */,
 				323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */,
 				323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */,
+				325BAD9E1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.h */,
+				325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1071,6 +1088,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				325BAD9A1FDE876C0070BCD2 /* MYRunLoopOperationManager */,
 				32672F4A1FD8DD7D00A8F68F /* MYSectionHeaderCollectionViewLayout */,
 				32CC0EF71FD79F2500D45E30 /* MYRadarView */,
 				32C726EE1FCBAD650093D353 /* MYCountDownManager */,
@@ -1549,6 +1567,7 @@
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */,
 				3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */,
+				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
 				32B3EBE91FBE8EFC0067DF21 /* FXCyclePagerViewCell.m in Sources */,
@@ -1557,6 +1576,7 @@
 				32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				32C727021FCBB13D0093D353 /* MYCountDownViewCell.m in Sources */,
+				325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */,
 				4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */,
 				32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */,
 				32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */,

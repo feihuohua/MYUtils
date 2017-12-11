@@ -8,6 +8,7 @@
 
 #import "MYHamburgerButtonViewController.h"
 #import "MYHamburgerButton.h"
+#import <UIView+Position.h>
 #import <Masonry.h>
 
 @interface MYHamburgerButtonViewController ()
@@ -44,7 +45,7 @@
     }];
     
     self.crossToArrowButton = [MYHamburgerButton buttonWithType:UIButtonTypeCustom];
-    [self.crossToArrowButton addTarget:self action:@selector(didCrossToArrowButtonButtonTouch:) forControlEvents:UIControlEventTouchUpInside];
+    [self.crossToArrowButton addTarget:self action:@selector(didCrossToArrowButtonTouch:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.crossToArrowButton];
     [self.crossToArrowButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view.mas_centerX);
@@ -56,7 +57,7 @@
 }
 
 - (void)didBackButtonTouch:(MYHamburgerButton *)sender {
-    if(sender.currentMode == MYHamburgerButtonModeHamburger){
+    if(sender.currentMode == MYHamburgerButtonModeHamburger) {
         [sender setCurrentModeWithAnimation:MYHamburgerButtonModeArrow];
     } else{
         [sender setCurrentModeWithAnimation:MYHamburgerButtonModeHamburger];
@@ -64,14 +65,14 @@
 }
 
 - (void)didCloseButtonTouch:(MYHamburgerButton *)sender {
-    if(sender.currentMode == MYHamburgerButtonModeHamburger){
+    if(sender.currentMode == MYHamburgerButtonModeHamburger) {
         [sender setCurrentModeWithAnimation:MYHamburgerButtonModeCross];
     } else{
         [sender setCurrentModeWithAnimation:MYHamburgerButtonModeHamburger];
     }
 }
 
-- (void)didCrossToArrowButtonButtonTouch:(MYHamburgerButton *)sender {
+- (void)didCrossToArrowButtonTouch:(MYHamburgerButton *)sender {
     if(sender.currentMode == MYHamburgerButtonModeArrow){
         [sender setCurrentModeWithAnimation:MYHamburgerButtonModeCross];
     } else{
