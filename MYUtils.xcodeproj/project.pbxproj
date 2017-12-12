@@ -118,6 +118,7 @@
 		325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */; };
 		325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */; };
 		325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */; };
+		325BADCC1FDF6F280070BCD2 /* UIButton+MultipleTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */; };
 		32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */; };
 		32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */; };
 		32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */; };
@@ -366,6 +367,8 @@
 		325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRunLoopOperationManager.m; sourceTree = "<group>"; };
 		325BAD9E1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CurrentIndexPath.h"; sourceTree = "<group>"; };
 		325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CurrentIndexPath.m"; sourceTree = "<group>"; };
+		325BADCA1FDF6F280070BCD2 /* UIButton+MultipleTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MultipleTouch.h"; sourceTree = "<group>"; };
+		325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MultipleTouch.m"; sourceTree = "<group>"; };
 		32672F4B1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewLayout.h; sourceTree = "<group>"; };
 		32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSectionHeaderCollectionViewLayout.m; sourceTree = "<group>"; };
 		32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewController.h; sourceTree = "<group>"; };
@@ -1081,6 +1084,8 @@
 				323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */,
 				325BAD9E1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.h */,
 				325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */,
+				325BADCA1FDF6F280070BCD2 /* UIButton+MultipleTouch.h */,
+				325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1591,6 +1596,7 @@
 				32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				32B3EC091FBEA7F60067DF21 /* MYHamburgerButton.m in Sources */,
+				325BADCC1FDF6F280070BCD2 /* UIButton+MultipleTouch.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
 				32C726FC1FCBB0F30093D353 /* MYCountDownViewController1.m in Sources */,
 				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
