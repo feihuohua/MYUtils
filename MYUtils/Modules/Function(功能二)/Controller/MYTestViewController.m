@@ -28,8 +28,8 @@
     // 配置请求和响应类型，由于部分伙伴们的服务器不接收JSON传过去，现在默认值改成了plainText
     [MYNetworking configRequestType:kMYRequestTypePlainText
                        responseType:kMYResponseTypeJSON
-                 shouldAutoEncodeUrl:YES
-             callbackOnCancelRequest:NO];
+                shouldAutoEncodeUrl:YES
+            callbackOnCancelRequest:NO];
     
     // 设置GET、POST请求都缓存
     [MYNetworking cacheGetRequest:YES shoulCachePost:YES];
@@ -55,6 +55,46 @@
     }];
     
     NSLog(@"网络状态:--->%ld", (long)[MYNetworking networkStatus]);
+    
+    // 测试POST API：
+    // 假数据
+    NSDictionary *postDict = @{ @"urls": @"http://www.henishuo.com/git-use-inwork/",
+                                @"goal" : @"site",
+                                @"total" : @(123)
+                                };
+    NSString *path = @"/urls?site=www.henishuo.com&token=bRidefmXoNxIi3Jp";
+    // 由于这里有两套基础路径，用时就需要更新
+    [MYNetworking updateBaseUrl:@"http://data.zz.baidu.com"];
+    // 每次刷新缓存
+    // 如果获取到的业务数据是不正确的，则需要下次调用时设置为YES,表示要刷新缓存
+    // HYBURLSessionTask *task =
+    [MYNetworking postWithUrl:path refreshCache:YES params:postDict success:^(id response) {
+        
+    } fail:^(NSError *error) {
+        
+    }];
+    
+    // 取消全部请求
+    //  [HYBNetworking cancelAllRequest];
+    
+    // 取消单个请求方法一
+    //  [HYBNetworking cancelRequestWithURL:path];
+    
+    // 取消单个请求方法二
+    //  [task cancel];
+    
+    NSLog(@"%lld", [MYNetworking totalCacheSize]);
+    //  [HYBNetworking clearCaches];
+    
+    path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/b.zip"];
+    [MYNetworking downloadWithUrl:@"http://wiki.lbsyun.baidu.com/cms/iossdk/sdk/BaiduMap_IOSSDK_v2.10.2_All.zip" saveToPath:path progress:^(int64_t bytesRead, int64_t totalBytesRead) {
+        
+    } success:^(id response) {
+        
+    } failure:^(NSError *error) {
+        
+    }];
+//    NSLog(@"%@", task);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,13 +103,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
