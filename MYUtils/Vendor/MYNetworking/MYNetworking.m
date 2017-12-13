@@ -42,7 +42,7 @@ static BOOL sg_shouldAutoEncode = NO;
 static NSDictionary *sg_httpHeaders = nil;
 static MYResponseType sg_responseType = kMYResponseTypeJSON;
 static MYRequestType  sg_requestType  = kMYRequestTypePlainText;
-static MYNetworkStatus sg_networkStatus = kMYNetworkStatusReachableViaWiFi;
+static MYNetworkStatus sg_networkStatus = kMYNetworkStatusUnknown;
 static NSMutableArray *sg_requestTasks;
 static BOOL sg_cacheGet = YES;
 static BOOL sg_cachePost = NO;
@@ -209,14 +209,6 @@ static inline NSString *cachePath() {
     sg_responseType = responseType;
     sg_shouldAutoEncode = shouldAutoEncode;
     sg_shouldCallbackOnCancelRequest = shouldCallbackOnCancelRequest;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(reachabilityChanged:) name:AFNetworkingReachabilityDidChangeNotification
-                                               object:nil];
-}
-
-+ (void)reachabilityChanged:(NSNotification *)notification {
-    sg_networkStatus = [notification.userInfo[AFNetworkingReachabilityNotificationStatusItem] integerValue];
 }
 
 + (BOOL)shouldEncode {
@@ -749,7 +741,6 @@ static inline NSString *cachePath() {
             
             manager.requestSerializer.stringEncoding = NSUTF8StringEncoding;
             
-            
             for (NSString *key in sg_httpHeaders.allKeys) {
                 if (sg_httpHeaders[key] != nil) {
                     [manager.requestSerializer setValue:sg_httpHeaders[key] forHTTPHeaderField:key];
@@ -771,7 +762,6 @@ static inline NSString *cachePath() {
             sg_sharedManager = manager;
         }
     }
-    
     return sg_sharedManager;
 }
 
@@ -780,13 +770,13 @@ static inline NSString *cachePath() {
     
     [reachabilityManager startMonitoring];
     [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        if (status == AFNetworkReachabilityStatusNotReachable){
+        if (status == AFNetworkReachabilityStatusNotReachable) {
             sg_networkStatus = kMYNetworkStatusNotReachable;
-        } else if (status == AFNetworkReachabilityStatusUnknown){
+        } else if (status == AFNetworkReachabilityStatusUnknown) {
             sg_networkStatus = kMYNetworkStatusUnknown;
-        } else if (status == AFNetworkReachabilityStatusReachableViaWWAN){
+        } else if (status == AFNetworkReachabilityStatusReachableViaWWAN) {
             sg_networkStatus = kMYNetworkStatusReachableViaWWAN;
-        } else if (status == AFNetworkReachabilityStatusReachableViaWiFi){
+        } else if (status == AFNetworkReachabilityStatusReachableViaWiFi) {
             sg_networkStatus = kMYNetworkStatusReachableViaWiFi;
         }
     }];

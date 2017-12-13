@@ -73,9 +73,13 @@ typedef void(^MYResponseFail)(NSError *error);
  *  每次请求都要带上的一些参数
  */
 + (void)builtinParameters:(NSDictionary *)parameters;
-@property (nonatomic) NSDictionary *builtinParameters;
 
 + (MYNetworkStatus)networkStatus;
+
+/**
+ *  监控网络状态
+ */
++ (void)detectNetwork;
 
 /*!
  *
