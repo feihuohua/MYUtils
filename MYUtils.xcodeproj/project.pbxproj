@@ -119,6 +119,7 @@
 		325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */; };
 		325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */; };
 		325BADCC1FDF6F280070BCD2 /* UIButton+MultipleTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */; };
+		325BADD31FDFAC810070BCD2 /* MYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADD21FDFAC810070BCD2 /* MYNetworking.m */; };
 		32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */; };
 		32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */; };
 		32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */; };
@@ -369,6 +370,8 @@
 		325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CurrentIndexPath.m"; sourceTree = "<group>"; };
 		325BADCA1FDF6F280070BCD2 /* UIButton+MultipleTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MultipleTouch.h"; sourceTree = "<group>"; };
 		325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MultipleTouch.m"; sourceTree = "<group>"; };
+		325BADD11FDFAC810070BCD2 /* MYNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNetworking.h; sourceTree = "<group>"; };
+		325BADD21FDFAC810070BCD2 /* MYNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNetworking.m; sourceTree = "<group>"; };
 		32672F4B1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewLayout.h; sourceTree = "<group>"; };
 		32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSectionHeaderCollectionViewLayout.m; sourceTree = "<group>"; };
 		32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewController.h; sourceTree = "<group>"; };
@@ -947,6 +950,15 @@
 			path = MYRunLoopOperationManager;
 			sourceTree = "<group>";
 		};
+		325BADD01FDFAC700070BCD2 /* MYNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				325BADD11FDFAC810070BCD2 /* MYNetworking.h */,
+				325BADD21FDFAC810070BCD2 /* MYNetworking.m */,
+			);
+			path = MYNetworking;
+			sourceTree = "<group>";
+		};
 		32672F4A1FD8DD7D00A8F68F /* MYSectionHeaderCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1093,6 +1105,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				325BADD01FDFAC700070BCD2 /* MYNetworking */,
 				325BAD9A1FDE876C0070BCD2 /* MYRunLoopOperationManager */,
 				32672F4A1FD8DD7D00A8F68F /* MYSectionHeaderCollectionViewLayout */,
 				32CC0EF71FD79F2500D45E30 /* MYRadarView */,
@@ -1617,6 +1630,7 @@
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */,
 				32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */,
+				325BADD31FDFAC810070BCD2 /* MYNetworking.m in Sources */,
 				3254F4E31FBD78470020B58C /* FXSliderViewController.m in Sources */,
 				32CC0EFD1FD7A08F00D45E30 /* MYRadarViewViewController.m in Sources */,
 				32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */,
