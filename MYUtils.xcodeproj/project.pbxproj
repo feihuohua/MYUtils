@@ -128,6 +128,7 @@
 		32672F5F1FD8EC5B00A8F68F /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */; };
 		32672F611FD8EDA100A8F68F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32672F601FD8EDA100A8F68F /* data.json */; };
 		32672F631FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */; };
+		326A1EF41FE8AC6700535930 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -385,6 +386,8 @@
 		32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDFeedCell.xib; sourceTree = "<group>"; };
 		32672F601FD8EDA100A8F68F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYTemplateLayoutViewController.xib; sourceTree = "<group>"; };
+		326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		326A1EF31FE8AC6700535930 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -791,6 +794,8 @@
 			children = (
 				3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */,
 				3254F4B51FBD78470020B58C /* MYImageCornerRadiusViewController.h */,
+				326A1EF31FE8AC6700535930 /* UIImageView+CornerRadius.h */,
+				326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */,
 			);
 			path = "ImageView设置圆角";
 			sourceTree = "<group>";
@@ -1624,6 +1629,7 @@
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */,
 				3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */,
+				326A1EF41FE8AC6700535930 /* UIImageView+CornerRadius.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,

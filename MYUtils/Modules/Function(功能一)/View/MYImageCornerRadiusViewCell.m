@@ -8,6 +8,7 @@
 
 #import "MYImageCornerRadiusViewCell.h"
 #import "UtilsMacros.h"
+#import "UIImageView+CornerRadius.h"
 #import <MYKit.h>
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
@@ -64,9 +65,8 @@ static NSString *identifier = @"MYImageCornerRadiusViewCell";
 
 - (UIImageView *)originImageView {
     if (!_originImageView) {
-        _originImageView = [[UIImageView alloc] init];
+        _originImageView = [[UIImageView alloc] initWithRoundingRectImageView];
         _originImageView.contentMode = UIViewContentModeScaleAspectFill;
-        _originImageView.myCornerRadius = 20.0f;
         [self.contentView addSubview:_originImageView];
     }
     return _originImageView;
