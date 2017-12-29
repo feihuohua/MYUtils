@@ -92,6 +92,11 @@
 		3215B47A1FC473CA001038A5 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4751FC473CA001038A5 /* MYScrollViewController.m */; };
 		3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4771FC473CA001038A5 /* MYMapViewController.m */; };
 		323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */; };
+		3241746C1FF6485E007BB277 /* MYFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241746B1FF6485E007BB277 /* MYFlowLayoutViewController.m */; };
+		324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */; };
+		324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174721FF6490C007BB277 /* MYJDFlowLayout.m */; };
+		324174761FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174751FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m */; };
+		324174791FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174781FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m */; };
 		3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
@@ -319,6 +324,16 @@
 		3215B4771FC473CA001038A5 /* MYMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMapViewController.m; sourceTree = "<group>"; };
 		323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFPSStatusManager.h; sourceTree = "<group>"; };
 		323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFPSStatusManager.m; sourceTree = "<group>"; };
+		3241746A1FF6485E007BB277 /* MYFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFlowLayoutViewController.h; sourceTree = "<group>"; };
+		3241746B1FF6485E007BB277 /* MYFlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFlowLayoutViewController.m; sourceTree = "<group>"; };
+		3241746E1FF648F3007BB277 /* MYJDFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYJDFlowLayoutViewController.h; sourceTree = "<group>"; };
+		3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYJDFlowLayoutViewController.m; sourceTree = "<group>"; };
+		324174711FF6490C007BB277 /* MYJDFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYJDFlowLayout.h; sourceTree = "<group>"; };
+		324174721FF6490C007BB277 /* MYJDFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYJDFlowLayout.m; sourceTree = "<group>"; };
+		324174741FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYVerticalWaterfallFlowLayout.h; sourceTree = "<group>"; };
+		324174751FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVerticalWaterfallFlowLayout.m; sourceTree = "<group>"; };
+		324174771FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYVerticalWaterfallFlowLayoutViewController.h; sourceTree = "<group>"; };
+		324174781FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVerticalWaterfallFlowLayoutViewController.m; sourceTree = "<group>"; };
 		3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionThirdViewController.h; sourceTree = "<group>"; };
 		3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionThirdViewController.m; sourceTree = "<group>"; };
 		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
@@ -728,6 +743,23 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		3241746D1FF648A0007BB277 /* UICollectionView布局 */ = {
+			isa = PBXGroup;
+			children = (
+				3241746A1FF6485E007BB277 /* MYFlowLayoutViewController.h */,
+				3241746B1FF6485E007BB277 /* MYFlowLayoutViewController.m */,
+				3241746E1FF648F3007BB277 /* MYJDFlowLayoutViewController.h */,
+				3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */,
+				324174771FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.h */,
+				324174781FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m */,
+				324174711FF6490C007BB277 /* MYJDFlowLayout.h */,
+				324174721FF6490C007BB277 /* MYJDFlowLayout.m */,
+				324174741FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.h */,
+				324174751FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m */,
+			);
+			path = "UICollectionView布局";
+			sourceTree = "<group>";
+		};
 		3254F48D1FBD72A90020B58C /* Function(功能一) */ = {
 			isa = PBXGroup;
 			children = (
@@ -918,6 +950,7 @@
 				32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */,
 				32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */,
 				32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */,
+				3241746D1FF648A0007BB277 /* UICollectionView布局 */,
 				32672F541FD8EC1A00A8F68F /* FDTemplateLayoutCell的使用 */,
 				32C726F91FCBB0F30093D353 /* UITableViewCell倒计时 */,
 				3215B4691FC47100001038A5 /* UIScrollView的侧滑 */,
@@ -1596,6 +1629,7 @@
 				32B3EBE91FBE8EFC0067DF21 /* FXCyclePagerViewCell.m in Sources */,
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				3254F5141FBD79E70020B58C /* MYFunctionSecondViewController.m in Sources */,
+				3241746C1FF6485E007BB277 /* MYFlowLayoutViewController.m in Sources */,
 				32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				32C727021FCBB13D0093D353 /* MYCountDownViewCell.m in Sources */,
@@ -1604,6 +1638,7 @@
 				32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */,
 				32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */,
 				3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */,
+				324174791FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m in Sources */,
 				3215B4791FC473CA001038A5 /* MYCollectionViewController.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
@@ -1616,10 +1651,12 @@
 				32B3EC091FBEA7F60067DF21 /* MYHamburgerButton.m in Sources */,
 				325BADCC1FDF6F280070BCD2 /* UIButton+MultipleTouch.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
+				324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */,
 				32C726FC1FCBB0F30093D353 /* MYCountDownViewController1.m in Sources */,
 				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
 				3254F4E41FBD78470020B58C /* MYCustomNavigationBarViewController.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
+				324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */,
 				320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
 				320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */,
@@ -1681,6 +1718,7 @@
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */,
 				3212BF511F4D8C7100C57DBE /* UIViewController+MYModal.m in Sources */,
+				324174761FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m in Sources */,
 				320774F31FADA85600A56F88 /* MYIGLDemoViewController.m in Sources */,
 				32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,

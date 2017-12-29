@@ -1,21 +1,22 @@
 //
-//  MYFunctionSecondViewController.m
+//  MYFlowLayoutViewController.m
 //  MYUtils
 //
-//  Created by sunjinshuai on 2017/11/16.
+//  Created by sunjinshuai on 2017/12/29.
 //  Copyright © 2017年 com.51fanxing. All rights reserved.
 //
 
-#import "MYFunctionSecondViewController.h"
+#import "MYFlowLayoutViewController.h"
 
-@interface MYFunctionSecondViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface MYFlowLayoutViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
+
 @end
 
-@implementation MYFunctionSecondViewController
+@implementation MYFlowLayoutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,18 +24,8 @@
     self.title = @"UIKitDemo";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.dataSource addObject:@"有多种自定义动画效果的下拉菜单-MYIGLDemoViewController"];
-    [self.dataSource addObject:@"自定义转场动画-MYCustomTransitionViewController"];
-    [self.dataSource addObject:@"自动计算UICollectionviewcell尺寸-MYAutomaticallyCollectionViewCellViewController"];
-    [self.dataSource addObject:@"自定义Button-MYHamburgerButtonViewController"];
-    [self.dataSource addObject:@"仿美团导航栏-MYFadeViewController"];
-    [self.dataSource addObject:@"UIScrollView的侧滑返回并存-MYSideslipScrollViewController"];
-    [self.dataSource addObject:@"UITableVieCell倒计时-MYCountDownViewController1"];
-    [self.dataSource addObject:@"*雷达效果咻一咻*-MYRadarViewViewController"];
-    [self.dataSource addObject:@"*UICollectionView Header悬浮效果*-MYSectionHeaderCollectionViewController"];
-    [self.dataSource addObject:@"*UITableView-FDTemplateLayoutCell的使用*-MYTemplateLayoutViewController"];
-    [self.dataSource addObject:@"*UICollectionView布局实战*-MYFlowLayoutViewController"];
-    
+    [self.dataSource addObject:@"仿京东商城布局-MYJDFlowLayoutViewController"];
+   
     [self.view addSubview:self.tableView];
 }
 
@@ -55,7 +46,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-
+    
     return 0.01f;
 }
 
