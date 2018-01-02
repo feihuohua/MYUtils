@@ -184,7 +184,7 @@
             [self addSubview:indicatorView];
             [indicatorViews addObject:indicatorView];
         }
-    }else if (indicatorViews.count > _numberOfPages) {
+    } else if (indicatorViews.count > _numberOfPages) {
         for (NSInteger idx = indicatorViews.count - 1; idx >= _numberOfPages; --idx) {
             UIImageView *indicatorView = indicatorViews[idx];
             [indicatorView removeFromSuperview];
@@ -208,7 +208,7 @@
         if (_pageIndicatorImage) {
             indicatorView.contentMode = _indicatorImageContentMode;
             indicatorView.image = _currentPage == index ? _currentPageIndicatorImage : _pageIndicatorImage;
-        }else {
+        } else {
             indicatorView.image = nil;
             indicatorView.backgroundColor = _currentPage == index ? _currentPageIndicatorTintColor : _pageIndicatorTintColor;
         }
@@ -266,7 +266,7 @@
     for (UIImageView *indicatorView in _indicatorViews) {
         if (_pageIndicatorImage) {
             indicatorView.layer.cornerRadius = 0;
-        }else {
+        } else {
             indicatorView.layer.cornerRadius = _currentPage == index ? _currentPageIndicatorSize.width/2 : _pageIndicatorSize.width/2;
         }
         CGSize size = index == _currentPage ? _currentPageIndicatorSize : _pageIndicatorSize;
@@ -280,6 +280,5 @@
     [super layoutSubviews];
     [self layoutIndicatorViews];
 }
-
 
 @end

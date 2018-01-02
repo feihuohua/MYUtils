@@ -25,7 +25,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.dataSource addObject:@"*轮播图*-MYBannerCycleViewController"];
+    [self.dataSource addObject:@"*轮播图*-MYCyclePagerViewController"];
     [self.dataSource addObject:@"*照片浏览器*-MWPhotoBrowserDemo"];
     [self.dataSource addObject:@"*iconFont实战*-MYIconFontViewController"];
     [self.dataSource addObject:@"keyboard-MYKeyboardViewController"];

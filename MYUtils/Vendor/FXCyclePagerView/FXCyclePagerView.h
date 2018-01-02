@@ -78,6 +78,8 @@ typedef NS_ENUM(NSUInteger, FXPagerScrollDirection) {
 @property (nonatomic, weak, nullable) id<FXCyclePagerViewDataSource> dataSource;
 @property (nonatomic, weak, nullable) id<FXCyclePagerViewDelegate> delegate;
 
+// pager view, don't set dataSource and delegate
+@property (nonatomic, weak, readonly) UICollectionView *collectionView;
 // pager view layout
 @property (nonatomic, strong, readonly) FXCyclePagerViewLayout *layout;
 

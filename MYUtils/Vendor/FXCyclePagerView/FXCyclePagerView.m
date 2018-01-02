@@ -48,8 +48,11 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 @property (nonatomic, assign) FXIndexSection indexSection; // current index
 @property (nonatomic, assign) NSInteger dequeueSection;
 @property (nonatomic, assign) FXIndexSection beginDragIndexSection;
+@property (nonatomic, assign) NSInteger firstScrollIndex;
 
 @property (nonatomic, assign) BOOL needClearLayout;
+@property (nonatomic, assign) BOOL didReloadData;
+@property (nonatomic, assign) BOOL didLayout;
 
 @end
 
@@ -79,16 +82,19 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 }
 
 - (void)configureProperty {
+    _didReloadData = NO;
+    _didLayout = NO;
     _autoScrollInterval = 0;
     _isInfiniteLoop = YES;
     _beginDragIndexSection.index = 0;
     _beginDragIndexSection.section = 0;
     _indexSection.index = -1;
     _indexSection.section = -1;
+    _firstScrollIndex = -1;
 }
 
 - (void)addCollectionView {
-    FXCyclePagerTransformLayout *layout = [[FXCyclePagerTransformLayout alloc]init];
+    FXCyclePagerTransformLayout *layout = [[FXCyclePagerTransformLayout alloc] init];
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     layout.delegate = _delegateFlags.applyTransformToAttributes ? self : nil;;
     collectionView.backgroundColor = [UIColor clearColor];
@@ -139,7 +145,7 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
         return;
     }
     
-    [self scrollToNearlyIndexAtDirection:FXPagerScrollDirectionRight animate:YES];
+    [self scrollToNearlyIndexAtDirection:FXPagerScrollDirectionLeft animate:YES];
 }
 
 #pragma mark - getter
@@ -213,7 +219,7 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 
 - (void)setDelegate:(id<FXCyclePagerViewDelegate>)delegate {
     _delegate = delegate;
-    _delegateFlags.pagerViewDidScroll = [delegate respondsToSelector:@selector(scrollViewDidScroll:)];
+    _delegateFlags.pagerViewDidScroll = [delegate respondsToSelector:@selector(pagerViewDidScroll:)];
     _delegateFlags.didScrollFromIndexToNewIndex = [delegate respondsToSelector:@selector(pagerView:didScrollFromIndex:toIndex:)];
     _delegateFlags.initializeTransformAttributes = [delegate respondsToSelector:@selector(pagerView:initializeTransformAttributes:)];
     _delegateFlags.applyTransformToAttributes = [delegate respondsToSelector:@selector(pagerView:applyTransformToAttributes:)];
@@ -231,6 +237,7 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 #pragma mark - public
 
 - (void)reloadData {
+    _didReloadData = YES;
     [self setNeedClearLayout];
     [self clearLayout];
     [self updateData];
@@ -241,7 +248,10 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
     [self updateLayout];
     _numberOfItems = [_dataSource numberOfItemsInPagerView:self];
     [_collectionView reloadData];
-    [self resetPagerViewAtIndex:_indexSection.index];
+    if (!_didLayout && !CGRectIsEmpty(self.frame) && _indexSection.index < 0) {
+        _didLayout = YES;
+    }
+    [self resetPagerViewAtIndex:_indexSection.index < 0 && !CGRectIsEmpty(self.frame) ? 0 :_indexSection.index];
 }
 
 - (void)scrollToNearlyIndexAtDirection:(FXPagerScrollDirection)direction animate:(BOOL)animate {
@@ -250,6 +260,11 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 }
 
 - (void)scrollToItemAtIndex:(NSInteger)index animate:(BOOL)animate {
+    if (!_didLayout && _didReloadData) {
+        _firstScrollIndex = index;
+    }else {
+        _firstScrollIndex = -1;
+    }
     if (!_isInfiniteLoop) {
         [self scrollToItemAtIndexSection:FXMakeIndexSection(index, 0) animate:animate];
         return;
@@ -399,6 +414,10 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 }
 
 - (void)resetPagerViewAtIndex:(NSInteger)index {
+    if (_didLayout && _firstScrollIndex >= 0) {
+        index = _firstScrollIndex;
+        _firstScrollIndex = -1;
+    }
     if (index < 0) {
         return;
     }
@@ -417,7 +436,6 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
     }
     if (_indexSection.section > kPagerViewMaxSectionCount - kPagerViewMinSectionCount || _indexSection.section < kPagerViewMinSectionCount) {
         [self resetPagerViewAtIndex:_indexSection.index];
-        //NSLog(@"recyclePagerViewIfNeed");
     }
 }
 
@@ -465,6 +483,9 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (!_didLayout) {
+        return;
+    }
     FXIndexSection newIndexSection =  [self caculateIndexSectionWithOffsetX:scrollView.contentOffset.x];
     if (_numberOfItems <= 0 || ![self isValidIndexSection:newIndexSection]) {
         NSLog(@"inVlaidIndexSection:(%ld,%ld)!",(long)newIndexSection.index,(long)newIndexSection.section);
@@ -494,7 +515,6 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    //NSLog(@"scrollViewWillEndDragging %lf %lf",scrollView.contentOffset.x,targetContentOffset->x);
     if (fabs(velocity.x) < 0.35 || !FXEqualIndexSection(_beginDragIndexSection, _indexSection)) {
         targetContentOffset->x = [self caculateOffsetXAtIndexSection:_indexSection];
         return;
@@ -554,7 +574,8 @@ NS_INLINE FXIndexSection FXMakeIndexSection(NSInteger index, NSInteger section) 
     [super layoutSubviews];
     BOOL needUpdateLayout = !CGRectEqualToRect(_collectionView.frame, self.bounds);
     _collectionView.frame = self.bounds;
-    if (_indexSection.section < 0 || needUpdateLayout) {
+    if ((_indexSection.section < 0 || needUpdateLayout) && (_numberOfItems > 0 || _didReloadData)) {
+        _didLayout = YES;
         [self setNeedUpdateLayout];
     }
 }

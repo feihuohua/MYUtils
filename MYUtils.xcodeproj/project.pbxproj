@@ -110,9 +110,10 @@
 		324174C91FFB3934007BB277 /* MYTouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C81FFB3934007BB277 /* MYTouchIDManager.m */; };
 		324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174CB1FFB46EA007BB277 /* SDiOSVersion.m */; };
 		324174CF1FFB4BF6007BB277 /* MYPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174CE1FFB4BF6007BB277 /* MYPopupView.m */; };
+		324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174D31FFB60E2007BB277 /* MYCyclePagerViewController.m */; };
+		324174D61FFB60E2007BB277 /* MYCyclePagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324174D41FFB60E2007BB277 /* MYCyclePagerViewController.xib */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
-		3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */; };
 		3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */; };
 		3254F4E61FBD78470020B58C /* MYKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */; };
 		3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */; };
@@ -131,7 +132,6 @@
 		325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AFE9E1FC01B63009FF8B1 /* MYSplashScreenManager.m */; };
 		325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */; };
 		325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */; };
-		325BADCC1FDF6F280070BCD2 /* UIButton+MultipleTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */; };
 		325BADD31FDFAC810070BCD2 /* MYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADD21FDFAC810070BCD2 /* MYNetworking.m */; };
 		32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */; };
 		32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */; };
@@ -365,12 +365,13 @@
 		324174CB1FFB46EA007BB277 /* SDiOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiOSVersion.m; sourceTree = "<group>"; };
 		324174CD1FFB4BF6007BB277 /* MYPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPopupView.h; sourceTree = "<group>"; };
 		324174CE1FFB4BF6007BB277 /* MYPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPopupView.m; sourceTree = "<group>"; };
+		324174D21FFB60E2007BB277 /* MYCyclePagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCyclePagerViewController.h; sourceTree = "<group>"; };
+		324174D31FFB60E2007BB277 /* MYCyclePagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCyclePagerViewController.m; sourceTree = "<group>"; };
+		324174D41FFB60E2007BB277 /* MYCyclePagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYCyclePagerViewController.xib; sourceTree = "<group>"; };
 		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
 		3254F4B11FBD78470020B58C /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
 		3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewController.m; sourceTree = "<group>"; };
 		3254F4B51FBD78470020B58C /* MYImageCornerRadiusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYImageCornerRadiusViewController.h; sourceTree = "<group>"; };
-		3254F4B81FBD78470020B58C /* MYBannerCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerCycleViewController.h; sourceTree = "<group>"; };
-		3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerCycleViewController.m; sourceTree = "<group>"; };
 		3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYKeyboardViewController.m; sourceTree = "<group>"; };
 		3254F4C21FBD78470020B58C /* MYKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYKeyboardViewController.h; sourceTree = "<group>"; };
 		3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYKeyboardViewController.xib; sourceTree = "<group>"; };
@@ -405,8 +406,6 @@
 		325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRunLoopOperationManager.m; sourceTree = "<group>"; };
 		325BAD9E1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CurrentIndexPath.h"; sourceTree = "<group>"; };
 		325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CurrentIndexPath.m"; sourceTree = "<group>"; };
-		325BADCA1FDF6F280070BCD2 /* UIButton+MultipleTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MultipleTouch.h"; sourceTree = "<group>"; };
-		325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MultipleTouch.m"; sourceTree = "<group>"; };
 		325BADD11FDFAC810070BCD2 /* MYNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNetworking.h; sourceTree = "<group>"; };
 		325BADD21FDFAC810070BCD2 /* MYNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNetworking.m; sourceTree = "<group>"; };
 		32672F4B1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -953,8 +952,9 @@
 		324174A21FFB2660007BB277 /* BannerCycle */ = {
 			isa = PBXGroup;
 			children = (
-				3254F4B81FBD78470020B58C /* MYBannerCycleViewController.h */,
-				3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */,
+				324174D21FFB60E2007BB277 /* MYCyclePagerViewController.h */,
+				324174D31FFB60E2007BB277 /* MYCyclePagerViewController.m */,
+				324174D41FFB60E2007BB277 /* MYCyclePagerViewController.xib */,
 			);
 			path = BannerCycle;
 			sourceTree = "<group>";
@@ -1277,8 +1277,6 @@
 				323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */,
 				325BAD9E1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.h */,
 				325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */,
-				325BADCA1FDF6F280070BCD2 /* UIButton+MultipleTouch.h */,
-				325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */,
 				324174CA1FFB46EA007BB277 /* SDiOSVersion.h */,
 				324174CB1FFB46EA007BB277 /* SDiOSVersion.m */,
 			);
@@ -1565,6 +1563,7 @@
 				320774EE1FACBE1C00A56F88 /* photo8t.jpg in Resources */,
 				320774C11FACB93000A56F88 /* VideoOverlay@2x.png in Resources */,
 				32712B191F395164008A105F /* Info.plist in Resources */,
+				324174D61FFB60E2007BB277 /* MYCyclePagerViewController.xib in Resources */,
 				320774DF1FACBE1C00A56F88 /* photo1.jpg in Resources */,
 				320774BD1FACB93000A56F88 /* UIBarButtonItemGrid.png in Resources */,
 				320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */,
@@ -1693,6 +1692,7 @@
 				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
+				324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */,
 				324174A01FFB25D7007BB277 /* MYUtilsViewController.m in Sources */,
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */,
@@ -1713,7 +1713,6 @@
 				32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */,
 				32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */,
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
-				325BADCC1FDF6F280070BCD2 /* UIButton+MultipleTouch.m in Sources */,
 				324174B91FFB2D6A007BB277 /* MYAnimationViewController.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
 				324174C61FFB300D007BB277 /* MYSearchViewController.m in Sources */,
@@ -1778,7 +1777,6 @@
 				32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */,
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
-				3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
 				320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */,
 				32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */,
