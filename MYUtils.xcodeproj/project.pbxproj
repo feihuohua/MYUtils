@@ -97,6 +97,9 @@
 		324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174721FF6490C007BB277 /* MYJDFlowLayout.m */; };
 		324174761FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174751FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m */; };
 		324174791FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174781FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m */; };
+		3241747C1FFB18BB007BB277 /* MYVerticalWaterfallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241747B1FFB18BB007BB277 /* MYVerticalWaterfallModel.m */; };
+		324174801FFB18FF007BB277 /* MYVerticalWaterfallViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241747E1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.m */; };
+		324174811FFB18FF007BB277 /* MYVerticalWaterfallViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3241747F1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.xib */; };
 		3254F49E1FBD73430020B58C /* MYFunctionThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
@@ -334,6 +337,11 @@
 		324174751FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVerticalWaterfallFlowLayout.m; sourceTree = "<group>"; };
 		324174771FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYVerticalWaterfallFlowLayoutViewController.h; sourceTree = "<group>"; };
 		324174781FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVerticalWaterfallFlowLayoutViewController.m; sourceTree = "<group>"; };
+		3241747A1FFB18BB007BB277 /* MYVerticalWaterfallModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYVerticalWaterfallModel.h; sourceTree = "<group>"; };
+		3241747B1FFB18BB007BB277 /* MYVerticalWaterfallModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVerticalWaterfallModel.m; sourceTree = "<group>"; };
+		3241747D1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYVerticalWaterfallViewCell.h; sourceTree = "<group>"; };
+		3241747E1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVerticalWaterfallViewCell.m; sourceTree = "<group>"; };
+		3241747F1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYVerticalWaterfallViewCell.xib; sourceTree = "<group>"; };
 		3254F49C1FBD73430020B58C /* MYFunctionThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFunctionThirdViewController.h; sourceTree = "<group>"; };
 		3254F49D1FBD73430020B58C /* MYFunctionThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFunctionThirdViewController.m; sourceTree = "<group>"; };
 		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
@@ -1243,6 +1251,8 @@
 			children = (
 				32B3EBEF1FBE91070067DF21 /* MYFeedModel.h */,
 				32B3EBF01FBE91070067DF21 /* MYFeedModel.m */,
+				3241747A1FFB18BB007BB277 /* MYVerticalWaterfallModel.h */,
+				3241747B1FFB18BB007BB277 /* MYVerticalWaterfallModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1258,6 +1268,9 @@
 				32B3EBFE1FBE94090067DF21 /* DynamicSizeCell.xib */,
 				32B3EC071FBEA7F60067DF21 /* MYHamburgerButton.h */,
 				32B3EC081FBEA7F60067DF21 /* MYHamburgerButton.m */,
+				3241747D1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.h */,
+				3241747E1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.m */,
+				3241747F1FFB18FF007BB277 /* MYVerticalWaterfallViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1534,6 +1547,7 @@
 				320774AB1FACB93000A56F88 /* ImageSelectedSmallOff.png in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
 				320774B11FACB93000A56F88 /* PlayButtonOverlayLarge.png in Resources */,
+				324174811FFB18FF007BB277 /* MYVerticalWaterfallViewCell.xib in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
 				320774A81FACB93000A56F88 /* ImageSelectedOn.png in Resources */,
 				320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */,
@@ -1622,6 +1636,7 @@
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */,
+				324174801FFB18FF007BB277 /* MYVerticalWaterfallViewCell.m in Sources */,
 				3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */,
 				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
@@ -1697,6 +1712,7 @@
 				32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
+				3241747C1FFB18BB007BB277 /* MYVerticalWaterfallModel.m in Sources */,
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,

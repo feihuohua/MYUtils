@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MYVerticalWaterfallFlowLayoutViewController : UIViewController
+@interface MYVerticalWaterfallFlowLayoutViewController : UICollectionViewController
 
 @end

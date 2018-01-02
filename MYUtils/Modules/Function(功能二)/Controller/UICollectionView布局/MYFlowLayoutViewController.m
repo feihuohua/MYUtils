@@ -25,6 +25,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.dataSource addObject:@"仿京东商城布局-MYJDFlowLayoutViewController"];
+    [self.dataSource addObject:@"瀑布流布局-MYVerticalWaterfallFlowLayoutViewController"];
    
     [self.view addSubview:self.tableView];
 }
