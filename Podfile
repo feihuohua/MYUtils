@@ -15,7 +15,6 @@ target 'MYUtils' do
     pod 'WebViewJavascriptBridge', '~> 6.0.2'
     pod 'ZYKeyboardUtil', '~> 1.0.7'
     pod 'MBProgressHUD', '~> 0.9.2'
-    pod 'IGLDropDownMenu', '~> 1.6.2'
     pod 'YYKit', '1.0.9'
     pod 'pop', '~> 1.0.10'
     pod 'FLEX', '~> 2.4.0'

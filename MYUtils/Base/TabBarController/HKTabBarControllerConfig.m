@@ -8,9 +8,9 @@
 
 #import "HKTabBarControllerConfig.h"
 #import "HKNavigationController.h"
-#import "MYFunctionFirstViewController.h"
-#import "MYFunctionSecondViewController.h"
-#import "MYFunctionThirdViewController.h"
+#import "MYUIKitViewController.h"
+#import "MYUtilsViewController.h"
+#import "MYAnimationViewController.h"
 #import "MYFadeNavigationController.h"
 
 @interface HKTabBarControllerConfig ()<UITabBarControllerDelegate>
@@ -44,18 +44,19 @@
 
 - (NSArray *)viewControllers {
     
-    MYFunctionFirstViewController *firstViewController = [[MYFunctionFirstViewController alloc] init];
+    MYUIKitViewController *firstViewController = [[MYUIKitViewController alloc] init];
     UIViewController *firstNavigationController = [[MYFadeNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
-    MYFunctionSecondViewController *secondViewController = [[MYFunctionSecondViewController alloc] init];
+    
+    MYUtilsViewController *secondViewController = [[MYUtilsViewController alloc] init];
     UIViewController *secondNavigationController = [[MYFadeNavigationController alloc]
-                                                    initWithRootViewController:secondViewController];
+                                                   initWithRootViewController:secondViewController];
     
-    MYFunctionThirdViewController *thirdViewController = [[MYFunctionThirdViewController alloc] init];
+    MYAnimationViewController *thirdViewController = [[MYAnimationViewController alloc] init];
     UIViewController *thirdNavigationController = [[MYFadeNavigationController alloc]
-                                                   initWithRootViewController:thirdViewController];
-    
+                                                    initWithRootViewController:thirdViewController];
+  
     NSArray *viewControllers = @[
                                  firstNavigationController,
                                  secondNavigationController,
@@ -66,24 +67,25 @@
 
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"功能一",
+                                                 CYLTabBarItemTitle : @"UIKit",
                                                  CYLTabBarItemImage : @"investment_normal",  /* NSString and UIImage are supported*/
                                                  CYLTabBarItemSelectedImage : @"investment_selected", /* NSString and UIImage are supported*/
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{
-                                                  CYLTabBarItemTitle : @"功能二",
+                                                  CYLTabBarItemTitle : @"Utils",
                                                   CYLTabBarItemImage : @"travel_normal",
                                                   CYLTabBarItemSelectedImage : @"travel_selected",
                                                   };
     NSDictionary *thirdTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : @"功能三",
+                                                 CYLTabBarItemTitle : @"Animation",
                                                  CYLTabBarItemImage : @"myprofile_normal",
                                                  CYLTabBarItemSelectedImage : @"myprofile_selected",
                                                  };
+    
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
                                        secondTabBarItemsAttributes,
-                                       thirdTabBarItemsAttributes
+                                       thirdTabBarItemsAttributes,
                                        ];
     return tabBarItemsAttributes;
 }
