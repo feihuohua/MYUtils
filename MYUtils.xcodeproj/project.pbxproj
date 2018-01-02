@@ -108,6 +108,8 @@
 		324174C31FFB2FAC007BB277 /* MYiOS11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C21FFB2FAC007BB277 /* MYiOS11ViewController.m */; };
 		324174C61FFB300D007BB277 /* MYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C51FFB300D007BB277 /* MYSearchViewController.m */; };
 		324174C91FFB3934007BB277 /* MYTouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C81FFB3934007BB277 /* MYTouchIDManager.m */; };
+		324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174CB1FFB46EA007BB277 /* SDiOSVersion.m */; };
+		324174CF1FFB4BF6007BB277 /* MYPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174CE1FFB4BF6007BB277 /* MYPopupView.m */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
 		3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */; };
@@ -359,6 +361,10 @@
 		324174C51FFB300D007BB277 /* MYSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSearchViewController.m; sourceTree = "<group>"; };
 		324174C71FFB3934007BB277 /* MYTouchIDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTouchIDManager.h; sourceTree = "<group>"; };
 		324174C81FFB3934007BB277 /* MYTouchIDManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTouchIDManager.m; sourceTree = "<group>"; };
+		324174CA1FFB46EA007BB277 /* SDiOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDiOSVersion.h; sourceTree = "<group>"; };
+		324174CB1FFB46EA007BB277 /* SDiOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDiOSVersion.m; sourceTree = "<group>"; };
+		324174CD1FFB4BF6007BB277 /* MYPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPopupView.h; sourceTree = "<group>"; };
+		324174CE1FFB4BF6007BB277 /* MYPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPopupView.m; sourceTree = "<group>"; };
 		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
 		3254F4B11FBD78470020B58C /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
 		3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewController.m; sourceTree = "<group>"; };
@@ -929,6 +935,8 @@
 			children = (
 				324174BE1FFB2F3C007BB277 /* FXCyclePagerViewCell.h */,
 				324174BD1FFB2F3C007BB277 /* FXCyclePagerViewCell.m */,
+				324174CD1FFB4BF6007BB277 /* MYPopupView.h */,
+				324174CE1FFB4BF6007BB277 /* MYPopupView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1271,6 +1279,8 @@
 				325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */,
 				325BADCA1FDF6F280070BCD2 /* UIButton+MultipleTouch.h */,
 				325BADCB1FDF6F280070BCD2 /* UIButton+MultipleTouch.m */,
+				324174CA1FFB46EA007BB277 /* SDiOSVersion.h */,
+				324174CB1FFB46EA007BB277 /* SDiOSVersion.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1723,6 +1733,7 @@
 				326A1EF41FE8AC6700535930 /* UIImageView+CornerRadius.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
+				324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */,
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */,
@@ -1780,6 +1791,7 @@
 				32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				324174C31FFB2FAC007BB277 /* MYiOS11ViewController.m in Sources */,
+				324174CF1FFB4BF6007BB277 /* MYPopupView.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 				32B3EBE81FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m in Sources */,
 				3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */,
