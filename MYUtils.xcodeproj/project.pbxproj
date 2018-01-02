@@ -107,6 +107,7 @@
 		324174BF1FFB2F3C007BB277 /* FXCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174BD1FFB2F3C007BB277 /* FXCyclePagerViewCell.m */; };
 		324174C31FFB2FAC007BB277 /* MYiOS11ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C21FFB2FAC007BB277 /* MYiOS11ViewController.m */; };
 		324174C61FFB300D007BB277 /* MYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C51FFB300D007BB277 /* MYSearchViewController.m */; };
+		324174C91FFB3934007BB277 /* MYTouchIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174C81FFB3934007BB277 /* MYTouchIDManager.m */; };
 		3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */; };
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
 		3254F4E21FBD78470020B58C /* MYBannerCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B91FBD78470020B58C /* MYBannerCycleViewController.m */; };
@@ -356,6 +357,8 @@
 		324174C21FFB2FAC007BB277 /* MYiOS11ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYiOS11ViewController.m; sourceTree = "<group>"; };
 		324174C41FFB300D007BB277 /* MYSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSearchViewController.h; sourceTree = "<group>"; };
 		324174C51FFB300D007BB277 /* MYSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSearchViewController.m; sourceTree = "<group>"; };
+		324174C71FFB3934007BB277 /* MYTouchIDManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTouchIDManager.h; sourceTree = "<group>"; };
+		324174C81FFB3934007BB277 /* MYTouchIDManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTouchIDManager.m; sourceTree = "<group>"; };
 		3254F4B01FBD78470020B58C /* MWPhotoBrowserDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPhotoBrowserDemo.m; sourceTree = "<group>"; };
 		3254F4B11FBD78470020B58C /* MWPhotoBrowserDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPhotoBrowserDemo.h; sourceTree = "<group>"; };
 		3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYImageCornerRadiusViewController.m; sourceTree = "<group>"; };
@@ -679,6 +682,8 @@
 				3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */,
 				32C727151FCD48F70093D353 /* FCFileManager.h */,
 				32C727141FCD48F70093D353 /* FCFileManager.m */,
+				324174C71FFB3934007BB277 /* MYTouchIDManager.h */,
+				324174C81FFB3934007BB277 /* MYTouchIDManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1736,6 +1741,7 @@
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				3254F4EF1FBD78480020B58C /* MYScriptMessageHandlerViewController.m in Sources */,
 				32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */,
+				324174C91FFB3934007BB277 /* MYTouchIDManager.m in Sources */,
 				32B3EBE71FBE8EFC0067DF21 /* MYShowTextViewCell.m in Sources */,
 				3208CADD1FC48BCD00AD9A30 /* UIFloatLabelTextField.m in Sources */,
 				324174BF1FFB2F3C007BB277 /* FXCyclePagerViewCell.m in Sources */,
