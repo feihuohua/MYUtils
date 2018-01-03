@@ -30,6 +30,7 @@
     [self.dataSource addObject:@"*iconFont实战*-MYIconFontViewController"];
     [self.dataSource addObject:@"keyboard-MYKeyboardViewController"];
     [self.dataSource addObject:@"*UIScrollView的侧滑返回并存*-MYSideslipScrollViewController"];
+    [self.dataSource addObject:@"*36氪*-MYPagerViewController"];
     
     [self registerViewControllerBasedOption];
     

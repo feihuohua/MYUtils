@@ -90,6 +90,10 @@
 		3215B4791FC473CA001038A5 /* MYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4721FC473C9001038A5 /* MYCollectionViewController.m */; };
 		3215B47A1FC473CA001038A5 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4751FC473CA001038A5 /* MYScrollViewController.m */; };
 		3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4771FC473CA001038A5 /* MYMapViewController.m */; };
+		3220B1341FFC962B00A58AA0 /* MYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1331FFC962B00A58AA0 /* MYPagerViewController.m */; };
+		3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1361FFC99CA00A58AA0 /* MYListViewController.m */; };
+		3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */; };
+		3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */; };
 		323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */; };
 		324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */; };
 		324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174721FF6490C007BB277 /* MYJDFlowLayout.m */; };
@@ -325,6 +329,14 @@
 		3215B4751FC473CA001038A5 /* MYScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScrollViewController.m; sourceTree = "<group>"; };
 		3215B4761FC473CA001038A5 /* MYMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMapViewController.h; sourceTree = "<group>"; };
 		3215B4771FC473CA001038A5 /* MYMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMapViewController.m; sourceTree = "<group>"; };
+		3220B1321FFC962B00A58AA0 /* MYPagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPagerViewController.h; sourceTree = "<group>"; };
+		3220B1331FFC962B00A58AA0 /* MYPagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPagerViewController.m; sourceTree = "<group>"; };
+		3220B1351FFC99CA00A58AA0 /* MYListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYListViewController.h; sourceTree = "<group>"; };
+		3220B1361FFC99CA00A58AA0 /* MYListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYListViewController.m; sourceTree = "<group>"; };
+		3220B1381FFC99E200A58AA0 /* MYCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCustomViewController.h; sourceTree = "<group>"; };
+		3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustomViewController.m; sourceTree = "<group>"; };
+		3220B13B1FFC99F500A58AA0 /* MYPagerCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPagerCollectionViewController.h; sourceTree = "<group>"; };
+		3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPagerCollectionViewController.m; sourceTree = "<group>"; };
 		323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFPSStatusManager.h; sourceTree = "<group>"; };
 		323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFPSStatusManager.m; sourceTree = "<group>"; };
 		3241746E1FF648F3007BB277 /* MYJDFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYJDFlowLayoutViewController.h; sourceTree = "<group>"; };
@@ -734,6 +746,21 @@
 			path = AuthenticationWIFI;
 			sourceTree = "<group>";
 		};
+		3220B1311FFC961800A58AA0 /* PagerController */ = {
+			isa = PBXGroup;
+			children = (
+				3220B1321FFC962B00A58AA0 /* MYPagerViewController.h */,
+				3220B1331FFC962B00A58AA0 /* MYPagerViewController.m */,
+				3220B1351FFC99CA00A58AA0 /* MYListViewController.h */,
+				3220B1361FFC99CA00A58AA0 /* MYListViewController.m */,
+				3220B1381FFC99E200A58AA0 /* MYCustomViewController.h */,
+				3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */,
+				3220B13B1FFC99F500A58AA0 /* MYPagerCollectionViewController.h */,
+				3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */,
+			);
+			path = PagerController;
+			sourceTree = "<group>";
+		};
 		323AD4231FC2AE5F00BC3DEA /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -911,6 +938,7 @@
 		3241749B1FFB25B7007BB277 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3220B1311FFC961800A58AA0 /* PagerController */,
 				324174AC1FFB2942007BB277 /* ScrollViewPopGesture */,
 				324174A41FFB26B3007BB277 /* IconFont */,
 				324174A31FFB2691007BB277 /* Keyboard */,
@@ -1691,6 +1719,7 @@
 				324174BC1FFB2F1C007BB277 /* MYHamburgerButton.m in Sources */,
 				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
+				3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
 				324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */,
 				324174A01FFB25D7007BB277 /* MYUtilsViewController.m in Sources */,
@@ -1765,8 +1794,10 @@
 				324174961FFB2286007BB277 /* MYUIKitViewController.m in Sources */,
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
+				3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
 				3215B4681FC464FC001038A5 /* MYPresentationViewController.m in Sources */,
+				3220B1341FFC962B00A58AA0 /* MYPagerViewController.m in Sources */,
 				320FFB221FC3D966006CC5AE /* MYFadeViewController.m in Sources */,
 				323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */,
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
@@ -1780,6 +1811,7 @@
 				32712B1A1F395164008A105F /* main.m in Sources */,
 				320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */,
 				32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */,
+				3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */,
 				3241748B1FFB1DFD007BB277 /* MYSliderViewController.m in Sources */,
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */,

@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - CATLog (1.1.0)
   - CTMediator (12)
-  - CYLTabBarController (1.13.1)
+  - CYLTabBarController (1.13.2)
   - DACircularProgress (2.3.1)
   - FBAllocationTracker (0.1.5)
   - FBMemoryProfiler (0.1.3):
@@ -40,9 +40,9 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TYPagerController (2.0.1)
+  - TYPagerController (2.0.6)
   - UITableView+FDTemplateLayoutCell (1.6)
-  - WebViewJavascriptBridge (6.0.2)
+  - WebViewJavascriptBridge (6.0.3)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -65,6 +65,7 @@ DEPENDENCIES:
   - pop (~> 1.0.10)
   - SDWebImage (~> 4.0.0)
   - TYPagerController (~> 2.0.1)
+  - TYPagerController (~> 2.0.6)
   - UITableView+FDTemplateLayoutCell (~> 1.6)
   - WebViewJavascriptBridge (~> 6.0.2)
   - YYKit (= 1.0.9)
@@ -74,7 +75,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CATLog: 518918ae4f922e3b52152391e3e9e4bda591e4ea
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
-  CYLTabBarController: 97f6b486f9e6c613d69e9c111cc9c2c5db7000ce
+  CYLTabBarController: 1ea13266ead94d45427c9d7ff8fa6e06d6835d23
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
   FBMemoryProfiler: 623fc5f8a61f7d02ec75c87e3b97c90f621d8b02
@@ -88,12 +89,12 @@ SPEC CHECKSUMS:
   MYKit: 927fa53dbf032bad0bf6442eeb15af97e27e42bb
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TYPagerController: f86e3f85d723caa967655f23661d32beaee7db77
+  TYPagerController: 043c9063b53cc6d3f6eb937c9dcbf431ae7cad85
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
-  WebViewJavascriptBridge: 791ee0e26d1bf15efe5fb7fb9666a71a19b89d77
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: 22b7c11e21dbcf64cb91e18af55421d4b0132d3d
+PODFILE CHECKSUM: f11e35e517a15f655269a786c8291746a05ca1f5
 
 COCOAPODS: 1.3.1
