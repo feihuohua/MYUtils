@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
-#define MY_ACTION_SHEET_COLOR(r, g, b)      MY_ACTION_SHEET_COLOR_A(r, g, b, 1.0f)
-#define MY_ACTION_SHEET_COLOR_A(r, g, b, a) [UIColor colorWithRed:(r)/255.0f\
+#define kMYActionSheetColor(r, g, b)        kMYActionSheetColorA(r, g, b, 1.0f)
+#define kMYActionSheetColorA(r, g, b, a)    [UIColor colorWithRed:(r)/255.0f\
                                                             green:(g)/255.0f\
-                                                            blue:(b)/255.0f\
+                                                             blue:(b)/255.0f\
                                                             alpha:a]
-
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -112,9 +110,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *separatorColor;
 
 /**
- Title can be limit in titleLinesNumber. Default is 0.
+ Blur view's background color. Default is `RGBA(255.0/255.0f, 255.0/255.0f, 255.0/255.0f, 0.5f)`.
  */
-@property (nonatomic, assign) NSInteger titleLinesNumber;
+@property (nonatomic, strong) UIColor *blurBackgroundColor;
+
+/**
+ Title can be limit in numberOfTitleLines. Default is 0.
+ */
+@property (nonatomic, assign) NSInteger numberOfTitleLines;
 
 /**
  Auto hide when the device rotated. Default is NO, won't auto hide.
@@ -122,7 +125,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL autoHideWhenDeviceRotated;
 
 /**
- LCActionSheetConfig shared instance.
+ MYActionSheetConfig shared instance.
  */
 @property (class, nonatomic, strong, readonly) MYActionSheetConfig *config;
 

@@ -45,6 +45,11 @@
         
     } otherButtonTitles:@"确定", nil];
     
+    NSMutableIndexSet *indexSet = [[NSMutableIndexSet alloc] init];
+    [indexSet addIndex:1];
+    actionSheet.destructiveButtonIndexSet = indexSet;
+    actionSheet.destructiveButtonColor = [UIColor redColor];
+    
     [actionSheet show];
 }
 

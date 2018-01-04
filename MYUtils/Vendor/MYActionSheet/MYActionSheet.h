@@ -10,11 +10,9 @@
 
 @class MYActionSheet;
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - MYActionSheet Block
-
 /**
  Handle click button.
  */
@@ -37,7 +35,6 @@ typedef void(^MYActionSheetWillDismissHandler)(MYActionSheet *actionSheet, NSInt
  Handle action sheet did dismiss.
  */
 typedef void(^MYActionSheetDidDismissHandler)(MYActionSheet *actionSheet, NSInteger buttonIndex);
-
 
 #pragma mark - MYActionSheet Delegate
 
@@ -171,14 +168,20 @@ typedef void(^MYActionSheetDidDismissHandler)(MYActionSheet *actionSheet, NSInte
 @property (nonatomic, strong) UIColor *separatorColor;
 
 /**
- Title can be limit in titleLinesNumber. Default is 0.
+ Blur view's background color. Default is `RGBA(255.0/255.0f, 255.0/255.0f, 255.0/255.0f, 0.5f)`.
  */
-@property (nonatomic, assign) NSInteger titleLinesNumber;
+@property (nonatomic, strong) UIColor *blurBackgroundColor;
+
+/**
+ Title can be limit in numberOfTitleLines. Default is 0.
+ */
+@property (nonatomic, assign) NSInteger numberOfTitleLines;
 
 /**
  Auto hide when the device rotated. Default is NO, won't auto hide.
  */
 @property (nonatomic, assign) BOOL autoHideWhenDeviceRotated;
+
 
 /**
  MYActionSheet clicked handler.
@@ -201,10 +204,6 @@ typedef void(^MYActionSheetDidDismissHandler)(MYActionSheet *actionSheet, NSInte
  */
 @property (nullable, nonatomic, copy) MYActionSheetDidDismissHandler  didDismissHandler;
 
-
-#pragma mark - Methods
-
-#pragma mark Delegate
 
 /**
  Initialize an instance of MYActionSheet (Delegate).

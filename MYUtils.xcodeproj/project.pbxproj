@@ -94,6 +94,7 @@
 		3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1361FFC99CA00A58AA0 /* MYListViewController.m */; };
 		3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */; };
 		3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */; };
+		3220B1591FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1581FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m */; };
 		323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */; };
 		324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */; };
 		324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174721FF6490C007BB277 /* MYJDFlowLayout.m */; };
@@ -337,6 +338,8 @@
 		3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustomViewController.m; sourceTree = "<group>"; };
 		3220B13B1FFC99F500A58AA0 /* MYPagerCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPagerCollectionViewController.h; sourceTree = "<group>"; };
 		3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPagerCollectionViewController.m; sourceTree = "<group>"; };
+		3220B1571FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MYActionSheet.h"; sourceTree = "<group>"; };
+		3220B1581FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MYActionSheet.m"; sourceTree = "<group>"; };
 		323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFPSStatusManager.h; sourceTree = "<group>"; };
 		323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFPSStatusManager.m; sourceTree = "<group>"; };
 		3241746E1FF648F3007BB277 /* MYJDFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYJDFlowLayoutViewController.h; sourceTree = "<group>"; };
@@ -1388,6 +1391,8 @@
 				32C84BFF1F715DD3003E4793 /* MYActionSheetCell.m */,
 				32C84BFB1F715D86003E4793 /* MYActionSheetViewController.h */,
 				32C84BFC1F715D86003E4793 /* MYActionSheetViewController.m */,
+				3220B1571FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.h */,
+				3220B1581FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m */,
 			);
 			path = MYActionSheet;
 			sourceTree = "<group>";
@@ -1725,6 +1730,7 @@
 				324174A01FFB25D7007BB277 /* MYUtilsViewController.m in Sources */,
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */,
+				3220B1591FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				324174B51FFB2B82007BB277 /* MYTransparentNavigationBarViewController.m in Sources */,
 				32C727021FCBB13D0093D353 /* MYCountDownViewCell.m in Sources */,

@@ -8,17 +8,19 @@
 
 #import "MYActionSheetConfig.h"
 
-#define MY_ACTION_SHEET_BUTTON_HEIGHT       49.0f
+#define kMYActionSheetButtonHeight              49.0f
 
-#define MY_ACTION_SHEET_RED_COLOR           MY_ACTION_SHEET_COLOR(254, 67, 37)
+#define kMYActionSheetRedColor                  kMYActionSheetColor(254, 67, 37)
 
-#define MY_ACTION_SHEET_TITLE_FONT          [UIFont systemFontOfSize:14.0f]
+#define kMYActionSheetTitleFont                 [UIFont systemFontOfSize:14.0f]
 
-#define MY_ACTION_SHEET_BUTTON_FONT         [UIFont systemFontOfSize:18.0f]
+#define kMYActionSheetButtonFont                [UIFont systemFontOfSize:18.0f]
 
-#define MY_ACTION_SHEET_ANIMATION_DURATION  0.3f
+#define kMYActionSheetAnimationDuration         0.3f
 
-#define MY_ACTION_SHEET_DARK_OPACITY        0.3f
+#define kMYActionSheetDarkOpacity               0.3f
+
+#define kMYActionSheetBlurBgColorNormal         [[UIColor whiteColor] colorWithAlphaComponent:0.5]
 
 @implementation MYActionSheetConfig
 
@@ -37,19 +39,20 @@
 
 - (instancetype)initSharedInstance {
     if (self = [super init]) {
-        self.titleFont              = MY_ACTION_SHEET_TITLE_FONT;
-        self.buttonFont             = MY_ACTION_SHEET_BUTTON_FONT;
-        self.destructiveButtonColor = MY_ACTION_SHEET_RED_COLOR;
-        self.titleColor             = MY_ACTION_SHEET_COLOR(111, 111, 111);
+        self.titleFont              = kMYActionSheetTitleFont;
+        self.buttonFont             = kMYActionSheetButtonFont;
+        self.destructiveButtonColor = kMYActionSheetRedColor;
+        self.titleColor             = kMYActionSheetColor(111, 111, 111);
         self.buttonColor            = [UIColor blackColor];
         
-        self.buttonHeight           = MY_ACTION_SHEET_BUTTON_HEIGHT;
-        self.animationDuration      = MY_ACTION_SHEET_ANIMATION_DURATION;
-        self.darkOpacity            = MY_ACTION_SHEET_DARK_OPACITY;
+        self.buttonHeight           = kMYActionSheetButtonHeight;
+        self.animationDuration      = kMYActionSheetAnimationDuration;
+        self.darkOpacity            = kMYActionSheetDarkOpacity;
         
         self.titleEdgeInsets        = UIEdgeInsetsMake(15.0f, 15.0f, 15.0f, 15.0f);
         
-        self.separatorColor         = MY_ACTION_SHEET_COLOR_A(150, 150, 150, 0.3f);
+        self.separatorColor         = kMYActionSheetColorA(150, 150, 150, 0.3f);
+        self.blurBackgroundColor    = kMYActionSheetBlurBgColorNormal;
     }
     return self;
 }

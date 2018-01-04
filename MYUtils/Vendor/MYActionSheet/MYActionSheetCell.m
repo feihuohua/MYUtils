@@ -54,7 +54,7 @@
 }
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
-    if (self.tag == LC_ACTION_SHEET_CELL_HIDDE_LINE_TAG) {
+    if (self.tag == MY_ACTION_SHEET_CELL_HIDDE_LINE_TAG) {
         self.lineView.hidden = YES;
     } else {
         self.lineView.hidden = highlighted;
