@@ -95,6 +95,8 @@
 		3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */; };
 		3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */; };
 		3220B1591FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1581FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m */; };
+		3220B15D1FFDE47300A58AA0 /* MYProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B15C1FFDE47300A58AA0 /* MYProgressHUD.m */; };
+		3220B15F1FFDEB2900A58AA0 /* MYProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3220B15E1FFDEB2900A58AA0 /* MYProgressHUD.bundle */; };
 		323AD4221FC2A5B700BC3DEA /* MYFPSStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */; };
 		324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */; };
 		324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174721FF6490C007BB277 /* MYJDFlowLayout.m */; };
@@ -340,6 +342,9 @@
 		3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPagerCollectionViewController.m; sourceTree = "<group>"; };
 		3220B1571FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MYActionSheet.h"; sourceTree = "<group>"; };
 		3220B1581FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MYActionSheet.m"; sourceTree = "<group>"; };
+		3220B15B1FFDE47300A58AA0 /* MYProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYProgressHUD.h; sourceTree = "<group>"; };
+		3220B15C1FFDE47300A58AA0 /* MYProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYProgressHUD.m; sourceTree = "<group>"; };
+		3220B15E1FFDEB2900A58AA0 /* MYProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MYProgressHUD.bundle; sourceTree = "<group>"; };
 		323AD4201FC2A5B700BC3DEA /* MYFPSStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFPSStatusManager.h; sourceTree = "<group>"; };
 		323AD4211FC2A5B700BC3DEA /* MYFPSStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFPSStatusManager.m; sourceTree = "<group>"; };
 		3241746E1FF648F3007BB277 /* MYJDFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYJDFlowLayoutViewController.h; sourceTree = "<group>"; };
@@ -762,6 +767,16 @@
 				3220B13C1FFC99F500A58AA0 /* MYPagerCollectionViewController.m */,
 			);
 			path = PagerController;
+			sourceTree = "<group>";
+		};
+		3220B15A1FFDE41700A58AA0 /* MYProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3220B15B1FFDE47300A58AA0 /* MYProgressHUD.h */,
+				3220B15C1FFDE47300A58AA0 /* MYProgressHUD.m */,
+				3220B15E1FFDEB2900A58AA0 /* MYProgressHUD.bundle */,
+			);
+			path = MYProgressHUD;
 			sourceTree = "<group>";
 		};
 		323AD4231FC2AE5F00BC3DEA /* Recovered References */ = {
@@ -1317,6 +1332,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				3220B15A1FFDE41700A58AA0 /* MYProgressHUD */,
 				325BADD01FDFAC700070BCD2 /* MYNetworking */,
 				325BAD9A1FDE876C0070BCD2 /* MYRunLoopOperationManager */,
 				32672F4A1FD8DD7D00A8F68F /* MYSectionHeaderCollectionViewLayout */,
@@ -1578,6 +1594,7 @@
 				3254F4ED1FBD78480020B58C /* MYCountDownViewController.xib in Resources */,
 				320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */,
 				320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */,
+				3220B15F1FFDEB2900A58AA0 /* MYProgressHUD.bundle in Resources */,
 				320774E81FACBE1C00A56F88 /* photo5t.jpg in Resources */,
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
@@ -1770,6 +1787,7 @@
 				324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */,
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
+				3220B15D1FFDE47300A58AA0 /* MYProgressHUD.m in Sources */,
 				3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */,
 				32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */,
 				324174B21FFB2AAE007BB277 /* MYCustomNavigationBarViewController.m in Sources */,

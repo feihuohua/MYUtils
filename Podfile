@@ -23,4 +23,5 @@ target 'MYUtils' do
     pod 'CATLog', '~> 1.1.0'
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
     pod 'TYPagerController', '~> 2.0.6'
+    pod 'MBProgressHUD', '~> 0.9.2'
 end  
