@@ -45,7 +45,7 @@
     self.repeatingLogExampleTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendExampleLogMessage) userInfo:nil repeats:YES];
 
     [[MYSplashScreenManager sharedManager] showSplashScreenWithDuration:1.5];
-    [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/4133010-bb1c14196f3241f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
+    [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/588630-6ab787e3782df5ab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
