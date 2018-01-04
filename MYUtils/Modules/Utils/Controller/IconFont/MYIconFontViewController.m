@@ -8,6 +8,7 @@
 
 #import "MYIconFontViewController.h"
 #import "TBCityIconFont.h"
+#import "MYActionSheet.h"
 #import "UIImage+TBCityIconFont.h"
 
 @interface MYIconFontViewController ()
@@ -31,11 +32,20 @@
     [self.view addSubview:button];
     [button setImage:[UIImage iconWithInfo:TBCityIconInfoMake(@"\U0000e60c", 40, [UIColor redColor])] forState:UIControlStateNormal];
     [button setTintColor:[UIColor greenColor]];
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, CGRectGetMaxY(button.frame) + 20, 280, 40)];
     [self.view addSubview:label];
     label.font = [UIFont fontWithName:@"iconfont" size:15];
     label.text = @"这是用label显示的iconfont  \U0000e60c";
+}
+
+- (void)buttonClick:(UIButton *)sender {
+    MYActionSheet *actionSheet = [MYActionSheet sheetWithTitle:@"测试" cancelButtonTitle:@"取消" clicked:^(MYActionSheet * _Nonnull actionSheet, NSInteger buttonIndex) {
+        
+    } otherButtonTitles:@"确定", nil];
+    
+    [actionSheet show];
 }
 
 @end
