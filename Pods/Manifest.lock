@@ -23,6 +23,7 @@ PODS:
     - FBAllocationTracker (~> 0.1)
     - FBRetainCycleDetector (~> 0.1)
   - FBRetainCycleDetector (0.1.4)
+  - FLAnimatedImage (1.0.12)
   - FLEX (2.4.0)
   - IconFont (1.0.2)
   - Masonry (1.0.2)
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - CYLTabBarController (~> 1.13.1)
   - DACircularProgress (~> 2.3.1)
   - FBMemoryProfiler (~> 0.1.3)
+  - FLAnimatedImage (~> 1.0.12)
   - FLEX (~> 2.4.0)
   - IconFont (~> 1.0.2)
   - Masonry (~> 1.0.2)
@@ -80,6 +82,7 @@ SPEC CHECKSUMS:
   FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
   FBMemoryProfiler: 623fc5f8a61f7d02ec75c87e3b97c90f621d8b02
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   IconFont: 97ff724bc6d26aac018678a2da4f8542600e5a67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -95,6 +98,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: a223346717862b925452740bd839577d7ec6c0e7
+PODFILE CHECKSUM: 8eeb17067696249919865eaab1bc9590c80b8705
 
 COCOAPODS: 1.3.1

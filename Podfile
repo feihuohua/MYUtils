@@ -24,4 +24,5 @@ target 'MYUtils' do
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
     pod 'TYPagerController', '~> 2.0.6'
     pod 'MBProgressHUD', '~> 0.9.2'
+    pod 'FLAnimatedImage', '~> 1.0.12'
 end  
