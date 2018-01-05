@@ -48,7 +48,7 @@
         self.session = [NSURLSession sessionWithConfiguration:sessionConfiguration
                                                      delegate:self
                                                 delegateQueue:queue];
-        self.downloadTask =  [self.session downloadTaskWithRequest:[NSURLRequest requestWithURL:url]];
+        self.downloadTask = [self.session downloadTaskWithRequest:[NSURLRequest requestWithURL:url]];
         [self.downloadTask resume];
     }
     return self;

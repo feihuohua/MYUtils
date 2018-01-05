@@ -18,6 +18,7 @@
 #import "RetainCycleLoggerPlugin.h"
 #import "CATLog.h"
 #import "MYLaunchAdvertManager.h"
+#import "MYNetworking.h"
 
 #define YouLogI(fmt, ...) [CATLog logI:[NSString stringWithFormat:@"[%@:%d] %s %@",[NSString stringWithFormat:@"%s",__FILE__].lastPathComponent,__LINE__,__func__,fmt],##__VA_ARGS__,@""];
 
@@ -41,6 +42,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [MYNetworking enableInterfaceDebug:YES];
+    [MYNetworking configRequestType:kMYRequestTypePlainText
+                       responseType:kMYResponseTypeJSON
+                shouldAutoEncodeUrl:YES
+            callbackOnCancelRequest:NO];
+    
+    
     [[FLEXManager sharedManager] setNetworkDebuggingEnabled:YES];
     [self sendExampleNetworkRequests];
     self.repeatingLogExampleTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(sendExampleLogMessage) userInfo:nil repeats:YES];
@@ -48,7 +56,7 @@
 //    [[MYSplashScreenManager sharedManager] showSplashScreenWithDuration:1.5];
 //    [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/588630-6ab787e3782df5ab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     
-    [[MYLaunchAdvertManager shareManager] showSplashScreenLocalImage];
+    [[MYLaunchAdvertManager shareManager] showSplashScreenNetWorkImage];
    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];

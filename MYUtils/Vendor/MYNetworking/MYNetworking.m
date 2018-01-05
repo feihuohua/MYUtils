@@ -889,26 +889,7 @@ static inline NSString *cachePath() {
     if (![url length]) {
         return @"";
     }
-    
-    CFStringRef static const charsToEscape = CFSTR(".:/");
-    CFStringRef escapedString = CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-                                                                        (__bridge CFStringRef)url,
-                                                                        NULL,
-                                                                        charsToEscape,
-                                                                        kCFStringEncodingUTF8);
-    return (__bridge_transfer NSString *)escapedString;
-}
-
-+ (NSString *)decodedString:(NSString *)string {
-    if (![string length]) {
-        return @"";
-    }
-    
-    CFStringRef unescapedString = CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
-                                                                                          (__bridge CFStringRef)string,
-                                                                                          CFSTR(""),
-                                                                                          kCFStringEncodingUTF8);
-    return (__bridge_transfer NSString *)unescapedString;
+    return [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 }
 
 + (id)cahceResponseWithURL:(NSString *)url parameters:params {

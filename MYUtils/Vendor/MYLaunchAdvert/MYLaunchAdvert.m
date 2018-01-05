@@ -106,6 +106,10 @@ static MYLaunchImageViewSourceType _sourceType = MYLaunchImageViewSourceTypeLaun
     return [MYLaunchAdvertCache checkImageInCacheWithURL:url];
 }
 
+- (BOOL)checkImageInCacheWithURL:(NSURL *)url {
+    return [MYLaunchAdvertCache checkImageInCacheWithURL:url];
+}
+
 + (BOOL)checkVideoInCacheWithURL:(NSURL *)url {
     return [MYLaunchAdvertCache checkVideoInCacheWithURL:url];
 }
@@ -250,7 +254,7 @@ static MYLaunchImageViewSourceType _sourceType = MYLaunchImageViewSourceTypeLaun
                 // GIF不循环,播放完成
                 [[NSNotificationCenter defaultCenter] postNotificationName:MYLaunchAdGIFImageCycleOnceFinishNotification object:nil userInfo:@{@"imageNameOrURLString":configuration.imageNameOrURLString}];
                 
-            } completed:^(UIImage *image,NSData *imageData,NSError *error,NSURL *url){
+            } completed:^(UIImage *image, NSData *imageData, NSError *error, NSURL *url){
                 if(!error){
                     if ([weakSelf.delegate respondsToSelector:@selector(launchAdvert:imageDownLoadFinish:imageData:)]) {
                         [weakSelf.delegate launchAdvert:self imageDownLoadFinish:image imageData:imageData];

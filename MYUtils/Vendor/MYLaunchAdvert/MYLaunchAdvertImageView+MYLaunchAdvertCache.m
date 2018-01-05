@@ -58,7 +58,7 @@
     [[MYLaunchAdvertImageManager sharedManager] loadImageWithURL:url
                                                          options:options
                                                         progress:nil
-                                                       completed:^(UIImage * _Nullable image,  NSData *_Nullable imageData, NSError * _Nullable error, NSURL * _Nullable imageURL) {
+                                                       completed:^(UIImage * _Nullable image,  NSData * _Nullable imageData, NSError * _Nullable error, NSURL * _Nullable imageURL) {
                                                            if (!error) {
                                                                if (MYISGIFTypeWithData(imageData)) {
                                                                    weakSelf.image = nil;
@@ -71,12 +71,12 @@
                                                                        }
                                                                    };
                                                                } else {
-                                                                   weakSelf.image = image;
                                                                    weakSelf.animatedImage = nil;
+                                                                   weakSelf.image = image;
                                                                }
                                                            }
                                                            if (completedBlock) {
-                                                               completedBlock(image,imageData,error,imageURL);
+                                                               completedBlock(image, imageData, error, imageURL);
                                                            }
                                                        }];
 }
