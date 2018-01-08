@@ -19,6 +19,7 @@
 #import "CATLog.h"
 #import "MYLaunchAdvertManager.h"
 #import "MYNetworking.h"
+#import "QDPerformanceTestingHelper.h"
 
 #define YouLogI(fmt, ...) [CATLog logI:[NSString stringWithFormat:@"[%@:%d] %s %@",[NSString stringWithFormat:@"%s",__FILE__].lastPathComponent,__LINE__,__func__,fmt],##__VA_ARGS__,@""];
 
@@ -48,6 +49,7 @@
                 shouldAutoEncodeUrl:YES
             callbackOnCancelRequest:NO];
     
+    [[QDPerformanceTestingHelper sharedInstance] setHidden:NO];
     
     [[FLEXManager sharedManager] setNetworkDebuggingEnabled:YES];
     [self sendExampleNetworkRequests];
@@ -88,10 +90,10 @@
     //捕捉意外崩溃
     [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
     
-    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
-                                                                  [RetainCycleLoggerPlugin new]]
-                               retainCycleDetectorConfiguration:nil];
-    [_memoryProfiler enable];
+//    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
+//                                                                  [RetainCycleLoggerPlugin new]]
+//                               retainCycleDetectorConfiguration:nil];
+//    [_memoryProfiler enable];
     
     //Set ExceptionHandler
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);

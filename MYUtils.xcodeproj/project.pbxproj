@@ -202,6 +202,7 @@
 		32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE38D1F47E88900AE6267 /* UINavigationBar+Extension.m */; };
 		32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */; };
 		32CC0EFD1FD7A08F00D45E30 /* MYRadarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */; };
+		32D160422003663B0041E8D3 /* QDPerformanceTestingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D160412003663B0041E8D3 /* QDPerformanceTestingHelper.m */; };
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
@@ -560,6 +561,8 @@
 		32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRadarView.m; sourceTree = "<group>"; };
 		32CC0EFB1FD7A08F00D45E30 /* MYRadarViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYRadarViewViewController.h; sourceTree = "<group>"; };
 		32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRadarViewViewController.m; sourceTree = "<group>"; };
+		32D160402003663B0041E8D3 /* QDPerformanceTestingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDPerformanceTestingHelper.h; sourceTree = "<group>"; };
+		32D160412003663B0041E8D3 /* QDPerformanceTestingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDPerformanceTestingHelper.m; sourceTree = "<group>"; };
 		32DD4FD81F5654E0005C6FE9 /* MYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextField.h; sourceTree = "<group>"; };
 		32DD4FD91F5654E0005C6FE9 /* MYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextField.m; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
@@ -746,6 +749,8 @@
 		3208CAFE1FC7B65200AD9A30 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				32D160402003663B0041E8D3 /* QDPerformanceTestingHelper.h */,
+				32D160412003663B0041E8D3 /* QDPerformanceTestingHelper.m */,
 				3208CAFF1FC7B69A00AD9A30 /* MYFileManager.h */,
 				3208CB001FC7B69A00AD9A30 /* MYFileManager.m */,
 				3208CB021FC7BB8100AD9A30 /* MYStringFormattManager.h */,
@@ -1942,6 +1947,7 @@
 				32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */,
 				3279F4461FFF45CB0052CDB9 /* MYLaunchImageView.m in Sources */,
 				3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */,
+				32D160422003663B0041E8D3 /* QDPerformanceTestingHelper.m in Sources */,
 				3241748B1FFB1DFD007BB277 /* MYSliderViewController.m in Sources */,
 				4C3894E31F64DF3200BD95ED /* UINavigationController+Transitions.m in Sources */,
 				32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */,
