@@ -1,15 +1,17 @@
 //
-//  MYLaunchAdvertImageView+MYLaunchAdvertCache.h
+//  MYLaunchAdvertImageView.h
 //  MYUtils
 //
-//  Created by sunjinshuai on 2018/1/4.
+//  Created by sunjinshuai on 2018/1/5.
 //  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
-#import "MYLaunchAdvertView.h"
+#import <FLAnimatedImage/FLAnimatedImage.h>
 #import "MYLaunchAdvertImageManager.h"
 
-@interface MYLaunchAdvertImageView (MYLaunchAdvertCache)
+@interface MYLaunchAdvertImageView : FLAnimatedImageView
+
+@property (nonatomic, copy) void(^click)(CGPoint point);
 
 /**
  设置url图片

@@ -1,16 +1,38 @@
 //
-//  MYLaunchAdvertImageView+MYLaunchAdvertCache.m
+//  MYLaunchAdvertImageView.m
 //  MYUtils
 //
-//  Created by sunjinshuai on 2018/1/4.
+//  Created by sunjinshuai on 2018/1/5.
 //  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
-#import "MYLaunchAdvertImageView+MYLaunchAdvertCache.h"
-#import "MYLaunchAdvertImageManager.h"
-#import "MYLaunchAdvertConst.h"
+#import "MYLaunchAdvertImageView.h"
 
-@implementation MYLaunchAdvertImageView (MYLaunchAdvertCache)
+@interface MYLaunchAdvertImageView ()
+
+@end
+
+@implementation MYLaunchAdvertImageView
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.userInteractionEnabled = YES;
+        self.frame = [UIScreen mainScreen].bounds;
+        self.layer.masksToBounds = YES;
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                     action:@selector(tap:)];
+        [self addGestureRecognizer:tapGesture];
+    }
+    return self;
+}
+
+- (void)tap:(UIGestureRecognizer *)gestureRecognizer{
+    CGPoint point = [gestureRecognizer locationInView:self];
+    if (self.click) {
+        self.click(point);
+    }
+}
 
 - (void)ad_setImageWithURL:(NSURL *)url {
     [self ad_setImageWithURL:url placeholderImage:nil];

@@ -1,42 +1,13 @@
 //
-//  MYLaunchAdvertView.m
+//  MYLaunchAdvertVideoView.m
 //  MYUtils
 //
-//  Created by sunjinshuai on 2018/1/4.
+//  Created by sunjinshuai on 2018/1/5.
 //  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
-#import "MYLaunchAdvertView.h"
+#import "MYLaunchAdvertVideoView.h"
 
-@interface MYLaunchAdvertImageView ()
-
-@end
-
-@implementation MYLaunchAdvertImageView
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.userInteractionEnabled = YES;
-        self.frame = [UIScreen mainScreen].bounds;
-        self.layer.masksToBounds = YES;
-        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                     action:@selector(tap:)];
-        [self addGestureRecognizer:tapGesture];
-    }
-    return self;
-}
-
-- (void)tap:(UIGestureRecognizer *)gestureRecognizer{
-    CGPoint point = [gestureRecognizer locationInView:self];
-    if (self.click) {
-        self.click(point);
-    }
-}
-
-@end
-
-#pragma mark - videoAdView
 @interface MYLaunchAdvertVideoView ()<UIGestureRecognizerDelegate>
 
 @end

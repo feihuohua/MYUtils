@@ -10,10 +10,10 @@
 #import "MYLaunchAdvertConfiguration.h"
 #import "MYLaunchAdvertButton.h"
 #import "MYLaunchAdvertCache.h"
-#import "MYLaunchAdvertView.h"
+#import "MYLaunchAdvertImageView.h"
+#import "MYLaunchAdvertVideoView.h"
 #import "MYLaunchAdvertViewController.h"
 #import "MYLaunchImageView.h"
-#import "MYLaunchAdvertImageView+MYLaunchAdvertCache.h"
 
 typedef NS_ENUM(NSInteger, MYLaunchAdType) {
     MYLaunchAdTypeImage,

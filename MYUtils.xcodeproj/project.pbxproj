@@ -169,9 +169,9 @@
 		3279F4461FFF45CB0052CDB9 /* MYLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4371FFF45CA0052CDB9 /* MYLaunchImageView.m */; };
 		3279F4471FFF45CB0052CDB9 /* MYLaunchAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4381FFF45CA0052CDB9 /* MYLaunchAdvertViewController.m */; };
 		3279F4481FFF45CB0052CDB9 /* MYLaunchAdvertCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4391FFF45CA0052CDB9 /* MYLaunchAdvertCache.m */; };
-		3279F4491FFF45CB0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F43B1FFF45CA0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.m */; };
-		3279F44A1FFF45CB0052CDB9 /* MYLaunchAdvertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F43E1FFF45CA0052CDB9 /* MYLaunchAdvertView.m */; };
 		3279F44B1FFF45CB0052CDB9 /* MYLaunchAdvertConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F43F1FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.m */; };
+		3279F4571FFF59310052CDB9 /* MYLaunchAdvertImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4561FFF59310052CDB9 /* MYLaunchAdvertImageView.m */; };
+		3279F45A1FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4591FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m */; };
 		32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
 		32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD01FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m */; };
 		32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD41FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m */; };
@@ -484,10 +484,8 @@
 		3279F42C1FFF45CA0052CDB9 /* MYLaunchAdvertConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertConst.m; sourceTree = "<group>"; };
 		3279F42D1FFF45CA0052CDB9 /* MYLaunchAdvertCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertCache.h; sourceTree = "<group>"; };
 		3279F42E1FFF45CA0052CDB9 /* MYLaunchAdvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertViewController.h; sourceTree = "<group>"; };
-		3279F42F1FFF45CA0052CDB9 /* MYLaunchAdvertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertView.h; sourceTree = "<group>"; };
 		3279F4301FFF45CA0052CDB9 /* MYLaunchAdvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvert.m; sourceTree = "<group>"; };
 		3279F4311FFF45CA0052CDB9 /* MYLaunchAdvertDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertDownloader.m; sourceTree = "<group>"; };
-		3279F4321FFF45CA0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MYLaunchAdvertImageView+MYLaunchAdvertCache.h"; sourceTree = "<group>"; };
 		3279F4331FFF45CA0052CDB9 /* MYLaunchAdvertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertButton.m; sourceTree = "<group>"; };
 		3279F4341FFF45CA0052CDB9 /* MYLaunchAdvertImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertImageManager.m; sourceTree = "<group>"; };
 		3279F4351FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertConfiguration.h; sourceTree = "<group>"; };
@@ -496,12 +494,14 @@
 		3279F4381FFF45CA0052CDB9 /* MYLaunchAdvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertViewController.m; sourceTree = "<group>"; };
 		3279F4391FFF45CA0052CDB9 /* MYLaunchAdvertCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertCache.m; sourceTree = "<group>"; };
 		3279F43A1FFF45CA0052CDB9 /* MYLaunchAdvertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertButton.h; sourceTree = "<group>"; };
-		3279F43B1FFF45CA0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MYLaunchAdvertImageView+MYLaunchAdvertCache.m"; sourceTree = "<group>"; };
 		3279F43C1FFF45CA0052CDB9 /* MYLaunchAdvertDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertDownloader.h; sourceTree = "<group>"; };
 		3279F43D1FFF45CA0052CDB9 /* MYLaunchAdvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvert.h; sourceTree = "<group>"; };
-		3279F43E1FFF45CA0052CDB9 /* MYLaunchAdvertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertView.m; sourceTree = "<group>"; };
 		3279F43F1FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertConfiguration.m; sourceTree = "<group>"; };
 		3279F4401FFF45CA0052CDB9 /* MYLaunchAdvertImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertImageManager.h; sourceTree = "<group>"; };
+		3279F4551FFF59310052CDB9 /* MYLaunchAdvertImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertImageView.h; sourceTree = "<group>"; };
+		3279F4561FFF59310052CDB9 /* MYLaunchAdvertImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertImageView.m; sourceTree = "<group>"; };
+		3279F4581FFF5F590052CDB9 /* MYLaunchAdvertVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertVideoView.h; sourceTree = "<group>"; };
+		3279F4591FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertVideoView.m; sourceTree = "<group>"; };
 		32B3EBCB1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
 		32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
 		32B3EBCF1FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
@@ -1430,27 +1430,27 @@
 			isa = PBXGroup;
 			children = (
 				3279F42B1FFF45CA0052CDB9 /* MYLaunchImageView.h */,
+				3279F4371FFF45CA0052CDB9 /* MYLaunchImageView.m */,
+				3279F4361FFF45CA0052CDB9 /* MYLaunchAdvertConst.h */,
 				3279F42C1FFF45CA0052CDB9 /* MYLaunchAdvertConst.m */,
 				3279F42D1FFF45CA0052CDB9 /* MYLaunchAdvertCache.h */,
+				3279F4391FFF45CA0052CDB9 /* MYLaunchAdvertCache.m */,
 				3279F42E1FFF45CA0052CDB9 /* MYLaunchAdvertViewController.h */,
-				3279F42F1FFF45CA0052CDB9 /* MYLaunchAdvertView.h */,
+				3279F4381FFF45CA0052CDB9 /* MYLaunchAdvertViewController.m */,
+				3279F4551FFF59310052CDB9 /* MYLaunchAdvertImageView.h */,
+				3279F4561FFF59310052CDB9 /* MYLaunchAdvertImageView.m */,
+				3279F4581FFF5F590052CDB9 /* MYLaunchAdvertVideoView.h */,
+				3279F4591FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m */,
+				3279F43D1FFF45CA0052CDB9 /* MYLaunchAdvert.h */,
 				3279F4301FFF45CA0052CDB9 /* MYLaunchAdvert.m */,
+				3279F43C1FFF45CA0052CDB9 /* MYLaunchAdvertDownloader.h */,
 				3279F4311FFF45CA0052CDB9 /* MYLaunchAdvertDownloader.m */,
-				3279F4321FFF45CA0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.h */,
+				3279F43A1FFF45CA0052CDB9 /* MYLaunchAdvertButton.h */,
 				3279F4331FFF45CA0052CDB9 /* MYLaunchAdvertButton.m */,
+				3279F4401FFF45CA0052CDB9 /* MYLaunchAdvertImageManager.h */,
 				3279F4341FFF45CA0052CDB9 /* MYLaunchAdvertImageManager.m */,
 				3279F4351FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.h */,
-				3279F4361FFF45CA0052CDB9 /* MYLaunchAdvertConst.h */,
-				3279F4371FFF45CA0052CDB9 /* MYLaunchImageView.m */,
-				3279F4381FFF45CA0052CDB9 /* MYLaunchAdvertViewController.m */,
-				3279F4391FFF45CA0052CDB9 /* MYLaunchAdvertCache.m */,
-				3279F43A1FFF45CA0052CDB9 /* MYLaunchAdvertButton.h */,
-				3279F43B1FFF45CA0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.m */,
-				3279F43C1FFF45CA0052CDB9 /* MYLaunchAdvertDownloader.h */,
-				3279F43D1FFF45CA0052CDB9 /* MYLaunchAdvert.h */,
-				3279F43E1FFF45CA0052CDB9 /* MYLaunchAdvertView.m */,
 				3279F43F1FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.m */,
-				3279F4401FFF45CA0052CDB9 /* MYLaunchAdvertImageManager.h */,
 			);
 			path = MYLaunchAdvert;
 			sourceTree = "<group>";
@@ -1895,6 +1895,7 @@
 				3279F4441FFF45CB0052CDB9 /* MYLaunchAdvertButton.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
 				3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */,
+				3279F4571FFF59310052CDB9 /* MYLaunchAdvertImageView.m in Sources */,
 				325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
 				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
@@ -1902,7 +1903,6 @@
 				3279F4451FFF45CB0052CDB9 /* MYLaunchAdvertImageManager.m in Sources */,
 				320774C51FACB93000A56F88 /* MWGridViewController.m in Sources */,
 				3254F4EF1FBD78480020B58C /* MYScriptMessageHandlerViewController.m in Sources */,
-				3279F44A1FFF45CB0052CDB9 /* MYLaunchAdvertView.m in Sources */,
 				32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */,
 				324174C91FFB3934007BB277 /* MYTouchIDManager.m in Sources */,
 				32B3EBE71FBE8EFC0067DF21 /* MYShowTextViewCell.m in Sources */,
@@ -1911,6 +1911,7 @@
 				32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */,
 				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
 				3220B1841FFE32AE00A58AA0 /* MYLaunchAdvertManager.m in Sources */,
+				3279F45A1FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
 				32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */,
@@ -1948,7 +1949,6 @@
 				324174991FFB2374007BB277 /* MYCollectionLayoutViewController.m in Sources */,
 				324174761FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m in Sources */,
 				32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */,
-				3279F4491FFF45CB0052CDB9 /* MYLaunchAdvertImageView+MYLaunchAdvertCache.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				324174C31FFB2FAC007BB277 /* MYiOS11ViewController.m in Sources */,
 				324174CF1FFB4BF6007BB277 /* MYPopupView.m in Sources */,
