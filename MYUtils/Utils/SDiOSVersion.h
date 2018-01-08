@@ -24,28 +24,32 @@ typedef NS_ENUM(NSInteger, DeviceVersion){
     iPhone7Plus           = 13,
     iPhoneSE              = 14,
     
-    iPad1                 = 15,
-    iPad2                 = 16,
-    iPadMini              = 17,
-    iPad3                 = 18,
-    iPad4                 = 19,
-    iPadAir               = 20,
-    iPadMini2             = 21,
-    iPadAir2              = 22,
-    iPadMini3             = 23,
-    iPadMini4             = 24,
-    iPadPro12Dot9Inch     = 25,
-    iPadPro9Dot7Inch      = 26,
-    iPad5                 = 27,
-    iPadPro12Dot9Inch2Gen = 28,
-    iPadPro10Dot5Inch     = 29,
+    iPhone8               = 15,
+    iPhone8Plus           = 16,
+    iPhoneX               = 17,
     
-    iPodTouch1Gen         = 30,
-    iPodTouch2Gen         = 31,
-    iPodTouch3Gen         = 32,
-    iPodTouch4Gen         = 33,
-    iPodTouch5Gen         = 34,
-    iPodTouch6Gen         = 35
+    iPad1                 = 18,
+    iPad2                 = 19,
+    iPadMini              = 20,
+    iPad3                 = 21,
+    iPad4                 = 22,
+    iPadAir               = 23,
+    iPadMini2             = 24,
+    iPadAir2              = 25,
+    iPadMini3             = 26,
+    iPadMini4             = 27,
+    iPadPro12Dot9Inch     = 28,
+    iPadPro9Dot7Inch      = 29,
+    iPad5                 = 30,
+    iPadPro12Dot9Inch2Gen = 31,
+    iPadPro10Dot5Inch     = 32,
+    
+    iPodTouch1Gen         = 33,
+    iPodTouch2Gen         = 34,
+    iPodTouch3Gen         = 35,
+    iPodTouch4Gen         = 36,
+    iPodTouch5Gen         = 37,
+    iPodTouch6Gen         = 38
 };
 
 typedef NS_ENUM(NSInteger, DeviceSize){
@@ -53,7 +57,8 @@ typedef NS_ENUM(NSInteger, DeviceSize){
     Screen3Dot5inch = 1,
     Screen4inch     = 2,
     Screen4Dot7inch = 3,
-    Screen5Dot5inch = 4
+    Screen5Dot5inch = 4,
+    Screen5Dot8inch = 5
 };
 
 @interface SDiOSVersion : NSObject

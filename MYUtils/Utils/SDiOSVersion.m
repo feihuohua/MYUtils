@@ -42,6 +42,14 @@
                               @"iPhone9,3" : @(iPhone7),
                               @"iPhone9,2" : @(iPhone7Plus),
                               @"iPhone9,4" : @(iPhone7Plus),
+                              
+                              @"iPhone10,1" : @(iPhone8),
+                              @"iPhone10,4" : @(iPhone8),
+                              @"iPhone10,2" : @(iPhone8Plus),
+                              @"iPhone10,5" : @(iPhone8Plus),
+                              @"iPhone10,3" : @(iPhoneX),
+                              @"iPhone10,6" : @(iPhoneX),
+                              
                               @"i386"      : @(Simulator),
                               @"x86_64"    : @(Simulator),
                               
@@ -126,8 +134,11 @@
         return  Screen4Dot7inch;
     } else if(screenHeight == 736) {
         return Screen5Dot5inch;
-    } else
+    } else if(screenHeight == 812) {
+        return Screen5Dot8inch;
+    } else {
         return UnknownSize;
+    }
 }
 
 + (DeviceSize)deviceSize
@@ -138,7 +149,7 @@
             deviceSize = Screen4Dot7inch;
         } else if (deviceSize == Screen4Dot7inch) {
             deviceSize = Screen5Dot5inch;
-        }
+        } 
     }
     return deviceSize;
 }
@@ -151,7 +162,8 @@
              @(Screen3Dot5inch) : @"3.5 inch",
              @(Screen4inch)     : @"4 inch",
              @(Screen4Dot7inch) : @"4.7 inch",
-             @(Screen5Dot5inch) : @"5.5 inch"
+             @(Screen5Dot5inch) : @"5.5 inch",
+             @(Screen5Dot8inch) : @"5.8 inch"
              }[@(deviceSize)];
 }
 
@@ -174,6 +186,9 @@
              @(iPhone6SPlus)         : @"iPhone 6S Plus",
              @(iPhone7)              : @"iPhone 7",
              @(iPhone7Plus)          : @"iPhone 7 Plus",
+             @(iPhone8)              : @"iPhone 8",
+             @(iPhone8Plus)          : @"iPhone 8 Plus",
+             @(iPhoneX)              : @"iPhone X",
              @(iPhoneSE)             : @"iPhone SE",
              
              @(iPad1)                : @"iPad 1",
@@ -208,7 +223,7 @@
 {
     if ([self resolutionSize] == Screen4inch && [UIScreen mainScreen].nativeScale > 2) {
         return YES;
-    }else if ([self resolutionSize] == Screen4Dot7inch && [UIScreen mainScreen].scale == 3){
+    } else if ([self resolutionSize] == Screen4Dot7inch && [UIScreen mainScreen].scale == 3) {
         return YES;
     }
     
