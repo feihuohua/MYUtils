@@ -154,6 +154,7 @@
 		32672F611FD8EDA100A8F68F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32672F601FD8EDA100A8F68F /* data.json */; };
 		32672F631FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */; };
 		326A1EF41FE8AC6700535930 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */; };
+		326BCD802004CAFE00585315 /* MYRangeSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BCD7F2004CAFE00585315 /* MYRangeSliderView.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -467,6 +468,8 @@
 		32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYTemplateLayoutViewController.xib; sourceTree = "<group>"; };
 		326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
 		326A1EF31FE8AC6700535930 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		326BCD7E2004CAFE00585315 /* MYRangeSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYRangeSliderView.h; sourceTree = "<group>"; };
+		326BCD7F2004CAFE00585315 /* MYRangeSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRangeSliderView.m; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -631,6 +634,8 @@
 			children = (
 				3203A2FF1F6632AD00BA3601 /* FXSlider.h */,
 				3203A3001F6632AD00BA3601 /* FXSlider.m */,
+				326BCD7E2004CAFE00585315 /* MYRangeSliderView.h */,
+				326BCD7F2004CAFE00585315 /* MYRangeSliderView.m */,
 			);
 			path = FXSlider;
 			sourceTree = "<group>";
@@ -1840,6 +1845,7 @@
 				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
 				3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */,
+				326BCD802004CAFE00585315 /* MYRangeSliderView.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
 				324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */,
 				324174A01FFB25D7007BB277 /* MYUtilsViewController.m in Sources */,

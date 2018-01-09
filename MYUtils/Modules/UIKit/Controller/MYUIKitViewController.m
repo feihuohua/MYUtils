@@ -28,7 +28,7 @@
     [self.dataSource addObject:@"*FDTemplateLayoutCell*-MYTemplateLayoutViewController"];
     [self.dataSource addObject:@"UILabel设置行间距、指定显示行数-MYShowTextViewController"];
     [self.dataSource addObject:@"*UIImageView设置圆角*-MYImageCornerRadiusViewController"];
-    [self.dataSource addObject:@"自定义UISlider-FXSliderViewController"];
+    [self.dataSource addObject:@"自定义UISlider-MYSliderViewController"];
     [self.dataSource addObject:@"*倒计时演练*-MYCountDownViewController"];
     [self.dataSource addObject:@"*自定义UITextField*-MYTextFieldViewController"];
     [self.dataSource addObject:@"*UICollectionView布局*-MYCollectionLayoutViewController"];
