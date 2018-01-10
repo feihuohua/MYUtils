@@ -8,6 +8,7 @@
 
 #import "MYCountDownManager.h"
 #import "MYCountDownTimeIntervalModel.h"
+#import <YYWeakProxy.h>
 
 NSString *const kMYCountDownNotification = @"MYCountDownNotification";
 
@@ -43,6 +44,10 @@ NSString *const kMYCountDownNotification = @"MYCountDownNotification";
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForegroundNotification) name:UIApplicationWillEnterForegroundNotification object:nil];
     }
     return self;
+}
+
+- (void)dealloc {
+    
 }
 
 - (void)start {
@@ -125,7 +130,8 @@ NSString *const kMYCountDownNotification = @"MYCountDownNotification";
 
 - (NSTimer *)timer {
     if (!_timer) {
-        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerAction) userInfo:nil repeats:YES];
+        YYWeakProxy *prx = [YYWeakProxy proxyWithTarget:self];
+        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:prx selector:@selector(timerAction) userInfo:nil repeats:YES];
         [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
     }
     return _timer;

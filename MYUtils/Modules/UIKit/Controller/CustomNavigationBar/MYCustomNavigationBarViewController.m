@@ -24,7 +24,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.dataSource addObject:@"透明导航栏-MYTransparentNavigationBarViewController"];
-    [self.dataSource addObject:@"仿美团导航栏-MYCustomNavigationBarViewController"];
+    [self.dataSource addObject:@"仿美团导航栏-MYFadeViewController"];
 
     [self.view addSubview:self.tableView];
 }
