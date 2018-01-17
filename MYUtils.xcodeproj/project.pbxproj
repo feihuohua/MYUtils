@@ -154,6 +154,7 @@
 		32659993200F1911001F727E /* MYHeaderTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659992200F1911001F727E /* MYHeaderTabViewController.m */; };
 		32659996200F196D001F727E /* MYHeaderTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659995200F196D001F727E /* MYHeaderTabViewBar.m */; };
 		32659999200F1AAB001F727E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659997200F1AAA001F727E /* TableViewController.m */; };
+		3265999C200F35CE001F727E /* MYSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265999B200F35CE001F727E /* MYSliderView.m */; };
 		32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */; };
 		32672F501FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F4F1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.m */; };
 		32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32672F521FD8EBC200A8F68F /* MYTemplateLayoutViewController.m */; };
@@ -479,6 +480,8 @@
 		32659995200F196D001F727E /* MYHeaderTabViewBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHeaderTabViewBar.m; sourceTree = "<group>"; };
 		32659997200F1AAA001F727E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		32659998200F1AAB001F727E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3265999A200F35CE001F727E /* MYSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSliderView.h; sourceTree = "<group>"; };
+		3265999B200F35CE001F727E /* MYSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSliderView.m; sourceTree = "<group>"; };
 		32672F4B1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewLayout.h; sourceTree = "<group>"; };
 		32672F4C1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSectionHeaderCollectionViewLayout.m; sourceTree = "<group>"; };
 		32672F4E1FD8DEC900A8F68F /* MYSectionHeaderCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSectionHeaderCollectionViewController.h; sourceTree = "<group>"; };
@@ -658,6 +661,8 @@
 			children = (
 				3203A2FF1F6632AD00BA3601 /* FXSlider.h */,
 				3203A3001F6632AD00BA3601 /* FXSlider.m */,
+				3265999A200F35CE001F727E /* MYSliderView.h */,
+				3265999B200F35CE001F727E /* MYSliderView.m */,
 			);
 			path = FXSlider;
 			sourceTree = "<group>";
@@ -1895,6 +1900,7 @@
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				324174921FFB21C3007BB277 /* MYTableCountDownViewController.m in Sources */,
+				3265999C200F35CE001F727E /* MYSliderView.m in Sources */,
 				3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */,
 				3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */,
 				324174BC1FFB2F1C007BB277 /* MYHamburgerButton.m in Sources */,
