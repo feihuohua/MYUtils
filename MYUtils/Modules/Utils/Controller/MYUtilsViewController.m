@@ -31,6 +31,7 @@
     [self.dataSource addObject:@"keyboard-MYKeyboardViewController"];
     [self.dataSource addObject:@"*UIScrollView的侧滑返回并存*-MYSideslipScrollViewController"];
     [self.dataSource addObject:@"*36氪*-MYPagerViewController"];
+    [self.dataSource addObject:@"*UIScrollView嵌套UIScrollView问题*-MYHeaderTabViewController"];
     
     [self registerViewControllerBasedOption];
     
