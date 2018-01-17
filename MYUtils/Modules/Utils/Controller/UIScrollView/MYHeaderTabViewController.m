@@ -22,15 +22,15 @@
     [super viewDidLoad];
     self.tabDataSource = self;
     self.tabDelegate = self;
-    
+    self.headerZoomIn = NO;
     MYHeaderTabViewBar *tabViewBar = [[MYHeaderTabViewBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
-    tabViewBar.titleSelectedColor = [UIColor redColor];
-    tabViewBar.indicatorColor = [UIColor redColor];
-    tabViewBar.indicatorStyle = MYIndicatorStyleCover;
-    tabViewBar.indicatorColor = [UIColor lightGrayColor];
-    tabViewBar.indicatorCornerRadius = 5;
-    tabViewBar.indicatorAdditionalWidth = 10;
-    tabViewBar.indicatorHeight = 5;
+//    tabViewBar.titleSelectedColor = [UIColor redColor];
+//    tabViewBar.indicatorColor = [UIColor redColor];
+//    tabViewBar.indicatorStyle = MYIndicatorStyleCover;
+//    tabViewBar.indicatorColor = [UIColor lightGrayColor];
+//    tabViewBar.indicatorCornerRadius = 5;
+//    tabViewBar.indicatorAdditionalWidth = 10;
+//    tabViewBar.indicatorHeight = 5;
     tabViewBar.delegate = self;
     MYTabViewControllerTabViewBarPlugin *tabViewBarPlugin = [[MYTabViewControllerTabViewBarPlugin alloc] initWithTabViewBar:tabViewBar delegate:nil];
     [self enablePlugin:tabViewBarPlugin];
@@ -60,11 +60,6 @@
 
 #pragma mark -
 
-- (void)tabViewController:(MYTabViewController *)tabViewController scrollViewVerticalScroll:(CGFloat)contentPercentY {
-    // 博主很傻，用此方法渐变导航栏是偷懒表现，只是为了demo演示。正确科学方法请自行百度 iOS导航栏透明
-    self.navigationController.navigationBar.alpha = contentPercentY;
-}
-
 - (NSInteger)numberOfViewControllerForTabViewController:(MYTabViewController *)tabViewController {
     return 10;
 }
@@ -81,7 +76,6 @@
     headerView.image = [UIImage imageNamed:@"1"];
     headerView.contentMode = UIViewContentModeScaleAspectFill;
     headerView.userInteractionEnabled = YES;
-    tabViewController.headerZoomIn = NO;
     return headerView;
 }
 

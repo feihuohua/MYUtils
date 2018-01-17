@@ -151,7 +151,6 @@
 		32659986200F13E6001F727E /* UIViewController+MYTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659985200F13E6001F727E /* UIViewController+MYTabViewController.m */; };
 		32659989200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659988200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m */; };
 		3265998C200F1649001F727E /* MYTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265998B200F1649001F727E /* MYTabViewBar.m */; };
-		3265998F200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265998E200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.m */; };
 		32659993200F1911001F727E /* MYHeaderTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659992200F1911001F727E /* MYHeaderTabViewController.m */; };
 		32659996200F196D001F727E /* MYHeaderTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659995200F196D001F727E /* MYHeaderTabViewBar.m */; };
 		32659999200F1AAB001F727E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659997200F1AAA001F727E /* TableViewController.m */; };
@@ -474,8 +473,6 @@
 		32659988200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewControllerTabViewBarPlugin.m; sourceTree = "<group>"; };
 		3265998A200F1649001F727E /* MYTabViewBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewBar.h; sourceTree = "<group>"; };
 		3265998B200F1649001F727E /* MYTabViewBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewBar.m; sourceTree = "<group>"; };
-		3265998D200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewControllerBottomInsetPlugin.h; sourceTree = "<group>"; };
-		3265998E200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewControllerBottomInsetPlugin.m; sourceTree = "<group>"; };
 		32659991200F1911001F727E /* MYHeaderTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHeaderTabViewController.h; sourceTree = "<group>"; };
 		32659992200F1911001F727E /* MYHeaderTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHeaderTabViewController.m; sourceTree = "<group>"; };
 		32659994200F196D001F727E /* MYHeaderTabViewBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHeaderTabViewBar.h; sourceTree = "<group>"; };
@@ -1303,8 +1300,6 @@
 				32659982200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.m */,
 				32659987200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.h */,
 				32659988200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m */,
-				3265998D200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.h */,
-				3265998E200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.m */,
 				3265998A200F1649001F727E /* MYTabViewBar.h */,
 				3265998B200F1649001F727E /* MYTabViewBar.m */,
 				3265997E200F12DE001F727E /* MYTabViewController.h */,
@@ -1973,7 +1968,6 @@
 				3279F4571FFF59310052CDB9 /* MYLaunchAdvertImageView.m in Sources */,
 				325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
-				3265998F200F17B5001F727E /* MYTabViewControllerBottomInsetPlugin.m in Sources */,
 				32659980200F12DE001F727E /* MYTabViewController.m in Sources */,
 				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
 				32659996200F196D001F727E /* MYHeaderTabViewBar.m in Sources */,
