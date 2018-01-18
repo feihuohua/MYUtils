@@ -507,4 +507,9 @@
     }];
 }
 
+- (void)setScrollEnabled:(BOOL)scrollEnabled {
+    _scrollEnabled = scrollEnabled;
+    self.scrollView.scrollEnabled = scrollEnabled;
+}
+
 @end

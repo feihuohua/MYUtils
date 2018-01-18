@@ -49,6 +49,10 @@
 
 // Default is YES when headerView not nil
 @property (nonatomic, assign) BOOL headerZoomIn;
+/**
+ *  是否允许页面左右滑动，默认YES
+ */
+@property (nonatomic, assign, getter=isScrollEnabled) BOOL scrollEnabled;
 @property (nonatomic, readonly) UIScrollView  *scrollView;
 @property (nonatomic, readonly) NSArray       *viewControllers;
 @property (nonatomic, strong)   UIView        *tabHeaderView;

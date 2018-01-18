@@ -18,8 +18,6 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.tableView.backgroundColor = [UIColor clearColor];
-    self.tableView.separatorColor = [UIColor clearColor];
     
     UIImage *image = [UIImage imageNamed:(self.index == 0 ? @"2": @"3")];
     UIImageView *imageBg = [[UIImageView alloc] initWithImage:image];
@@ -39,6 +37,12 @@
         cell.backgroundColor = [UIColor clearColor];
     }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TableViewController *test = [[TableViewController alloc] init];
+    [self.navigationController pushViewController:test animated:YES];
 }
 
 @end

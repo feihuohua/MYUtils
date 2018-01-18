@@ -23,7 +23,10 @@
     self.tabDataSource = self;
     self.tabDelegate = self;
     self.headerZoomIn = NO;
+    self.scrollEnabled = NO;
     MYHeaderTabViewBar *tabViewBar = [[MYHeaderTabViewBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
+    tabViewBar.seperatorViewHidden = NO;
+    tabViewBar.titleFont = [UIFont systemFontOfSize:18.0f];
 //    tabViewBar.titleSelectedColor = [UIColor redColor];
 //    tabViewBar.indicatorColor = [UIColor redColor];
 //    tabViewBar.indicatorStyle = MYIndicatorStyleCover;
@@ -44,12 +47,10 @@
     return [self numberOfViewControllerForTabViewController:self];
 }
 
-- (id)tabViewBar:(MYHeaderTabViewBar *)tabViewBar titleForIndex:(NSInteger)index {
+- (NSString *)tabViewBar:(MYHeaderTabViewBar *)tabViewBar titleForIndex:(NSInteger)index {
     if (index == 0) {
         return @"虾米";
     }
-    NSMutableAttributedString *attString = [[NSMutableAttributedString alloc] initWithString:@"网易云 5"];
-    [attString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:12] range:NSMakeRange(3, 2)];
     return @"网易云asdfasdfasdf 5";
 }
 

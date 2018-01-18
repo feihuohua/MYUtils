@@ -40,7 +40,7 @@
 
 /// 初始化变量
 - (void)initialization {
-    _seperatorViewHidden = NO;
+    _seperatorViewHidden = YES;
     _indicatorStyle = MYIndicatorStyleDefault;
     _indicatorCornerRadius = 0;
     _indicatorBorderWidth = 0;
@@ -175,7 +175,7 @@
     }
     
     UIButton *btn = [self.buttons objectAtIndex:index];
-    id title = [self.delegate tabViewBar:self titleForIndex:index];
+    NSString *title = [self.delegate tabViewBar:self titleForIndex:index];
     
     [btn setTitle:title forState:UIControlStateNormal];
     [btn setTitle:title forState:UIControlStateDisabled];
@@ -193,7 +193,7 @@
     for (NSInteger index = 0; index < count; index++) {
         UIButton *button = [self createButton];
         button.tag = index;
-        id title = [self.delegate tabViewBar:self titleForIndex:index];
+        NSString *title = [self.delegate tabViewBar:self titleForIndex:index];
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitle:title forState:UIControlStateDisabled];
         
@@ -310,6 +310,7 @@
         _seperatorView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(self.bounds) - 0.5, CGRectGetWidth(self.bounds), 0.5)];
         _seperatorView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
         _seperatorView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
+        _seperatorView.hidden = _seperatorViewHidden;
     }
     return _seperatorView;
 }
