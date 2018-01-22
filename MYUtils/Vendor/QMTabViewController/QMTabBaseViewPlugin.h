@@ -1,15 +1,16 @@
 //
-//  MYTabViewControllerBasePlugin.h
-//  MYUtils
+//  QMTabBaseViewPlugin.h
+//  QuanMinTV
 //
-//  Created by sunjinshuai on 2018/1/17.
-//  Copyright © 2018年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/1/19.
+//  Copyright © 2018年 QMTV. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@class MYTabViewController;
 
-@protocol MYTabViewControllerPlugin <NSObject>
+@class QMTabViewController;
+
+@protocol QMTabViewPluginDelegate <NSObject>
 
 - (void)scrollViewVerticalScroll:(CGFloat)contentPercentY;
 - (void)scrollViewHorizontalScroll:(CGFloat)contentOffsetX;
@@ -18,9 +19,9 @@
 
 @end
 
-@interface MYTabViewControllerBasePlugin : NSObject <MYTabViewControllerPlugin>
+@interface QMTabBaseViewPlugin : NSObject <QMTabViewPluginDelegate>
 
-@property (nonatomic, assign) MYTabViewController *tabViewController;
+@property (nonatomic, assign) QMTabViewController *tabViewController;
 
 // Called only once when enable. Default does nothing
 - (void)initPlugin;

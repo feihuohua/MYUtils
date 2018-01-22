@@ -10,6 +10,7 @@
 #import "TBCityIconFont.h"
 #import "MYActionSheet.h"
 #import "UIImage+TBCityIconFont.h"
+#import "MYPassWordView.h"
 
 @interface MYIconFontViewController ()
 
@@ -38,6 +39,13 @@
     [self.view addSubview:label];
     label.font = [UIFont fontWithName:@"iconfont" size:15];
     label.text = @"这是用label显示的iconfont  \U0000e60c";
+    
+    MYPassWordView *passWordView = [[MYPassWordView alloc] init];
+    passWordView.frame = CGRectMake(50, CGRectGetMaxY(label.frame) + 10, 300, 50);
+    passWordView.passWordNum = 6;
+    passWordView.squareWidth = 45;
+    passWordView.pointRadius = 6;
+    [self.view addSubview:passWordView];
 }
 
 - (void)buttonClick:(UIButton *)sender {

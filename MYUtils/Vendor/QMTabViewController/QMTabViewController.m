@@ -1,16 +1,16 @@
 //
-//  MYTabViewController.m
-//  MYUtils
+//  QMTabViewController.m
+//  QuanMinTV
 //
-//  Created by sunjinshuai on 2018/1/17.
-//  Copyright © 2018年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/1/19.
+//  Copyright © 2018年 QMTV. All rights reserved.
 //
 
-#import "MYTabViewController.h"
-#import "UIViewController+MYTabViewController.h"
-#import "MYTabViewControllerBasePlugin.h"
+#import "QMTabViewController.h"
+#import "UIViewController+QMTabViewController.h"
+#import "QMTabBaseViewPlugin.h"
 
-@interface MYTabViewController () <UIScrollViewDelegate> {
+@interface QMTabViewController () <UIScrollViewDelegate> {
     struct {
         CGFloat headHeight;
         CGFloat bottomInset;
@@ -27,21 +27,30 @@
     BOOL     _viewDidAppearIsCalledBefore;
 }
 
+/**
+ *  containerView
+ */
 @property (nonatomic, strong) UIView           *containerView;
 @property (nonatomic, strong) UIScrollView     *scrollView;
+/**
+ *  子控件
+ */
 @property (nonatomic, strong) NSArray          *viewControllers;
-@property (nonatomic, assign) NSInteger        curIndex;
+/**
+ *  当前滑动的索引
+ */
+@property (nonatomic, assign) NSInteger        currentIndex;
 @property (nonatomic, assign) NSInteger        showIndexAfterAppear;
 
 @property (nonatomic, strong) NSMutableArray   *plugins;
 
 @end
 
-@implementation MYTabViewController
+@implementation QMTabViewController
 
 - (void)dealloc {
     [self removeKVOObserver];
-    for (MYTabViewControllerBasePlugin *plugin in self.plugins.objectEnumerator) {
+    for (QMTabBaseViewPlugin *plugin in self.plugins.objectEnumerator) {
         [plugin removePlugin];
     }
     for (UIViewController *viewController in self.viewControllers.objectEnumerator) {
@@ -51,13 +60,15 @@
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    if (self.curIndex != self.scrollView.contentOffset.x / CGRectGetWidth(self.scrollView.frame)) {
+    if (self.currentIndex != self.scrollView.contentOffset.x / CGRectGetWidth(self.scrollView.frame)) {
         [self scrollViewDidEndDecelerating:self.scrollView];
     }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    /// 加载containerView
     [self loadContainerView];
 }
 
@@ -75,7 +86,7 @@
     [super viewDidAppear:animated];
     if (!_viewDidAppearIsCalledBefore) {
         _viewDidAppearIsCalledBefore = YES;
-        [self viewDidScrollToIndex:self.curIndex];
+        [self viewDidScrollToIndex:self.currentIndex];
         if (_headViewScrollEnable) {
             [self tabDelegateScrollViewVerticalScroll:0];
         }
@@ -96,16 +107,16 @@
         self.showIndexAfterAppear = index;
         return;
     }
-    if (index < 0 || index >= self.viewControllers.count || index == self.curIndex) {
+    if (index < 0 || index >= self.viewControllers.count || index == self.currentIndex) {
         return;
     }
     [self enableCurScrollViewScrollToTop:NO];
     [self viewControllersAutoFitToScrollToIndex:index];
     if ([self.tabDelegate respondsToSelector:@selector(tabViewController:scrollViewWillScrollFromIndex:offsetX:)]) {
-        [self.tabDelegate tabViewController:self scrollViewWillScrollFromIndex:self.curIndex offsetX:self.scrollView.contentOffset.x];
+        [self.tabDelegate tabViewController:self scrollViewWillScrollFromIndex:self.currentIndex offsetX:self.scrollView.contentOffset.x];
     }
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *plugin, NSUInteger idx, BOOL *stop) {
-        [plugin scrollViewWillScrollFromIndex:self.curIndex offsetX:self.scrollView.contentOffset.x];
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *plugin, NSUInteger idx, BOOL *stop) {
+        [plugin scrollViewWillScrollFromIndex:self.currentIndex offsetX:self.scrollView.contentOffset.x];
     }];
     [self.scrollView setContentOffset:CGPointMake(index * CGRectGetWidth(self.scrollView.bounds), 0) animated:animated];
     if (!animated) {
@@ -114,7 +125,7 @@
 }
 
 - (void)enableCurScrollViewScrollToTop:(BOOL)enable {
-    UIViewController *viewController = [self viewControllerForIndex:self.curIndex];
+    UIViewController *viewController = [self viewControllerForIndex:self.currentIndex];
     viewController.tabContentScrollView.scrollsToTop = enable;
 }
 
@@ -124,11 +135,11 @@
     }
     NSInteger minIndex = 0;
     NSInteger maxIndex = self.viewControllers.count;
-    if (index < self.curIndex) {
+    if (index < self.currentIndex) {
         minIndex = index;
-        maxIndex = self.curIndex - 1;
+        maxIndex = self.currentIndex - 1;
     } else {
-        minIndex = self.curIndex + 1;
+        minIndex = self.currentIndex + 1;
         maxIndex = index;
     }
     for (NSInteger index = minIndex; index <= maxIndex; index++) {
@@ -157,7 +168,7 @@
 #pragma mark - LoadView
 
 - (void)reloadData {
-    for (MYTabViewControllerBasePlugin *plugin in self.plugins.objectEnumerator) {
+    for (QMTabBaseViewPlugin *plugin in self.plugins.objectEnumerator) {
         [plugin removePlugin];
     }
     [self.tabHeaderView removeFromSuperview];
@@ -170,7 +181,7 @@
     }
     self.viewControllers = nil;
     self.scrollView.contentOffset = CGPointZero;
-    self.curIndex = 0;
+    self.currentIndex = 0;
     _contentOffsetY = 0;
     _headViewScrollEnable = NO;
     
@@ -330,7 +341,7 @@
     if (!_headViewScrollEnable) {
         return;
     }
-    UIViewController *viewController = self.viewControllers[self.curIndex];
+    UIViewController *viewController = self.viewControllers[self.currentIndex];
     UIScrollView *scrollView = viewController.tabContentScrollView;
     if (scrollView != object) {
         return;
@@ -365,7 +376,7 @@
     if ([self.tabDelegate respondsToSelector:@selector(tabViewController:scrollViewVerticalScroll:)]) {
         [self.tabDelegate tabViewController:self scrollViewVerticalScroll:percent];
     }
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *plugin, NSUInteger idx, BOOL *stop) {
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *plugin, NSUInteger idx, BOOL *stop) {
         [plugin scrollViewVerticalScroll:percent];
     }];
 }
@@ -374,13 +385,13 @@
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [self enableCurScrollViewScrollToTop:NO];
-    [self viewControllersAutoFitToScrollToIndex:self.curIndex - 1];
-    [self viewControllersAutoFitToScrollToIndex:self.curIndex + 1];
+    [self viewControllersAutoFitToScrollToIndex:self.currentIndex - 1];
+    [self viewControllersAutoFitToScrollToIndex:self.currentIndex + 1];
     if ([self.tabDelegate respondsToSelector:@selector(tabViewController:scrollViewWillScrollFromIndex:offsetX:)]) {
-        [self.tabDelegate tabViewController:self scrollViewWillScrollFromIndex:self.curIndex offsetX:scrollView.contentOffset.x];
+        [self.tabDelegate tabViewController:self scrollViewWillScrollFromIndex:self.currentIndex offsetX:scrollView.contentOffset.x];
     }
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *plugin, NSUInteger idx, BOOL *stop) {
-        [plugin scrollViewWillScrollFromIndex:self.curIndex offsetX:scrollView.contentOffset.x];
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *plugin, NSUInteger idx, BOOL *stop) {
+        [plugin scrollViewWillScrollFromIndex:self.currentIndex offsetX:scrollView.contentOffset.x];
     }];
 }
 
@@ -389,7 +400,7 @@
     if ([self.tabDelegate respondsToSelector:@selector(tabViewController:scrollViewHorizontalScroll:)]) {
         [self.tabDelegate tabViewController:self scrollViewHorizontalScroll:scrollView.contentOffset.x];
     }
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *plugin, NSUInteger idx, BOOL *stop) {
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *plugin, NSUInteger idx, BOOL *stop) {
         [plugin scrollViewHorizontalScroll:scrollView.contentOffset.x];
     }];
 }
@@ -399,8 +410,8 @@
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    self.curIndex = scrollView.contentOffset.x / CGRectGetWidth(self.scrollView.frame);
-    UIViewController *viewController = [self viewControllerForIndex:self.curIndex];
+    self.currentIndex = scrollView.contentOffset.x / CGRectGetWidth(self.scrollView.frame);
+    UIViewController *viewController = [self viewControllerForIndex:self.currentIndex];
     UIScrollView *curScrollView = viewController.tabContentScrollView;
     UIEdgeInsets insets = curScrollView.contentInset;
     CGFloat maxY = insets.bottom + curScrollView.contentSize.height - curScrollView.bounds.size.height;
@@ -414,14 +425,14 @@
         }
     }
     [self enableCurScrollViewScrollToTop:YES];
-    [self viewDidScrollToIndex:self.curIndex];
+    [self viewDidScrollToIndex:self.currentIndex];
 }
 
 - (void)viewDidScrollToIndex:(NSInteger)index {
     if ([self.tabDelegate respondsToSelector:@selector(tabViewController:scrollViewDidScrollToIndex:)]) {
         [self.tabDelegate tabViewController:self scrollViewDidScrollToIndex:index];
     }
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *plugin, NSUInteger idx, BOOL *stop) {
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *plugin, NSUInteger idx, BOOL *stop) {
         [plugin scrollViewDidScrollToIndex:index];
     }];
 }
@@ -429,17 +440,17 @@
 #pragma mark - Plugin
 
 - (void)loadPlugins {
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *plugin, NSUInteger idx, BOOL *stop) {
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *plugin, NSUInteger idx, BOOL *stop) {
         [plugin loadPlugin];
     }];
     _loadParameter.pluginsLoadFlag = YES;
 }
 
-- (void)enablePlugin:(MYTabViewControllerBasePlugin *)plugin {
+- (void)enablePlugin:(QMTabBaseViewPlugin *)plugin {
     if (!self.plugins) {
         self.plugins = [NSMutableArray new];
     }
-    [self.plugins enumerateObjectsUsingBlock:^(MYTabViewControllerBasePlugin *existPlugin, NSUInteger idx, BOOL *stop) {
+    [self.plugins enumerateObjectsUsingBlock:^(QMTabBaseViewPlugin *existPlugin, NSUInteger idx, BOOL *stop) {
         if ([existPlugin isMemberOfClass:[plugin class]]) {
             [existPlugin removePlugin];
             [self.plugins removeObject:existPlugin];
@@ -454,7 +465,7 @@
     }
 }
 
-- (void)removePlugin:(MYTabViewControllerBasePlugin *)plugin {
+- (void)removePlugin:(QMTabBaseViewPlugin *)plugin {
     [plugin removePlugin];
     plugin.tabViewController = nil;
     [self.plugins removeObject:plugin];
@@ -470,6 +481,9 @@
     _viewControllers = viewControllers;
 }
 
+/**
+ *  加载containerView
+ */
 - (void)loadContainerView {
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;

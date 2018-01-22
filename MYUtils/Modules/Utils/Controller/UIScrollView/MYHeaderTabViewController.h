@@ -6,8 +6,8 @@
 //  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
-#import "MYTabViewController.h"
+#import "QMTabViewController.h"
 
-@interface MYHeaderTabViewController : MYTabViewController
+@interface MYHeaderTabViewController : QMTabViewController
 
 @end

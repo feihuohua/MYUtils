@@ -145,12 +145,6 @@
 		325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9C1FDE877C0070BCD2 /* MYRunLoopOperationManager.m */; };
 		325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */; };
 		325BADD31FDFAC810070BCD2 /* MYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BADD21FDFAC810070BCD2 /* MYNetworking.m */; };
-		3265997D200F12BA001F727E /* MYTabViewControllerBasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265997C200F12BA001F727E /* MYTabViewControllerBasePlugin.m */; };
-		32659980200F12DE001F727E /* MYTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265997F200F12DE001F727E /* MYTabViewController.m */; };
-		32659983200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659982200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.m */; };
-		32659986200F13E6001F727E /* UIViewController+MYTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659985200F13E6001F727E /* UIViewController+MYTabViewController.m */; };
-		32659989200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659988200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m */; };
-		3265998C200F1649001F727E /* MYTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265998B200F1649001F727E /* MYTabViewBar.m */; };
 		32659993200F1911001F727E /* MYHeaderTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659992200F1911001F727E /* MYHeaderTabViewController.m */; };
 		32659996200F196D001F727E /* MYHeaderTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659995200F196D001F727E /* MYHeaderTabViewBar.m */; };
 		32659999200F1AAB001F727E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32659997200F1AAA001F727E /* TableViewController.m */; };
@@ -182,6 +176,16 @@
 		3279F44B1FFF45CB0052CDB9 /* MYLaunchAdvertConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F43F1FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.m */; };
 		3279F4571FFF59310052CDB9 /* MYLaunchAdvertImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4561FFF59310052CDB9 /* MYLaunchAdvertImageView.m */; };
 		3279F45A1FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3279F4591FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m */; };
+		329CE64620121DF500FEF065 /* QMTabBarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63B20121DF500FEF065 /* QMTabBarPlugin.m */; };
+		329CE64720121DF500FEF065 /* QMTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63C20121DF500FEF065 /* QMTabViewBar.m */; };
+		329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63D20121DF500FEF065 /* QMTabViewController.m */; };
+		329CE64920121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63E20121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m */; };
+		329CE64A20121DF500FEF065 /* QMTabBaseViewPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE64220121DF500FEF065 /* QMTabBaseViewPlugin.m */; };
+		329CE64B20121DF500FEF065 /* UIViewController+QMTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE64520121DF500FEF065 /* UIViewController+QMTabViewController.m */; };
+		329CE655201331BE00FEF065 /* MYFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE654201331BE00FEF065 /* MYFeatureViewController.m */; };
+		329CE6582013320E00FEF065 /* MYFeatureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE6572013320E00FEF065 /* MYFeatureManager.m */; };
+		329CE65B2013334800FEF065 /* MYFeatureViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE65A2013334800FEF065 /* MYFeatureViewCell.m */; };
+		329CE65E201351EE00FEF065 /* MYPassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE65D201351EE00FEF065 /* MYPassWordView.m */; };
 		32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
 		32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD01FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m */; };
 		32B3EBD71FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EBD41FBE8E7F0067DF21 /* MYCrossDissolveSecondViewController.m */; };
@@ -462,18 +466,6 @@
 		325BAD9F1FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CurrentIndexPath.m"; sourceTree = "<group>"; };
 		325BADD11FDFAC810070BCD2 /* MYNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNetworking.h; sourceTree = "<group>"; };
 		325BADD21FDFAC810070BCD2 /* MYNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNetworking.m; sourceTree = "<group>"; };
-		3265997B200F12BA001F727E /* MYTabViewControllerBasePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewControllerBasePlugin.h; sourceTree = "<group>"; };
-		3265997C200F12BA001F727E /* MYTabViewControllerBasePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewControllerBasePlugin.m; sourceTree = "<group>"; };
-		3265997E200F12DE001F727E /* MYTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewController.h; sourceTree = "<group>"; };
-		3265997F200F12DE001F727E /* MYTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewController.m; sourceTree = "<group>"; };
-		32659981200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewControllerHeaderScrollPlugin.h; sourceTree = "<group>"; };
-		32659982200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewControllerHeaderScrollPlugin.m; sourceTree = "<group>"; };
-		32659984200F13E6001F727E /* UIViewController+MYTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MYTabViewController.h"; sourceTree = "<group>"; };
-		32659985200F13E6001F727E /* UIViewController+MYTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MYTabViewController.m"; sourceTree = "<group>"; };
-		32659987200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewControllerTabViewBarPlugin.h; sourceTree = "<group>"; };
-		32659988200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewControllerTabViewBarPlugin.m; sourceTree = "<group>"; };
-		3265998A200F1649001F727E /* MYTabViewBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTabViewBar.h; sourceTree = "<group>"; };
-		3265998B200F1649001F727E /* MYTabViewBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTabViewBar.m; sourceTree = "<group>"; };
 		32659991200F1911001F727E /* MYHeaderTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHeaderTabViewController.h; sourceTree = "<group>"; };
 		32659992200F1911001F727E /* MYHeaderTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHeaderTabViewController.m; sourceTree = "<group>"; };
 		32659994200F196D001F727E /* MYHeaderTabViewBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHeaderTabViewBar.h; sourceTree = "<group>"; };
@@ -533,6 +525,26 @@
 		3279F4561FFF59310052CDB9 /* MYLaunchAdvertImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertImageView.m; sourceTree = "<group>"; };
 		3279F4581FFF5F590052CDB9 /* MYLaunchAdvertVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertVideoView.h; sourceTree = "<group>"; };
 		3279F4591FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertVideoView.m; sourceTree = "<group>"; };
+		329CE63A20121DF500FEF065 /* QMTabBaseViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTabBaseViewPlugin.h; sourceTree = "<group>"; };
+		329CE63B20121DF500FEF065 /* QMTabBarPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabBarPlugin.m; sourceTree = "<group>"; };
+		329CE63C20121DF500FEF065 /* QMTabViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabViewBar.m; sourceTree = "<group>"; };
+		329CE63D20121DF500FEF065 /* QMTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabViewController.m; sourceTree = "<group>"; };
+		329CE63E20121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabHeaderScrollViewPlugin.m; sourceTree = "<group>"; };
+		329CE63F20121DF500FEF065 /* UIViewController+QMTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+QMTabViewController.h"; sourceTree = "<group>"; };
+		329CE64020121DF500FEF065 /* QMTabViewBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTabViewBar.h; sourceTree = "<group>"; };
+		329CE64120121DF500FEF065 /* QMTabBarPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTabBarPlugin.h; sourceTree = "<group>"; };
+		329CE64220121DF500FEF065 /* QMTabBaseViewPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabBaseViewPlugin.m; sourceTree = "<group>"; };
+		329CE64320121DF500FEF065 /* QMTabHeaderScrollViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTabHeaderScrollViewPlugin.h; sourceTree = "<group>"; };
+		329CE64420121DF500FEF065 /* QMTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTabViewController.h; sourceTree = "<group>"; };
+		329CE64520121DF500FEF065 /* UIViewController+QMTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+QMTabViewController.m"; sourceTree = "<group>"; };
+		329CE653201331BE00FEF065 /* MYFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFeatureViewController.h; sourceTree = "<group>"; };
+		329CE654201331BE00FEF065 /* MYFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFeatureViewController.m; sourceTree = "<group>"; };
+		329CE6562013320E00FEF065 /* MYFeatureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFeatureManager.h; sourceTree = "<group>"; };
+		329CE6572013320E00FEF065 /* MYFeatureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFeatureManager.m; sourceTree = "<group>"; };
+		329CE6592013334800FEF065 /* MYFeatureViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYFeatureViewCell.h; sourceTree = "<group>"; };
+		329CE65A2013334800FEF065 /* MYFeatureViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYFeatureViewCell.m; sourceTree = "<group>"; };
+		329CE65C201351EE00FEF065 /* MYPassWordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPassWordView.h; sourceTree = "<group>"; };
+		329CE65D201351EE00FEF065 /* MYPassWordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPassWordView.m; sourceTree = "<group>"; };
 		32B3EBCB1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
 		32B3EBCC1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
 		32B3EBCF1FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCrossDissolveTransitionAnimator.h; sourceTree = "<group>"; };
@@ -1114,6 +1126,8 @@
 			children = (
 				3254F4CD1FBD78470020B58C /* MYIconFontViewController.h */,
 				3254F4CE1FBD78470020B58C /* MYIconFontViewController.m */,
+				329CE65C201351EE00FEF065 /* MYPassWordView.h */,
+				329CE65D201351EE00FEF065 /* MYPassWordView.m */,
 			);
 			path = IconFont;
 			sourceTree = "<group>";
@@ -1296,25 +1310,6 @@
 			path = MYNetworking;
 			sourceTree = "<group>";
 		};
-		3265997A200F1273001F727E /* MYTabViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3265997B200F12BA001F727E /* MYTabViewControllerBasePlugin.h */,
-				3265997C200F12BA001F727E /* MYTabViewControllerBasePlugin.m */,
-				32659981200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.h */,
-				32659982200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.m */,
-				32659987200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.h */,
-				32659988200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m */,
-				3265998A200F1649001F727E /* MYTabViewBar.h */,
-				3265998B200F1649001F727E /* MYTabViewBar.m */,
-				3265997E200F12DE001F727E /* MYTabViewController.h */,
-				3265997F200F12DE001F727E /* MYTabViewController.m */,
-				32659984200F13E6001F727E /* UIViewController+MYTabViewController.h */,
-				32659985200F13E6001F727E /* UIViewController+MYTabViewController.m */,
-			);
-			path = MYTabViewController;
-			sourceTree = "<group>";
-		};
 		32659990200F18E2001F727E /* UIScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1462,7 +1457,8 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				3265997A200F1273001F727E /* MYTabViewController */,
+				329CE652201331B000FEF065 /* MYFeatureViewController */,
+				329CE63920121DF500FEF065 /* QMTabViewController */,
 				3279F42A1FFF45CA0052CDB9 /* MYLaunchAdvert */,
 				3220B15A1FFDE41700A58AA0 /* MYProgressHUD */,
 				325BADD01FDFAC700070BCD2 /* MYNetworking */,
@@ -1524,6 +1520,38 @@
 				3279F43F1FFF45CA0052CDB9 /* MYLaunchAdvertConfiguration.m */,
 			);
 			path = MYLaunchAdvert;
+			sourceTree = "<group>";
+		};
+		329CE63920121DF500FEF065 /* QMTabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				329CE63A20121DF500FEF065 /* QMTabBaseViewPlugin.h */,
+				329CE63B20121DF500FEF065 /* QMTabBarPlugin.m */,
+				329CE63C20121DF500FEF065 /* QMTabViewBar.m */,
+				329CE63D20121DF500FEF065 /* QMTabViewController.m */,
+				329CE63E20121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m */,
+				329CE63F20121DF500FEF065 /* UIViewController+QMTabViewController.h */,
+				329CE64020121DF500FEF065 /* QMTabViewBar.h */,
+				329CE64120121DF500FEF065 /* QMTabBarPlugin.h */,
+				329CE64220121DF500FEF065 /* QMTabBaseViewPlugin.m */,
+				329CE64320121DF500FEF065 /* QMTabHeaderScrollViewPlugin.h */,
+				329CE64420121DF500FEF065 /* QMTabViewController.h */,
+				329CE64520121DF500FEF065 /* UIViewController+QMTabViewController.m */,
+			);
+			path = QMTabViewController;
+			sourceTree = "<group>";
+		};
+		329CE652201331B000FEF065 /* MYFeatureViewController */ = {
+			isa = PBXGroup;
+			children = (
+				329CE653201331BE00FEF065 /* MYFeatureViewController.h */,
+				329CE654201331BE00FEF065 /* MYFeatureViewController.m */,
+				329CE6592013334800FEF065 /* MYFeatureViewCell.h */,
+				329CE65A2013334800FEF065 /* MYFeatureViewCell.m */,
+				329CE6562013320E00FEF065 /* MYFeatureManager.h */,
+				329CE6572013320E00FEF065 /* MYFeatureManager.m */,
+			);
+			path = MYFeatureViewController;
 			sourceTree = "<group>";
 		};
 		32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */ = {
@@ -1908,6 +1936,7 @@
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
 				3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
+				329CE65E201351EE00FEF065 /* MYPassWordView.m in Sources */,
 				324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */,
 				324174A01FFB25D7007BB277 /* MYUtilsViewController.m in Sources */,
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
@@ -1924,6 +1953,8 @@
 				3215B4791FC473CA001038A5 /* MYCollectionViewController.m in Sources */,
 				3212BF4F1F4D8C7100C57DBE /* MYModalContentView.m in Sources */,
 				32CBE38E1F47E88900AE6267 /* UINavigationBar+Extension.m in Sources */,
+				329CE64920121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m in Sources */,
+				329CE64620121DF500FEF065 /* QMTabBarPlugin.m in Sources */,
 				3212BF501F4D8C7100C57DBE /* MYModalViewController.m in Sources */,
 				3208CB011FC7B69A00AD9A30 /* MYFileManager.m in Sources */,
 				32672F5E1FD8EC5B00A8F68F /* FDFeedCell.m in Sources */,
@@ -1932,7 +1963,6 @@
 				32CBE35E1F46DAFC00AE6267 /* HKNavigationController.m in Sources */,
 				324174B91FFB2D6A007BB277 /* MYAnimationViewController.m in Sources */,
 				320774C41FACB93000A56F88 /* MWGridCell.m in Sources */,
-				32659989200F1624001F727E /* MYTabViewControllerTabViewBarPlugin.m in Sources */,
 				324174C61FFB300D007BB277 /* MYSearchViewController.m in Sources */,
 				324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */,
 				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
@@ -1941,7 +1971,8 @@
 				320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
 				320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */,
-				32659983200F13A8001F727E /* MYTabViewControllerHeaderScrollPlugin.m in Sources */,
+				329CE64720121DF500FEF065 /* QMTabViewBar.m in Sources */,
+				329CE65B2013334800FEF065 /* MYFeatureViewCell.m in Sources */,
 				3254F4EB1FBD78480020B58C /* MYIconFontViewController.m in Sources */,
 				32C84C001F715DD3003E4793 /* MYActionSheetCell.m in Sources */,
 				3279F4471FFF45CB0052CDB9 /* MYLaunchAdvertViewController.m in Sources */,
@@ -1954,11 +1985,12 @@
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
 				324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */,
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
+				329CE6582013320E00FEF065 /* MYFeatureManager.m in Sources */,
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3220B15D1FFDE47300A58AA0 /* MYProgressHUD.m in Sources */,
-				3265998C200F1649001F727E /* MYTabViewBar.m in Sources */,
 				32659993200F1911001F727E /* MYHeaderTabViewController.m in Sources */,
 				3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */,
+				329CE64B20121DF500FEF065 /* UIViewController+QMTabViewController.m in Sources */,
 				3279F4411FFF45CB0052CDB9 /* MYLaunchAdvertConst.m in Sources */,
 				32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */,
 				324174B21FFB2AAE007BB277 /* MYCustomNavigationBarViewController.m in Sources */,
@@ -1974,7 +2006,6 @@
 				3279F4571FFF59310052CDB9 /* MYLaunchAdvertImageView.m in Sources */,
 				325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,
-				32659980200F12DE001F727E /* MYTabViewController.m in Sources */,
 				3254F4EE1FBD78480020B58C /* MYJavaScriptCoreViewController.m in Sources */,
 				32659996200F196D001F727E /* MYHeaderTabViewBar.m in Sources */,
 				3254F4EA1FBD78470020B58C /* MYTextFieldViewController.m in Sources */,
@@ -1991,11 +2022,12 @@
 				3220B1841FFE32AE00A58AA0 /* MYLaunchAdvertManager.m in Sources */,
 				3279F45A1FFF5F590052CDB9 /* MYLaunchAdvertVideoView.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
+				329CE64A20121DF500FEF065 /* QMTabBaseViewPlugin.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
 				32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */,
-				3265997D200F12BA001F727E /* MYTabViewControllerBasePlugin.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
+				329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */,
 				324174961FFB2286007BB277 /* MYUIKitViewController.m in Sources */,
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
@@ -2015,11 +2047,11 @@
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				3220B18F1FFF120D00A58AA0 /* WebViewController.m in Sources */,
+				329CE655201331BE00FEF065 /* MYFeatureViewController.m in Sources */,
 				3279F4481FFF45CB0052CDB9 /* MYLaunchAdvertCache.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
 				320FFB1F1FC3D6E7006CC5AE /* MYFadeNavigationController.m in Sources */,
 				32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */,
-				32659986200F13E6001F727E /* UIViewController+MYTabViewController.m in Sources */,
 				3279F4461FFF45CB0052CDB9 /* MYLaunchImageView.m in Sources */,
 				3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */,
 				32D160422003663B0041E8D3 /* QDPerformanceTestingHelper.m in Sources */,

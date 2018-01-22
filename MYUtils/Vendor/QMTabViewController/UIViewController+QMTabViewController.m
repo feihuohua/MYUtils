@@ -1,22 +1,22 @@
 //
-//  UIViewController+MYTabViewController.m
-//  MYUtils
+//  UIViewController+QMTabViewController.m
+//  QuanMinTV
 //
-//  Created by sunjinshuai on 2018/1/17.
-//  Copyright © 2018年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/1/19.
+//  Copyright © 2018年 QMTV. All rights reserved.
 //
 
-#import "UIViewController+MYTabViewController.h"
+#import "UIViewController+QMTabViewController.h"
 #import <objc/runtime.h>
 
-@implementation UIViewController (MYTabViewController)
+@implementation UIViewController (QMTabViewController)
 @dynamic tabViewController, tabContentScrollView;
 
-- (MYTabViewController *)tabViewController {
+- (QMTabViewController *)tabViewController {
     return objc_getAssociatedObject(self, @selector(tabViewController));
 }
 
-- (void)setTabViewController:(MYTabViewController *)tabViewController {
+- (void)setTabViewController:(QMTabViewController *)tabViewController {
     objc_setAssociatedObject(self, @selector(tabViewController), tabViewController, OBJC_ASSOCIATION_ASSIGN);
 }
 

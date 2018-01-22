@@ -7,12 +7,13 @@
 //
 
 #import "MYHeaderTabViewController.h"
-#import "MYTabViewControllerTabViewBarPlugin.h"
-#import "MYTabViewControllerHeaderScrollPlugin.h"
 #import "MYHeaderTabViewBar.h"
 #import "TableViewController.h"
+#import "QMTabViewController.h"
+#import "QMTabHeaderScrollViewPlugin.h"
+#import "QMTabBarPlugin.h"
 
-@interface MYHeaderTabViewController ()<MYTabViewControllerDataSource, MYTabViewControllerDelagate, MYHeaderTabViewBarDelegate>
+@interface MYHeaderTabViewController ()<QMTabViewControllerDataSource, QMTabViewControllerDelagate, MYHeaderTabViewBarDelegate>
 
 @end
 
@@ -35,10 +36,10 @@
 //    tabViewBar.indicatorAdditionalWidth = 10;
 //    tabViewBar.indicatorHeight = 5;
     tabViewBar.delegate = self;
-    MYTabViewControllerTabViewBarPlugin *tabViewBarPlugin = [[MYTabViewControllerTabViewBarPlugin alloc] initWithTabViewBar:tabViewBar delegate:nil];
+    QMTabBarPlugin *tabViewBarPlugin = [[QMTabBarPlugin alloc] initWithTabViewBar:tabViewBar delegate:nil];
     [self enablePlugin:tabViewBarPlugin];
     
-    [self enablePlugin:[MYTabViewControllerHeaderScrollPlugin new]];
+    [self enablePlugin:[QMTabHeaderScrollViewPlugin new]];
 }
 
 #pragma mark -
@@ -55,23 +56,23 @@
 }
 
 - (void)tabViewBar:(MYHeaderTabViewBar *)tabViewBar didSelectIndex:(NSInteger)index {
-    BOOL anim = labs(index - self.curIndex) > 1 ? NO: YES;
+    BOOL anim = labs(index - self.currentIndex) > 1 ? NO: YES;
     [self scrollToIndex:index animated:anim];
 }
 
 #pragma mark -
 
-- (NSInteger)numberOfViewControllerForTabViewController:(MYTabViewController *)tabViewController {
+- (NSInteger)numberOfViewControllerForTabViewController:(QMTabViewController *)tabViewController {
     return 10;
 }
 
-- (UIViewController *)tabViewController:(MYTabViewController *)tabViewController viewControllerForIndex:(NSInteger)index {
+- (UIViewController *)tabViewController:(QMTabViewController *)tabViewController viewControllerForIndex:(NSInteger)index {
     TableViewController *vc = [TableViewController new];
     vc.index = index;
     return vc;
 }
 
-- (UIView *)tabHeaderViewForTabViewController:(MYTabViewController *)tabViewController {
+- (UIView *)tabHeaderViewForTabViewController:(QMTabViewController *)tabViewController {
     CGRect rect = CGRectMake(0, 0, 0, floor(300.0f));
     UIImageView *headerView = [[UIImageView alloc] initWithFrame:rect];
     headerView.image = [UIImage imageNamed:@"1"];
@@ -80,11 +81,11 @@
     return headerView;
 }
 
-- (CGFloat)tabHeaderBottomInsetForTabViewController:(MYTabViewController *)tabViewController {
-    return MYTabViewBarDefaultHeight + CGRectGetMaxY(self.navigationController.navigationBar.frame);
+- (CGFloat)tabHeaderBottomInsetForTabViewController:(QMTabViewController *)tabViewController {
+    return QMTabViewBarDefaultHeight + CGRectGetMaxY(self.navigationController.navigationBar.frame);
 }
 
-- (UIEdgeInsets)containerInsetsForTabViewController:(MYTabViewController *)tabViewController {
+- (UIEdgeInsets)containerInsetsForTabViewController:(QMTabViewController *)tabViewController {
     return UIEdgeInsetsMake(0, 0, 0, 0);
 }
 

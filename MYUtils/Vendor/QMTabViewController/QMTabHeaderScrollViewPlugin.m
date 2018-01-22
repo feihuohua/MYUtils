@@ -1,30 +1,30 @@
 //
-//  MYTabViewControllerHeaderScrollPlugin.m
-//  MYUtils
+//  QMTabHeaderScrollViewPlugin.m
+//  QuanMinTV
 //
-//  Created by sunjinshuai on 2018/1/17.
-//  Copyright © 2018年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/1/19.
+//  Copyright © 2018年 QMTV. All rights reserved.
 //
 
-#import "MYTabViewControllerHeaderScrollPlugin.h"
-#import "UIViewController+MYTabViewController.h"
-#import "MYTabViewController.h"
+#import "QMTabHeaderScrollViewPlugin.h"
+#import "UIViewController+QMTabViewController.h"
+#import "QMTabViewController.h"
 
-@interface MYTabViewControllerHeaderScrollPlugin ()
+@interface QMTabHeaderScrollViewPlugin ()
 
 @property (nonatomic, assign) NSInteger index;
 
 @end
 
-@implementation MYTabViewControllerHeaderScrollPlugin
+@implementation QMTabHeaderScrollViewPlugin
 
 - (void)removePlugin {
-    [self removePanGestureForIndex:self.tabViewController.curIndex];
+    [self removePanGestureForIndex:self.tabViewController.currentIndex];
 }
 
 - (void)loadPlugin {
-    [self addPanGestureForIndex:self.tabViewController.curIndex];
-    self.index = self.tabViewController.curIndex;
+    [self addPanGestureForIndex:self.tabViewController.currentIndex];
+    self.index = self.tabViewController.currentIndex;
 }
 
 - (void)scrollViewWillScrollFromIndex:(NSInteger)index offsetX:(CGFloat)contentOffsetX {

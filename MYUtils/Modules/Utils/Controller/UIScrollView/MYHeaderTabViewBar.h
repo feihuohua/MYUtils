@@ -6,7 +6,7 @@
 //  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
-#import "MYTabViewBar.h"
+#import "QMTabViewBar.h"
 @class MYHeaderTabViewBar;
 
 typedef NS_ENUM(NSInteger, MYIndicatorStyle) {
@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, MYIndicatorStyle) {
 
 @end
 
-@interface MYHeaderTabViewBar : MYTabViewBar
+@interface MYHeaderTabViewBar : QMTabViewBar
 
 @property (nonatomic, weak) id<MYHeaderTabViewBarDelegate> delegate;
 

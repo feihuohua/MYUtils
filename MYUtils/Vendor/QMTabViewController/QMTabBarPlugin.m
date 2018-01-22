@@ -1,30 +1,30 @@
 //
-//  MYTabViewControllerTabViewBarPlugin.m
-//  MYUtils
+//  QMTabBarPlugin.m
+//  QuanMinTV
 //
-//  Created by sunjinshuai on 2018/1/17.
-//  Copyright © 2018年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/1/19.
+//  Copyright © 2018年 QMTV. All rights reserved.
 //
 
-#import "MYTabViewControllerTabViewBarPlugin.h"
-#import "MYTabViewController.h"
-#import "MYTabViewBar.h"
+#import "QMTabBarPlugin.h"
+#import "QMTabViewBar.h"
+#import "QMTabViewController.h"
 
-@interface MYTabViewControllerTabViewBarPlugin ()  {
+@interface QMTabBarPlugin ()  {
     BOOL _loadFlag;
     NSInteger _tabCount;
     CGFloat _maxIndicatorX;
 }
 
-@property (nonatomic, weak) id<MYTabViewBarPluginDelagate> delegate;
-@property (nonatomic, strong) MYTabViewBar *tabViewBar;
+@property (nonatomic, weak) id<QMTabBarPluginDelagate> delegate;
+@property (nonatomic, strong) QMTabViewBar *tabViewBar;
 
 @end
 
-@implementation MYTabViewControllerTabViewBarPlugin
+@implementation QMTabBarPlugin
 
-- (instancetype)initWithTabViewBar:(MYTabViewBar *)tabViewBar
-                          delegate:(id<MYTabViewBarPluginDelagate>)delegate {
+- (instancetype)initWithTabViewBar:(QMTabViewBar *)tabViewBar
+                          delegate:(id<QMTabBarPluginDelagate>)delegate {
     if (self = [super init]) {
         self.tabViewBar = tabViewBar;
         self.delegate = delegate;
@@ -39,7 +39,7 @@
 
 - (void)initPlugin {
     if (CGRectGetHeight(self.tabViewBar.frame) == 0) {
-        self.tabViewBar.frame = CGRectMake(0, 0, 0, MYTabViewBarDefaultHeight);
+        self.tabViewBar.frame = CGRectMake(0, 0, 0, QMTabViewBarDefaultHeight);
     }
 }
 

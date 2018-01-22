@@ -1,14 +1,14 @@
 //
-//  MYTabViewControllerBasePlugin.m
-//  MYUtils
+//  QMTabBaseViewPlugin.m
+//  QuanMinTV
 //
-//  Created by sunjinshuai on 2018/1/17.
-//  Copyright © 2018年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/1/19.
+//  Copyright © 2018年 QMTV. All rights reserved.
 //
 
-#import "MYTabViewControllerBasePlugin.h"
+#import "QMTabBaseViewPlugin.h"
 
-@implementation MYTabViewControllerBasePlugin
+@implementation QMTabBaseViewPlugin
 
 - (void)initPlugin {
 }
