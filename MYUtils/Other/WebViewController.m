@@ -85,8 +85,7 @@
         
         CGFloat progress = [change[NSKeyValueChangeNewKey] floatValue];
         [self.progressView setProgress:progress animated:YES];
-        if(progress == 1.0)
-        {
+        if (progress == 1.0) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 
                 [self.progressView setProgress:0.0 animated:NO];

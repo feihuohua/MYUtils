@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-static const CGFloat QMTabViewBarDefaultHeight = 44.0f;
+static const CGFloat QMTabViewBarDefaultHeight = 52.0f;
 
 @protocol QMTabViewBarDelegate <NSObject>
 

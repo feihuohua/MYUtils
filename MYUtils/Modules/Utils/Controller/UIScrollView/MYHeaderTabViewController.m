@@ -25,16 +25,9 @@
     self.tabDelegate = self;
     self.headerZoomIn = NO;
     self.scrollEnabled = NO;
-    MYHeaderTabViewBar *tabViewBar = [[MYHeaderTabViewBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
+    MYHeaderTabViewBar *tabViewBar = [[MYHeaderTabViewBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, QMTabViewBarDefaultHeight)];
     tabViewBar.seperatorViewHidden = NO;
-    tabViewBar.titleFont = [UIFont systemFontOfSize:18.0f];
-//    tabViewBar.titleSelectedColor = [UIColor redColor];
-//    tabViewBar.indicatorColor = [UIColor redColor];
-//    tabViewBar.indicatorStyle = MYIndicatorStyleCover;
-//    tabViewBar.indicatorColor = [UIColor lightGrayColor];
-//    tabViewBar.indicatorCornerRadius = 5;
-//    tabViewBar.indicatorAdditionalWidth = 10;
-//    tabViewBar.indicatorHeight = 5;
+
     tabViewBar.delegate = self;
     QMTabBarPlugin *tabViewBarPlugin = [[QMTabBarPlugin alloc] initWithTabViewBar:tabViewBar delegate:nil];
     [self enablePlugin:tabViewBarPlugin];
@@ -50,9 +43,9 @@
 
 - (NSString *)tabViewBar:(MYHeaderTabViewBar *)tabViewBar titleForIndex:(NSInteger)index {
     if (index == 0) {
-        return @"虾米";
+        return @"d";
     }
-    return @"网易云asdfasdfasdf 5";
+    return @"网易云云网易云云网易云云";
 }
 
 - (void)tabViewBar:(MYHeaderTabViewBar *)tabViewBar didSelectIndex:(NSInteger)index {

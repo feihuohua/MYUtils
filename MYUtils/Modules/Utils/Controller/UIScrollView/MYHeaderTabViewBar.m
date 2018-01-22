@@ -7,6 +7,8 @@
 //
 
 #import "MYHeaderTabViewBar.h"
+#import <UIColor+Hex.h>
+#import <NSString+Contains.h>
 #import <UIView+Position.h>
 
 @interface MYHeaderTabViewBar ()
@@ -18,8 +20,6 @@
 @property (nonatomic, strong) UIScrollView *contentView;
 /// 分割线
 @property (nonatomic, strong) UIView *seperatorView;
-/// 指示器
-@property (nonatomic, strong) UIView *indicatorView;
 /// 记录刚开始时的偏移量
 @property (nonatomic, assign) NSInteger startOffsetX;
 
@@ -32,27 +32,27 @@
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
         
-        [self initialization];
+        // 变量初始化
+        [self variableInitialization];
+        
+        // 设置子控件
         [self setupSubViews];
     }
     return self;
 }
 
 /// 初始化变量
-- (void)initialization {
+- (void)variableInitialization {
     _seperatorViewHidden = YES;
-    _indicatorStyle = MYIndicatorStyleDefault;
-    _indicatorCornerRadius = 0;
-    _indicatorBorderWidth = 0;
-    _indicatorBorderColor = [UIColor clearColor];
-    _indicatorAdditionalWidth = 0;
-    _itemSpacing = 20.0;
-    _indicatorHeight = 2.0;
-    _startOffsetX = 0.0;
-    _titleFont = [UIFont systemFontOfSize:14.0];
-    _indicatorColor = [UIColor colorWithRed:29.0f/255.0f green:154.0f/255.0f blue:255.0f/255.0f alpha:1];
-    _titleNormalColor = [UIColor colorWithWhite:0 alpha:0.2];
-    _titleSelectedColor = [UIColor colorWithRed:29.0f/255.0f green:154.0f/255.0f blue:255.0f/255.0f alpha:1];
+    _margin = 12.0f;
+    _padding = 12.0f;
+    _startOffsetX = 0.0f;
+    _cornerRadius = 14.0f;
+    
+    // 默认12号字体
+    _titleFont = [UIFont systemFontOfSize:12.0];
+    _titleNormalColor = [UIColor colorWithHexString:@"#666666"];
+    _titleSelectedColor = [UIColor colorWithHexString:@"#ed1c56"];
 }
 
 /// 设置子控件
@@ -63,9 +63,6 @@
     
     // 2、添加底部分割线
     [self addSubview:self.seperatorView];
-    
-    // 3、添加指示器
-    [self.contentView addSubview:self.indicatorView];
 }
 
 #pragma mark -
@@ -77,63 +74,6 @@
 
 - (void)tabScrollXOffset:(CGFloat)contentOffsetX {
     
-    CGFloat progress = 0;
-    NSInteger originalIndex = 0;
-    NSInteger targetIndex = 0;
-    // 判断是左滑还是右滑
-    CGFloat currentOffsetX = contentOffsetX;
-    CGFloat scrollViewW = self.contentView.bounds.size.width;
-    if (currentOffsetX > self.startOffsetX) { // 左滑
-        // 1、计算 progress
-        progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW);
-        // 2、计算 originalIndex
-        originalIndex = currentOffsetX / scrollViewW;
-        // 3、计算 targetIndex
-        targetIndex = originalIndex + 1;
-        if (targetIndex >= self.buttons.count) {
-            progress = 1;
-            targetIndex = originalIndex;
-        }
-        // 4、如果完全划过去
-        if (currentOffsetX - self.startOffsetX == scrollViewW) {
-            progress = 1;
-            targetIndex = originalIndex;
-        }
-    } else { // 右滑
-        // 1、计算 progress
-        progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW));
-        // 2、计算 targetIndex
-        targetIndex = currentOffsetX / scrollViewW;
-        // 3、计算 originalIndex
-        originalIndex = targetIndex + 1;
-        if (originalIndex >= self.buttons.count) {
-            originalIndex = self.buttons.count - 1;
-        }
-    }
-    
-    UIButton *originalBtn = self.buttons[originalIndex];
-    UIButton *targetBtn = self.buttons[targetIndex];
-    
-    // 1、计算 targetBtn／originalBtn 之间的 x 差值
-    CGFloat totalOffsetX = targetBtn.origin.x - originalBtn.origin.x;
-    // 2、计算 targetBtn／originalBtn 之间的差值
-    CGFloat totalDistance = CGRectGetMaxX(targetBtn.frame) - CGRectGetMaxX(originalBtn.frame);
-    /// 计算 indicatorView 滚动时 x 的偏移量
-    CGFloat offsetX = 0.0;
-    /// 计算 indicatorView 滚动时宽度的偏移量
-    CGFloat distance = 0.0;
-    
-    offsetX = totalOffsetX * progress + + 0.5 * _itemSpacing;
-    distance = progress * (totalDistance - totalOffsetX) - _itemSpacing;
-    
-    /// 计算 indicatorView 新的 frame
-    if (self.indicatorStyle == MYIndicatorStyleCover) {
-        _indicatorView.x = originalBtn.origin.x + offsetX - self.indicatorAdditionalWidth / 2;
-        _indicatorView.width = originalBtn.width + distance + self.indicatorAdditionalWidth;
-    } else {
-        _indicatorView.x = originalBtn.origin.x + offsetX;
-        _indicatorView.width = originalBtn.width + distance;
-    }
 }
 
 - (void)tabDidScrollToIndex:(NSInteger)index {
@@ -188,7 +128,7 @@
     }];
     NSInteger count = [self.delegate numberOfTabForTabViewBar:self];
     
-    CGFloat btnX = 0;
+    CGFloat btnX = _padding;
     
     for (NSInteger index = 0; index < count; index++) {
         UIButton *button = [self createButton];
@@ -197,71 +137,61 @@
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitle:title forState:UIControlStateDisabled];
         
-        CGFloat cellWidth = [self sizeWithTitle:title].width + _itemSpacing;
-        button.frame = CGRectMake(btnX, 0, cellWidth, CGRectGetHeight(self.bounds));
-        btnX = cellWidth + btnX;
+        CGFloat cellWidth = [self sizeWithTitle:title].width + _padding * 2;
+        CGFloat cellHeight = self.height - _padding * 2;
+        button.frame = CGRectMake(btnX, _padding, cellWidth, cellHeight);
+        btnX = cellWidth + btnX + _margin;
         [self.buttons addObject:button];
         [self.contentView addSubview:button];
     }
-    self.contentView.contentSize = CGSizeMake(CGRectGetMaxX(self.contentView.subviews.lastObject.frame), 44.0);
+    self.contentView.contentSize = CGSizeMake(CGRectGetMaxX(self.contentView.subviews.lastObject.frame) + _padding, CGRectGetHeight(self.bounds));
     
     if (self.buttons.count < 1) {
         return;
     }
     [self tabDidScrollToIndex:_currentIndex];
-    
-    UIButton *firstButton = self.buttons.firstObject;
-    [self updateIndicatorStyle:firstButton];
-}
-
-// 更新Indicator的偏移量
-- (void)updateIndicatorStyle:(UIButton *)currentButton {
-    
-    CGFloat indicatorViewWidth = [self sizeWithTitle:currentButton.currentTitle].width;
-    CGFloat tempIndicatorViewHeight = [self sizeWithTitle:currentButton.currentTitle].height;
-    
-    if (self.indicatorStyle == MYIndicatorStyleCover) {
-        
-        if (self.indicatorHeight < tempIndicatorViewHeight && tempIndicatorViewHeight + self.indicatorAdditionalWidth < self.height) {
-            _indicatorView.y = 0.5 * (self.height - tempIndicatorViewHeight - self.indicatorAdditionalWidth);
-            _indicatorView.height = tempIndicatorViewHeight + self.indicatorAdditionalWidth;
-        } else {
-            _indicatorView.y = 0.5 * self.indicatorAdditionalWidth;
-            _indicatorView.height = self.height - self.indicatorAdditionalWidth;
-        }
-        
-        _indicatorView.x = (currentButton.width - indicatorViewWidth - self.indicatorAdditionalWidth)/2;
-        _indicatorView.width = indicatorViewWidth + self.indicatorAdditionalWidth;
-        
-        // 圆角处理
-        if (self.indicatorCornerRadius > 0.5 * _indicatorView.height) {
-            _indicatorView.layer.cornerRadius = 0.5 * _indicatorView.height;
-        } else {
-            _indicatorView.layer.cornerRadius = self.indicatorCornerRadius;
-        }
-        // 边框宽度及边框颜色
-        _indicatorView.layer.borderWidth = self.indicatorBorderWidth;
-        _indicatorView.layer.borderColor = self.indicatorBorderColor.CGColor;
-    } else {
-        _indicatorView.x = (currentButton.width - indicatorViewWidth)/2;
-        _indicatorView.width = indicatorViewWidth;
-        _indicatorView.height = _indicatorHeight;
-        _indicatorView.y = CGRectGetHeight(self.bounds) - _indicatorHeight;
-    }
 }
 
 - (CGSize)sizeWithTitle:(NSString *)title {
+    
+    // 缺省字符处理
+    if ([self wordsCount:title] < 4) {
+        title = @"全民直播";
+    }
     NSDictionary *attrs = @{NSFontAttributeName : _titleFont};
     return [title boundingRectWithSize:CGSizeMake(0, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
 
+- (int)wordsCount:(NSString *)text {
+    NSInteger n = text.length;
+    int i;
+    int l = 0, a = 0, b = 0;
+    unichar c;
+    for (i = 0; i < n; i++) {
+        c = [text characterAtIndex:i];
+        if (isblank(c)) {
+            b++;
+        } else if (isascii(c)) {
+            a++;
+        } else {
+            l++;
+        }
+    }
+    if (a == 0 && l == 0) {
+        return 0;
+    }
+    return l + (int)ceilf((float)(a + b) / 2.0);
+}
+
 - (UIButton *)createButton {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.titleLabel.font = _titleFont;
-    [btn setTitleColor:_titleNormalColor forState:UIControlStateNormal];
-    [btn setTitleColor:_titleSelectedColor forState:UIControlStateDisabled];
-    [btn addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    return btn;
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.titleLabel.font = _titleFont;
+    button.layer.cornerRadius = _cornerRadius;
+    [button setTitleColor:_titleNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:_titleSelectedColor forState:UIControlStateDisabled];
+    [button setBackgroundColor:[UIColor colorWithRed:243.0f/255.0f green:243.0f/255.0f blue:243.0f/255.0f alpha:0.72f]];
+    [button addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    return button;
 }
 
 - (void)onBtnClick:(UIButton *)sender {
@@ -280,11 +210,6 @@
 - (void)setSeperatorViewHidden:(BOOL)seperatorViewHidden {
     _seperatorViewHidden = seperatorViewHidden;
     self.seperatorView.hidden = seperatorViewHidden;
-}
-
-- (void)setIndicatorColor:(UIColor *)indicatorColor {
-    _indicatorColor = indicatorColor;
-    self.indicatorView.backgroundColor = indicatorColor;
 }
 
 - (NSMutableArray *)buttons {
@@ -314,14 +239,5 @@
     }
     return _seperatorView;
 }
-
-- (UIView *)indicatorView {
-    if (!_indicatorView) {
-        _indicatorView = [[UIView alloc] initWithFrame:CGRectZero];
-        _indicatorView.backgroundColor = _indicatorColor;
-    }
-    return _indicatorView;
-}
-
 
 @end
