@@ -16,6 +16,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+.DS_Store 
+*/.DS_Store 
 
 ## Other
 *.moved-aside
@@ -61,10 +63,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-
-.DS_Store
-
-*.xcuserstate  
-
-MYUtils.xcodeproj/project.xcworkspace/xcuserdata/sunjinshuai.xcuserdatad/UserInterfaceState.xcuserstate 
-MYUtils.xcodeproj/xcuserdata/sunjinshuai.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
