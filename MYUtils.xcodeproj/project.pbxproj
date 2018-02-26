@@ -155,6 +155,7 @@
 		32712B191F395164008A105F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32712B141F395164008A105F /* Info.plist */; };
 		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
 		32712B281F39B335008A105F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32712B271F39B335008A105F /* iconfont.ttf */; };
+		329124FE2043FC0600FA32E3 /* MYNavigaionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 329124FD2043FC0600FA32E3 /* MYNavigaionBar.m */; };
 		3299ECFE203FF22F00BE2B40 /* MYLaunchAdvertConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECE9203FF22E00BE2B40 /* MYLaunchAdvertConst.m */; };
 		3299ECFF203FF22F00BE2B40 /* MYLaunchAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECEC203FF22E00BE2B40 /* MYLaunchAdvert.m */; };
 		3299ED00203FF22F00BE2B40 /* MYLaunchAdvertDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECED203FF22E00BE2B40 /* MYLaunchAdvertDownloader.m */; };
@@ -469,6 +470,8 @@
 		32712B151F395164008A105F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32712B271F39B335008A105F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
+		329124FC2043FC0600FA32E3 /* MYNavigaionBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNavigaionBar.h; sourceTree = "<group>"; };
+		329124FD2043FC0600FA32E3 /* MYNavigaionBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNavigaionBar.m; sourceTree = "<group>"; };
 		3299ECE8203FF22E00BE2B40 /* MYLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchImageView.h; sourceTree = "<group>"; };
 		3299ECE9203FF22E00BE2B40 /* MYLaunchAdvertConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertConst.m; sourceTree = "<group>"; };
 		3299ECEA203FF22E00BE2B40 /* MYLaunchAdvertCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertCache.h; sourceTree = "<group>"; };
@@ -1368,6 +1371,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				329124FB2043FBF000FA32E3 /* MYNavigaionBar */,
 				3299ECE7203FF22E00BE2B40 /* MYLaunchAdvert */,
 				329CE652201331B000FEF065 /* MYFeatureViewController */,
 				329CE63920121DF500FEF065 /* QMTabViewController */,
@@ -1399,6 +1403,15 @@
 				32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		329124FB2043FBF000FA32E3 /* MYNavigaionBar */ = {
+			isa = PBXGroup;
+			children = (
+				329124FC2043FC0600FA32E3 /* MYNavigaionBar.h */,
+				329124FD2043FC0600FA32E3 /* MYNavigaionBar.m */,
+			);
+			path = MYNavigaionBar;
 			sourceTree = "<group>";
 		};
 		3299ECE7203FF22E00BE2B40 /* MYLaunchAdvert */ = {
@@ -1829,6 +1842,7 @@
 			files = (
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
 				3299ED01203FF22F00BE2B40 /* MYLaunchAdvertImageView.m in Sources */,
+				329124FE2043FC0600FA32E3 /* MYNavigaionBar.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				324174921FFB21C3007BB277 /* MYTableCountDownViewController.m in Sources */,
 				3265999C200F35CE001F727E /* MYSliderView.m in Sources */,
