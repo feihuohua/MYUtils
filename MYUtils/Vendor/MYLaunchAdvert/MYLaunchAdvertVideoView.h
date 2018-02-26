@@ -18,6 +18,7 @@
 @property (nonatomic, assign) MPMovieScalingMode videoScalingMode;
 @property (nonatomic, assign) AVLayerVideoGravity videoGravity;
 @property (nonatomic, assign) BOOL videoCycleOnce;
+@property (nonatomic, assign) BOOL muted;
 @property (nonatomic, strong) NSURL *contentURL;
 
 - (void)stopVideoPlayer;

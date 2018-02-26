@@ -16,3 +16,4 @@ NSString *const MYLaunchAdDetailPageWillShowNotification = @"MYLaunchAdDetailPag
 NSString *const MYLaunchAdDetailPageShowFinishNotification = @"MYLaunchAdDetailPageShowFinishNotification";
 NSString *const MYLaunchAdGIFImageCycleOnceFinishNotification = @"MYLaunchAdGIFImageCycleOnceFinishNotification";
 NSString *const MYLaunchAdVideoCycleOnceFinishNotification = @"MYLaunchAdVideoCycleOnceFinishNotification";
+NSString *const MYLaunchAdVideoPlayFailedNotification = @"MYLaunchAdVideoPlayFailedNotification";

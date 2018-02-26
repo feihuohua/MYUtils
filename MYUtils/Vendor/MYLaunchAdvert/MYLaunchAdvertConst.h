@@ -71,7 +71,8 @@ UIKIT_EXTERN NSString *const MYLaunchAdDetailPageShowFinishNotification;
 UIKIT_EXTERN NSString *const MYLaunchAdGIFImageCycleOnceFinishNotification;
 /** videoCycleOnce = YES(视频不循环时) ,video播放完成通知 */
 UIKIT_EXTERN NSString *const MYLaunchAdVideoCycleOnceFinishNotification;
-
+/** 视频播放失败通知 */
+UIKIT_EXTERN NSString *const MYLaunchAdVideoPlayFailedNotification;
 
 /** 启动图来源 */
 typedef NS_ENUM(NSInteger, MYLaunchImageViewSourceType) {

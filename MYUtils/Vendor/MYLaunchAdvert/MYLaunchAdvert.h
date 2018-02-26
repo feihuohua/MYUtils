@@ -22,7 +22,9 @@
  @param openModel 打开页面参数(此参数即你配置广告数据设置的configuration.openModel)
  @param clickPoint 点击位置
  */
-- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert clickAndOpenModel:(id)openModel clickPoint:(CGPoint)clickPoint;
+- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert
+   clickAndOpenModel:(id)openModel
+          clickPoint:(CGPoint)clickPoint;
 
 /**
  *  图片本地读取/或下载完成回调
@@ -31,7 +33,9 @@
  *  @param image 读取/下载的image
  *  @param imageData 读取/下载的imageData
  */
-- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert imageDownLoadFinish:(UIImage *)image imageData:(NSData *)imageData;
+- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert
+ imageDownLoadFinish:(UIImage *)image
+           imageData:(NSData *)imageData;
 
 /**
  *  video本地读取/或下载完成回调
@@ -39,7 +43,8 @@
  *  @param launchAdvert MYLaunchAdvert
  *  @param pathURL  本地保存路径
  */
-- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert videoDownLoadFinish:(NSURL *)pathURL;
+- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert
+ videoDownLoadFinish:(NSURL *)pathURL;
 
 /**
  视频下载进度回调
@@ -49,7 +54,9 @@
  @param total    总大小
  @param current  当前已下载大小
  */
-- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert videoDownLoadProgress:(float)progress total:(unsigned long long)total current:(unsigned long long)current;
+- (void)launchAdvert:(MYLaunchAdvert *)launchAdvert videoDownLoadProgress:(float)progress
+               total:(unsigned long long)total
+             current:(unsigned long long)current;
 
 /**
  *  倒计时回调

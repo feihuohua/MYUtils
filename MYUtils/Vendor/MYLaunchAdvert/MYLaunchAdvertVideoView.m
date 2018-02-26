@@ -7,14 +7,20 @@
 //
 
 #import "MYLaunchAdvertVideoView.h"
+#import "MYLaunchAdvertConst.h"
+
+static NSString *const VideoPlayStatus = @"status";
 
 @interface MYLaunchAdvertVideoView ()<UIGestureRecognizerDelegate>
+
+@property (nonatomic, strong) AVPlayerItem *playerItem;
 
 @end
 
 @implementation MYLaunchAdvertVideoView
 
 - (void)dealloc {
+    [self.playerItem removeObserver:self forKeyPath:VideoPlayStatus];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -52,6 +58,10 @@
     [_videoPlayer.player pause];
     [_videoPlayer.view removeFromSuperview];
     _videoPlayer = nil;
+    // 释放音频焦点
+    [[AVAudioSession sharedInstance] setActive:NO
+                                    withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation
+                                          error:nil];
 }
 
 - (void)runLoopTheMovie:(NSNotification *)notification {
@@ -62,6 +72,21 @@
     }
 }
 
+#pragma mark - KVO
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    if ([keyPath isEqualToString:VideoPlayStatus]) {
+        NSInteger newStatus = ((NSNumber *)change[@"new"]).integerValue;
+        if (newStatus == AVPlayerItemStatusFailed) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:MYLaunchAdVideoPlayFailedNotification
+                                                                object:nil
+                                                              userInfo:@{
+                                                                         @"videoNameOrURLString":_contentURL.absoluteString
+                                                                         }];
+        }
+    }
+}
+
+
 #pragma mark - set
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
@@ -71,8 +96,10 @@
 - (void)setContentURL:(NSURL *)contentURL {
     _contentURL = contentURL;
     AVAsset *movieAsset = [AVURLAsset URLAssetWithURL:contentURL options:nil];
-    AVPlayerItem * playerItem = [AVPlayerItem playerItemWithAsset:movieAsset];
-    self.videoPlayer.player = [AVPlayer playerWithPlayerItem:playerItem];
+    self.playerItem = [AVPlayerItem playerItemWithAsset:movieAsset];
+    _videoPlayer.player = [AVPlayer playerWithPlayerItem:self.playerItem];
+    // 监听播放失败状态
+    [self.playerItem addObserver:self forKeyPath:VideoPlayStatus options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)setVideoGravity:(AVLayerVideoGravity)videoGravity {
@@ -80,22 +107,27 @@
     _videoPlayer.videoGravity = videoGravity;
 }
 
+- (void)setMuted:(BOOL)muted {
+    _muted = muted;
+    _videoPlayer.player.muted = muted;
+}
+
 - (void)setVideoScalingMode:(MPMovieScalingMode)videoScalingMode {
     _videoScalingMode = videoScalingMode;
     switch (_videoScalingMode) {
-        case MPMovieScalingModeNone: {
+        case MPMovieScalingModeNone:{
             _videoPlayer.videoGravity = AVLayerVideoGravityResizeAspect;
         }
             break;
-        case MPMovieScalingModeAspectFit: {
+        case MPMovieScalingModeAspectFit:{
             _videoPlayer.videoGravity = AVLayerVideoGravityResizeAspect;
         }
             break;
-        case MPMovieScalingModeAspectFill: {
+        case MPMovieScalingModeAspectFill:{
             _videoPlayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         }
             break;
-        case MPMovieScalingModeFill: {
+        case MPMovieScalingModeFill:{
             _videoPlayer.videoGravity = AVLayerVideoGravityResize;
         }
             break;
@@ -112,7 +144,13 @@
         _videoPlayer.view.frame = [UIScreen mainScreen].bounds;
         _videoPlayer.view.backgroundColor = [UIColor clearColor];
         // 注册通知控制是否循环播放
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(runLoopTheMovie:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(runLoopTheMovie:)
+                                                     name:AVPlayerItemDidPlayToEndTimeNotification
+                                                   object:nil];
+        // 获取音频焦点
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+        [[AVAudioSession sharedInstance] setActive:YES error:nil];
     }
     return _videoPlayer;
 }

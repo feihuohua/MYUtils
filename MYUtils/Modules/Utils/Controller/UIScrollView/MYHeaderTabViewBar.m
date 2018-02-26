@@ -52,7 +52,7 @@
     // 默认12号字体
     _titleFont = [UIFont systemFontOfSize:12.0];
     _titleNormalColor = [UIColor colorWithHexString:@"#666666"];
-    _titleSelectedColor = [UIColor colorWithHexString:@"#ed1c56"];
+    _titleSelectedColor = [UIColor redColor];
 }
 
 /// 设置子控件

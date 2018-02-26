@@ -11,7 +11,6 @@
 #import "MYUIKitViewController.h"
 #import "MYUtilsViewController.h"
 #import "MYAnimationViewController.h"
-#import "MYFadeNavigationController.h"
 
 @interface HKTabBarControllerConfig ()<UITabBarControllerDelegate>
 
@@ -45,16 +44,16 @@
 - (NSArray *)viewControllers {
     
     MYUIKitViewController *firstViewController = [[MYUIKitViewController alloc] init];
-    UIViewController *firstNavigationController = [[MYFadeNavigationController alloc]
+    UIViewController *firstNavigationController = [[HKNavigationController alloc]
                                                    initWithRootViewController:firstViewController];
     
     
     MYUtilsViewController *secondViewController = [[MYUtilsViewController alloc] init];
-    UIViewController *secondNavigationController = [[MYFadeNavigationController alloc]
+    UIViewController *secondNavigationController = [[HKNavigationController alloc]
                                                    initWithRootViewController:secondViewController];
     
     MYAnimationViewController *thirdViewController = [[MYAnimationViewController alloc] init];
-    UIViewController *thirdNavigationController = [[MYFadeNavigationController alloc]
+    UIViewController *thirdNavigationController = [[HKNavigationController alloc]
                                                     initWithRootViewController:thirdViewController];
   
     NSArray *viewControllers = @[

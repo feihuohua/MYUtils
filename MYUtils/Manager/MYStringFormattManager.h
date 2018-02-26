@@ -16,12 +16,14 @@
  *  按首字母排列数组
  *  attributeName:排序所根据的属性名,若传入string数组则attributeName传空
  */
-- (NSArray *)orderArray:(NSArray *)array orderBy:(NSString *)attributeName;
+- (NSArray *)orderArray:(NSArray *)array
+                orderBy:(NSString *)attributeName;
 
 /**
  *  获取首字母数组
  *  attributeName:排序所根据的属性名,若传入string数组则attributeName传空
  */
-- (NSArray *)getSectionArray:(NSArray *)array orderBy:(NSString *)attributeName;
+- (NSArray *)getSectionArray:(NSArray *)array
+                     orderBy:(NSString *)attributeName;
 
 @end

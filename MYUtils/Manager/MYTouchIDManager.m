@@ -20,7 +20,8 @@
     return _shareManager;
 }
 
-- (void)showTouchIDWithDescribe:(NSString *)desc blockState:(StateBlock)block {
+- (void)showTouchIDWithDescribe:(NSString *)desc
+                     blockState:(StateBlock)block {
     if (NSFoundationVersionNumber < NSFoundationVersionNumber_iOS_8_0) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -124,13 +125,11 @@
                 }
             }
         }];
-        
     } else {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSLog(@"当前设备不支持TouchID");
             block(TDTouchIDStateNotSupport,error);
         });
-        
     }
 }
 

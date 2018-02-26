@@ -19,7 +19,6 @@
 #import "CATLog.h"
 #import "MYLaunchAdvertManager.h"
 #import "MYNetworking.h"
-#import "QDPerformanceTestingHelper.h"
 #import "MYFeatureViewController.h"
 
 #define YouLogI(fmt, ...) [CATLog logI:[NSString stringWithFormat:@"[%@:%d] %s %@",[NSString stringWithFormat:@"%s",__FILE__].lastPathComponent,__LINE__,__func__,fmt],##__VA_ARGS__,@""];
@@ -41,7 +40,6 @@
  2、当不为空时,application:didFinishLaunchWithOptions方法返回NO，否则返回YES
  3、在application:performActionForShortcutItem:completionHandler方法内处理点击事件
  */
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [MYNetworking enableInterfaceDebug:YES];
@@ -50,7 +48,6 @@
                 shouldAutoEncodeUrl:YES
             callbackOnCancelRequest:NO];
     
-    [[QDPerformanceTestingHelper sharedInstance] setHidden:NO];
     
     [[FLEXManager sharedManager] setNetworkDebuggingEnabled:YES];
     [self sendExampleNetworkRequests];
@@ -59,7 +56,7 @@
 //    [[MYSplashScreenManager sharedManager] showSplashScreenWithDuration:1.5];
 //    [[MYSplashScreenManager sharedManager] startDownLoadNewImageWithUrl:@"http://upload-images.jianshu.io/upload_images/588630-6ab787e3782df5ab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"];
     
-    [[MYLaunchAdvertManager shareManager] showSplashScreenNetWorkImage];
+    [[MYLaunchAdvertManager shareManager] showSplashScreenLocalVideo];
    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
@@ -97,7 +94,7 @@
     
     [TBCityIconFont setFontName:@"iconfont"];
     [self configShortCutItems];
-    [[MYFPSStatusManager sharedInstance] start];
+    
     
     //捕捉意外崩溃
     [UncaughtExceptionHandler InstallUncaughtExceptionHandler];

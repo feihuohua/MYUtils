@@ -25,4 +25,9 @@ target 'MYUtils' do
     pod 'TYPagerController', '~> 2.0.6'
     pod 'MBProgressHUD', '~> 0.9.2'
     pod 'FLAnimatedImage', '~> 1.0.12'
+    pod 'MYFPSStatusManager', '~> 1.0.1'
+    pod 'FCFileManager', '~> 1.0.20'
+    pod 'MYModalViewController', '~> 1.0.0'
+    
+    pod 'WRNavigationBar', '~> 1.2.0'
 end  

@@ -24,7 +24,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.dataSource addObject:@"Cross Dissolve-MYCrossDissolveFirstViewController"];
-    [self.dataSource addObject:@"自定义转场动画-MYCustomTransitionViewController"];
     
     [self.view addSubview:self.tableView];
 }

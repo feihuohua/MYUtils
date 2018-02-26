@@ -94,6 +94,9 @@ typedef NS_ENUM(NSInteger, ShowFinishAnimate) {
 /** 设置视频是否只循环播放一次(YES:只播放一次,NO循环播放,default NO) */
 @property (nonatomic, assign) BOOL videoCycleOnce;
 
+/** 是否关闭音频(default NO) */
+@property (nonatomic, assign) BOOL muted;
+
 + (MYLaunchVideoAdvertConfiguration *)defaultConfiguration;
 
 @end

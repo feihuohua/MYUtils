@@ -37,7 +37,6 @@
     [self.dataSource addObject:@"自定义UISwitch-MYAMViralSwitchViewController"];
     [self.dataSource addObject:@"CollectionDynamicCell-MYAutomaticallyCollectionViewCellViewController"];
     [self.dataSource addObject:@"自定义导航栏-MYCustomNavigationBarViewController"];
-    [self.dataSource addObject:@"iOS11-MYiOS11ViewController"];
     
     [self registerViewControllerBasedOption];
     

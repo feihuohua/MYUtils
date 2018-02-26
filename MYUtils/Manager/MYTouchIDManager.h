@@ -81,6 +81,7 @@ typedef void (^StateBlock)(TDTouchIDState state, NSError *error);
  @param block 回调状态的block
  */
 
-- (void)showTouchIDWithDescribe:(NSString *)desc blockState:(StateBlock)block;
+- (void)showTouchIDWithDescribe:(NSString *)desc
+                     blockState:(StateBlock)block;
 
 @end

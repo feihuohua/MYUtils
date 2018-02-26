@@ -18,7 +18,4 @@
 /// 加载本地图片资源
 - (void)showSplashScreenLocalImage;
 
-/// 加载网络图片资源
-- (void)showSplashScreenNetWorkImage;
-
 @end
