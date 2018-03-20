@@ -21,7 +21,7 @@ NSString *const kMYCountDownNotification = @"MYCountDownNotification";
 
 /// 后台模式使用, 记录进入后台的本地时间
 @property (nonatomic, assign) BOOL backgroudRecord;
-@property (nonatomic, strong) NSDate *lastDate;
+@property (nonatomic, assign) CFAbsoluteTime lastTime;
 
 @end
 
@@ -31,7 +31,7 @@ NSString *const kMYCountDownNotification = @"MYCountDownNotification";
     static MYCountDownManager *manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[MYCountDownManager alloc]init];
+        manager = [[MYCountDownManager alloc] init];
     });
     return manager;
 }
@@ -84,7 +84,7 @@ NSString *const kMYCountDownNotification = @"MYCountDownNotification";
     MYCountDownTimeIntervalModel *timeInterval = self.timeIntervalDictionary[identifier];
     if (timeInterval) {
         timeInterval.timeInterval = 0;
-    }else {
+    } else {
         [self.timeIntervalDictionary setObject:[MYCountDownTimeIntervalModel timeInterval:0] forKey:identifier];
     }
 }
@@ -112,16 +112,16 @@ NSString *const kMYCountDownNotification = @"MYCountDownNotification";
 }
 
 - (void)applicationDidEnterBackgroundNotification {
-    self.backgroudRecord = _timer;
+    self.backgroudRecord = (_timer != nil);
     if (self.backgroudRecord) {
-        self.lastDate = [NSDate date];
+        self.lastTime = CFAbsoluteTimeGetCurrent();
         [self invalidate];
     }
 }
 
 - (void)applicationWillEnterForegroundNotification {
     if (self.backgroudRecord) {
-        NSTimeInterval timeInterval =  [[NSDate date] timeIntervalSinceDate:self.lastDate];
+        CFAbsoluteTime timeInterval = CFAbsoluteTimeGetCurrent() - self.lastTime;
         // 取整
         [self timerActionWithTimeInterval:(NSInteger)timeInterval];
         [self start];

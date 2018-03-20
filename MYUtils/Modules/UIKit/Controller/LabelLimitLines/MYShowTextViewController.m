@@ -96,7 +96,7 @@ static NSString * const reuseIdentifier = @"MYShowTextViewCell";
             cellModel.contentLines = TextInitContentLines;
         }
         NSInteger newxtRow = (indexPath.row + 1) >= [self.dataSource count] - 1 ?  [self.dataSource count] - 1 :(indexPath.row + 1);
-        [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:newxtRow  inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationFade];
+        [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:newxtRow inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationFade];
     }];
     MYShowTextCellModel *textCellModel = [self.dataSource objectAtIndex:indexPath.row];
     [cell layoutSubviewsWithModel:textCellModel];

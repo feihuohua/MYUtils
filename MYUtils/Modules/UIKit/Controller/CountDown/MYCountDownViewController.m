@@ -9,7 +9,6 @@
 #import "MYCountDownViewController.h"
 #import "UIButton+CountDown.h"
 #import "UILabel+CountDown.h"
-#import <CIImage+Screenshot.h>
 #import <NSMutableDictionary+ChainProgramming.h>
 #import <NSMutableAttributedString+ChainProgramming.h>
 #import "UIButton+Badge.h"
@@ -20,7 +19,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *countdownButton;
 @property (weak, nonatomic) IBOutlet UILabel *countdownLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *attributedLabel;
 @property (weak, nonatomic) IBOutlet UIButton *topButton;
 @property (weak, nonatomic) IBOutlet UIButton *rightButton;
@@ -35,8 +33,6 @@
     [super viewDidLoad];
     
     [self.countdownLabel scheduledTimerWithTimeInterval:5.0f title:@"重新发送" countDownTitle:@"秒后可重发" titleBackgroundColor:[UIColor blueColor] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
-    
-    [self setupQRCodeImage];
     
     [self setupAttributedString];
     
@@ -92,23 +88,6 @@
         attributes.font(12).color([UIColor blueColor]);
     }];
     self.attributedLabel.attributedText = attributedString;
-}
-
-- (void)setupQRCodeImage {
-    // 1.创建滤镜对象
-    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
-    
-    // 2.恢复默认设置
-    [filter setDefaults];
-    
-    // 3.设置数据
-    NSString *info = @"https://www.baidu.com";
-    NSData *infoData = [info dataUsingEncoding:NSUTF8StringEncoding];
-    [filter setValue:infoData forKeyPath:@"inputMessage"];
-    
-    // 4.生成二维码
-    CIImage *outputImage = [filter outputImage];
-    self.imageView.image = [outputImage createNonInterpolatedWithSize:self.imageView.bounds.size.width];
 }
 
 - (IBAction)countdownBtnClick:(UIButton *)sender {

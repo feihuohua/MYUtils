@@ -2,14 +2,16 @@
 platform :ios, "8.0"
 
 target 'MYUtils' do
+#    UIKit
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+    pod 'MYKit', '~> 1.0.7'
     pod 'AFNetworking', '~> 3.1.0'
     pod 'MJExtension', '~> 3.0.13'
     pod 'IconFont', '~> 1.0.2'
     pod 'CTMediator'
     pod 'SDWebImage', '~> 4.0.0'
     pod 'Masonry', '~> 1.0.2'
-    pod 'MYKit', '~> 1.0.4'
-    pod 'TYPagerController' , '~> 2.0.1'
+    pod 'TYPagerController', '~> 2.1.2'
     pod 'CYLTabBarController', '~> 1.13.1'
     pod 'DACircularProgress', '~> 2.3.1'
     pod 'WebViewJavascriptBridge', '~> 6.0.2'
@@ -21,8 +23,7 @@ target 'MYUtils' do
     pod 'MLeaksFinder', '~> 1.0.0'
     pod 'FBMemoryProfiler', '~> 0.1.3'
     pod 'CATLog', '~> 1.1.0'
-    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
-    pod 'TYPagerController', '~> 2.0.6'
+    
     pod 'MBProgressHUD', '~> 0.9.2'
     pod 'FLAnimatedImage', '~> 1.0.12'
     pod 'MYFPSStatusManager', '~> 1.0.1'

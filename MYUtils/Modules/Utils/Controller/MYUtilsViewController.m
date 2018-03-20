@@ -27,11 +27,12 @@
     
     [self.dataSource addObject:@"*轮播图*-MYCyclePagerViewController"];
     [self.dataSource addObject:@"*照片浏览器*-MWPhotoBrowserDemo"];
-    [self.dataSource addObject:@"*iconFont实战*-MYIconFontViewController"];
-    [self.dataSource addObject:@"keyboard-MYKeyboardViewController"];
+    [self.dataSource addObject:@"*IconFont实战*-MYIconFontViewController"];
+    [self.dataSource addObject:@"Keyboard-MYKeyboardViewController"];
     [self.dataSource addObject:@"*UIScrollView的侧滑返回并存*-MYSideslipScrollViewController"];
     [self.dataSource addObject:@"*36氪*-MYPagerViewController"];
     [self.dataSource addObject:@"*UIScrollView嵌套UIScrollView问题*-MYHeaderTabViewController"];
+    [self.dataSource addObject:@"*MYSoundServiceKit*-MYSoundServiceKitViewController"];
     
     [self registerViewControllerBasedOption];
     

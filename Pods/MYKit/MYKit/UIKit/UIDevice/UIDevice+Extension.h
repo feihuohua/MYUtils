@@ -25,11 +25,6 @@
 + (NSString *)systemVersion;
 
 /**
- 网络监测
- */
-+ (NSString *)getNetWorkStates;
-
-/**
  IFV/IDFV (Identifier for Vendor)
  */
 + (NSString *)appleIFV;
@@ -54,5 +49,49 @@
 + (BOOL)p55InchDiplay;
 
 + (NSString *)getIPAddress:(BOOL)preferIPv4;
+
+/**
+ 获取当前网络运营商的名称
+ @return 中国移动/中国联通/中国电信或者其他运营商
+ */
++ (NSString *)getCarrierName;
+
+/**
+ 获取当前设备的CPU数量
+ @return NSUInteger
+ */
++ (NSUInteger)getCurrentDeviceCPUCount;
+
+/**
+ 获取当前设备CPU总的使用百分比
+ @return CGFloat
+ */
++ (CGFloat)getCurrentDeviceAllCoreCPUUse;
+
+/**
+ 获取当前设备单个CPU使用的百分比
+ @return NSArray;
+ */
++ (NSArray *)getCurrentDeviceSingleCoreCPUUse;
+
+/**
+ 获取当前设备的单元网络地址
+ @return NSString
+ */
++ (NSString *)getCurrentDeviceIPAddressWithCell;
+
+/**
+ 获取当前设备的WiFi地址
+ @return NSString
+ */
++ (NSString *)getCurrentDeviceIPAddressWithWiFi;
+
+/**
+ 获取当前设备的IP地址
+ 
+ @return NSString
+ */
++ (NSString *)getCurrentDeviceIPAddresses;
+
 
 @end

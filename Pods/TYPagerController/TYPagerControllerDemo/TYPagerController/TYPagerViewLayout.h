@@ -25,11 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)pagerViewLayout:(TYPagerViewLayout *)pagerViewLayout itemForIndex:(NSInteger)index prefetching:(BOOL)prefetching;
 
 // return item's view
-- (id)pagerViewLayout:(TYPagerViewLayout *)pagerViewLayout viewForItem:(id)item atIndex:(NSInteger)index;
+- (UIView *)pagerViewLayout:(TYPagerViewLayout *)pagerViewLayout viewForItem:(id)item atIndex:(NSInteger)index;
 
 // see TYPagerView&&TYPagerController, add&&remove item ,must implement scrollView addSubView item's view
 - (void)pagerViewLayout:(TYPagerViewLayout *)pagerViewLayout addVisibleItem:(id)item atIndex:(NSInteger)index;
 - (void)pagerViewLayout:(TYPagerViewLayout *)pagerViewLayout removeInVisibleItem:(id)item atIndex:(NSInteger)index;
+
+@optional
+
+// if have not viewController return nil.
+- (UIViewController *)pagerViewLayout:(TYPagerViewLayout *)pagerViewLayout viewControllerForItem:(id)item atIndex:(NSInteger)index;
 
 @end
 
@@ -75,6 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL autoMemoryCache; // default YES
 
 @property (nonatomic, assign) NSInteger prefetchItemCount;// preload left and right item's count , default 0
+// because when superview add subview(have tableView) will call relodData,if set Yes will optimize. default NO
+@property (nonatomic, assign) BOOL prefetchItemWillAddToSuperView;
 
 @property (nonatomic, assign, readonly) NSRange prefetchRange;
 @property (nonatomic, assign, readonly) NSRange visibleRange;
@@ -102,6 +109,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (ItemType _Nullable)itemForIndex:(NSInteger)idx;
 
 - (UIView *)viewForItem:(ItemType)item atIndex:(NSInteger)index;
+// if have not viewController return nil.
+- (UIViewController *_Nullable)viewControllerForItem:(id)item atIndex:(NSInteger)index;
 
 // view's frame at index 
 - (CGRect)frameForItemAtIndex:(NSInteger)index;

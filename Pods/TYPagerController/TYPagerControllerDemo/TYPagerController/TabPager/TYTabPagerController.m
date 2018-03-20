@@ -111,7 +111,6 @@
 - (TYPagerController *)pagerController {
     if (!_pagerController) {
         _pagerController = [[TYPagerController alloc]init];
-        _pagerController.layout.prefetchItemCount = 1;
     }
     return _pagerController;
 }
@@ -179,6 +178,9 @@
 
 - (void)pagerTabBar:(TYTabPagerBar *)pagerTabBar didSelectItemAtIndex:(NSInteger)index {
     [_pagerController scrollToControllerAtIndex:index animate:YES];
+    if ([_delegate respondsToSelector:@selector(tabPagerController:didSelectTabBarItemAtIndex:)]) {
+        [_delegate tabPagerController:self didSelectTabBarItemAtIndex:index];
+    }
 }
 
 #pragma mark - TYPagerControllerDataSource

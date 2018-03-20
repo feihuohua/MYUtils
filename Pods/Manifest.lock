@@ -33,18 +33,18 @@ PODS:
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - MYFPSStatusManager (1.0.1)
-  - MYKit (1.0.4):
-    - MYKit/Foundation (= 1.0.4)
-    - MYKit/UIKit (= 1.0.4)
-  - MYKit/Foundation (1.0.4)
-  - MYKit/UIKit (1.0.4):
+  - MYKit (1.0.7):
+    - MYKit/Foundation (= 1.0.7)
+    - MYKit/UIKit (= 1.0.7)
+  - MYKit/Foundation (1.0.7)
+  - MYKit/UIKit (1.0.7):
     - MYKit/Foundation
   - MYModalViewController (1.0.0)
   - pop (1.0.10)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
-  - TYPagerController (2.0.6)
+  - TYPagerController (2.1.2)
   - UITableView+FDTemplateLayoutCell (1.6)
   - WebViewJavascriptBridge (6.0.3)
   - WRNavigationBar (1.2.0)
@@ -69,12 +69,11 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.13)
   - MLeaksFinder (~> 1.0.0)
   - MYFPSStatusManager (~> 1.0.1)
-  - MYKit (~> 1.0.4)
+  - MYKit (~> 1.0.7)
   - MYModalViewController (~> 1.0.0)
   - pop (~> 1.0.10)
   - SDWebImage (~> 4.0.0)
-  - TYPagerController (~> 2.0.1)
-  - TYPagerController (~> 2.0.6)
+  - TYPagerController (~> 2.1.2)
   - UITableView+FDTemplateLayoutCell (~> 1.6)
   - WebViewJavascriptBridge (~> 6.0.2)
   - WRNavigationBar (~> 1.2.0)
@@ -99,17 +98,17 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   MYFPSStatusManager: 8ba3e5a46eb4d4294bf7f808fb265b830ea8883a
-  MYKit: 927fa53dbf032bad0bf6442eeb15af97e27e42bb
+  MYKit: 988c194fd86c25632076bde887befe671e1f9ab0
   MYModalViewController: 02516f4db5b83791c32f2bc2b10804d93db21611
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  TYPagerController: 043c9063b53cc6d3f6eb937c9dcbf431ae7cad85
+  TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: d78dc8c0504841f2b8cda81badb135d934e9093a
+PODFILE CHECKSUM: 3440b349b977b63099673a42702a32c5065951ca
 
 COCOAPODS: 1.4.0

@@ -147,7 +147,6 @@
 		32672F5F1FD8EC5B00A8F68F /* FDFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */; };
 		32672F611FD8EDA100A8F68F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 32672F601FD8EDA100A8F68F /* data.json */; };
 		32672F631FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */; };
-		326A1EF41FE8AC6700535930 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */; };
 		32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712ACA1F3857A8008A105F /* AppDelegate.m */; };
 		32712AE11F3857A9008A105F /* MYUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AE01F3857A9008A105F /* MYUtilsTests.m */; };
 		32712AEC1F3857A9008A105F /* MYUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712AEB1F3857A9008A105F /* MYUtilsUITests.m */; };
@@ -192,8 +191,6 @@
 		32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC011FBE94090067DF21 /* DynamicHeightCell.m */; };
 		32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */; };
 		32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */; };
-		32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726F01FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m */; };
-		32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726F31FCBADD00093D353 /* MYCountDownManager.m */; };
 		32C726FF1FCBB10F0093D353 /* MYCountDownModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C726FE1FCBB10F0093D353 /* MYCountDownModel.m */; };
 		32C727021FCBB13D0093D353 /* MYCountDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C727011FCBB13D0093D353 /* MYCountDownViewCell.m */; };
 		32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C84BF91F715C30003E4793 /* MYActionSheet.m */; };
@@ -205,6 +202,24 @@
 		32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3611F46DB9000AE6267 /* HKTabBarControllerConfig.m */; };
 		32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */; };
 		32CC0EFD1FD7A08F00D45E30 /* MYRadarViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */; };
+		32CE8B1E2061086F00EC2D68 /* MYCountDownManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE8B1C2061086E00EC2D68 /* MYCountDownManager.m */; };
+		32CE8B1F2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE8B1D2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m */; };
+		32CE8B2320610A5600EC2D68 /* MYSoundService.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE8B2220610A5600EC2D68 /* MYSoundService.m */; };
+		32CE8B2620610AD800EC2D68 /* MYTeleponyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE8B2520610AD800EC2D68 /* MYTeleponyManager.m */; };
+		32CE8B2920610B3B00EC2D68 /* MYVolumeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE8B2820610B3B00EC2D68 /* MYVolumeManager.m */; };
+		32CE8B2D20610DB700EC2D68 /* MYSoundServiceKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CE8B2C20610DB700EC2D68 /* MYSoundServiceKitViewController.m */; };
+		32CE8B3D206111D100EC2D68 /* noMotionShake.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B31206111CB00EC2D68 /* noMotionShake.wav */; };
+		32CE8B3E206111D100EC2D68 /* shoppingCart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B32206111CC00EC2D68 /* shoppingCart.wav */; };
+		32CE8B3F206111D100EC2D68 /* payment.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B33206111CC00EC2D68 /* payment.mp3 */; };
+		32CE8B40206111D100EC2D68 /* motionShake.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B34206111CD00EC2D68 /* motionShake.wav */; };
+		32CE8B41206111D100EC2D68 /* motionShakeFail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B35206111CD00EC2D68 /* motionShakeFail.mp3 */; };
+		32CE8B42206111D100EC2D68 /* signIn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B36206111CE00EC2D68 /* signIn.mp3 */; };
+		32CE8B43206111D100EC2D68 /* payment.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B37206111CE00EC2D68 /* payment.wav */; };
+		32CE8B44206111D100EC2D68 /* brithdayMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B38206111CF00EC2D68 /* brithdayMusic.mp3 */; };
+		32CE8B45206111D100EC2D68 /* motionShake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B39206111CF00EC2D68 /* motionShake.mp3 */; };
+		32CE8B46206111D100EC2D68 /* shoppingCart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B3A206111D000EC2D68 /* shoppingCart.mp3 */; };
+		32CE8B47206111D100EC2D68 /* signIn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B3B206111D000EC2D68 /* signIn.wav */; };
+		32CE8B48206111D100EC2D68 /* motionShakeSuccess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B3C206111D100EC2D68 /* motionShakeSuccess.mp3 */; };
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
@@ -454,8 +469,6 @@
 		32672F5D1FD8EC5B00A8F68F /* FDFeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDFeedCell.xib; sourceTree = "<group>"; };
 		32672F601FD8EDA100A8F68F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		32672F621FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYTemplateLayoutViewController.xib; sourceTree = "<group>"; };
-		326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
-		326A1EF31FE8AC6700535930 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
 		32712AC31F3857A8008A105F /* MYUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32712AC91F3857A8008A105F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32712ACA1F3857A8008A105F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -542,10 +555,6 @@
 		32B3EC021FBE94090067DF21 /* DynamicSizeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicSizeCell.m; sourceTree = "<group>"; };
 		32B3EC0D1FBEA9830067DF21 /* MYHamburgerButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYHamburgerButtonViewController.h; sourceTree = "<group>"; };
 		32B3EC0E1FBEA9830067DF21 /* MYHamburgerButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYHamburgerButtonViewController.m; sourceTree = "<group>"; };
-		32C726EF1FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownTimeIntervalModel.h; sourceTree = "<group>"; };
-		32C726F01FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCountDownTimeIntervalModel.m; sourceTree = "<group>"; };
-		32C726F21FCBADD00093D353 /* MYCountDownManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownManager.h; sourceTree = "<group>"; };
-		32C726F31FCBADD00093D353 /* MYCountDownManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCountDownManager.m; sourceTree = "<group>"; };
 		32C726FD1FCBB10F0093D353 /* MYCountDownModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownModel.h; sourceTree = "<group>"; };
 		32C726FE1FCBB10F0093D353 /* MYCountDownModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCountDownModel.m; sourceTree = "<group>"; };
 		32C727001FCBB13D0093D353 /* MYCountDownViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCountDownViewCell.h; sourceTree = "<group>"; };
@@ -568,6 +577,30 @@
 		32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRadarView.m; sourceTree = "<group>"; };
 		32CC0EFB1FD7A08F00D45E30 /* MYRadarViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYRadarViewViewController.h; sourceTree = "<group>"; };
 		32CC0EFC1FD7A08F00D45E30 /* MYRadarViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYRadarViewViewController.m; sourceTree = "<group>"; };
+		32CE8B1A2061086E00EC2D68 /* MYCountDownManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCountDownManager.h; sourceTree = "<group>"; };
+		32CE8B1B2061086E00EC2D68 /* MYCountDownTimeIntervalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCountDownTimeIntervalModel.h; sourceTree = "<group>"; };
+		32CE8B1C2061086E00EC2D68 /* MYCountDownManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCountDownManager.m; sourceTree = "<group>"; };
+		32CE8B1D2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCountDownTimeIntervalModel.m; sourceTree = "<group>"; };
+		32CE8B2120610A5600EC2D68 /* MYSoundService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSoundService.h; sourceTree = "<group>"; };
+		32CE8B2220610A5600EC2D68 /* MYSoundService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSoundService.m; sourceTree = "<group>"; };
+		32CE8B2420610AD800EC2D68 /* MYTeleponyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTeleponyManager.h; sourceTree = "<group>"; };
+		32CE8B2520610AD800EC2D68 /* MYTeleponyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTeleponyManager.m; sourceTree = "<group>"; };
+		32CE8B2720610B3B00EC2D68 /* MYVolumeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYVolumeManager.h; sourceTree = "<group>"; };
+		32CE8B2820610B3B00EC2D68 /* MYVolumeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYVolumeManager.m; sourceTree = "<group>"; };
+		32CE8B2B20610DB700EC2D68 /* MYSoundServiceKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSoundServiceKitViewController.h; sourceTree = "<group>"; };
+		32CE8B2C20610DB700EC2D68 /* MYSoundServiceKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSoundServiceKitViewController.m; sourceTree = "<group>"; };
+		32CE8B31206111CB00EC2D68 /* noMotionShake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noMotionShake.wav; sourceTree = "<group>"; };
+		32CE8B32206111CC00EC2D68 /* shoppingCart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shoppingCart.wav; sourceTree = "<group>"; };
+		32CE8B33206111CC00EC2D68 /* payment.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = payment.mp3; sourceTree = "<group>"; };
+		32CE8B34206111CD00EC2D68 /* motionShake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = motionShake.wav; sourceTree = "<group>"; };
+		32CE8B35206111CD00EC2D68 /* motionShakeFail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motionShakeFail.mp3; sourceTree = "<group>"; };
+		32CE8B36206111CE00EC2D68 /* signIn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = signIn.mp3; sourceTree = "<group>"; };
+		32CE8B37206111CE00EC2D68 /* payment.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = payment.wav; sourceTree = "<group>"; };
+		32CE8B38206111CF00EC2D68 /* brithdayMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brithdayMusic.mp3; sourceTree = "<group>"; };
+		32CE8B39206111CF00EC2D68 /* motionShake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motionShake.mp3; sourceTree = "<group>"; };
+		32CE8B3A206111D000EC2D68 /* shoppingCart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shoppingCart.mp3; sourceTree = "<group>"; };
+		32CE8B3B206111D000EC2D68 /* signIn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = signIn.wav; sourceTree = "<group>"; };
+		32CE8B3C206111D100EC2D68 /* motionShakeSuccess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motionShakeSuccess.mp3; sourceTree = "<group>"; };
 		32DD4FD81F5654E0005C6FE9 /* MYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextField.h; sourceTree = "<group>"; };
 		32DD4FD91F5654E0005C6FE9 /* MYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextField.m; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
@@ -764,6 +797,7 @@
 				324174C81FFB3934007BB277 /* MYTouchIDManager.m */,
 				3220B1821FFE32AE00A58AA0 /* MYLaunchAdvertManager.h */,
 				3220B1831FFE32AE00A58AA0 /* MYLaunchAdvertManager.m */,
+				32CE8B132061084B00EC2D68 /* MYCountDownManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -894,10 +928,8 @@
 		324174861FFB1D59007BB277 /* ImageCornerRadius */ = {
 			isa = PBXGroup;
 			children = (
-				3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */,
 				3254F4B51FBD78470020B58C /* MYImageCornerRadiusViewController.h */,
-				326A1EF31FE8AC6700535930 /* UIImageView+CornerRadius.h */,
-				326A1EF21FE8AC6700535930 /* UIImageView+CornerRadius.m */,
+				3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */,
 			);
 			path = ImageCornerRadius;
 			sourceTree = "<group>";
@@ -996,6 +1028,7 @@
 		3241749B1FFB25B7007BB277 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				32CE8B2A20610DAA00EC2D68 /* MYSoundServiceKit */,
 				32659990200F18E2001F727E /* UIScrollView */,
 				3220B1311FFC961800A58AA0 /* PagerController */,
 				324174AC1FFB2942007BB277 /* ScrollViewPopGesture */,
@@ -1343,6 +1376,18 @@
 				3220B1851FFE33E000A58AA0 /* video1.mp4 */,
 				3220B1871FFE393A00A58AA0 /* image2.jpg */,
 				3220B1891FFE39B100A58AA0 /* image12.gif */,
+				32CE8B38206111CF00EC2D68 /* brithdayMusic.mp3 */,
+				32CE8B39206111CF00EC2D68 /* motionShake.mp3 */,
+				32CE8B34206111CD00EC2D68 /* motionShake.wav */,
+				32CE8B35206111CD00EC2D68 /* motionShakeFail.mp3 */,
+				32CE8B3C206111D100EC2D68 /* motionShakeSuccess.mp3 */,
+				32CE8B31206111CB00EC2D68 /* noMotionShake.wav */,
+				32CE8B33206111CC00EC2D68 /* payment.mp3 */,
+				32CE8B37206111CE00EC2D68 /* payment.wav */,
+				32CE8B3A206111D000EC2D68 /* shoppingCart.mp3 */,
+				32CE8B32206111CC00EC2D68 /* shoppingCart.wav */,
+				32CE8B36206111CE00EC2D68 /* signIn.mp3 */,
+				32CE8B3B206111D000EC2D68 /* signIn.wav */,
 				32712B131F395164008A105F /* Assets.xcassets */,
 				32712B141F395164008A105F /* Info.plist */,
 				32712B151F395164008A105F /* main.m */,
@@ -1371,6 +1416,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32CE8B2020610A2B00EC2D68 /* MYSoundServiceKit */,
 				329124FB2043FBF000FA32E3 /* MYNavigaionBar */,
 				3299ECE7203FF22E00BE2B40 /* MYLaunchAdvert */,
 				329CE652201331B000FEF065 /* MYFeatureViewController */,
@@ -1380,7 +1426,6 @@
 				325BAD9A1FDE876C0070BCD2 /* MYRunLoopOperationManager */,
 				32672F4A1FD8DD7D00A8F68F /* MYSectionHeaderCollectionViewLayout */,
 				32CC0EF71FD79F2500D45E30 /* MYRadarView */,
-				32C726EE1FCBAD650093D353 /* MYCountDownManager */,
 				3215B45C1FC45A7D001038A5 /* AuthenticationWIFI */,
 				32B3EBCA1FBE8D950067DF21 /* UICollectionView+ARDynamicHeightLayoutCell */,
 				325AFE9C1FC01B52009FF8B1 /* MYSplashScreenManager */,
@@ -1497,17 +1542,6 @@
 			path = "Cross Dissolve";
 			sourceTree = "<group>";
 		};
-		32C726EE1FCBAD650093D353 /* MYCountDownManager */ = {
-			isa = PBXGroup;
-			children = (
-				32C726EF1FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.h */,
-				32C726F01FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m */,
-				32C726F21FCBADD00093D353 /* MYCountDownManager.h */,
-				32C726F31FCBADD00093D353 /* MYCountDownManager.m */,
-			);
-			path = MYCountDownManager;
-			sourceTree = "<group>";
-		};
 		32C84BF71F715BE8003E4793 /* MYActionSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1543,6 +1577,40 @@
 				32CC0EF91FD79F4B00D45E30 /* MYRadarView.m */,
 			);
 			path = MYRadarView;
+			sourceTree = "<group>";
+		};
+		32CE8B132061084B00EC2D68 /* MYCountDownManager */ = {
+			isa = PBXGroup;
+			children = (
+				32CE8B1A2061086E00EC2D68 /* MYCountDownManager.h */,
+				32CE8B1C2061086E00EC2D68 /* MYCountDownManager.m */,
+				32CE8B1B2061086E00EC2D68 /* MYCountDownTimeIntervalModel.h */,
+				32CE8B1D2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m */,
+			);
+			name = MYCountDownManager;
+			path = MYUtils/Vendor/MYCountDownManager;
+			sourceTree = SOURCE_ROOT;
+		};
+		32CE8B2020610A2B00EC2D68 /* MYSoundServiceKit */ = {
+			isa = PBXGroup;
+			children = (
+				32CE8B2120610A5600EC2D68 /* MYSoundService.h */,
+				32CE8B2220610A5600EC2D68 /* MYSoundService.m */,
+				32CE8B2420610AD800EC2D68 /* MYTeleponyManager.h */,
+				32CE8B2520610AD800EC2D68 /* MYTeleponyManager.m */,
+				32CE8B2720610B3B00EC2D68 /* MYVolumeManager.h */,
+				32CE8B2820610B3B00EC2D68 /* MYVolumeManager.m */,
+			);
+			path = MYSoundServiceKit;
+			sourceTree = "<group>";
+		};
+		32CE8B2A20610DAA00EC2D68 /* MYSoundServiceKit */ = {
+			isa = PBXGroup;
+			children = (
+				32CE8B2B20610DB700EC2D68 /* MYSoundServiceKitViewController.h */,
+				32CE8B2C20610DB700EC2D68 /* MYSoundServiceKitViewController.m */,
+			);
+			path = MYSoundServiceKit;
 			sourceTree = "<group>";
 		};
 		32DD4FD41F565443005C6FE9 /* MYTextField */ = {
@@ -1691,14 +1759,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				320774A41FACB93000A56F88 /* ImageError@3x.png in Resources */,
+				32CE8B46206111D100EC2D68 /* shoppingCart.mp3 in Resources */,
+				32CE8B47206111D100EC2D68 /* signIn.wav in Resources */,
+				32CE8B42206111D100EC2D68 /* signIn.mp3 in Resources */,
 				3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */,
 				320774AA1FACB93000A56F88 /* ImageSelectedOn@3x.png in Resources */,
 				3220B18A1FFE39B100A58AA0 /* image12.gif in Resources */,
 				320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */,
+				32CE8B3F206111D100EC2D68 /* payment.mp3 in Resources */,
 				3254F4ED1FBD78480020B58C /* MYCountDownViewController.xib in Resources */,
 				3220B1861FFE33E100A58AA0 /* video1.mp4 in Resources */,
 				320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */,
 				320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */,
+				32CE8B43206111D100EC2D68 /* payment.wav in Resources */,
 				3220B15F1FFDEB2900A58AA0 /* MYProgressHUD.bundle in Resources */,
 				320774E81FACBE1C00A56F88 /* photo5t.jpg in Resources */,
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
@@ -1724,14 +1797,17 @@
 				320774EF1FACBE1C00A56F88 /* video.mp4 in Resources */,
 				320774A51FACB93000A56F88 /* ImageSelectedOff.png in Resources */,
 				320774E51FACBE1C00A56F88 /* photo4.jpg in Resources */,
+				32CE8B40206111D100EC2D68 /* motionShake.wav in Resources */,
 				320774B61FACB93000A56F88 /* PlayButtonOverlayLargeTap@3x.png in Resources */,
 				320774A31FACB93000A56F88 /* ImageError@2x.png in Resources */,
 				320774AE1FACB93000A56F88 /* ImageSelectedSmallOn.png in Resources */,
 				320774B81FACB93000A56F88 /* UIBarButtonItemArrowLeft@2x.png in Resources */,
+				32CE8B44206111D100EC2D68 /* brithdayMusic.mp3 in Resources */,
 				320774E11FACBE1C00A56F88 /* photo2.jpg in Resources */,
 				320774E41FACBE1C00A56F88 /* photo3t.jpg in Resources */,
 				320774AC1FACB93000A56F88 /* ImageSelectedSmallOff@2x.png in Resources */,
 				320774A71FACB93000A56F88 /* ImageSelectedOff@3x.png in Resources */,
+				32CE8B45206111D100EC2D68 /* motionShake.mp3 in Resources */,
 				320774B51FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
 				320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */,
 				320774E71FACBE1C00A56F88 /* photo5.jpg in Resources */,
@@ -1750,10 +1826,14 @@
 				320774EA1FACBE1C00A56F88 /* photo6t.jpg in Resources */,
 				320774B41FACB93000A56F88 /* PlayButtonOverlayLargeTap.png in Resources */,
 				320774E31FACBE1C00A56F88 /* photo3.jpg in Resources */,
+				32CE8B3D206111D100EC2D68 /* noMotionShake.wav in Resources */,
+				32CE8B41206111D100EC2D68 /* motionShakeFail.mp3 in Resources */,
 				320774AB1FACB93000A56F88 /* ImageSelectedSmallOff.png in Resources */,
+				32CE8B3E206111D100EC2D68 /* shoppingCart.wav in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
 				320774B11FACB93000A56F88 /* PlayButtonOverlayLarge.png in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
+				32CE8B48206111D100EC2D68 /* motionShakeSuccess.mp3 in Resources */,
 				320774A81FACB93000A56F88 /* ImageSelectedOn.png in Resources */,
 				3220B1881FFE393A00A58AA0 /* image2.jpg in Resources */,
 				320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */,
@@ -1854,6 +1934,7 @@
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
 				3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */,
 				3299ED05203FF22F00BE2B40 /* MYLaunchAdvertViewController.m in Sources */,
+				32CE8B2D20610DB700EC2D68 /* MYSoundServiceKitViewController.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
 				329CE65E201351EE00FEF065 /* MYPassWordView.m in Sources */,
 				324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */,
@@ -1869,6 +1950,7 @@
 				3299ED02203FF22F00BE2B40 /* MYLaunchAdvertButton.m in Sources */,
 				32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */,
 				32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */,
+				32CE8B1E2061086F00EC2D68 /* MYCountDownManager.m in Sources */,
 				324174791FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m in Sources */,
 				3215B4791FC473CA001038A5 /* MYCollectionViewController.m in Sources */,
 				329CE64920121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m in Sources */,
@@ -1896,7 +1978,6 @@
 				32CBE35F1F46DAFC00AE6267 /* UIViewController+NavigationExtension.m in Sources */,
 				320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */,
 				3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */,
-				326A1EF41FE8AC6700535930 /* UIImageView+CornerRadius.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
 				3299ED03203FF22F00BE2B40 /* MYLaunchAdvertImageManager.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
@@ -1928,13 +2009,13 @@
 				32B3EBE71FBE8EFC0067DF21 /* MYShowTextViewCell.m in Sources */,
 				3208CADD1FC48BCD00AD9A30 /* UIFloatLabelTextField.m in Sources */,
 				324174BF1FFB2F3C007BB277 /* FXCyclePagerViewCell.m in Sources */,
+				32CE8B2620610AD800EC2D68 /* MYTeleponyManager.m in Sources */,
 				32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */,
 				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
 				3220B1841FFE32AE00A58AA0 /* MYLaunchAdvertManager.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				329CE64A20121DF500FEF065 /* QMTabBaseViewPlugin.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
-				32C726F41FCBADD00093D353 /* MYCountDownManager.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
 				329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */,
@@ -1942,6 +2023,7 @@
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
 				3299ED06203FF22F00BE2B40 /* MYLaunchAdvertCache.m in Sources */,
+				32CE8B2320610A5600EC2D68 /* MYSoundService.m in Sources */,
 				3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
 				3220B1341FFC962B00A58AA0 /* MYPagerViewController.m in Sources */,
@@ -1953,6 +2035,7 @@
 				32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */,
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
+				32CE8B1F2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m in Sources */,
 				3299ED00203FF22F00BE2B40 /* MYLaunchAdvertDownloader.m in Sources */,
 				3220B18F1FFF120D00A58AA0 /* WebViewController.m in Sources */,
 				3299ECFF203FF22F00BE2B40 /* MYLaunchAdvert.m in Sources */,
@@ -1966,12 +2049,12 @@
 				324174991FFB2374007BB277 /* MYCollectionLayoutViewController.m in Sources */,
 				32659999200F1AAB001F727E /* TableViewController.m in Sources */,
 				324174761FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m in Sources */,
-				32C726F11FCBAD9F0093D353 /* MYCountDownTimeIntervalModel.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				324174CF1FFB4BF6007BB277 /* MYPopupView.m in Sources */,
 				32712ACB1F3857A8008A105F /* AppDelegate.m in Sources */,
 				32B3EBE81FBE8EFC0067DF21 /* MYImageCornerRadiusViewCell.m in Sources */,
 				3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */,
+				32CE8B2920610B3B00EC2D68 /* MYVolumeManager.m in Sources */,
 				3254F4F21FBD78480020B58C /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
 				3215B47A1FC473CA001038A5 /* MYScrollViewController.m in Sources */,
 			);

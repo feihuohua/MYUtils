@@ -8,7 +8,7 @@
 
 #import "MYImageCornerRadiusViewCell.h"
 #import "UtilsMacros.h"
-#import "UIImageView+CornerRadius.h"
+#import <UIImageView+RoundedAvatar.h>
 #import <MYKit.h>
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>

@@ -46,13 +46,13 @@
     
     //固定4个进行分隔
     self.bankTextField = [[MYTextField alloc] initWithSeparateCount:4];
-    self.bankTextField.frame = CGRectMake(20, 70, 300, 45);
+    self.bankTextField.frame = CGRectMake(20, 100, 300, 45);
     self.bankTextField.delegate = self;
     self.bankTextField.limitCount = 19;//可以不设置，但是那样的话，就可以无限输入了
     self.bankTextField.layer.cornerRadius = 4.0;
     self.bankTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.bankTextField.layer.borderWidth = 2.0;
-    
+    self.bankTextField.placeholder = @"XXXX XXXX XXXX XXXX XXX";
     [self.view addSubview:self.bankTextField];
     
     
@@ -64,14 +64,14 @@
     self.phoneTextField.layer.cornerRadius = 4.0;
     self.phoneTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.phoneTextField.layer.borderWidth = 2.0;
-    
+    self.phoneTextField.placeholder = @"XXX XXXX XXXX";
     [self.view addSubview:self.phoneTextField];
     
     
     //输入身份证号
     self.idCardTextField = [[MYTextField alloc] initWithSeparateArray:@[@"6",@"8",@"4"]];
     self.idCardTextField.frame = CGRectMake(20, CGRectGetMaxY(self.phoneTextField.frame) + 10, 300, 45);
-    
+    self.idCardTextField.placeholder = @"XXXXXX XXXXXXXX XXXX";
     self.idCardTextField.delegate = self;
     self.idCardTextField.limitCount = 18;//可以不设置，但是那样的话，就可以无限输入了
     self.idCardTextField.layer.cornerRadius = 4.0;
