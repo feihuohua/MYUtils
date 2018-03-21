@@ -5,6 +5,7 @@ target 'MYUtils' do
 #    UIKit
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
     pod 'MYKit', '~> 1.0.7'
+    pod 'TSMessages', '~> 0.9.12'
     pod 'AFNetworking', '~> 3.1.0'
     pod 'MJExtension', '~> 3.0.13'
     pod 'IconFont', '~> 1.0.2'

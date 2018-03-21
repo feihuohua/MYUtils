@@ -221,6 +221,8 @@
 		32CE8B47206111D100EC2D68 /* signIn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B3B206111D000EC2D68 /* signIn.wav */; };
 		32CE8B48206111D100EC2D68 /* motionShakeSuccess.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 32CE8B3C206111D100EC2D68 /* motionShakeSuccess.mp3 */; };
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
+		32E1AAE4206229E80072A1E4 /* MYMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AAE2206229E80072A1E4 /* MYMessagesViewController.m */; };
+		32E1AAE5206229E80072A1E4 /* MYMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
@@ -603,6 +605,9 @@
 		32CE8B3C206111D100EC2D68 /* motionShakeSuccess.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = motionShakeSuccess.mp3; sourceTree = "<group>"; };
 		32DD4FD81F5654E0005C6FE9 /* MYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextField.h; sourceTree = "<group>"; };
 		32DD4FD91F5654E0005C6FE9 /* MYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextField.m; sourceTree = "<group>"; };
+		32E1AAE1206229E80072A1E4 /* MYMessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYMessagesViewController.h; sourceTree = "<group>"; };
+		32E1AAE2206229E80072A1E4 /* MYMessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYMessagesViewController.m; sourceTree = "<group>"; };
+		32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYMessagesViewController.xib; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		32E9823F1FD6310A005C15B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		32E982401FD6310A005C15B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
@@ -1028,6 +1033,7 @@
 		3241749B1FFB25B7007BB277 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				32E1AADD206229950072A1E4 /* MessagesTopUtils */,
 				32CE8B2A20610DAA00EC2D68 /* MYSoundServiceKit */,
 				32659990200F18E2001F727E /* UIScrollView */,
 				3220B1311FFC961800A58AA0 /* PagerController */,
@@ -1416,6 +1422,7 @@
 		32712B171F395164008A105F /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				32E1AADC206203170072A1E4 /* MYAlertView */,
 				32CE8B2020610A2B00EC2D68 /* MYSoundServiceKit */,
 				329124FB2043FBF000FA32E3 /* MYNavigaionBar */,
 				3299ECE7203FF22E00BE2B40 /* MYLaunchAdvert */,
@@ -1637,6 +1644,23 @@
 			path = FXCyclePagerView;
 			sourceTree = "<group>";
 		};
+		32E1AADC206203170072A1E4 /* MYAlertView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MYAlertView;
+			sourceTree = "<group>";
+		};
+		32E1AADD206229950072A1E4 /* MessagesTopUtils */ = {
+			isa = PBXGroup;
+			children = (
+				32E1AAE1206229E80072A1E4 /* MYMessagesViewController.h */,
+				32E1AAE2206229E80072A1E4 /* MYMessagesViewController.m */,
+				32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */,
+			);
+			path = MessagesTopUtils;
+			sourceTree = "<group>";
+		};
 		4C3894DD1F64DF3200BD95ED /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1838,6 +1862,7 @@
 				3220B1881FFE393A00A58AA0 /* image2.jpg in Resources */,
 				320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */,
 				320774BB1FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png in Resources */,
+				32E1AAE5206229E80072A1E4 /* MYMessagesViewController.xib in Resources */,
 				320774A91FACB93000A56F88 /* ImageSelectedOn@2x.png in Resources */,
 				320774B91FACB93000A56F88 /* UIBarButtonItemArrowLeft@3x.png in Resources */,
 			);
@@ -1887,11 +1912,45 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MYUtils/Pods-MYUtils-resources.sh",
 				"${PODS_ROOT}/CATLog/CATLog/CATLog/CATLogFilesViewController.xib",
 				"${PODS_ROOT}/CATLog/CATLog/CATLog/CATLogReviewController.xib",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CATLogFilesViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CATLogReviewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundError.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundError@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundErrorIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundErrorIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundMessage.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundMessage@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccess.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccess@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccessIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccessIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarning.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarning@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarningIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarningIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationButtonBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationButtonBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TSMessagesDefaultDesign.json",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2012,6 +2071,7 @@
 				32CE8B2620610AD800EC2D68 /* MYTeleponyManager.m in Sources */,
 				32672F4D1FD8DD9500A8F68F /* MYSectionHeaderCollectionViewLayout.m in Sources */,
 				3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */,
+				32E1AAE4206229E80072A1E4 /* MYMessagesViewController.m in Sources */,
 				3220B1841FFE32AE00A58AA0 /* MYLaunchAdvertManager.m in Sources */,
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				329CE64A20121DF500FEF065 /* QMTabBaseViewPlugin.m in Sources */,

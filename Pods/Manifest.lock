@@ -26,6 +26,7 @@ PODS:
   - FCFileManager (1.0.20)
   - FLAnimatedImage (1.0.12)
   - FLEX (2.4.0)
+  - HexColors (2.2.1)
   - IconFont (1.0.2)
   - Masonry (1.0.2)
   - MBProgressHUD (0.9.2)
@@ -44,6 +45,8 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
   - TYPagerController (2.1.2)
   - UITableView+FDTemplateLayoutCell (1.6)
   - WebViewJavascriptBridge (6.0.3)
@@ -73,6 +76,7 @@ DEPENDENCIES:
   - MYModalViewController (~> 1.0.0)
   - pop (~> 1.0.10)
   - SDWebImage (~> 4.0.0)
+  - TSMessages (~> 0.9.12)
   - TYPagerController (~> 2.1.2)
   - UITableView+FDTemplateLayoutCell (~> 1.6)
   - WebViewJavascriptBridge (~> 6.0.2)
@@ -92,6 +96,7 @@ SPEC CHECKSUMS:
   FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
   IconFont: 97ff724bc6d26aac018678a2da4f8542600e5a67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
@@ -102,6 +107,7 @@ SPEC CHECKSUMS:
   MYModalViewController: 02516f4db5b83791c32f2bc2b10804d93db21611
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
@@ -109,6 +115,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: 3440b349b977b63099673a42702a32c5065951ca
+PODFILE CHECKSUM: b6b98538c5f60334abae56c4093149da7abef2af
 
 COCOAPODS: 1.4.0

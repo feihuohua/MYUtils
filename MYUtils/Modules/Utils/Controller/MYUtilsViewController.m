@@ -33,6 +33,7 @@
     [self.dataSource addObject:@"*36氪*-MYPagerViewController"];
     [self.dataSource addObject:@"*UIScrollView嵌套UIScrollView问题*-MYHeaderTabViewController"];
     [self.dataSource addObject:@"*MYSoundServiceKit*-MYSoundServiceKitViewController"];
+    [self.dataSource addObject:@"*消息弹出*-MYMessagesViewController"];
     
     [self registerViewControllerBasedOption];
     
