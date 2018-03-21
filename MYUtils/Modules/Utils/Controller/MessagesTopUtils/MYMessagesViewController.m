@@ -63,25 +63,7 @@
                            canBeDismissedByUser:YES];
 }
 
-- (IBAction)didTapToggleNavigationBar:(id)sender
-{
-    [self.navigationController setNavigationBarHidden:!self.navigationController.navigationBarHidden animated:YES];
-}
-
-- (IBAction)didTapToggleNavigationBarAlpha:(id)sender
-{
-    CGFloat alpha = self.navigationController.navigationBar.alpha;
-    self.navigationController.navigationBar.alpha = (alpha==1.f)?0.5:1;
-}
-
-- (IBAction)didTapToggleWantsFullscreen:(id)sender
-{
-    self.wantsFullScreenLayout = !self.wantsFullScreenLayout;
-    [self.navigationController.navigationBar setTranslucent:!self.navigationController.navigationBar.isTranslucent];
-}
-
-- (IBAction)didTapCustomImage:(id)sender
-{
+- (IBAction)didTapCustomImage:(id)sender {
     [TSMessage showNotificationInViewController:self
                                           title:NSLocalizedString(@"Custom image", nil)
                                        subtitle:NSLocalizedString(@"This uses an image you can define", nil)
@@ -95,13 +77,11 @@
                            canBeDismissedByUser:YES];
 }
 
-- (IBAction)didTapDismissCurrentMessage:(id)sender
-{
+- (IBAction)didTapDismissCurrentMessage:(id)sender {
     [TSMessage dismissActiveNotification];
 }
 
-- (IBAction)didTapEndless:(id)sender
-{
+- (IBAction)didTapEndless:(id)sender {
     [TSMessage showNotificationInViewController:self
                                           title:NSLocalizedString(@"Endless", nil)
                                        subtitle:NSLocalizedString(@"This message can not be dismissed and will not be hidden automatically. Tap the 'Dismiss' button to dismiss the currently shown message", nil)
@@ -115,8 +95,7 @@
                            canBeDismissedByUser:NO];
 }
 
-- (IBAction)didTapLong:(id)sender
-{
+- (IBAction)didTapLong:(id)sender {
     [TSMessage showNotificationInViewController:self
                                           title:NSLocalizedString(@"Long", nil)
                                        subtitle:NSLocalizedString(@"This message is displayed 10 seconds instead of the calculated value", nil)
@@ -130,8 +109,7 @@
                            canBeDismissedByUser:YES];
 }
 
-- (IBAction)didTapBottom:(id)sender
-{
+- (IBAction)didTapBottom:(id)sender {
     [TSMessage showNotificationInViewController:self
                                           title:NSLocalizedString(@"Hu!", nil)
                                        subtitle:NSLocalizedString(@"I'm down here :)", nil)
@@ -145,15 +123,13 @@
                            canBeDismissedByUser:YES];
 }
 
-- (IBAction)didTapText:(id)sender
-{
+- (IBAction)didTapText:(id)sender {
     [TSMessage showNotificationWithTitle:NSLocalizedString(@"With 'Text' I meant a long text, so here it is", nil)
                                 subtitle:NSLocalizedString(@"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus", nil)
                                     type:TSMessageNotificationTypeWarning];
 }
 
-- (IBAction)didTapCustomDesign:(id)sender
-{
+- (IBAction)didTapCustomDesign:(id)sender {
     // this is an example on how to apply a custom design
     [TSMessage addCustomDesignFromFileWithName:@"AlternativeDesign.json"];
     [TSMessage showNotificationWithTitle:NSLocalizedString(@"Updated to custom design file", nil)
@@ -161,13 +137,8 @@
                                     type:TSMessageNotificationTypeSuccess];
 }
 
+- (IBAction)didTapNavBarOverlay:(id)sender {
 
-- (IBAction)didTapNavBarOverlay:(id)sender
-{
-    if (self.navigationController.navigationBarHidden){
-        [self.navigationController setNavigationBarHidden:NO];
-    }
-    
     [TSMessage showNotificationInViewController:self.navigationController
                                           title:NSLocalizedString(@"Whoa!", nil)
                                        subtitle:NSLocalizedString(@"Over the Navigation Bar!", nil)
@@ -181,21 +152,5 @@
                            canBeDismissedByUser:YES];
 }
 
-
-
-//- (CGFloat)messageLocationOfMessageView:(TSMessageView *)messageView
-//{
-//    return 44.0; // any calculation here
-//}
-
-//- (void)customizeMessageView:(TSMessageView *)messageView
-//{
-//    messageView.alpha = 0.5;
-//}
-
-- (IBAction)didTapNavbarHidden:(id)sender
-{
-    self.navigationController.navigationBarHidden = !self.navigationController.navigationBarHidden;
-}
 
 @end
