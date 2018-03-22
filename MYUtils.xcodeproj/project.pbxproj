@@ -223,6 +223,7 @@
 		32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DD4FD91F5654E0005C6FE9 /* MYTextField.m */; };
 		32E1AAE4206229E80072A1E4 /* MYMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AAE2206229E80072A1E4 /* MYMessagesViewController.m */; };
 		32E1AAE5206229E80072A1E4 /* MYMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */; };
+		32E1AB572063B47B0072A1E4 /* MYCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB562063B47B0072A1E4 /* MYCustomNavigationBar.m */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
@@ -608,6 +609,8 @@
 		32E1AAE1206229E80072A1E4 /* MYMessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYMessagesViewController.h; sourceTree = "<group>"; };
 		32E1AAE2206229E80072A1E4 /* MYMessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYMessagesViewController.m; sourceTree = "<group>"; };
 		32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYMessagesViewController.xib; sourceTree = "<group>"; };
+		32E1AB552063B47B0072A1E4 /* MYCustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCustomNavigationBar.h; sourceTree = "<group>"; };
+		32E1AB562063B47B0072A1E4 /* MYCustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustomNavigationBar.m; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		32E9823F1FD6310A005C15B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		32E982401FD6310A005C15B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
@@ -1462,6 +1465,8 @@
 			children = (
 				329124FC2043FC0600FA32E3 /* MYNavigaionBar.h */,
 				329124FD2043FC0600FA32E3 /* MYNavigaionBar.m */,
+				32E1AB552063B47B0072A1E4 /* MYCustomNavigationBar.h */,
+				32E1AB562063B47B0072A1E4 /* MYCustomNavigationBar.m */,
 			);
 			path = MYNavigaionBar;
 			sourceTree = "<group>";
@@ -2078,6 +2083,7 @@
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
 				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
+				32E1AB572063B47B0072A1E4 /* MYCustomNavigationBar.m in Sources */,
 				329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */,
 				324174961FFB2286007BB277 /* MYUIKitViewController.m in Sources */,
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,

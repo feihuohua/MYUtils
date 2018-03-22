@@ -7,13 +7,13 @@
 //
 
 #import "MYTestViewController.h"
-#import "MYNavigaionBar.h"
+#import "MYCustomNavigationBar.h"
 #import "UtilsMacros.h"
 #import <UIBarButtonItem+Extension.h>
 
 @interface MYTestViewController ()
 
-@property (nonatomic, strong) MYNavigaionBar *customNavBar;
+@property (nonatomic, strong) MYCustomNavigationBar *customNavBar;
 
 @end
 
@@ -37,7 +37,7 @@
     // 设置自定义导航栏标题颜色
     self.customNavBar.titleLabelColor = [UIColor whiteColor];
     
-    [self.customNavBar wr_setLeftButtonWithImage:[UIImage imageNamed:@"hk_navigation_back"]];
+    [self.customNavBar my_setLeftButtonWithImage:[UIImage imageNamed:@"hk_navigation_back"]];
     
     weakSelf(self)
     self.customNavBar.onClickLeftButton = ^{
@@ -49,10 +49,9 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (MYNavigaionBar *)customNavBar
-{
-    if (_customNavBar == nil) {
-        _customNavBar = [MYNavigaionBar CustomNavigationBar];
+- (MYCustomNavigationBar *)customNavBar {
+    if (!_customNavBar) {
+        _customNavBar = [MYCustomNavigationBar customNavigationBar];
     }
     return _customNavBar;
 }
