@@ -29,7 +29,6 @@
     [self.dataSource addObject:@"*照片浏览器*-MWPhotoBrowserDemo"];
     [self.dataSource addObject:@"*IconFont实战*-MYIconFontViewController"];
     [self.dataSource addObject:@"Keyboard-MYKeyboardViewController"];
-    [self.dataSource addObject:@"*UIScrollView的侧滑返回并存*-MYSideslipScrollViewController"];
     [self.dataSource addObject:@"*36氪*-MYPagerViewController"];
     [self.dataSource addObject:@"*UIScrollView嵌套UIScrollView问题*-MYHeaderTabViewController"];
     [self.dataSource addObject:@"*MYSoundServiceKit*-MYSoundServiceKitViewController"];

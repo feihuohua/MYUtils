@@ -79,11 +79,6 @@
 		320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB241FC3DC85006CC5AE /* MYTestViewController.m */; };
 		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
 		3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B45E1FC45A8F001038A5 /* AuthenticationWIFIManager.m */; };
-		3215B46C1FC47128001038A5 /* MYSideslipScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B46B1FC47128001038A5 /* MYSideslipScrollViewController.m */; };
-		3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B46E1FC4714A001038A5 /* UINavigationController+PopGesture.m */; };
-		3215B4791FC473CA001038A5 /* MYCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4721FC473C9001038A5 /* MYCollectionViewController.m */; };
-		3215B47A1FC473CA001038A5 /* MYScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4751FC473CA001038A5 /* MYScrollViewController.m */; };
-		3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B4771FC473CA001038A5 /* MYMapViewController.m */; };
 		3220B1341FFC962B00A58AA0 /* MYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1331FFC962B00A58AA0 /* MYPagerViewController.m */; };
 		3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1361FFC99CA00A58AA0 /* MYListViewController.m */; };
 		3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1391FFC99E200A58AA0 /* MYCustomViewController.m */; };
@@ -346,16 +341,6 @@
 		3212C20B1F5425E700C57DBE /* AMViralSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViralSwitch.m; sourceTree = "<group>"; };
 		3215B45D1FC45A8F001038A5 /* AuthenticationWIFIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationWIFIManager.h; sourceTree = "<group>"; };
 		3215B45E1FC45A8F001038A5 /* AuthenticationWIFIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWIFIManager.m; sourceTree = "<group>"; };
-		3215B46A1FC47128001038A5 /* MYSideslipScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSideslipScrollViewController.h; sourceTree = "<group>"; };
-		3215B46B1FC47128001038A5 /* MYSideslipScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSideslipScrollViewController.m; sourceTree = "<group>"; };
-		3215B46D1FC4714A001038A5 /* UINavigationController+PopGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PopGesture.h"; sourceTree = "<group>"; };
-		3215B46E1FC4714A001038A5 /* UINavigationController+PopGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PopGesture.m"; sourceTree = "<group>"; };
-		3215B4711FC473C9001038A5 /* MYCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYCollectionViewController.h; sourceTree = "<group>"; };
-		3215B4721FC473C9001038A5 /* MYCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYCollectionViewController.m; sourceTree = "<group>"; };
-		3215B4741FC473C9001038A5 /* MYScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYScrollViewController.h; sourceTree = "<group>"; };
-		3215B4751FC473CA001038A5 /* MYScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYScrollViewController.m; sourceTree = "<group>"; };
-		3215B4761FC473CA001038A5 /* MYMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMapViewController.h; sourceTree = "<group>"; };
-		3215B4771FC473CA001038A5 /* MYMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMapViewController.m; sourceTree = "<group>"; };
 		3220B1321FFC962B00A58AA0 /* MYPagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPagerViewController.h; sourceTree = "<group>"; };
 		3220B1331FFC962B00A58AA0 /* MYPagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYPagerViewController.m; sourceTree = "<group>"; };
 		3220B1351FFC99CA00A58AA0 /* MYListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYListViewController.h; sourceTree = "<group>"; };
@@ -1040,7 +1025,6 @@
 				32CE8B2A20610DAA00EC2D68 /* MYSoundServiceKit */,
 				32659990200F18E2001F727E /* UIScrollView */,
 				3220B1311FFC961800A58AA0 /* PagerController */,
-				324174AC1FFB2942007BB277 /* ScrollViewPopGesture */,
 				324174A41FFB26B3007BB277 /* IconFont */,
 				324174A31FFB2691007BB277 /* Keyboard */,
 				324174A21FFB2660007BB277 /* BannerCycle */,
@@ -1183,23 +1167,6 @@
 				324174BB1FFB2F1C007BB277 /* MYHamburgerButton.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		324174AC1FFB2942007BB277 /* ScrollViewPopGesture */ = {
-			isa = PBXGroup;
-			children = (
-				3215B46A1FC47128001038A5 /* MYSideslipScrollViewController.h */,
-				3215B46B1FC47128001038A5 /* MYSideslipScrollViewController.m */,
-				3215B46D1FC4714A001038A5 /* UINavigationController+PopGesture.h */,
-				3215B46E1FC4714A001038A5 /* UINavigationController+PopGesture.m */,
-				3215B4711FC473C9001038A5 /* MYCollectionViewController.h */,
-				3215B4721FC473C9001038A5 /* MYCollectionViewController.m */,
-				3215B4761FC473CA001038A5 /* MYMapViewController.h */,
-				3215B4771FC473CA001038A5 /* MYMapViewController.m */,
-				3215B4741FC473C9001038A5 /* MYScrollViewController.h */,
-				3215B4751FC473CA001038A5 /* MYScrollViewController.m */,
-			);
-			path = ScrollViewPopGesture;
 			sourceTree = "<group>";
 		};
 		324174AD1FFB2996007BB277 /* Radar */ = {
@@ -1991,7 +1958,6 @@
 				324174921FFB21C3007BB277 /* MYTableCountDownViewController.m in Sources */,
 				3265999C200F35CE001F727E /* MYSliderView.m in Sources */,
 				3299ED07203FF22F00BE2B40 /* MYLaunchAdvertVideoView.m in Sources */,
-				3215B47B1FC473CA001038A5 /* MYMapViewController.m in Sources */,
 				3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */,
 				324174BC1FFB2F1C007BB277 /* MYHamburgerButton.m in Sources */,
 				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
@@ -2016,7 +1982,6 @@
 				32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */,
 				32CE8B1E2061086F00EC2D68 /* MYCountDownManager.m in Sources */,
 				324174791FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m in Sources */,
-				3215B4791FC473CA001038A5 /* MYCollectionViewController.m in Sources */,
 				329CE64920121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m in Sources */,
 				329CE64620121DF500FEF065 /* QMTabBarPlugin.m in Sources */,
 				3299ED08203FF22F00BE2B40 /* MYLaunchAdvertConfiguration.m in Sources */,
@@ -2051,7 +2016,6 @@
 				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3220B15D1FFDE47300A58AA0 /* MYProgressHUD.m in Sources */,
 				32659993200F1911001F727E /* MYHeaderTabViewController.m in Sources */,
-				3215B46F1FC4714A001038A5 /* UINavigationController+PopGesture.m in Sources */,
 				329CE64B20121DF500FEF065 /* UIViewController+QMTabViewController.m in Sources */,
 				32CC0EFA1FD79F4B00D45E30 /* MYRadarView.m in Sources */,
 				324174B21FFB2AAE007BB277 /* MYCustomNavigationBarViewController.m in Sources */,
@@ -2094,7 +2058,6 @@
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
 				3220B1341FFC962B00A58AA0 /* MYPagerViewController.m in Sources */,
 				3254F4F01FBD78480020B58C /* MYWebViewController.m in Sources */,
-				3215B46C1FC47128001038A5 /* MYSideslipScrollViewController.m in Sources */,
 				320774C31FACB93000A56F88 /* MWCaptionView.m in Sources */,
 				32C726FF1FCBB10F0093D353 /* MYCountDownModel.m in Sources */,
 				3208CB041FC7BB8100AD9A30 /* MYStringFormattManager.m in Sources */,
@@ -2122,7 +2085,6 @@
 				3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */,
 				32CE8B2920610B3B00EC2D68 /* MYVolumeManager.m in Sources */,
 				3254F4F21FBD78480020B58C /* MYWebViewJavascriptBridge2ViewController.m in Sources */,
-				3215B47A1FC473CA001038A5 /* MYScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
