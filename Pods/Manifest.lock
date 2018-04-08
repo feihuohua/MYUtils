@@ -42,6 +42,9 @@ PODS:
     - MYKit/Foundation
   - MYModalViewController (1.0.0)
   - pop (1.0.10)
+  - RTRootNavigationController (0.6.6):
+    - RTRootNavigationController/Core (= 0.6.6)
+  - RTRootNavigationController/Core (0.6.6)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -75,6 +78,7 @@ DEPENDENCIES:
   - MYKit (~> 1.0.7)
   - MYModalViewController (~> 1.0.0)
   - pop (~> 1.0.10)
+  - RTRootNavigationController (~> 0.6.6)
   - SDWebImage (~> 4.0.0)
   - TSMessages (~> 0.9.12)
   - TYPagerController (~> 2.1.2)
@@ -106,6 +110,7 @@ SPEC CHECKSUMS:
   MYKit: 988c194fd86c25632076bde887befe671e1f9ab0
   MYModalViewController: 02516f4db5b83791c32f2bc2b10804d93db21611
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  RTRootNavigationController: 1429554f853e8319a383849befed73d5dc58a108
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
@@ -115,6 +120,6 @@ SPEC CHECKSUMS:
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: b6b98538c5f60334abae56c4093149da7abef2af
+PODFILE CHECKSUM: b41d4f1ec21d5efdf019a9e5bda5cf409752b766
 
 COCOAPODS: 1.4.0

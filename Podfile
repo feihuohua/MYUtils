@@ -32,4 +32,5 @@ target 'MYUtils' do
     pod 'MYModalViewController', '~> 1.0.0'
     
     pod 'WRNavigationBar', '~> 1.2.0'
+    pod 'RTRootNavigationController', '~> 0.6.6'
 end  

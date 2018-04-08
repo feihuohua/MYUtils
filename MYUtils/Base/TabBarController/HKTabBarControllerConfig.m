@@ -11,6 +11,7 @@
 #import "MYUIKitViewController.h"
 #import "MYUtilsViewController.h"
 #import "MYAnimationViewController.h"
+#import <RTRootNavigationController.h>
 
 @interface HKTabBarControllerConfig ()<UITabBarControllerDelegate>
 
