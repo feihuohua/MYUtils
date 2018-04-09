@@ -7,6 +7,7 @@
 //
 
 #import "WebViewController.h"
+#import <UIBarButtonItem+Extension.h>
 #import <WebKit/WebKit.h>
 
 @interface WebViewController ()
@@ -43,9 +44,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"详情";
-    self.navigationController.navigationBar.translucent = YES;
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"←" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+//    self.navigationController.navigationBar.translucent = YES;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithTarget:self
+                                                                              action:@selector(didTapBackButton)
+                                                                               image:@"hk_navigation_back"];
     
     CGFloat navbarHeight = [UIApplication sharedApplication].statusBarFrame.size.height + 44;
     self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, navbarHeight, self.view.bounds.size.width, self.view.bounds.size.height-navbarHeight)];
@@ -54,7 +57,9 @@
     
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     
-    if(!self.URLString) return;
+    if (!self.URLString) {
+        return;
+    }
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:(self.URLString)]];
     [self.webView loadRequest:request];
     
@@ -69,7 +74,7 @@
     [self.progressView removeFromSuperview];
 }
 
-- (void)back {
+- (void)didTapBackButton {
     
     if ([_webView canGoBack]) {
         [_webView goBack];

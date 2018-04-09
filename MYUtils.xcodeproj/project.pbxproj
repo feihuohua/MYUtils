@@ -222,6 +222,7 @@
 		32E3B91C207B1687009CE0A6 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B913207B1687009CE0A6 /* image4.jpg */; };
 		32E3B91D207B1687009CE0A6 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B914207B1687009CE0A6 /* image3.jpg */; };
 		32E3B91E207B1687009CE0A6 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B915207B1687009CE0A6 /* image1.jpg */; };
+		32E3B921207B2908009CE0A6 /* MYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B920207B2908009CE0A6 /* MYNetwork.m */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
@@ -598,6 +599,8 @@
 		32E3B913207B1687009CE0A6 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 		32E3B914207B1687009CE0A6 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 		32E3B915207B1687009CE0A6 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		32E3B91F207B2908009CE0A6 /* MYNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNetwork.h; sourceTree = "<group>"; };
+		32E3B920207B2908009CE0A6 /* MYNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNetwork.m; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		32E9823F1FD6310A005C15B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		32E982401FD6310A005C15B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
@@ -849,8 +852,6 @@
 		3220B18C1FFF11F800A58AA0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3220B18D1FFF120D00A58AA0 /* WebViewController.h */,
-				3220B18E1FFF120D00A58AA0 /* WebViewController.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1638,6 +1639,10 @@
 				3220B1831FFE32AE00A58AA0 /* MYLaunchAdvertManager.m */,
 				32E3B90A207B13B0009CE0A6 /* MYLaunchAdModel.h */,
 				32E3B90B207B13B0009CE0A6 /* MYLaunchAdModel.m */,
+				32E3B91F207B2908009CE0A6 /* MYNetwork.h */,
+				32E3B920207B2908009CE0A6 /* MYNetwork.m */,
+				3220B18D1FFF120D00A58AA0 /* WebViewController.h */,
+				3220B18E1FFF120D00A58AA0 /* WebViewController.m */,
 			);
 			path = LaunchAdvert;
 			sourceTree = "<group>";
@@ -2076,6 +2081,7 @@
 				3208CB041FC7BB8100AD9A30 /* MYStringFormattManager.m in Sources */,
 				32B3EBF11FBE91070067DF21 /* MYFeedModel.m in Sources */,
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
+				32E3B921207B2908009CE0A6 /* MYNetwork.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				32CE8B1F2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m in Sources */,
 				3220B18F1FFF120D00A58AA0 /* WebViewController.m in Sources */,

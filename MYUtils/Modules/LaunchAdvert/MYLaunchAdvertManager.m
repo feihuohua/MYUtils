@@ -11,6 +11,8 @@
 #import "MYNetworking.h"
 #import "UtilsMacros.h"
 #import "WebViewController.h"
+#import "MYNetwork.h"
+#import "MYLaunchAdModel.h"
 
 /** 以下连接供测试使用 */
 
@@ -95,12 +97,12 @@
     //3.数据获取成功,配置广告数据后,自动结束等待,显示广告
     //注意:请求广告数据前,必须设置此属性,否则会先进入window的的根控制器
     [XHLaunchAd setWaitDataDuration:3];
-    /*
+    
     //广告数据请求
-    [Network getLaunchAdImageDataSuccess:^(NSDictionary * response) {
+    [MYNetwork getLaunchAdImageDataSuccess:^(NSDictionary * response) {
         NSLog(@"广告数据 = %@",response);
         //广告数据转模型
-        LaunchAdModel *model = [[LaunchAdModel alloc] initWithDict:response[@"data"]];
+        MYLaunchAdModel *model = [[MYLaunchAdModel alloc] initWithDict:response[@"data"]];
         //配置广告数据
         XHLaunchImageAdConfiguration *imageAdconfiguration = [XHLaunchImageAdConfiguration new];
         //广告停留时间
@@ -128,17 +130,14 @@
         imageAdconfiguration.showEnterForeground = NO;
         
         //图片已缓存 - 显示一个 "已预载" 视图 (可选)
-        if([XHLaunchAd checkImageInCacheWithURL:[NSURL URLWithString:model.content]]){
+        if ([XHLaunchAd checkImageInCacheWithURL:[NSURL URLWithString:model.content]]) {
             //设置要添加的自定义视图(可选)
             imageAdconfiguration.subViews = [self launchAdSubViews_alreadyView];
-            
         }
         //显示开屏广告
         [XHLaunchAd imageAdWithImageAdConfiguration:imageAdconfiguration delegate:self];
-        
     } failure:^(NSError *error) {
     }];
-    */
 }
 
 #pragma mark - 图片开屏广告-本地数据-示例
@@ -188,14 +187,13 @@
     //3.数据获取成功,配置广告数据后,自动结束等待,显示广告
     //注意:请求广告数据前,必须设置此属性,否则会先进入window的的根控制器
     [XHLaunchAd setWaitDataDuration:3];
-    /*
+    
     //广告数据请求
-    [Network getLaunchAdVideoDataSuccess:^(NSDictionary * response) {
+    [MYNetwork getLaunchAdVideoDataSuccess:^(NSDictionary * response) {
         
         NSLog(@"广告数据 = %@",response);
-        
         //广告数据转模型
-        LaunchAdModel *model = [[LaunchAdModel alloc] initWithDict:response[@"data"]];
+        MYLaunchAdModel *model = [[MYLaunchAdModel alloc] initWithDict:response[@"data"]];
         
         //配置广告数据
         XHLaunchVideoAdConfiguration *videoAdconfiguration = [XHLaunchVideoAdConfiguration new];
@@ -215,7 +213,7 @@
         //广告点击打开页面参数(openModel可为NSString,模型,字典等任意类型)
         videoAdconfiguration.openModel = model.openUrl;
         //广告显示完成动画
-        videoAdconfiguration.showFinishAnimate =ShowFinishAnimateFadein;
+        videoAdconfiguration.showFinishAnimate = ShowFinishAnimateFadein;
         //广告显示完成动画时间
         videoAdconfiguration.showFinishAnimateTime = 0.8;
         //后台返回时,是否显示广告
@@ -223,18 +221,15 @@
         //跳过按钮类型
         videoAdconfiguration.skipButtonType = SkipTypeTimeText;
         //视频已缓存 - 显示一个 "已预载" 视图 (可选)
-        if([XHLaunchAd checkVideoInCacheWithURL:[NSURL URLWithString:model.content]]){
+        if ([XHLaunchAd checkVideoInCacheWithURL:[NSURL URLWithString:model.content]]) {
             //设置要添加的自定义视图(可选)
             videoAdconfiguration.subViews = [self launchAdSubViews_alreadyView];
-            
         }
         
         [XHLaunchAd videoAdWithVideoAdConfiguration:videoAdconfiguration delegate:self];
-        
     } failure:^(NSError *error) {
         
     }];
-    */
 }
 
 #pragma mark - 视频开屏广告-本地数据-示例
@@ -274,6 +269,7 @@
     [XHLaunchAd videoAdWithVideoAdConfiguration:videoAdconfiguration delegate:self];
     
 }
+
 #pragma mark - 自定义跳过按钮-示例
 - (void)example05 {
     
@@ -459,14 +455,16 @@
     NSLog(@"广告点击事件");
     
     /** openModel即配置广告数据设置的点击广告时打开页面参数(configuration.openModel) */
-    if(openModel==nil) return;
+    if (!openModel) {
+        return;
+    }
     
     WebViewController *VC = [[WebViewController alloc] init];
     NSString *urlString = (NSString *)openModel;
     VC.URLString = urlString;
     UIViewController *rootVC = [[UIApplication sharedApplication].delegate window].rootViewController;
-    [rootVC.childViewControllers.firstObject.childViewControllers.firstObject.navigationController pushViewController:VC animated:YES];
     
+    [rootVC.childViewControllers.firstObject.childViewControllers.firstObject.childViewControllers.firstObject pushViewController:VC animated:YES];
 }
 
 /**
