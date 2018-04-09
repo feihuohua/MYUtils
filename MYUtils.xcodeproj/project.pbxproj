@@ -87,9 +87,6 @@
 		3220B15D1FFDE47300A58AA0 /* MYProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B15C1FFDE47300A58AA0 /* MYProgressHUD.m */; };
 		3220B15F1FFDEB2900A58AA0 /* MYProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3220B15E1FFDEB2900A58AA0 /* MYProgressHUD.bundle */; };
 		3220B1841FFE32AE00A58AA0 /* MYLaunchAdvertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1831FFE32AE00A58AA0 /* MYLaunchAdvertManager.m */; };
-		3220B1861FFE33E100A58AA0 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3220B1851FFE33E000A58AA0 /* video1.mp4 */; };
-		3220B1881FFE393A00A58AA0 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3220B1871FFE393A00A58AA0 /* image2.jpg */; };
-		3220B18A1FFE39B100A58AA0 /* image12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3220B1891FFE39B100A58AA0 /* image12.gif */; };
 		3220B18F1FFF120D00A58AA0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B18E1FFF120D00A58AA0 /* WebViewController.m */; };
 		324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3241746F1FF648F3007BB277 /* MYJDFlowLayoutViewController.m */; };
 		324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 324174721FF6490C007BB277 /* MYJDFlowLayout.m */; };
@@ -150,17 +147,6 @@
 		32712B1A1F395164008A105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32712B151F395164008A105F /* main.m */; };
 		32712B281F39B335008A105F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32712B271F39B335008A105F /* iconfont.ttf */; };
 		329124FE2043FC0600FA32E3 /* MYNavigaionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 329124FD2043FC0600FA32E3 /* MYNavigaionBar.m */; };
-		3299ECFE203FF22F00BE2B40 /* MYLaunchAdvertConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECE9203FF22E00BE2B40 /* MYLaunchAdvertConst.m */; };
-		3299ECFF203FF22F00BE2B40 /* MYLaunchAdvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECEC203FF22E00BE2B40 /* MYLaunchAdvert.m */; };
-		3299ED00203FF22F00BE2B40 /* MYLaunchAdvertDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECED203FF22E00BE2B40 /* MYLaunchAdvertDownloader.m */; };
-		3299ED01203FF22F00BE2B40 /* MYLaunchAdvertImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECEE203FF22E00BE2B40 /* MYLaunchAdvertImageView.m */; };
-		3299ED02203FF22F00BE2B40 /* MYLaunchAdvertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECEF203FF22E00BE2B40 /* MYLaunchAdvertButton.m */; };
-		3299ED03203FF22F00BE2B40 /* MYLaunchAdvertImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECF0203FF22E00BE2B40 /* MYLaunchAdvertImageManager.m */; };
-		3299ED04203FF22F00BE2B40 /* MYLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECF4203FF22E00BE2B40 /* MYLaunchImageView.m */; };
-		3299ED05203FF22F00BE2B40 /* MYLaunchAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECF5203FF22E00BE2B40 /* MYLaunchAdvertViewController.m */; };
-		3299ED06203FF22F00BE2B40 /* MYLaunchAdvertCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECF6203FF22E00BE2B40 /* MYLaunchAdvertCache.m */; };
-		3299ED07203FF22F00BE2B40 /* MYLaunchAdvertVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECFB203FF22E00BE2B40 /* MYLaunchAdvertVideoView.m */; };
-		3299ED08203FF22F00BE2B40 /* MYLaunchAdvertConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3299ECFC203FF22E00BE2B40 /* MYLaunchAdvertConfiguration.m */; };
 		329CE64620121DF500FEF065 /* QMTabBarPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63B20121DF500FEF065 /* QMTabBarPlugin.m */; };
 		329CE64720121DF500FEF065 /* QMTabViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63C20121DF500FEF065 /* QMTabViewBar.m */; };
 		329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 329CE63D20121DF500FEF065 /* QMTabViewController.m */; };
@@ -219,6 +205,23 @@
 		32E1AAE4206229E80072A1E4 /* MYMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AAE2206229E80072A1E4 /* MYMessagesViewController.m */; };
 		32E1AAE5206229E80072A1E4 /* MYMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */; };
 		32E1AB572063B47B0072A1E4 /* MYCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1AB562063B47B0072A1E4 /* MYCustomNavigationBar.m */; };
+		32E3B8FC207B0FAE009CE0A6 /* DeviceDataLibrery.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8F4207B0FAC009CE0A6 /* DeviceDataLibrery.m */; };
+		32E3B8FD207B0FAE009CE0A6 /* BatteryInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8F7207B0FAC009CE0A6 /* BatteryInfoManager.m */; };
+		32E3B8FE207B0FAE009CE0A6 /* NetWorkInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8F8207B0FAD009CE0A6 /* NetWorkInfoManager.m */; };
+		32E3B8FF207B0FAE009CE0A6 /* DeviceInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B8F9207B0FAD009CE0A6 /* DeviceInfoManager.m */; };
+		32E3B902207B1052009CE0A6 /* MYBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B901207B1052009CE0A6 /* MYBasicViewController.m */; };
+		32E3B906207B1127009CE0A6 /* MYClientInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B905207B1127009CE0A6 /* MYClientInfoViewController.m */; };
+		32E3B908207B1134009CE0A6 /* MYClientInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B907207B1134009CE0A6 /* MYClientInfoViewController.xib */; };
+		32E3B90C207B13B0009CE0A6 /* MYLaunchAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B90B207B13B0009CE0A6 /* MYLaunchAdModel.m */; };
+		32E3B916207B1687009CE0A6 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B90D207B1685009CE0A6 /* image2.jpg */; };
+		32E3B917207B1687009CE0A6 /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B90E207B1686009CE0A6 /* image0.jpg */; };
+		32E3B918207B1687009CE0A6 /* image12.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B90F207B1686009CE0A6 /* image12.gif */; };
+		32E3B919207B1687009CE0A6 /* image11.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B910207B1686009CE0A6 /* image11.gif */; };
+		32E3B91A207B1687009CE0A6 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B911207B1686009CE0A6 /* video1.mp4 */; };
+		32E3B91B207B1687009CE0A6 /* video0.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B912207B1686009CE0A6 /* video0.mp4 */; };
+		32E3B91C207B1687009CE0A6 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B913207B1687009CE0A6 /* image4.jpg */; };
+		32E3B91D207B1687009CE0A6 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B914207B1687009CE0A6 /* image3.jpg */; };
+		32E3B91E207B1687009CE0A6 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B915207B1687009CE0A6 /* image1.jpg */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
@@ -356,9 +359,6 @@
 		3220B15E1FFDEB2900A58AA0 /* MYProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MYProgressHUD.bundle; sourceTree = "<group>"; };
 		3220B1821FFE32AE00A58AA0 /* MYLaunchAdvertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertManager.h; sourceTree = "<group>"; };
 		3220B1831FFE32AE00A58AA0 /* MYLaunchAdvertManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertManager.m; sourceTree = "<group>"; };
-		3220B1851FFE33E000A58AA0 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
-		3220B1871FFE393A00A58AA0 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
-		3220B1891FFE39B100A58AA0 /* image12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image12.gif; sourceTree = "<group>"; };
 		3220B18D1FFF120D00A58AA0 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		3220B18E1FFF120D00A58AA0 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		3241746E1FF648F3007BB277 /* MYJDFlowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYJDFlowLayoutViewController.h; sourceTree = "<group>"; };
@@ -473,28 +473,6 @@
 		32712BC31F3AF520008A105F /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
 		329124FC2043FC0600FA32E3 /* MYNavigaionBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNavigaionBar.h; sourceTree = "<group>"; };
 		329124FD2043FC0600FA32E3 /* MYNavigaionBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNavigaionBar.m; sourceTree = "<group>"; };
-		3299ECE8203FF22E00BE2B40 /* MYLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchImageView.h; sourceTree = "<group>"; };
-		3299ECE9203FF22E00BE2B40 /* MYLaunchAdvertConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertConst.m; sourceTree = "<group>"; };
-		3299ECEA203FF22E00BE2B40 /* MYLaunchAdvertCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertCache.h; sourceTree = "<group>"; };
-		3299ECEB203FF22E00BE2B40 /* MYLaunchAdvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertViewController.h; sourceTree = "<group>"; };
-		3299ECEC203FF22E00BE2B40 /* MYLaunchAdvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvert.m; sourceTree = "<group>"; };
-		3299ECED203FF22E00BE2B40 /* MYLaunchAdvertDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertDownloader.m; sourceTree = "<group>"; };
-		3299ECEE203FF22E00BE2B40 /* MYLaunchAdvertImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertImageView.m; sourceTree = "<group>"; };
-		3299ECEF203FF22E00BE2B40 /* MYLaunchAdvertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertButton.m; sourceTree = "<group>"; };
-		3299ECF0203FF22E00BE2B40 /* MYLaunchAdvertImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertImageManager.m; sourceTree = "<group>"; };
-		3299ECF1203FF22E00BE2B40 /* MYLaunchAdvertConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertConfiguration.h; sourceTree = "<group>"; };
-		3299ECF2203FF22E00BE2B40 /* MYLaunchAdvertVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertVideoView.h; sourceTree = "<group>"; };
-		3299ECF3203FF22E00BE2B40 /* MYLaunchAdvertConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertConst.h; sourceTree = "<group>"; };
-		3299ECF4203FF22E00BE2B40 /* MYLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchImageView.m; sourceTree = "<group>"; };
-		3299ECF5203FF22E00BE2B40 /* MYLaunchAdvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertViewController.m; sourceTree = "<group>"; };
-		3299ECF6203FF22E00BE2B40 /* MYLaunchAdvertCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertCache.m; sourceTree = "<group>"; };
-		3299ECF7203FF22E00BE2B40 /* MYLaunchAdvertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertButton.h; sourceTree = "<group>"; };
-		3299ECF8203FF22E00BE2B40 /* MYLaunchAdvertImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertImageView.h; sourceTree = "<group>"; };
-		3299ECF9203FF22E00BE2B40 /* MYLaunchAdvertDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertDownloader.h; sourceTree = "<group>"; };
-		3299ECFA203FF22E00BE2B40 /* MYLaunchAdvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvert.h; sourceTree = "<group>"; };
-		3299ECFB203FF22E00BE2B40 /* MYLaunchAdvertVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertVideoView.m; sourceTree = "<group>"; };
-		3299ECFC203FF22E00BE2B40 /* MYLaunchAdvertConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdvertConfiguration.m; sourceTree = "<group>"; };
-		3299ECFD203FF22E00BE2B40 /* MYLaunchAdvertImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdvertImageManager.h; sourceTree = "<group>"; };
 		329CE63A20121DF500FEF065 /* QMTabBaseViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTabBaseViewPlugin.h; sourceTree = "<group>"; };
 		329CE63B20121DF500FEF065 /* QMTabBarPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabBarPlugin.m; sourceTree = "<group>"; };
 		329CE63C20121DF500FEF065 /* QMTabViewBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTabViewBar.m; sourceTree = "<group>"; };
@@ -596,6 +574,30 @@
 		32E1AAE3206229E80072A1E4 /* MYMessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYMessagesViewController.xib; sourceTree = "<group>"; };
 		32E1AB552063B47B0072A1E4 /* MYCustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYCustomNavigationBar.h; sourceTree = "<group>"; };
 		32E1AB562063B47B0072A1E4 /* MYCustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCustomNavigationBar.m; sourceTree = "<group>"; };
+		32E3B8F4207B0FAC009CE0A6 /* DeviceDataLibrery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDataLibrery.m; sourceTree = "<group>"; };
+		32E3B8F5207B0FAC009CE0A6 /* DeviceInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoManager.h; sourceTree = "<group>"; };
+		32E3B8F6207B0FAC009CE0A6 /* NetWorkInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkInfoManager.h; sourceTree = "<group>"; };
+		32E3B8F7207B0FAC009CE0A6 /* BatteryInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryInfoManager.m; sourceTree = "<group>"; };
+		32E3B8F8207B0FAD009CE0A6 /* NetWorkInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkInfoManager.m; sourceTree = "<group>"; };
+		32E3B8F9207B0FAD009CE0A6 /* DeviceInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoManager.m; sourceTree = "<group>"; };
+		32E3B8FA207B0FAD009CE0A6 /* DeviceDataLibrery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDataLibrery.h; sourceTree = "<group>"; };
+		32E3B8FB207B0FAD009CE0A6 /* BatteryInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryInfoManager.h; sourceTree = "<group>"; };
+		32E3B900207B1052009CE0A6 /* MYBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYBasicViewController.h; sourceTree = "<group>"; };
+		32E3B901207B1052009CE0A6 /* MYBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYBasicViewController.m; sourceTree = "<group>"; };
+		32E3B904207B1127009CE0A6 /* MYClientInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MYClientInfoViewController.h; path = MYUtils/Modules/Utils/Controller/MYClientInfoViewController.h; sourceTree = SOURCE_ROOT; };
+		32E3B905207B1127009CE0A6 /* MYClientInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MYClientInfoViewController.m; path = MYUtils/Modules/Utils/Controller/MYClientInfoViewController.m; sourceTree = SOURCE_ROOT; };
+		32E3B907207B1134009CE0A6 /* MYClientInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MYClientInfoViewController.xib; sourceTree = "<group>"; };
+		32E3B90A207B13B0009CE0A6 /* MYLaunchAdModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYLaunchAdModel.h; sourceTree = "<group>"; };
+		32E3B90B207B13B0009CE0A6 /* MYLaunchAdModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYLaunchAdModel.m; sourceTree = "<group>"; };
+		32E3B90D207B1685009CE0A6 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		32E3B90E207B1686009CE0A6 /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		32E3B90F207B1686009CE0A6 /* image12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image12.gif; sourceTree = "<group>"; };
+		32E3B910207B1686009CE0A6 /* image11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = image11.gif; sourceTree = "<group>"; };
+		32E3B911207B1686009CE0A6 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		32E3B912207B1686009CE0A6 /* video0.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video0.mp4; sourceTree = "<group>"; };
+		32E3B913207B1687009CE0A6 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		32E3B914207B1687009CE0A6 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		32E3B915207B1687009CE0A6 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		32E9823F1FD6310A005C15B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		32E982401FD6310A005C15B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
@@ -788,8 +790,14 @@
 				3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */,
 				324174C71FFB3934007BB277 /* MYTouchIDManager.h */,
 				324174C81FFB3934007BB277 /* MYTouchIDManager.m */,
-				3220B1821FFE32AE00A58AA0 /* MYLaunchAdvertManager.h */,
-				3220B1831FFE32AE00A58AA0 /* MYLaunchAdvertManager.m */,
+				32E3B8FB207B0FAD009CE0A6 /* BatteryInfoManager.h */,
+				32E3B8F7207B0FAC009CE0A6 /* BatteryInfoManager.m */,
+				32E3B8FA207B0FAD009CE0A6 /* DeviceDataLibrery.h */,
+				32E3B8F4207B0FAC009CE0A6 /* DeviceDataLibrery.m */,
+				32E3B8F5207B0FAC009CE0A6 /* DeviceInfoManager.h */,
+				32E3B8F9207B0FAD009CE0A6 /* DeviceInfoManager.m */,
+				32E3B8F6207B0FAC009CE0A6 /* NetWorkInfoManager.h */,
+				32E3B8F8207B0FAD009CE0A6 /* NetWorkInfoManager.m */,
 				32CE8B132061084B00EC2D68 /* MYCountDownManager */,
 			);
 			path = Manager;
@@ -1021,6 +1029,7 @@
 		3241749B1FFB25B7007BB277 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				32E3B903207B1113009CE0A6 /* ClientInfo */,
 				32E1AADD206229950072A1E4 /* MessagesTopUtils */,
 				32CE8B2A20610DAA00EC2D68 /* MYSoundServiceKit */,
 				32659990200F18E2001F727E /* UIScrollView */,
@@ -1335,6 +1344,7 @@
 		32712B111F395164008A105F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				32E3B909207B1383009CE0A6 /* LaunchAdvert */,
 				324174A81FFB28B0007BB277 /* Animation */,
 				3241749A1FFB25B7007BB277 /* Utils */,
 				324174821FFB1D2C007BB277 /* UIKit */,
@@ -1349,9 +1359,15 @@
 				3208B4711F4AC7EF00A0883B /* messageHandler.html */,
 				3208B47D1F4AD5B800A0883B /* webViewJavascriptBridge.html */,
 				3208B46D1F4AB90A00A0883B /* index.html */,
-				3220B1851FFE33E000A58AA0 /* video1.mp4 */,
-				3220B1871FFE393A00A58AA0 /* image2.jpg */,
-				3220B1891FFE39B100A58AA0 /* image12.gif */,
+				32E3B90E207B1686009CE0A6 /* image0.jpg */,
+				32E3B915207B1687009CE0A6 /* image1.jpg */,
+				32E3B90D207B1685009CE0A6 /* image2.jpg */,
+				32E3B914207B1687009CE0A6 /* image3.jpg */,
+				32E3B913207B1687009CE0A6 /* image4.jpg */,
+				32E3B910207B1686009CE0A6 /* image11.gif */,
+				32E3B90F207B1686009CE0A6 /* image12.gif */,
+				32E3B912207B1686009CE0A6 /* video0.mp4 */,
+				32E3B911207B1686009CE0A6 /* video1.mp4 */,
 				32CE8B38206111CF00EC2D68 /* brithdayMusic.mp3 */,
 				32CE8B39206111CF00EC2D68 /* motionShake.mp3 */,
 				32CE8B34206111CD00EC2D68 /* motionShake.wav */,
@@ -1395,7 +1411,6 @@
 				32E1AADC206203170072A1E4 /* MYAlertView */,
 				32CE8B2020610A2B00EC2D68 /* MYSoundServiceKit */,
 				329124FB2043FBF000FA32E3 /* MYNavigaionBar */,
-				3299ECE7203FF22E00BE2B40 /* MYLaunchAdvert */,
 				329CE652201331B000FEF065 /* MYFeatureViewController */,
 				329CE63920121DF500FEF065 /* QMTabViewController */,
 				3220B15A1FFDE41700A58AA0 /* MYProgressHUD */,
@@ -1436,35 +1451,6 @@
 				32E1AB562063B47B0072A1E4 /* MYCustomNavigationBar.m */,
 			);
 			path = MYNavigaionBar;
-			sourceTree = "<group>";
-		};
-		3299ECE7203FF22E00BE2B40 /* MYLaunchAdvert */ = {
-			isa = PBXGroup;
-			children = (
-				3299ECFA203FF22E00BE2B40 /* MYLaunchAdvert.h */,
-				3299ECEC203FF22E00BE2B40 /* MYLaunchAdvert.m */,
-				3299ECE8203FF22E00BE2B40 /* MYLaunchImageView.h */,
-				3299ECF4203FF22E00BE2B40 /* MYLaunchImageView.m */,
-				3299ECF3203FF22E00BE2B40 /* MYLaunchAdvertConst.h */,
-				3299ECE9203FF22E00BE2B40 /* MYLaunchAdvertConst.m */,
-				3299ECEA203FF22E00BE2B40 /* MYLaunchAdvertCache.h */,
-				3299ECF6203FF22E00BE2B40 /* MYLaunchAdvertCache.m */,
-				3299ECEB203FF22E00BE2B40 /* MYLaunchAdvertViewController.h */,
-				3299ECF5203FF22E00BE2B40 /* MYLaunchAdvertViewController.m */,
-				3299ECF8203FF22E00BE2B40 /* MYLaunchAdvertImageView.h */,
-				3299ECEE203FF22E00BE2B40 /* MYLaunchAdvertImageView.m */,
-				3299ECF7203FF22E00BE2B40 /* MYLaunchAdvertButton.h */,
-				3299ECEF203FF22E00BE2B40 /* MYLaunchAdvertButton.m */,
-				3299ECFD203FF22E00BE2B40 /* MYLaunchAdvertImageManager.h */,
-				3299ECF0203FF22E00BE2B40 /* MYLaunchAdvertImageManager.m */,
-				3299ECF1203FF22E00BE2B40 /* MYLaunchAdvertConfiguration.h */,
-				3299ECFC203FF22E00BE2B40 /* MYLaunchAdvertConfiguration.m */,
-				3299ECF2203FF22E00BE2B40 /* MYLaunchAdvertVideoView.h */,
-				3299ECFB203FF22E00BE2B40 /* MYLaunchAdvertVideoView.m */,
-				3299ECF9203FF22E00BE2B40 /* MYLaunchAdvertDownloader.h */,
-				3299ECED203FF22E00BE2B40 /* MYLaunchAdvertDownloader.m */,
-			);
-			path = MYLaunchAdvert;
 			sourceTree = "<group>";
 		};
 		329CE63920121DF500FEF065 /* QMTabViewController */ = {
@@ -1633,6 +1619,29 @@
 			path = MessagesTopUtils;
 			sourceTree = "<group>";
 		};
+		32E3B903207B1113009CE0A6 /* ClientInfo */ = {
+			isa = PBXGroup;
+			children = (
+				32E3B900207B1052009CE0A6 /* MYBasicViewController.h */,
+				32E3B901207B1052009CE0A6 /* MYBasicViewController.m */,
+				32E3B904207B1127009CE0A6 /* MYClientInfoViewController.h */,
+				32E3B905207B1127009CE0A6 /* MYClientInfoViewController.m */,
+				32E3B907207B1134009CE0A6 /* MYClientInfoViewController.xib */,
+			);
+			path = ClientInfo;
+			sourceTree = "<group>";
+		};
+		32E3B909207B1383009CE0A6 /* LaunchAdvert */ = {
+			isa = PBXGroup;
+			children = (
+				3220B1821FFE32AE00A58AA0 /* MYLaunchAdvertManager.h */,
+				3220B1831FFE32AE00A58AA0 /* MYLaunchAdvertManager.m */,
+				32E3B90A207B13B0009CE0A6 /* MYLaunchAdModel.h */,
+				32E3B90B207B13B0009CE0A6 /* MYLaunchAdModel.m */,
+			);
+			path = LaunchAdvert;
+			sourceTree = "<group>";
+		};
 		4C3894DD1F64DF3200BD95ED /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1760,27 +1769,30 @@
 				32CE8B42206111D100EC2D68 /* signIn.mp3 in Resources */,
 				3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */,
 				320774AA1FACB93000A56F88 /* ImageSelectedOn@3x.png in Resources */,
-				3220B18A1FFE39B100A58AA0 /* image12.gif in Resources */,
 				320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */,
 				32CE8B3F206111D100EC2D68 /* payment.mp3 in Resources */,
 				3254F4ED1FBD78480020B58C /* MYCountDownViewController.xib in Resources */,
-				3220B1861FFE33E100A58AA0 /* video1.mp4 in Resources */,
 				320774AF1FACB93000A56F88 /* ImageSelectedSmallOn@2x.png in Resources */,
+				32E3B917207B1687009CE0A6 /* image0.jpg in Resources */,
 				320774B01FACB93000A56F88 /* ImageSelectedSmallOn@3x.png in Resources */,
 				32CE8B43206111D100EC2D68 /* payment.wav in Resources */,
 				3220B15F1FFDEB2900A58AA0 /* MYProgressHUD.bundle in Resources */,
 				320774E81FACBE1C00A56F88 /* photo5t.jpg in Resources */,
 				32712B281F39B335008A105F /* iconfont.ttf in Resources */,
 				3208B46E1F4AB90A00A0883B /* index.html in Resources */,
+				32E3B918207B1687009CE0A6 /* image12.gif in Resources */,
 				320774BF1FACB93000A56F88 /* UIBarButtonItemGrid@3x.png in Resources */,
 				32672F611FD8EDA100A8F68F /* data.json in Resources */,
 				320774C21FACB93000A56F88 /* VideoOverlay@3x.png in Resources */,
+				32E3B91A207B1687009CE0A6 /* video1.mp4 in Resources */,
 				320774ED1FACBE1C00A56F88 /* photo8.jpg in Resources */,
 				320774E01FACBE1C00A56F88 /* photo1t.jpg in Resources */,
 				320774A21FACB93000A56F88 /* ImageError.png in Resources */,
 				320774B21FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png in Resources */,
 				320774E21FACBE1C00A56F88 /* photo2t.jpg in Resources */,
 				320774B71FACB93000A56F88 /* UIBarButtonItemArrowLeft.png in Resources */,
+				32E3B91B207B1687009CE0A6 /* video0.mp4 in Resources */,
+				32E3B908207B1134009CE0A6 /* MYClientInfoViewController.xib in Resources */,
 				32B3EC041FBE94090067DF21 /* DynamicSizeCell.xib in Resources */,
 				320774BC1FACB93000A56F88 /* UIBarButtonItemArrowRight@3x.png in Resources */,
 				320774C01FACB93000A56F88 /* VideoOverlay.png in Resources */,
@@ -1805,7 +1817,10 @@
 				320774A71FACB93000A56F88 /* ImageSelectedOff@3x.png in Resources */,
 				32CE8B45206111D100EC2D68 /* motionShake.mp3 in Resources */,
 				320774B51FACB93000A56F88 /* PlayButtonOverlayLargeTap@2x.png in Resources */,
+				32E3B916207B1687009CE0A6 /* image2.jpg in Resources */,
 				320774BA1FACB93000A56F88 /* UIBarButtonItemArrowRight.png in Resources */,
+				32E3B91C207B1687009CE0A6 /* image4.jpg in Resources */,
+				32E3B919207B1687009CE0A6 /* image11.gif in Resources */,
 				320774E71FACBE1C00A56F88 /* photo5.jpg in Resources */,
 				320774E91FACBE1C00A56F88 /* photo6.jpg in Resources */,
 				32672F631FD8EF0700A8F68F /* MYTemplateLayoutViewController.xib in Resources */,
@@ -1819,6 +1834,7 @@
 				320774EB1FACBE1C00A56F88 /* photo7.jpg in Resources */,
 				320774A61FACB93000A56F88 /* ImageSelectedOff@2x.png in Resources */,
 				320774E61FACBE1C00A56F88 /* photo4t.jpg in Resources */,
+				32E3B91E207B1687009CE0A6 /* image1.jpg in Resources */,
 				320774EA1FACBE1C00A56F88 /* photo6t.jpg in Resources */,
 				320774B41FACB93000A56F88 /* PlayButtonOverlayLargeTap.png in Resources */,
 				320774E31FACBE1C00A56F88 /* photo3.jpg in Resources */,
@@ -1826,12 +1842,12 @@
 				32CE8B41206111D100EC2D68 /* motionShakeFail.mp3 in Resources */,
 				320774AB1FACB93000A56F88 /* ImageSelectedSmallOff.png in Resources */,
 				32CE8B3E206111D100EC2D68 /* shoppingCart.wav in Resources */,
+				32E3B91D207B1687009CE0A6 /* image3.jpg in Resources */,
 				3208B47E1F4AD5B800A0883B /* webViewJavascriptBridge.html in Resources */,
 				320774B11FACB93000A56F88 /* PlayButtonOverlayLarge.png in Resources */,
 				32712B181F395164008A105F /* Assets.xcassets in Resources */,
 				32CE8B48206111D100EC2D68 /* motionShakeSuccess.mp3 in Resources */,
 				320774A81FACB93000A56F88 /* ImageSelectedOn.png in Resources */,
-				3220B1881FFE393A00A58AA0 /* image2.jpg in Resources */,
 				320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */,
 				320774BB1FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png in Resources */,
 				32E1AAE5206229E80072A1E4 /* MYMessagesViewController.xib in Resources */,
@@ -1952,19 +1968,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				320774C61FACB93000A56F88 /* MWPhoto.m in Sources */,
-				3299ED01203FF22F00BE2B40 /* MYLaunchAdvertImageView.m in Sources */,
+				32E3B90C207B13B0009CE0A6 /* MYLaunchAdModel.m in Sources */,
 				329124FE2043FC0600FA32E3 /* MYNavigaionBar.m in Sources */,
 				4CB578641F41FA0A004EE94D /* FXPageControl.m in Sources */,
 				324174921FFB21C3007BB277 /* MYTableCountDownViewController.m in Sources */,
 				3265999C200F35CE001F727E /* MYSliderView.m in Sources */,
-				3299ED07203FF22F00BE2B40 /* MYLaunchAdvertVideoView.m in Sources */,
 				3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */,
 				324174BC1FFB2F1C007BB277 /* MYHamburgerButton.m in Sources */,
 				325BAD9D1FDE877C0070BCD2 /* MYRunLoopOperationManager.m in Sources */,
 				3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */,
 				3220B13D1FFC99F500A58AA0 /* MYPagerCollectionViewController.m in Sources */,
-				3299ED05203FF22F00BE2B40 /* MYLaunchAdvertViewController.m in Sources */,
 				32CE8B2D20610DB700EC2D68 /* MYSoundServiceKitViewController.m in Sources */,
+				32E3B8FE207B0FAE009CE0A6 /* NetWorkInfoManager.m in Sources */,
 				32672F571FD8EC2800A8F68F /* FDFeedEntity.m in Sources */,
 				329CE65E201351EE00FEF065 /* MYPassWordView.m in Sources */,
 				324174D51FFB60E2007BB277 /* MYCyclePagerViewController.m in Sources */,
@@ -1972,19 +1987,18 @@
 				3254F4F11FBD78480020B58C /* MYWebViewJavascriptBridge1ViewController.m in Sources */,
 				32B3EBE61FBE8EFC0067DF21 /* MYShowTextCellModel.m in Sources */,
 				3220B1591FFDDF2D00A58AA0 /* UIDevice+MYActionSheet.m in Sources */,
-				3299ECFE203FF22F00BE2B40 /* MYLaunchAdvertConst.m in Sources */,
+				32E3B8FC207B0FAE009CE0A6 /* DeviceDataLibrery.m in Sources */,
 				32C84C031F716175003E4793 /* MYActionSheetConfig.m in Sources */,
 				32C727021FCBB13D0093D353 /* MYCountDownViewCell.m in Sources */,
 				325BADA01FDE8A4E0070BCD2 /* UITableViewCell+CurrentIndexPath.m in Sources */,
 				4C3894E21F64DF3200BD95ED /* UINavigationController+StackManager.m in Sources */,
-				3299ED02203FF22F00BE2B40 /* MYLaunchAdvertButton.m in Sources */,
 				32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */,
 				32B3EBED1FBE8FEA0067DF21 /* MYAutomaticallyCollectionViewCellViewController.m in Sources */,
 				32CE8B1E2061086F00EC2D68 /* MYCountDownManager.m in Sources */,
 				324174791FF650A6007BB277 /* MYVerticalWaterfallFlowLayoutViewController.m in Sources */,
 				329CE64920121DF500FEF065 /* QMTabHeaderScrollViewPlugin.m in Sources */,
+				32E3B8FD207B0FAE009CE0A6 /* BatteryInfoManager.m in Sources */,
 				329CE64620121DF500FEF065 /* QMTabBarPlugin.m in Sources */,
-				3299ED08203FF22F00BE2B40 /* MYLaunchAdvertConfiguration.m in Sources */,
 				3208CB011FC7B69A00AD9A30 /* MYFileManager.m in Sources */,
 				32672F5E1FD8EC5B00A8F68F /* FDFeedCell.m in Sources */,
 				32B3EBD61FBE8E7F0067DF21 /* MYCrossDissolveTransitionAnimator.m in Sources */,
@@ -1995,10 +2009,10 @@
 				324174731FF6490C007BB277 /* MYJDFlowLayout.m in Sources */,
 				32B3EC061FBE94090067DF21 /* DynamicSizeCell.m in Sources */,
 				4CB578631F41FA0A004EE94D /* FXCyclePagerView.m in Sources */,
-				3299ED04203FF22F00BE2B40 /* MYLaunchImageView.m in Sources */,
 				324174701FF648F3007BB277 /* MYJDFlowLayoutViewController.m in Sources */,
 				320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */,
 				32DD4FDA1F5654E0005C6FE9 /* MYTextField.m in Sources */,
+				32E3B8FF207B0FAE009CE0A6 /* DeviceInfoManager.m in Sources */,
 				320774C71FACB93000A56F88 /* MWPhotoBrowser.m in Sources */,
 				329CE64720121DF500FEF065 /* QMTabViewBar.m in Sources */,
 				329CE65B2013334800FEF065 /* MYFeatureViewCell.m in Sources */,
@@ -2008,7 +2022,6 @@
 				320774641FACAD7600A56F88 /* UncaughtExceptionHandler.m in Sources */,
 				3203A3011F6632AD00BA3601 /* FXSlider.m in Sources */,
 				32CBE3621F46DB9000AE6267 /* HKTabBarControllerConfig.m in Sources */,
-				3299ED03203FF22F00BE2B40 /* MYLaunchAdvertImageManager.m in Sources */,
 				32C84BFD1F715D86003E4793 /* MYActionSheetViewController.m in Sources */,
 				324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */,
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
@@ -2050,9 +2063,9 @@
 				32E1AB572063B47B0072A1E4 /* MYCustomNavigationBar.m in Sources */,
 				329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */,
 				324174961FFB2286007BB277 /* MYUIKitViewController.m in Sources */,
+				32E3B906207B1127009CE0A6 /* MYClientInfoViewController.m in Sources */,
 				32B3EBD81FBE8E7F0067DF21 /* MYCrossDissolveFirstViewController.m in Sources */,
 				32B3EBDB1FBE8EC30067DF21 /* MYCustomTransitionViewController.m in Sources */,
-				3299ED06203FF22F00BE2B40 /* MYLaunchAdvertCache.m in Sources */,
 				32CE8B2320610A5600EC2D68 /* MYSoundService.m in Sources */,
 				3220B13A1FFC99E200A58AA0 /* MYCustomViewController.m in Sources */,
 				320774CB1FACB93000A56F88 /* UIImage+MWPhotoBrowser.m in Sources */,
@@ -2065,9 +2078,7 @@
 				3254F4E01FBD78470020B58C /* MWPhotoBrowserDemo.m in Sources */,
 				3203A3141F66957900BA3601 /* HKNumberButton.m in Sources */,
 				32CE8B1F2061086F00EC2D68 /* MYCountDownTimeIntervalModel.m in Sources */,
-				3299ED00203FF22F00BE2B40 /* MYLaunchAdvertDownloader.m in Sources */,
 				3220B18F1FFF120D00A58AA0 /* WebViewController.m in Sources */,
-				3299ECFF203FF22F00BE2B40 /* MYLaunchAdvert.m in Sources */,
 				329CE655201331BE00FEF065 /* MYFeatureViewController.m in Sources */,
 				32712B1A1F395164008A105F /* main.m in Sources */,
 				32672F531FD8EBC200A8F68F /* MYTemplateLayoutViewController.m in Sources */,
@@ -2077,6 +2088,7 @@
 				32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */,
 				324174991FFB2374007BB277 /* MYCollectionLayoutViewController.m in Sources */,
 				32659999200F1AAB001F727E /* TableViewController.m in Sources */,
+				32E3B902207B1052009CE0A6 /* MYBasicViewController.m in Sources */,
 				324174761FF64E25007BB277 /* MYVerticalWaterfallFlowLayout.m in Sources */,
 				32C84BFA1F715C30003E4793 /* MYActionSheet.m in Sources */,
 				324174CF1FFB4BF6007BB277 /* MYPopupView.m in Sources */,

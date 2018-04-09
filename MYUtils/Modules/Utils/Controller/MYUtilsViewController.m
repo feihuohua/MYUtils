@@ -33,6 +33,7 @@
     [self.dataSource addObject:@"*UIScrollView嵌套UIScrollView问题*-MYHeaderTabViewController"];
     [self.dataSource addObject:@"*MYSoundServiceKit*-MYSoundServiceKitViewController"];
     [self.dataSource addObject:@"*消息弹出*-MYMessagesViewController"];
+    [self.dataSource addObject:@"*iOS中获取各种设备信息*-MYClientInfoViewController"];
     
     [self registerViewControllerBasedOption];
     

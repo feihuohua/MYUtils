@@ -54,6 +54,8 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.6)
   - WebViewJavascriptBridge (6.0.3)
   - WRNavigationBar (1.2.0)
+  - XHLaunchAd (3.9.7):
+    - FLAnimatedImage (~> 1.0.12)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -85,6 +87,7 @@ DEPENDENCIES:
   - UITableView+FDTemplateLayoutCell (~> 1.6)
   - WebViewJavascriptBridge (~> 6.0.2)
   - WRNavigationBar (~> 1.2.0)
+  - XHLaunchAd (~> 3.9.7)
   - YYKit (= 1.0.9)
   - ZYKeyboardUtil (~> 1.0.7)
 
@@ -117,9 +120,10 @@ SPEC CHECKSUMS:
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
+  XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: b41d4f1ec21d5efdf019a9e5bda5cf409752b766
+PODFILE CHECKSUM: 034a9f583976ca850769dca78b4ff14292b495d5
 
 COCOAPODS: 1.4.0

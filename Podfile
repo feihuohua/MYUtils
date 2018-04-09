@@ -33,4 +33,6 @@ target 'MYUtils' do
     
     pod 'WRNavigationBar', '~> 1.2.0'
     pod 'RTRootNavigationController', '~> 0.6.6'
+    
+    pod 'XHLaunchAd', '~> 3.9.7'
 end  

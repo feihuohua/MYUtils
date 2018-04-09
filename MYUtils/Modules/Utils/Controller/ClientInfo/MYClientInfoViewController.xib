@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MYClientInfoViewController">
+            <connections>
+                <outlet property="view" destination="mXq-Pa-Xrb" id="0pc-pb-Yst"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mXq-Pa-Xrb">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OSr-aB-wZ4">
+                    <rect key="frame" x="46" y="114" width="283" height="505"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9L-BK-v1P">
+                            <rect key="frame" x="0.0" y="0.0" width="283" height="101"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxq-Mb-gOQ">
+                                    <rect key="frame" x="10" y="26" width="263" height="50"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="0rL-Qx-WAE"/>
+                                    </constraints>
+                                    <state key="normal" title="Hardware Info"/>
+                                    <connections>
+                                        <action selector="hardWareInfoButtonTapped:" destination="-1" eventType="touchUpInside" id="hM9-rg-sax"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="pxq-Mb-gOQ" firstAttribute="centerY" secondItem="c9L-BK-v1P" secondAttribute="centerY" id="8gU-Jt-nht"/>
+                                <constraint firstAttribute="trailing" secondItem="pxq-Mb-gOQ" secondAttribute="trailing" constant="10" id="fMW-NG-Mbe"/>
+                                <constraint firstItem="pxq-Mb-gOQ" firstAttribute="leading" secondItem="c9L-BK-v1P" secondAttribute="leading" constant="10" id="fl4-u8-8Uy"/>
+                                <constraint firstItem="pxq-Mb-gOQ" firstAttribute="centerX" secondItem="c9L-BK-v1P" secondAttribute="centerX" id="sRu-w6-Vcm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRT-aU-jn1">
+                            <rect key="frame" x="0.0" y="101" width="283" height="101"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rru-qZ-81f">
+                                    <rect key="frame" x="10" y="26" width="263" height="50"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="QS6-5y-UZe"/>
+                                    </constraints>
+                                    <state key="normal" title="Battery Info"/>
+                                    <connections>
+                                        <action selector="batteryInfoButtonTapped:" destination="-1" eventType="touchUpInside" id="kIi-im-sFb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Rru-qZ-81f" firstAttribute="centerX" secondItem="VRT-aU-jn1" secondAttribute="centerX" id="AeA-oM-K2B"/>
+                                <constraint firstItem="Rru-qZ-81f" firstAttribute="centerY" secondItem="VRT-aU-jn1" secondAttribute="centerY" id="RSq-dz-EPP"/>
+                                <constraint firstItem="Rru-qZ-81f" firstAttribute="leading" secondItem="VRT-aU-jn1" secondAttribute="leading" constant="10" id="e91-qB-9lH"/>
+                                <constraint firstAttribute="trailing" secondItem="Rru-qZ-81f" secondAttribute="trailing" constant="10" id="yhK-Hj-vbx"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eke-Ii-kcZ">
+                            <rect key="frame" x="0.0" y="202" width="283" height="101"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJD-9B-ddb">
+                                    <rect key="frame" x="10" y="26" width="263" height="50"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Qhs-J7-SvT"/>
+                                    </constraints>
+                                    <state key="normal" title="IP &amp;&amp; Address"/>
+                                    <connections>
+                                        <action selector="addressInfoButtonTapped:" destination="-1" eventType="touchUpInside" id="dwz-1d-yUU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="CJD-9B-ddb" firstAttribute="centerY" secondItem="eke-Ii-kcZ" secondAttribute="centerY" id="10c-aC-u0r"/>
+                                <constraint firstAttribute="trailing" secondItem="CJD-9B-ddb" secondAttribute="trailing" constant="10" id="R9p-sU-nzS"/>
+                                <constraint firstItem="CJD-9B-ddb" firstAttribute="centerX" secondItem="eke-Ii-kcZ" secondAttribute="centerX" id="lj3-0Z-fLp"/>
+                                <constraint firstItem="CJD-9B-ddb" firstAttribute="leading" secondItem="eke-Ii-kcZ" secondAttribute="leading" constant="10" id="wx2-6Q-a7v"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wJO-gi-E1X">
+                            <rect key="frame" x="0.0" y="303" width="283" height="101"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaq-DE-hG4">
+                                    <rect key="frame" x="10" y="26" width="263" height="50"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="dND-Ct-STn"/>
+                                    </constraints>
+                                    <state key="normal" title=" CPU Info"/>
+                                    <connections>
+                                        <action selector="CPUInfoButtonTapped:" destination="-1" eventType="touchUpInside" id="Bcq-vE-Io0"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Vaq-DE-hG4" secondAttribute="trailing" constant="10" id="Eyt-hj-d0A"/>
+                                <constraint firstItem="Vaq-DE-hG4" firstAttribute="centerY" secondItem="wJO-gi-E1X" secondAttribute="centerY" id="Ict-2J-X4f"/>
+                                <constraint firstItem="Vaq-DE-hG4" firstAttribute="centerX" secondItem="wJO-gi-E1X" secondAttribute="centerX" id="MdY-xE-8cr"/>
+                                <constraint firstItem="Vaq-DE-hG4" firstAttribute="leading" secondItem="wJO-gi-E1X" secondAttribute="leading" constant="10" id="oJB-Ta-9UL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-Z8-dyn">
+                            <rect key="frame" x="0.0" y="404" width="283" height="101"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4o-hr-Hdi">
+                                    <rect key="frame" x="10" y="26" width="263" height="50"/>
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="6KI-qn-Jsy"/>
+                                    </constraints>
+                                    <state key="normal" title="Disk &amp;&amp; Memory"/>
+                                    <connections>
+                                        <action selector="diskInfoButtonTapped:" destination="-1" eventType="touchUpInside" id="znL-W7-3Yd"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="C4o-hr-Hdi" firstAttribute="centerX" secondItem="FUv-Z8-dyn" secondAttribute="centerX" id="EhE-C5-swb"/>
+                                <constraint firstAttribute="trailing" secondItem="C4o-hr-Hdi" secondAttribute="trailing" constant="10" id="O7W-XE-6ur"/>
+                                <constraint firstItem="C4o-hr-Hdi" firstAttribute="leading" secondItem="FUv-Z8-dyn" secondAttribute="leading" constant="10" id="OD9-QA-oBN"/>
+                                <constraint firstItem="C4o-hr-Hdi" firstAttribute="centerY" secondItem="FUv-Z8-dyn" secondAttribute="centerY" id="xXS-0d-wRK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="OSr-aB-wZ4" secondAttribute="trailing" constant="30" id="JI9-qs-iWZ"/>
+                <constraint firstItem="OSr-aB-wZ4" firstAttribute="top" secondItem="z9K-PB-Yh3" secondAttribute="top" constant="94" id="KrN-KZ-6CZ"/>
+                <constraint firstItem="OSr-aB-wZ4" firstAttribute="leading" secondItem="mXq-Pa-Xrb" secondAttribute="leadingMargin" constant="30" id="ZT5-Kq-ReZ"/>
+                <constraint firstItem="z9K-PB-Yh3" firstAttribute="bottom" secondItem="OSr-aB-wZ4" secondAttribute="bottom" constant="48" id="z1q-Y4-FVe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="z9K-PB-Yh3"/>
+        </view>
+    </objects>
+</document>
