@@ -6,7 +6,8 @@
 //  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
-#import <MBProgressHUD/MBProgressHUD.h>
+#import <UIKit/UIKit.h>
+@class MBProgressHUD;
 
 typedef NS_ENUM(NSInteger, MYProgressHUDStatus) {
     MYProgressHUDStatusSuccess, /** 成功 */
@@ -15,22 +16,7 @@ typedef NS_ENUM(NSInteger, MYProgressHUDStatus) {
     MYProgressHUDStatusWaitting /** 等待 */
 };
 
-@interface MYProgressHUD : MBProgressHUD
-
-/**
- *  是否正在显示
- */
-@property (nonatomic, assign, getter=isShowNow) BOOL showNow;
-
-/**
- *  返回一个 HUD 的单例
- */
-+ (instancetype)sharedHUD;
-
-/**
- *  在 window 上添加一个提示`等待`的 HUD, 需要手动关闭
- */
-+ (void)showLoadingMessage:(NSString *)text;
+@interface MYProgressHUD : NSObject
 
 /**
  *  在 window 上添加一个只显示文字的 HUD
@@ -43,10 +29,18 @@ typedef NS_ENUM(NSInteger, MYProgressHUDStatus) {
 + (void)showMessage:(NSString *)text toView:(UIView *)view;
 
 /**
- *  在 toView 上添加一个显示文字和图片的 HUD
+ *  在 toView 上添加一个只显示文字的 HUD
  */
-+ (void)showMessage:(NSString *)text hudImage:(NSString *)image toView:(UIView *)view;
++ (void)showStatus:(MYProgressHUDStatus)status text:(NSString *)text toView:(UIView *)view;
 
+/**
+ *  在 window 上添加一个提示`等待`的 HUD, 需要手动关闭
+ */
++ (MBProgressHUD *)showLoadingMessage:(NSString *)message;
+
+/**
+ *  在 toView 上添加一个提示`等待`的 HUD, 需要手动关闭
+ */
 + (MBProgressHUD *)showLoadingMessage:(NSString *)message toView:(UIView *)view;
 
 /**

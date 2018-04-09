@@ -7,6 +7,7 @@
 //
 
 #import "MYMessagesViewController.h"
+#import "MYProgressHUD.h"
 #import <TSMessage.h>
 
 @interface MYMessagesViewController ()<TSMessageViewProtocol>
@@ -110,6 +111,8 @@
 }
 
 - (IBAction)didTapBottom:(id)sender {
+    
+    [MYProgressHUD showLoadingMessage:@"测试测试测试测试"];
     [TSMessage showNotificationInViewController:self
                                           title:NSLocalizedString(@"Hu!", nil)
                                        subtitle:NSLocalizedString(@"I'm down here :)", nil)
