@@ -223,6 +223,8 @@
 		32E3B91D207B1687009CE0A6 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B914207B1687009CE0A6 /* image3.jpg */; };
 		32E3B91E207B1687009CE0A6 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B915207B1687009CE0A6 /* image1.jpg */; };
 		32E3B921207B2908009CE0A6 /* MYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B920207B2908009CE0A6 /* MYNetwork.m */; };
+		32E3B924207B3063009CE0A6 /* LaunchVideoAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B922207B3062009CE0A6 /* LaunchVideoAd.json */; };
+		32E3B925207B3063009CE0A6 /* LaunchImageAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B923207B3063009CE0A6 /* LaunchImageAd.json */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
@@ -601,6 +603,8 @@
 		32E3B915207B1687009CE0A6 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		32E3B91F207B2908009CE0A6 /* MYNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYNetwork.h; sourceTree = "<group>"; };
 		32E3B920207B2908009CE0A6 /* MYNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNetwork.m; sourceTree = "<group>"; };
+		32E3B922207B3062009CE0A6 /* LaunchVideoAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchVideoAd.json; sourceTree = "<group>"; };
+		32E3B923207B3063009CE0A6 /* LaunchImageAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchImageAd.json; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		32E9823F1FD6310A005C15B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		32E982401FD6310A005C15B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
@@ -1369,6 +1373,8 @@
 				32E3B90F207B1686009CE0A6 /* image12.gif */,
 				32E3B912207B1686009CE0A6 /* video0.mp4 */,
 				32E3B911207B1686009CE0A6 /* video1.mp4 */,
+				32E3B923207B3063009CE0A6 /* LaunchImageAd.json */,
+				32E3B922207B3062009CE0A6 /* LaunchVideoAd.json */,
 				32CE8B38206111CF00EC2D68 /* brithdayMusic.mp3 */,
 				32CE8B39206111CF00EC2D68 /* motionShake.mp3 */,
 				32CE8B34206111CD00EC2D68 /* motionShake.wav */,
@@ -1793,6 +1799,7 @@
 				320774ED1FACBE1C00A56F88 /* photo8.jpg in Resources */,
 				320774E01FACBE1C00A56F88 /* photo1t.jpg in Resources */,
 				320774A21FACB93000A56F88 /* ImageError.png in Resources */,
+				32E3B925207B3063009CE0A6 /* LaunchImageAd.json in Resources */,
 				320774B21FACB93000A56F88 /* PlayButtonOverlayLarge@2x.png in Resources */,
 				320774E21FACBE1C00A56F88 /* photo2t.jpg in Resources */,
 				320774B71FACB93000A56F88 /* UIBarButtonItemArrowLeft.png in Resources */,
@@ -1854,6 +1861,7 @@
 				32CE8B48206111D100EC2D68 /* motionShakeSuccess.mp3 in Resources */,
 				320774A81FACB93000A56F88 /* ImageSelectedOn.png in Resources */,
 				320774AD1FACB93000A56F88 /* ImageSelectedSmallOff@3x.png in Resources */,
+				32E3B924207B3063009CE0A6 /* LaunchVideoAd.json in Resources */,
 				320774BB1FACB93000A56F88 /* UIBarButtonItemArrowRight@2x.png in Resources */,
 				32E1AAE5206229E80072A1E4 /* MYMessagesViewController.xib in Resources */,
 				320774A91FACB93000A56F88 /* ImageSelectedOn@2x.png in Resources */,
