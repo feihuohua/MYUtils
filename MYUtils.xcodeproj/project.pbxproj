@@ -225,6 +225,7 @@
 		32E3B921207B2908009CE0A6 /* MYNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B920207B2908009CE0A6 /* MYNetwork.m */; };
 		32E3B924207B3063009CE0A6 /* LaunchVideoAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B922207B3062009CE0A6 /* LaunchVideoAd.json */; };
 		32E3B925207B3063009CE0A6 /* LaunchImageAd.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E3B923207B3063009CE0A6 /* LaunchImageAd.json */; };
+		32E3B92D207B6E38009CE0A6 /* MYProgressAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E3B92C207B6E38009CE0A6 /* MYProgressAnimationView.m */; };
 		32E982421FD6310A005C15B5 /* CacheCleanerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */; };
 		32E982431FD6310A005C15B5 /* RetainCycleLoggerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E982411FD6310A005C15B5 /* RetainCycleLoggerPlugin.m */; };
 		4B9D18AD9A5CE90CDE5691F6 /* libPods-MYUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E7F3FFBB48C0DC04E249A /* libPods-MYUtils.a */; };
@@ -605,6 +606,8 @@
 		32E3B920207B2908009CE0A6 /* MYNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYNetwork.m; sourceTree = "<group>"; };
 		32E3B922207B3062009CE0A6 /* LaunchVideoAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchVideoAd.json; sourceTree = "<group>"; };
 		32E3B923207B3063009CE0A6 /* LaunchImageAd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LaunchImageAd.json; sourceTree = "<group>"; };
+		32E3B92B207B6E38009CE0A6 /* MYProgressAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYProgressAnimationView.h; sourceTree = "<group>"; };
+		32E3B92C207B6E38009CE0A6 /* MYProgressAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYProgressAnimationView.m; sourceTree = "<group>"; };
 		32E9823E1FD63109005C15B5 /* CacheCleanerPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCleanerPlugin.m; sourceTree = "<group>"; };
 		32E9823F1FD6310A005C15B5 /* RetainCycleLoggerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetainCycleLoggerPlugin.h; sourceTree = "<group>"; };
 		32E982401FD6310A005C15B5 /* CacheCleanerPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCleanerPlugin.h; sourceTree = "<group>"; };
@@ -848,6 +851,8 @@
 			children = (
 				3220B15B1FFDE47300A58AA0 /* MYProgressHUD.h */,
 				3220B15C1FFDE47300A58AA0 /* MYProgressHUD.m */,
+				32E3B92B207B6E38009CE0A6 /* MYProgressAnimationView.h */,
+				32E3B92C207B6E38009CE0A6 /* MYProgressAnimationView.m */,
 				3220B15E1FFDEB2900A58AA0 /* MYProgressHUD.bundle */,
 			);
 			path = MYProgressHUD;
@@ -2050,6 +2055,7 @@
 				32B3EC101FBEA9830067DF21 /* MYHamburgerButtonViewController.m in Sources */,
 				32B3EC051FBE94090067DF21 /* DynamicHeightCell.m in Sources */,
 				320774C81FACB93000A56F88 /* MWTapDetectingImageView.m in Sources */,
+				32E3B92D207B6E38009CE0A6 /* MYProgressAnimationView.m in Sources */,
 				3254F4F31FBD78480020B58C /* MYWebViewJavascriptBridgeViewController.m in Sources */,
 				325AFE9F1FC01B63009FF8B1 /* MYSplashScreenManager.m in Sources */,
 				3254F5101FBD792F0020B58C /* MYShowTextViewController.m in Sources */,

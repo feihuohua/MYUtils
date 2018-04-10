@@ -7,8 +7,15 @@
 //
 
 #import "MYProgressHUD.h"
+#import "MYProgressAnimationView.h"
 #import <MBProgressHUD.h>
 #import <NSString+Extension.h>
+
+@interface MYProgressHUD ()
+
+@property (nonatomic, strong) MYProgressAnimationView *animationView;
+
+@end
 
 @implementation MYProgressHUD
 
@@ -20,6 +27,25 @@
 + (void)showMessage:(NSString *)text toView:(UIView *)view {
     
     [self showStatus:MYProgressHUDStatusWaitting text:text toView:view];
+}
+
++ (void)showMessage:(NSString *)text toView:(UIView *)view yOffset:(CGFloat)yOffset {
+    
+    if ([NSString isEmpty:text]) {
+        return;
+    }
+    if (!view) {
+        view = [[UIApplication sharedApplication].windows firstObject];
+    }
+    
+    [MBProgressHUD hideAllHUDsForView:view animated:NO];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = text;
+    hud.margin = 10.f;
+    hud.yOffset = yOffset;
+    hud.removeFromSuperViewOnHide = YES;
+    [hud hide:YES afterDelay:2.0f];
 }
 
 + (void)showStatus:(MYProgressHUDStatus)status text:(NSString *)text toView:(UIView *)view {

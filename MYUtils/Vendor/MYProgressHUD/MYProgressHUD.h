@@ -29,6 +29,11 @@ typedef NS_ENUM(NSInteger, MYProgressHUDStatus) {
 + (void)showMessage:(NSString *)text toView:(UIView *)view;
 
 /**
+ *  在 toView 上添加一个只显示文字的 HUD yOffset 偏移量
+ */
++ (void)showMessage:(NSString *)text toView:(UIView *)view yOffset:(CGFloat)yOffset;
+
+/**
  *  在 toView 上添加一个只显示文字的 HUD
  */
 + (void)showStatus:(MYProgressHUDStatus)status text:(NSString *)text toView:(UIView *)view;
