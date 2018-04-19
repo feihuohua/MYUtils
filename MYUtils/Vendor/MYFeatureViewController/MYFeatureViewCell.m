@@ -30,12 +30,6 @@
     self.imageView.frame = self.contentView.bounds;
 }
 
-- (void)setImage:(UIImage *)image {
-    _image = image;
-    
-    self.imageView.image = image;
-}
-
 - (UIImageView *)imageView {
     if (!_imageView) {
         _imageView = [[UIImageView alloc] init];

@@ -61,34 +61,30 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-//    NSArray *array = @[
-//                       [UIImage imageNamed:@"fx_guide_1"],
-//                       [UIImage imageNamed:@"fx_guide_2"],
-//                       [UIImage imageNamed:@"fx_guide_3"],
-//                       [UIImage imageNamed:@"fx_guide_4"]
-//                       ];
-//    MYFeatureViewController *feature = [MYFeatureViewController initWithImageArray:array];
-//
-//    self.window.rootViewController = feature;
+    MYFeatureViewController *feature = [MYFeatureViewController newFeatureWithImageName:@"new_feature"
+                                                                             imageCount:3
+                                                                        showPageControl:YES];
+    feature.showSkip = YES;
+    self.window.rootViewController = feature;
     
-    HKTabBarControllerConfig *tabBarControllerConfig = [[HKTabBarControllerConfig alloc] init];
-    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
-    tabBarController.delegate = self;
-    [self.window setRootViewController:tabBarController];
-    [tabBarController setViewDidLayoutSubViewsBlock:^(CYLTabBarController *aTabBarController) {
-        UIViewController *viewController = aTabBarController.viewControllers[0];
-        UIView *tabBadgePointView0 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
-        [viewController.tabBarItem.cyl_tabButton cyl_setTabBadgePointView:tabBadgePointView0];
-        [viewController cyl_showTabBadgePoint];
-
-        UIView *tabBadgePointView1 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
-        [aTabBarController.viewControllers[1] cyl_setTabBadgePointView:tabBadgePointView1];
-        [aTabBarController.viewControllers[1] cyl_showTabBadgePoint];
-
-        UIView *tabBadgePointView2 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
-        [aTabBarController.viewControllers[2] cyl_setTabBadgePointView:tabBadgePointView2];
-        [aTabBarController.viewControllers[2] cyl_showTabBadgePoint];
-    }];
+//    HKTabBarControllerConfig *tabBarControllerConfig = [[HKTabBarControllerConfig alloc] init];
+//    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
+//    tabBarController.delegate = self;
+//    [self.window setRootViewController:tabBarController];
+//    [tabBarController setViewDidLayoutSubViewsBlock:^(CYLTabBarController *aTabBarController) {
+//        UIViewController *viewController = aTabBarController.viewControllers[0];
+//        UIView *tabBadgePointView0 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
+//        [viewController.tabBarItem.cyl_tabButton cyl_setTabBadgePointView:tabBadgePointView0];
+//        [viewController cyl_showTabBadgePoint];
+//
+//        UIView *tabBadgePointView1 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
+//        [aTabBarController.viewControllers[1] cyl_setTabBadgePointView:tabBadgePointView1];
+//        [aTabBarController.viewControllers[1] cyl_showTabBadgePoint];
+//
+//        UIView *tabBadgePointView2 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
+//        [aTabBarController.viewControllers[2] cyl_setTabBadgePointView:tabBadgePointView2];
+//        [aTabBarController.viewControllers[2] cyl_showTabBadgePoint];
+//    }];
 
     [self.window makeKeyAndVisible];
     

@@ -10,6 +10,6 @@
 
 @interface MYFeatureViewCell : UICollectionViewCell
 
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong, readonly) UIImageView *imageView;
 
 @end
