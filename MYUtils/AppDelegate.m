@@ -65,27 +65,28 @@
                                                                              imageCount:3
                                                                         showPageControl:YES];
     feature.showSkip = YES;
+    feature.skipBlock = ^{
+        HKTabBarControllerConfig *tabBarControllerConfig = [[HKTabBarControllerConfig alloc] init];
+        CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
+        tabBarController.delegate = self;
+        [self.window setRootViewController:tabBarController];
+        [tabBarController setViewDidLayoutSubViewsBlock:^(CYLTabBarController *aTabBarController) {
+            UIViewController *viewController = aTabBarController.viewControllers[0];
+            UIView *tabBadgePointView0 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
+            [viewController.tabBarItem.cyl_tabButton cyl_setTabBadgePointView:tabBadgePointView0];
+            [viewController cyl_showTabBadgePoint];
+            
+            UIView *tabBadgePointView1 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
+            [aTabBarController.viewControllers[1] cyl_setTabBadgePointView:tabBadgePointView1];
+            [aTabBarController.viewControllers[1] cyl_showTabBadgePoint];
+            
+            UIView *tabBadgePointView2 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
+            [aTabBarController.viewControllers[2] cyl_setTabBadgePointView:tabBadgePointView2];
+            [aTabBarController.viewControllers[2] cyl_showTabBadgePoint];
+        }];
+    };
     self.window.rootViewController = feature;
     
-//    HKTabBarControllerConfig *tabBarControllerConfig = [[HKTabBarControllerConfig alloc] init];
-//    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
-//    tabBarController.delegate = self;
-//    [self.window setRootViewController:tabBarController];
-//    [tabBarController setViewDidLayoutSubViewsBlock:^(CYLTabBarController *aTabBarController) {
-//        UIViewController *viewController = aTabBarController.viewControllers[0];
-//        UIView *tabBadgePointView0 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
-//        [viewController.tabBarItem.cyl_tabButton cyl_setTabBadgePointView:tabBadgePointView0];
-//        [viewController cyl_showTabBadgePoint];
-//
-//        UIView *tabBadgePointView1 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
-//        [aTabBarController.viewControllers[1] cyl_setTabBadgePointView:tabBadgePointView1];
-//        [aTabBarController.viewControllers[1] cyl_showTabBadgePoint];
-//
-//        UIView *tabBadgePointView2 = [UIView cyl_tabBadgePointViewWithClolor:[UIColor redColor] radius:4.5];
-//        [aTabBarController.viewControllers[2] cyl_setTabBadgePointView:tabBadgePointView2];
-//        [aTabBarController.viewControllers[2] cyl_showTabBadgePoint];
-//    }];
-
     [self.window makeKeyAndVisible];
     
     [TBCityIconFont setFontName:@"iconfont"];
@@ -95,10 +96,10 @@
     //捕捉意外崩溃
     [UncaughtExceptionHandler InstallUncaughtExceptionHandler];
     
-//    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
-//                                                                  [RetainCycleLoggerPlugin new]]
-//                               retainCycleDetectorConfiguration:nil];
-//    [_memoryProfiler enable];
+    _memoryProfiler = [[FBMemoryProfiler alloc] initWithPlugins:@[[CacheCleanerPlugin new],
+                                                                  [RetainCycleLoggerPlugin new]]
+                               retainCycleDetectorConfiguration:nil];
+    [_memoryProfiler enable];
     
     //Set ExceptionHandler
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
