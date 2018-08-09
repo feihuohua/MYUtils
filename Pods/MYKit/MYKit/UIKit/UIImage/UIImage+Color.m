@@ -10,26 +10,7 @@
 
 @implementation UIImage (Color)
 
-+ (UIImage *)imageWithColor:(UIColor *)color {
-    return [self imageWithColor:color size:CGSizeMake(1, 1)];
-}
-
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
-    if (CGSizeEqualToSize(size, CGSizeZero)) {
-        return nil;
-    }
-    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
-
-- (UIColor *)colorAtPoint:(CGPoint)point
-{
+- (UIColor *)colorAtPoint:(CGPoint)point {
     if (point.x < 0 || point.y < 0) return nil;
     
     CGImageRef imageRef = self.CGImage;
@@ -143,6 +124,58 @@
     CGImageRelease(contextRef);
     
     return grayImage;
+}
+
++ (UIImage *)createImageWithColor:(UIColor *)color {
+    return [UIImage createImageWithColor:color size:CGSizeMake(1.f, 1.f)];
+}
+
++ (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size {
+    NSParameterAssert(color);
+    
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+- (UIImage *)imageWithAlpha:(CGFloat)alpha {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0f);
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGRect area = CGRectMake(0, 0, self.size.width, self.size.height);
+    
+    CGContextScaleCTM(ctx, 1, -1);
+    CGContextTranslateCTM(ctx, 0, -area.size.height);
+    
+    CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
+    
+    CGContextSetAlpha(ctx, alpha);
+    
+    CGContextDrawImage(ctx, area, self.CGImage);
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
+- (UIImage *)resizeTo:(CGSize)size {
+    CGRect rect = CGRectMake(0, 0, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    [self drawInRect:rect];
+    UIImage *imageContext = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData *imageData = UIImagePNGRepresentation(imageContext);
+    return [UIImage imageWithData:imageData];
 }
 
 @end

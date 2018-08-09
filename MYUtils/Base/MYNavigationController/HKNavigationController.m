@@ -8,7 +8,7 @@
 
 #import "HKNavigationController.h"
 #import "UIViewController+NavigationExtension.h"
-#import <UIBarButtonItem+Extension.h>
+#import <UIBarButtonItem+Addition.h>
 
 @interface HKWrapNavigationController : UINavigationController
 

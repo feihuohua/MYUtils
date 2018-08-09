@@ -8,7 +8,6 @@
 
 #import "MYImageCornerRadiusViewCell.h"
 #import "UtilsMacros.h"
-#import <UIImageView+RoundedAvatar.h>
 #import <MYKit.h>
 #import <Masonry.h>
 #import <UIImageView+WebCache.h>
@@ -54,7 +53,7 @@ static NSString *identifier = @"MYImageCornerRadiusViewCell";
     _imageURL = imageURL;
     
     [self.originImageView sd_setImageWithURL:[NSURL URLWithString:imageURL]
-                            placeholderImage:[UIImage imageWithColor:[UIColor lightGrayColor]]];
+                            placeholderImage:[UIImage createImageWithColor:[UIColor lightGrayColor]]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

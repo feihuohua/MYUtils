@@ -11,7 +11,7 @@
 #import "DynamicHeightCell.h"
 #import "UICollectionView+ARDynamicCacheHeightLayoutCell.h"
 #import "MYFeedModel.h"
-#import "UIBarButtonItem+Extension.h"
+#import <UIBarButtonItem+Addition.h>
 
 @interface MYAutomaticallyCollectionViewCellViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 

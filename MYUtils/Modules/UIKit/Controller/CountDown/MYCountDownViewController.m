@@ -9,11 +9,8 @@
 #import "MYCountDownViewController.h"
 #import "UIButton+CountDown.h"
 #import "UILabel+CountDown.h"
-#import <NSMutableDictionary+ChainProgramming.h>
-#import <NSMutableAttributedString+ChainProgramming.h>
 #import "UIButton+Badge.h"
 #import "UIBarButtonItem+Badge.h"
-#import "UIButton+ImagePosition.h"
 
 @interface MYCountDownViewController ()
 
@@ -32,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.countdownLabel scheduledTimerWithTimeInterval:5.0f title:@"重新发送" countDownTitle:@"秒后可重发" titleBackgroundColor:[UIColor blueColor] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
+//    [self.countdownLabel scheduledTimerWithTimeInterval:5.0f title:@"重新发送" countDownTitle:@"秒后可重发" titleBackgroundColor:[UIColor blueColor] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
     
     [self setupAttributedString];
     
@@ -55,10 +52,10 @@
     self.navigationItem.rightBarButtonItem.badgeFont = [UIFont systemFontOfSize:10.0f];
     
     
-    [self.topButton setImagePosition:MYImagePositionTop spacing:5.0f];
-    [self.rightButton setImagePosition:MYImagePositionRight spacing:5.0f];
-    [self.leftButton setImagePosition:MYImagePositionLeft spacing:5.0f];
-    [self.bottomButton setImagePosition:MYImagePositionBottom spacing:5.0f];
+//    [self.topButton setImagePosition:MYImagePositionTop spacing:5.0f];
+//    [self.rightButton setImagePosition:MYImagePositionRight spacing:5.0f];
+//    [self.leftButton setImagePosition:MYImagePositionLeft spacing:5.0f];
+//    [self.bottomButton setImagePosition:MYImagePositionBottom spacing:5.0f];
     
     
 }
@@ -81,17 +78,17 @@
     //    self.attributedLabel.attributedText = attributedStr;
     
     //【封装工具类】
-    NSMutableAttributedString *attributedString = [NSMutableAttributedString makeAttributeString:@"3秒后跳转" attribute:^(NSMutableDictionary *attributes) {
-        attributes.font(24).color([UIColor redColor]);
-    }];
-    [attributedString makeAttributeStringAdd:@"订单详情页" attribute:^(NSMutableDictionary *attributes) {
-        attributes.font(12).color([UIColor blueColor]);
-    }];
-    self.attributedLabel.attributedText = attributedString;
+//    NSMutableAttributedString *attributedString = [NSMutableAttributedString makeAttributeString:@"3秒后跳转" attribute:^(NSMutableDictionary *attributes) {
+//        attributes.font(24).color([UIColor redColor]);
+//    }];
+//    [attributedString makeAttributeStringAdd:@"订单详情页" attribute:^(NSMutableDictionary *attributes) {
+//        attributes.font(12).color([UIColor blueColor]);
+//    }];
+//    self.attributedLabel.attributedText = attributedString;
 }
 
 - (IBAction)countdownBtnClick:(UIButton *)sender {
-    [self.countdownButton scheduledTimerWithTimeInterval:5.0f title:@"获取验证码" countDownTitle:@"s" titleBackgroundColor:[UIColor colorWithRed:84/255.0 green:180/255.0 blue:98/255.0 alpha:1.0f] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
+//    [self.countdownButton scheduledTimerWithTimeInterval:5.0f title:@"获取验证码" countDownTitle:@"s" titleBackgroundColor:[UIColor colorWithRed:84/255.0 green:180/255.0 blue:98/255.0 alpha:1.0f] countDownTitleBackgroundColor:[UIColor lightGrayColor]];
 }
 
 @end

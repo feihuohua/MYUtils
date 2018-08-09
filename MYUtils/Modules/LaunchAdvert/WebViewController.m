@@ -7,7 +7,7 @@
 //
 
 #import "WebViewController.h"
-#import <UIBarButtonItem+Extension.h>
+#import <UIBarButtonItem+Addition.h>
 #import <WebKit/WebKit.h>
 
 @interface WebViewController ()

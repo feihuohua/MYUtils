@@ -415,7 +415,7 @@
     cancelButton.titleLabel.font = self.buttonFont;
     [cancelButton setTitle:self.cancelButtonTitle forState:UIControlStateNormal];
     [cancelButton setTitleColor:self.buttonColor forState:UIControlStateNormal];
-    [cancelButton setBackgroundImage:[UIImage imageWithColor:self.separatorColor]
+    [cancelButton setBackgroundImage:[UIImage createImageWithColor:self.separatorColor]
                             forState:UIControlStateHighlighted];
     [cancelButton addTarget:self
                      action:@selector(cancelButtonClicked)
@@ -662,7 +662,7 @@
     
     self.lineView.backgroundColor = separatorColor;
     self.divisionView.backgroundColor = separatorColor;
-    [self.cancelButton setBackgroundImage:[UIImage imageWithColor:separatorColor]
+    [self.cancelButton setBackgroundImage:[UIImage createImageWithColor:separatorColor]
                                  forState:UIControlStateHighlighted];
     [self.tableView reloadData];
 }

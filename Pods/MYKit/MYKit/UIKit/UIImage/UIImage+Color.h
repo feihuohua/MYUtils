@@ -11,25 +11,6 @@
 @interface UIImage (Color)
 
 /**
- *  @brief  根据颜色生成纯色图片
- *
- *  @param color 颜色
- *
- *  @return 纯色图片
- */
-+ (UIImage *)imageWithColor:(UIColor *)color;
-
-/**
- *  @brief  根据颜色和传入的size生成图片
- *
- *  @param color 传入的颜色
- *  @param size  生成图片的size
- *
- *  @return 返回图片
- */
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
-
-/**
  *  @brief  取图片某一点的颜色
  *
  *  @param point 某一点
@@ -63,5 +44,24 @@
  */
 + (UIImage *)covertToGrayImageFromImage:(UIImage *)sourceImage;
 
+/**
+ *  @brief  根据颜色生成图片，默认size为{1.f, 1.f}
+ *  @param color 传入颜色
+ *  @return 返回图片
+ */
++ (UIImage *)createImageWithColor:(UIColor *)color;
+
+/**
+ *  @brief 设置图片的透明度
+ *  @param alpha 透明度
+ *  @return 返回处理后的图片
+ */
+- (UIImage *)imageWithAlpha:(CGFloat)alpha;
+
+/**
+ *  @brief 设置图片的size
+ *  @return 返回改变size之后的图片
+ */
+- (UIImage *)resizeTo:(CGSize)size;
 
 @end

@@ -12,8 +12,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (CornerRadii)
 
-// 指定倒角
-- (void)setCornerRadii:(CGFloat)cornerRadii roundingCorners:(UIRectCorner)roundingCorners;
+/**
+ 快速切圆角，带边框、边框颜色
+ 
+ @param roundingCorners 圆角样式
+ @param cornerRadii 圆角角度
+ */
+- (void)setCornerRadii:(CGFloat)cornerRadii
+       roundingCorners:(UIRectCorner)roundingCorners;
+
+/**
+ 快速切圆角，带边框、边框颜色
+ 
+ @param roundingCorners 圆角样式
+ @param cornerRadii 圆角角度
+ @param borderWidth 边线宽度
+ @param borderColor 边线颜色
+ */
+- (void)setCornerRadii:(CGFloat)cornerRadii
+       roundingCorners:(UIRectCorner)roundingCorners
+           borderWidth:(CGFloat)borderWidth
+           borderColor:(UIColor *)borderColor;
 
 @end
 

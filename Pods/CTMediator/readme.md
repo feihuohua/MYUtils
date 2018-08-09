@@ -14,7 +14,36 @@ use_frameworks!
 pod "CTMediator"
 ```
 
-[Demo](https://github.com/ModulizationDemo)
+---
+
+
+`CTMediator` helps you to devide your project into multi-project, and use `Target-Action` pattern to let subprojects to communicate with each other. *with no regist process!*
+
+you can check demo for more details:
+
+[Origin project](https://github.com/ModulizationDemo/MainProject)
+
+[Modulized Main Project with CTMediator](https://github.com/ModulizationDemo/ModulizedMainProject)
+
+[Demos](https://github.com/ModulizationDemo)
+
+[Swift Demo](https://github.com/ModulizationDemo/SwfitDemo)
+
+add private repo before you run demos:
+
+```
+pod repo add PrivatePods https://github.com/ModulizationDemo/PrivatePods.git
+```
+
+remember to run `pod install` before you run the demo!
+
+---
+
+[Origin project](https://github.com/ModulizationDemo/MainProject)
+
+[Modulized Main Project with CTMediator](https://github.com/ModulizationDemo/ModulizedMainProject)
+
+[Demos](https://github.com/ModulizationDemo)
 
 [Swift Demo](https://github.com/ModulizationDemo/SwfitDemo)
 
@@ -42,3 +71,12 @@ pod repo add PrivatePods https://github.com/ModulizationDemo/PrivatePods.git
 
 `DemoModule`目录是实际提供服务的业务，这个在实际工程中也是一个单独的repo。这个repo不被任何人所依赖，这个repo通过target-action来提供被调度的功能，然后由category repo通过runtime调度。
 
+---
+
+`CTMediator` helps you to devide your project into multi-project, and use `Target-Action` pattern to let subprojects to communicate with each other.
+
+you can check demo for more details:
+
+[Demo](https://github.com/ModulizationDemo)
+
+[Swift Demo](https://github.com/ModulizationDemo/SwfitDemo)

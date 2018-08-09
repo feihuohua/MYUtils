@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - CATLog (1.1.0)
-  - CTMediator (12)
+  - CTMediator (18)
   - CYLTabBarController (1.13.2)
   - DACircularProgress (2.3.1)
   - FBAllocationTracker (0.1.5)
@@ -30,28 +30,31 @@ PODS:
   - IconFont (1.0.2)
   - Masonry (1.0.2)
   - MBProgressHUD (0.9.2)
-  - MJExtension (3.0.13)
+  - MJExtension (3.0.15.1)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - MYFPSStatusManager (1.0.1)
-  - MYKit (1.0.7):
-    - MYKit/Foundation (= 1.0.7)
-    - MYKit/UIKit (= 1.0.7)
-  - MYKit/Foundation (1.0.7)
-  - MYKit/UIKit (1.0.7):
+  - MYKit (1.1.2):
+    - MYKit/Foundation (= 1.1.2)
+    - MYKit/SafeKit (= 1.1.2)
+    - MYKit/UIKit (= 1.1.2)
+  - MYKit/Foundation (1.1.2)
+  - MYKit/SafeKit (1.1.2):
+    - MYKit/Foundation
+  - MYKit/UIKit (1.1.2):
     - MYKit/Foundation
   - MYModalViewController (1.0.0)
   - pop (1.0.10)
-  - RTRootNavigationController (0.6.6):
-    - RTRootNavigationController/Core (= 0.6.6)
-  - RTRootNavigationController/Core (0.6.6)
+  - RTRootNavigationController (0.6.7):
+    - RTRootNavigationController/Core (= 0.6.7)
+  - RTRootNavigationController/Core (0.6.7)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - TSMessages (0.9.12):
     - HexColors (~> 2.2.0)
   - TYPagerController (2.1.2)
-  - UITableView+FDTemplateLayoutCell (1.6)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
   - WebViewJavascriptBridge (6.0.3)
   - WRNavigationBar (1.2.0)
   - XHLaunchAd (3.9.7):
@@ -77,24 +80,58 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.13)
   - MLeaksFinder (~> 1.0.0)
   - MYFPSStatusManager (~> 1.0.1)
-  - MYKit (~> 1.0.7)
+  - MYKit (~> 1.1.2)
   - MYModalViewController (~> 1.0.0)
   - pop (~> 1.0.10)
   - RTRootNavigationController (~> 0.6.6)
   - SDWebImage (~> 4.0.0)
   - TSMessages (~> 0.9.12)
   - TYPagerController (~> 2.1.2)
-  - UITableView+FDTemplateLayoutCell (~> 1.6)
+  - "UITableView+FDTemplateLayoutCell (~> 1.6)"
   - WebViewJavascriptBridge (~> 6.0.2)
   - WRNavigationBar (~> 1.2.0)
   - XHLaunchAd (~> 3.9.7)
   - YYKit (= 1.0.9)
   - ZYKeyboardUtil (~> 1.0.7)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CATLog
+    - CTMediator
+    - CYLTabBarController
+    - DACircularProgress
+    - FBAllocationTracker
+    - FBMemoryProfiler
+    - FBRetainCycleDetector
+    - FCFileManager
+    - FLAnimatedImage
+    - FLEX
+    - HexColors
+    - IconFont
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MLeaksFinder
+    - MYFPSStatusManager
+    - MYKit
+    - MYModalViewController
+    - pop
+    - RTRootNavigationController
+    - SDWebImage
+    - TSMessages
+    - TYPagerController
+    - "UITableView+FDTemplateLayoutCell"
+    - WebViewJavascriptBridge
+    - WRNavigationBar
+    - XHLaunchAd
+    - YYKit
+    - ZYKeyboardUtil
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CATLog: 518918ae4f922e3b52152391e3e9e4bda591e4ea
-  CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
+  CTMediator: 420e9d90f9f1fd740caf2238ed7ed64dc621c5b7
   CYLTabBarController: 1ea13266ead94d45427c9d7ff8fa6e06d6835d23
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   FBAllocationTracker: dfdca3f71aceca6a85e95e3c6ec76a9785eba0f1
@@ -107,23 +144,23 @@ SPEC CHECKSUMS:
   IconFont: 97ff724bc6d26aac018678a2da4f8542600e5a67
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   MYFPSStatusManager: 8ba3e5a46eb4d4294bf7f808fb265b830ea8883a
-  MYKit: 988c194fd86c25632076bde887befe671e1f9ab0
+  MYKit: 338258b9f984b07fe808216d2c77f4f33d3c2379
   MYModalViewController: 02516f4db5b83791c32f2bc2b10804d93db21611
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  RTRootNavigationController: 1429554f853e8319a383849befed73d5dc58a108
+  RTRootNavigationController: d6aa6cbb78a3eaecea4f6e4df63f15dd887836b8
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
-  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
   XHLaunchAd: 0dc50c5af00ee5d9e734b9dce6eece7acaa71122
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZYKeyboardUtil: c4b920eed9af063c46af2e9ea62e851d9331fbd9
 
-PODFILE CHECKSUM: 034a9f583976ca850769dca78b4ff14292b495d5
+PODFILE CHECKSUM: 97de16e1df895197dd0b5168c31654d5e3af73fa
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

@@ -7,7 +7,6 @@
 //
 
 #import "AuthenticationWIFIManager.h"
-#import "UIAlertView+Block.h"
 #import <WebKit/WebKit.h>
 #import <SafariServices/SafariServices.h>
 
@@ -68,31 +67,31 @@ static AuthenticationWIFIManager *shareManager = nil;
             self.complection = nil;
         }
         
-        if (self.needAlert) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-            [UIAlertView alertViewWithTitle:@"WI-FI认证提醒" message:@"检测到当前WI-FI需要认证才能使用，请尝试去认证网络" cancelButtonTitle:@"取消" otherButtonTitles:@[@"认证"] didDismissConfirmButtionBlock:^(NSInteger buttonIndex) {
-                if (buttonIndex == 1) { // 认证网络
-                    CGFloat systemVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
-                    if (systemVersion >= 9.0 && systemVersion < 11.0) {
-                        // iOS11下，SFSafariViewController有些问题，页面会白屏...原因暂时未知，如果你知道求告知~
-                        SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:self.trueUrl];
-                        UIViewController *currentVc = [UIApplication sharedApplication].delegate.window.rootViewController;
-                        if (currentVc.presentedViewController) {
-                            [currentVc.presentedViewController presentViewController:safariVc animated:YES completion:nil];
-                        } else if (currentVc) {
-                            [currentVc presentViewController:safariVc animated:YES completion:nil];
-                        }
-                    } else {
-                        if ([[UIApplication sharedApplication] canOpenURL:self.trueUrl]) {
-                            [[UIApplication sharedApplication] openURL:self.trueUrl];
-                        }
-                    }
-                }
-            } didDismissCancelButtonBlock:nil];
-        }
+//        if (self.needAlert) {
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+//            [UIAlertView alertViewWithTitle:@"WI-FI认证提醒" message:@"检测到当前WI-FI需要认证才能使用，请尝试去认证网络" cancelButtonTitle:@"取消" otherButtonTitles:@[@"认证"] didDismissConfirmButtionBlock:^(NSInteger buttonIndex) {
+//                if (buttonIndex == 1) { // 认证网络
+//                    CGFloat systemVersion = [[[UIDevice currentDevice] systemVersion] floatValue];
+//                    if (systemVersion >= 9.0 && systemVersion < 11.0) {
+//                        // iOS11下，SFSafariViewController有些问题，页面会白屏...原因暂时未知，如果你知道求告知~
+//                        SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:self.trueUrl];
+//                        UIViewController *currentVc = [UIApplication sharedApplication].delegate.window.rootViewController;
+//                        if (currentVc.presentedViewController) {
+//                            [currentVc.presentedViewController presentViewController:safariVc animated:YES completion:nil];
+//                        } else if (currentVc) {
+//                            [currentVc presentViewController:safariVc animated:YES completion:nil];
+//                        }
+//                    } else {
+//                        if ([[UIApplication sharedApplication] canOpenURL:self.trueUrl]) {
+//                            [[UIApplication sharedApplication] openURL:self.trueUrl];
+//                        }
+//                    }
+//                }
+//            } didDismissCancelButtonBlock:nil];
+//        }
     }
-#pragma clang diagnostic pop
+//#pragma clang diagnostic pop
 }
 
 - (WKWebView *)webView {

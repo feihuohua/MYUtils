@@ -8,7 +8,7 @@
 
 #import "MYShowTextViewCell.h"
 #import "MYShowTextCellModel.h"
-#import "UILabel+FitLines.h"
+#import <UILabel+LimitLines.h>
 #import "NSString+Size.h"
 
 #define SCREEN_HEIGHT CGRectGetHeight([[UIScreen mainScreen] bounds])

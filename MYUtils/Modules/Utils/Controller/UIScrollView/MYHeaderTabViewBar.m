@@ -7,8 +7,8 @@
 //
 
 #import "MYHeaderTabViewBar.h"
-#import <UIColor+Hex.h>
-#import <NSString+Contains.h>
+#import <UIColor+Addition.h>
+#import <NSString+Addition.h>
 #import <UIView+Position.h>
 
 @interface MYHeaderTabViewBar ()

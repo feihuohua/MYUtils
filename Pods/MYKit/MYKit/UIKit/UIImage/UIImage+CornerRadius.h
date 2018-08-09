@@ -2,8 +2,8 @@
 //  UIImage+CornerRadius.h
 //  MYKitDemo
 //
-//  Created by sunjinshuai on 2017/9/6.
-//  Copyright © 2017年 com.51fanxing. All rights reserved.
+//  Created by sunjinshuai on 2018/3/14.
+//  Copyright © 2018年 com.51fanxing. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,65 +11,43 @@
 @interface UIImage (CornerRadius)
 
 /**
- Rounds a new image with a given corner size.
- 
- @param radius  The radius of each corner oval. Values larger than half the
- rectangle's width or height are clamped appropriately to half
- the width or height.
- */
-- (nullable UIImage *)imageByRoundCornerRadius:(CGFloat)radius;
-
-/**
- Rounds a new image with a given corner size.
- 
- @param radius       The radius of each corner oval. Values larger than half the
- rectangle's width or height are clamped appropriately to
- half the width or height.
- 
- @param borderWidth  The inset border line width. Values larger than half the rectangle's
- width or height are clamped appropriately to half the width
- or height.
- 
- @param borderColor  The border stroke color. nil means clear color.
+ 将图片进行圆角处理，默认无边框(此操作是线程安全的)。
+ @param radius 圆角大小
+ @param newSize 图片将会缩放成的目标大小
+ @return 返回处理之后的图片
  */
 - (nullable UIImage *)imageByRoundCornerRadius:(CGFloat)radius
+                                     scaleSize:(CGSize)newSize;
+
+/**
+ 将图片进行圆角处理，并加上边框(此操作是线程安全的)。
+ @param radius 圆角大小
+ @param newSize 图片将会缩放成的目标大小
+ @param borderWidth 边框宽度
+ @param borderColor 边框颜色
+ @return 返回处理之后的图片
+ */
+- (nullable UIImage *)imageByRoundCornerRadius:(CGFloat)radius
+                                     scaleSize:(CGSize)newSize
                                    borderWidth:(CGFloat)borderWidth
                                    borderColor:(nullable UIColor *)borderColor;
 
 /**
- Rounds a new image with a given corner size.
- 
- @param radius       The radius of each corner oval. Values larger than half the
- rectangle's width or height are clamped appropriately to
- half the width or height.
- 
- @param corners      A bitmask value that identifies the corners that you want
- rounded. You can use this parameter to round only a subset
- of the corners of the rectangle.
- 
- @param borderWidth  The inset border line width. Values larger than half the rectangle's
- width or height are clamped appropriately to half the width
- or height.
- 
- @param borderColor  The border stroke color. nil means clear color.
- 
- @param borderLineJoin The border line join.
+ 图片加上圆形边框，图片必须得是正方形的，否则直接返回未加边框的原图片(此操作是线程安全的)
+ @param color 边框颜色
+ @param width 边框宽度
+ @return 返回处理之后的图片
  */
-- (nullable UIImage *)imageByRoundCornerRadius:(CGFloat)radius
-                                       corners:(UIRectCorner)corners
-                                   borderWidth:(CGFloat)borderWidth
-                                   borderColor:(nullable UIColor *)borderColor
-                                borderLineJoin:(CGLineJoin)borderLineJoin;
+- (nullable UIImage *)imageByRoundBorderedColor:(nullable UIColor *)color
+                                    borderWidth:(CGFloat)width;
 
 /**
- Returns a new image which is edge inset from this image.
- 
- @param insets  Inset (positive) for each of the edges, values can be negative to 'outset'.
- 
- @param color   Extend edge's fill color, nil means clear color.
- 
- @return        The new image, or nil if an error occurs.
+ 创建一张纯色的圆形图片
+ @param color 图片填充的颜色
+ @param radius 圆形图片的半径
+ @return 返回纯色的圆形图片
  */
-- (nullable UIImage *)imageByInsetEdge:(UIEdgeInsets)insets withColor:(nullable UIColor *)color;
++ (nullable UIImage *)roundImageWithColor:(nullable UIColor *)color
+                                   radius:(CGFloat)radius;
 
 @end

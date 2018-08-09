@@ -9,7 +9,7 @@
 #import "MYTestViewController.h"
 #import "MYCustomNavigationBar.h"
 #import "UtilsMacros.h"
-#import <UIBarButtonItem+Extension.h>
+#import <UIBarButtonItem+Addition.h>
 
 @interface MYTestViewController ()
 

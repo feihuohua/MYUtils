@@ -9,7 +9,7 @@
 #import "MYProgressHUD.h"
 #import "MYProgressAnimationView.h"
 #import <MBProgressHUD.h>
-#import <NSString+Extension.h>
+#import <NSString+Addition.h>
 
 @interface MYProgressHUD ()
 

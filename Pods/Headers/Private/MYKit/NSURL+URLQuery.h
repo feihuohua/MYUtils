@@ -1,1 +1,0 @@
-../../../MYKit/MYKit/Foundation/NSURL/NSURL+URLQuery.h

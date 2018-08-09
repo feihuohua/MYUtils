@@ -8,7 +8,7 @@
 
 #import "MYJavaScriptCoreViewController.h"
 #import "UtilsMacros.h"
-#import <UIColor+Random.h>
+#import <UIColor+Addition.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @interface MYJavaScriptCoreViewController ()<UIWebViewDelegate, UIScrollViewDelegate>

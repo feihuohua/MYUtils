@@ -4,7 +4,7 @@ platform :ios, "8.0"
 target 'MYUtils' do
 #    UIKit
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
-    pod 'MYKit', '~> 1.0.7'
+    pod 'MYKit', '~> 1.1.2'
     pod 'TSMessages', '~> 0.9.12'
     pod 'AFNetworking', '~> 3.1.0'
     pod 'MJExtension', '~> 3.0.13'
