@@ -34,7 +34,6 @@
     [self.dataSource addObject:@"*UICollectionView布局*-MYCollectionLayoutViewController"];
     [self.dataSource addObject:@"*TableViewCell倒计时*-MYTableCountDownViewController"];
     [self.dataSource addObject:@"*UIWebView实战*-MYWebViewController"];
-    [self.dataSource addObject:@"自定义UISwitch-MYAMViralSwitchViewController"];
     [self.dataSource addObject:@"CollectionDynamicCell-MYAutomaticallyCollectionViewCellViewController"];
     [self.dataSource addObject:@"自定义导航栏-MYCustomNavigationBarViewController"];
     

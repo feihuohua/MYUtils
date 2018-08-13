@@ -77,7 +77,6 @@
 		3208CB011FC7B69A00AD9A30 /* MYFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB001FC7B69A00AD9A30 /* MYFileManager.m */; };
 		3208CB041FC7BB8100AD9A30 /* MYStringFormattManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */; };
 		320FFB251FC3DC85006CC5AE /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320FFB241FC3DC85006CC5AE /* MYTestViewController.m */; };
-		3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212C20B1F5425E700C57DBE /* AMViralSwitch.m */; };
 		3215B45F1FC45A8F001038A5 /* AuthenticationWIFIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3215B45E1FC45A8F001038A5 /* AuthenticationWIFIManager.m */; };
 		3220B1341FFC962B00A58AA0 /* MYPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1331FFC962B00A58AA0 /* MYPagerViewController.m */; };
 		3220B1371FFC99CA00A58AA0 /* MYListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3220B1361FFC99CA00A58AA0 /* MYListViewController.m */; };
@@ -110,8 +109,6 @@
 		3254F4E11FBD78470020B58C /* MYImageCornerRadiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4B41FBD78470020B58C /* MYImageCornerRadiusViewController.m */; };
 		3254F4E51FBD78470020B58C /* MYKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */; };
 		3254F4E61FBD78470020B58C /* MYKeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */; };
-		3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */; };
-		3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4C71FBD78470020B58C /* MYAMViralSwitchViewController.m */; };
 		3254F4EA1FBD78470020B58C /* MYTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4CB1FBD78470020B58C /* MYTextFieldViewController.m */; };
 		3254F4EB1FBD78480020B58C /* MYIconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4CE1FBD78470020B58C /* MYIconFontViewController.m */; };
 		3254F4EC1FBD78480020B58C /* MYCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3254F4D11FBD78470020B58C /* MYCountDownViewController.m */; };
@@ -345,8 +342,6 @@
 		3208CB031FC7BB8100AD9A30 /* MYStringFormattManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYStringFormattManager.m; sourceTree = "<group>"; };
 		320FFB231FC3DC85006CC5AE /* MYTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYTestViewController.h; sourceTree = "<group>"; };
 		320FFB241FC3DC85006CC5AE /* MYTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
-		3212C20A1F5425E700C57DBE /* AMViralSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViralSwitch.h; sourceTree = "<group>"; };
-		3212C20B1F5425E700C57DBE /* AMViralSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViralSwitch.m; sourceTree = "<group>"; };
 		3215B45D1FC45A8F001038A5 /* AuthenticationWIFIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationWIFIManager.h; sourceTree = "<group>"; };
 		3215B45E1FC45A8F001038A5 /* AuthenticationWIFIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationWIFIManager.m; sourceTree = "<group>"; };
 		3220B1321FFC962B00A58AA0 /* MYPagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYPagerViewController.h; sourceTree = "<group>"; };
@@ -408,9 +403,6 @@
 		3254F4C11FBD78470020B58C /* MYKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYKeyboardViewController.m; sourceTree = "<group>"; };
 		3254F4C21FBD78470020B58C /* MYKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYKeyboardViewController.h; sourceTree = "<group>"; };
 		3254F4C31FBD78470020B58C /* MYKeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYKeyboardViewController.xib; sourceTree = "<group>"; };
-		3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MYAMViralSwitchViewController.xib; sourceTree = "<group>"; };
-		3254F4C71FBD78470020B58C /* MYAMViralSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAMViralSwitchViewController.m; sourceTree = "<group>"; };
-		3254F4C81FBD78470020B58C /* MYAMViralSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAMViralSwitchViewController.h; sourceTree = "<group>"; };
 		3254F4CA1FBD78470020B58C /* MYTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTextFieldViewController.h; sourceTree = "<group>"; };
 		3254F4CB1FBD78470020B58C /* MYTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTextFieldViewController.m; sourceTree = "<group>"; };
 		3254F4CD1FBD78470020B58C /* MYIconFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYIconFontViewController.h; sourceTree = "<group>"; };
@@ -816,15 +808,6 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		3212C2091F5425E700C57DBE /* AMViralSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				3212C20A1F5425E700C57DBE /* AMViralSwitch.h */,
-				3212C20B1F5425E700C57DBE /* AMViralSwitch.m */,
-			);
-			path = AMViralSwitch;
-			sourceTree = "<group>";
-		};
 		3215B45C1FC45A7D001038A5 /* AuthenticationWIFI */ = {
 			isa = PBXGroup;
 			children = (
@@ -891,7 +874,6 @@
 			children = (
 				324174AF1FFB2A42007BB277 /* CustomNavigationBar */,
 				324174A71FFB27F7007BB277 /* CollectionDynamicCell */,
-				324174A61FFB2754007BB277 /* Switch */,
 				324174A51FFB26EC007BB277 /* WebView */,
 				324174931FFB2239007BB277 /* FDTemplateLayoutCell */,
 				3241748F1FFB218B007BB277 /* TableViewCountDown */,
@@ -1132,16 +1114,6 @@
 				3254F4DF1FBD78470020B58C /* MYWebViewJavascriptBridge1ViewController.h */,
 			);
 			path = WebView;
-			sourceTree = "<group>";
-		};
-		324174A61FFB2754007BB277 /* Switch */ = {
-			isa = PBXGroup;
-			children = (
-				3254F4C61FBD78470020B58C /* MYAMViralSwitchViewController.xib */,
-				3254F4C71FBD78470020B58C /* MYAMViralSwitchViewController.m */,
-				3254F4C81FBD78470020B58C /* MYAMViralSwitchViewController.h */,
-			);
-			path = Switch;
 			sourceTree = "<group>";
 		};
 		324174A71FFB27F7007BB277 /* CollectionDynamicCell */ = {
@@ -1442,7 +1414,6 @@
 				3203A2FE1F66329D00BA3601 /* FXSlider */,
 				4C3894DD1F64DF3200BD95ED /* UINavigationController */,
 				32DD4FD41F565443005C6FE9 /* MYTextField */,
-				3212C2091F5425E700C57DBE /* AMViralSwitch */,
 				32DF81FD1F41B3F700320CB2 /* FXCyclePagerView */,
 			);
 			path = Vendor;
@@ -1787,7 +1758,6 @@
 				32CE8B46206111D100EC2D68 /* shoppingCart.mp3 in Resources */,
 				32CE8B47206111D100EC2D68 /* signIn.wav in Resources */,
 				32CE8B42206111D100EC2D68 /* signIn.mp3 in Resources */,
-				3254F4E81FBD78470020B58C /* MYAMViralSwitchViewController.xib in Resources */,
 				320774AA1FACB93000A56F88 /* ImageSelectedOn@3x.png in Resources */,
 				320774B31FACB93000A56F88 /* PlayButtonOverlayLarge@3x.png in Resources */,
 				32CE8B3F206111D100EC2D68 /* payment.mp3 in Resources */,
@@ -2033,7 +2003,6 @@
 				324174CC1FFB46EA007BB277 /* SDiOSVersion.m in Sources */,
 				32B3EBCD1FBE8D950067DF21 /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				329CE6582013320E00FEF065 /* MYFeatureManager.m in Sources */,
-				3254F4E91FBD78470020B58C /* MYAMViralSwitchViewController.m in Sources */,
 				3220B15D1FFDE47300A58AA0 /* MYProgressHUD.m in Sources */,
 				32659993200F1911001F727E /* MYHeaderTabViewController.m in Sources */,
 				329CE64B20121DF500FEF065 /* UIViewController+QMTabViewController.m in Sources */,
@@ -2066,7 +2035,6 @@
 				320774CA1FACB93000A56F88 /* MWZoomingScrollView.m in Sources */,
 				329CE64A20121DF500FEF065 /* QMTabBaseViewPlugin.m in Sources */,
 				320774C91FACB93000A56F88 /* MWTapDetectingView.m in Sources */,
-				3212C20C1F5425E700C57DBE /* AMViralSwitch.m in Sources */,
 				4CB578621F41FA0A004EE94D /* FXCyclePagerTransformLayout.m in Sources */,
 				32E1AB572063B47B0072A1E4 /* MYCustomNavigationBar.m in Sources */,
 				329CE64820121DF500FEF065 /* QMTabViewController.m in Sources */,
